@@ -66,6 +66,8 @@ p {
       background-color: rgba(0, 0, 0, 0.8);
       width: 110px;
       padding-left: 0; }
+      .bg-heder .select-language .down-menu a {
+        text-decoration: none; }
       .bg-heder .select-language .down-menu li {
         display: block;
         color: rgba(255, 255, 255, 0.5);
