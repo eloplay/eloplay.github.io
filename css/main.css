@@ -61,8 +61,8 @@ p {
       transition: opacity 0.2s; }
     .bg-heder .select-language .down-menu {
       position: absolute;
-      top: 33px;
-      left: -68px;
+      top: 40px;
+      left: -70px;
       background-color: rgba(0, 0, 0, 0.8);
       width: 110px;
       padding-left: 0; }
@@ -72,7 +72,7 @@ p {
         display: block;
         color: rgba(255, 255, 255, 0.5);
         font-size: 14px;
-        padding: 5px; }
+        padding: 5px 15px; }
         .bg-heder .select-language .down-menu li:hover {
           color: #fff;
           background-color: #000; }
