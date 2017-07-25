@@ -101,8 +101,8 @@ p
 			width: 55px
 			height: 55px
 			position: absolute
-			right: 51%
-			top: -22px
+			right: 50%
+			top: -40px
 .box-input-mail
 	p
 		font-family: "DINpro-regular", sans-serif
@@ -149,6 +149,8 @@ p
 	line-height: 125px
 	margin-top: 91px
 	margin-bottom: 91px
+	text-align: center
+	padding-left: 0
 	p
 		//color: rgba(255,255,255,0.5)
 	li
@@ -342,8 +344,7 @@ p
 			height: 540px
 			vertical-align: top
 			text-align: left
-			&:not(:last-child)
-				margin-right: 2.3%
+			margin: 10px
 			[class^=command-photo-]
 				width: 100%
 				height: 254px
@@ -437,3 +438,10 @@ p
 	width: 100%
 	height: auto
 	padding-bottom: 14rem
+
+
+
+@media (max-width: 1200px)
+	.in-social-networks
+		li:nth-child(1)
+			display: none
