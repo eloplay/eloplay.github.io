@@ -1,0 +1,314 @@
+html {
+  font-size: 10px; }
+
+body {
+  margin: 0;
+  font-family: "DINpro-regular", sans-serif;
+  font-size: 2.1rem;
+  font-weight: normal; }
+
+h1 {
+  color: #fff;
+  font-family: "DINpro-medium", sans-serif;
+  font-size: 4.8rem;
+  font-weight: normal;
+  line-height: 5.7rem; }
+
+h2 {
+  color: #fff;
+  font-family: "DINpro-regular", sans-serif;
+  font-size: 4.2rem;
+  font-weight: normal;
+  text-align: center; }
+
+p {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.1rem;
+  font-weight: normal;
+  line-height: 3.2rem; }
+
+.walpaper-full {
+  background: url(../img/bg-full.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto; }
+
+.bg-heder {
+  background: url(../img/bg-header.png) top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto; }
+  .bg-heder .logo-eloplay {
+    background: url(../img/logo-eloplay.svg) center no-repeat;
+    background-size: cover;
+    width: 145px;
+    height: 42px;
+    float: left;
+    margin-top: 25px; }
+  .bg-heder .select-language {
+    background: url(../img/icon-language.svg) center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: 25px;
+    position: relative;
+    opacity: 0.5;
+    cursor: pointer; }
+    .bg-heder .select-language:hover {
+      opacity: 1;
+      transition: opacity 0.2s; }
+    .bg-heder .select-language span {
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .bg-heder .indent-top {
+    margin-top: 123px; }
+  .bg-heder .box-title {
+    position: relative; }
+    .bg-heder .box-title h1 {
+      margin-bottom: 4.8rem; }
+    .bg-heder .box-title .icon-play {
+      background: url(../img/icon-play.svg) center no-repeat;
+      background-size: cover;
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      right: 51%;
+      top: -22px; }
+  .bg-heder .box-input-mail p {
+    font-family: "DINpro-regular", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #ff8d00;
+    position: absolute;
+    right: 195px;
+    top: -90px; }
+  .bg-heder .box-input-mail .input-mail {
+    position: relative; }
+    .bg-heder .box-input-mail .input-mail label {
+      color: #ff8d00;
+      font-size: 2.6rem;
+      line-height: 3rem;
+      margin-bottom: 3rem;
+      font-family: "DINpro-medium", sans-serif;
+      font-weight: normal;
+      display: block; }
+    .bg-heder .box-input-mail .input-mail .form-control {
+      width: 67%;
+      height: 42px;
+      border-radius: 0;
+      display: inline-block;
+      font-size: 16px; }
+    .bg-heder .box-input-mail .input-mail .btn-send {
+      height: 42px;
+      width: 29%;
+      background-color: #ff8d00;
+      color: #fff;
+      vertical-align: top;
+      margin-left: 10px;
+      padding: 9px 0 5px;
+      transition: transform 0.2s;
+      font-size: 16px; }
+      .bg-heder .box-input-mail .input-mail .btn-send:hover {
+        transform: scale(1.05); }
+  .bg-heder .in-social-networks {
+    width: 100%;
+    height: 125px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    line-height: 125px;
+    margin-top: 91px;
+    margin-bottom: 91px; }
+    .bg-heder .in-social-networks p {
+      color: rgba(255, 255, 255, 0.5); }
+    .bg-heder .in-social-networks li {
+      display: inline-block;
+      vertical-align: middle;
+      opacity: 0.5; }
+      .bg-heder .in-social-networks li:not(:last-child) {
+        margin-right: 9.5%; }
+    .bg-heder .in-social-networks .icon-social-1 {
+      background: url(../img/icon-social-1.svg) center no-repeat;
+      background-size: cover;
+      width: 40px;
+      height: 40px; }
+    .bg-heder .in-social-networks .icon-social-2 {
+      background: url(../img/icon-social-2.svg) center no-repeat;
+      background-size: cover;
+      width: 40px;
+      height: 36px; }
+    .bg-heder .in-social-networks .icon-social-3 {
+      background: url(../img/icon-social-3.svg) center no-repeat;
+      background-size: cover;
+      width: 40px;
+      height: 45px; }
+    .bg-heder .in-social-networks .icon-social-4 {
+      background: url(../img/icon-social-4.svg) center no-repeat;
+      background-size: cover;
+      width: 40px;
+      height: 34px; }
+    .bg-heder .in-social-networks .icon-social-5 {
+      background: url(../img/icon-social-5.svg) center no-repeat;
+      background-size: cover;
+      width: 40px;
+      height: 40px; }
+    .bg-heder .in-social-networks .icon-social-6 {
+      background: url(../img/icon-social-6.svg) center no-repeat;
+      background-size: cover;
+      width: 45px;
+      height: 39px; }
+
+.box-icon-partners {
+  text-align: center;
+  width: 75%;
+  margin: 12rem auto 0; }
+  .box-icon-partners .icon-axon {
+    background: url(../img/icon-axon.svg) center no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: top;
+    float: left; }
+  .box-icon-partners .icon-forklog {
+    background: url(../img/icon-forklog.svg) center no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    float: right; }
+
+.box-vidos {
+  margin-bottom: 3rem;
+  margin-top: 12rem; }
+
+.box-vidos {
+  margin-bottom: 3rem; }
+  .box-vidos .video {
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 95%;
+    margin: 0 auto; }
+    .box-vidos .video iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+
+.box-text {
+  width: 100%;
+  margin-right: initial;
+  margin-left: initial;
+  background: url(../img/bg-sction-text.png) center no-repeat #fff;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: 4.5rem;
+  padding: 5rem; }
+  .box-text .text-pading {
+    padding: 1rem 4rem; }
+    .box-text .text-pading:nth-child(2) p {
+      line-height: 3rem; }
+  .box-text p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7); }
+    .box-text p span {
+      font-weight: 400;
+      color: #000; }
+
+.history-progect {
+  margin-top: 11rem; }
+  .history-progect h2 {
+    margin-bottom: 8rem; }
+  .history-progect .box-item-hist {
+    text-align: center; }
+    .history-progect .box-item-hist .item-hist {
+      width: 22%;
+      min-width: 216px;
+      height: 320px;
+      border: 1px solid #ff8d00;
+      display: inline-block;
+      text-align: left;
+      padding: 2.5%;
+      box-shadow: 0 5px 0 #ff8d00;
+      margin: 1.2%;
+      vertical-align: top; }
+      .history-progect .box-item-hist .item-hist p:nth-child(2) {
+        font-family: "DINpro-medium", sans-serif;
+        font-size: 6rem;
+        margin-top: 85px;
+        margin-bottom: 36px; }
+      .history-progect .box-item-hist .item-hist p:nth-child(3) {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-size: 1.8rem; }
+      .history-progect .box-item-hist .item-hist .icon-hist-1 {
+        background: url(../img/icon-history-1.svg) center no-repeat;
+        background-size: contain;
+        width: 51px;
+        height: 42px; }
+      .history-progect .box-item-hist .item-hist .icon-hist-2 {
+        background: url(../img/icon-history-2.svg) center no-repeat;
+        background-size: contain;
+        width: 57px;
+        height: 42px; }
+      .history-progect .box-item-hist .item-hist .icon-hist-3 {
+        background: url(../img/icon-history-3.svg) center no-repeat;
+        background-size: contain;
+        width: 51px;
+        height: 44px; }
+      .history-progect .box-item-hist .item-hist .icon-hist-4 {
+        background: url(../img/icon-history-4.svg) center no-repeat;
+        background-size: contain;
+        width: 44px;
+        height: 42px; }
+
+.sect-center {
+  width: 100%;
+  height: 954px;
+  overflow: hidden; }
+  .sect-center .container {
+    text-align: left;
+    position: relative;
+    padding-top: 223px;
+    z-index: 0; }
+    .sect-center .container h2 {
+      text-align: left;
+      margin-bottom: 60px; }
+    .sect-center .container p {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-size: 18px; }
+    .sect-center .container .btn-game {
+      height: 42px;
+      width: 130px;
+      background-color: #ff8d00;
+      color: #fff;
+      padding: 9px 0 5px;
+      transition: transform 0.2s;
+      font-size: 16px;
+      z-index: 1;
+      margin-top: 19px; }
+      .sect-center .container .btn-game:hover {
+        transform: scale(1.05); }
+  .sect-center .bg-center {
+    background: url(../img/bg-center.png) center no-repeat;
+    background-size: contain;
+    height: 954px;
+    position: absolute;
+    left: 65px;
+    top: 69px;
+    width: 1477px;
+    z-index: -1; }
+
+/*# sourceMappingURL=main.css.map */
