@@ -55,11 +55,23 @@ p
 			transition: opacity 0.2s
 		.down-menu
 			position: absolute
-			top: 40px
-			left: -70px
-			background-color: rgba(0,0,0,0.8)
+			top: 48px
+			left: -33px
+			background-color: rgba(0, 0, 0, 0.8)
 			width: 110px
-			padding-left: 0
+			padding: 7px 0 7px 0
+			border-radius: 5px
+			&:before
+				display: block
+				content: ""
+				position: absolute
+				left: 44%
+				top: -6px
+				width: 0
+				height: 0
+				border-left: 6px solid transparent
+				border-right: 6px solid transparent
+				border-bottom: 6px solid rgba(0, 0, 0, 0.8)
 			a
 				text-decoration: none
 			li
