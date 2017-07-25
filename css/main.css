@@ -453,6 +453,11 @@ p {
   height: auto;
   padding-bottom: 14rem; }
 
+.form-control:focus,
+.btn:focus {
+  outline: #ff8d00;
+  border-color: #ff8d00; }
+
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
     display: none; } }
