@@ -9,22 +9,20 @@
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/fonts.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 </head>
-<body>
+<body ng-app="">
 		<div class="walpaper-full">
 			<div class="bg-heder">
 				<div class="container">
 					<div class="row">
 						<a href="http://eloplay.com"><div class="logo-eloplay"></div></a>
-						<div class="form-group select-language">
-  <select class="form-control" id="sel1">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-  </select>
+						<div class="select-language" ng-init="lang='РУС'; is_open = false" ng-click="is_open = !is_open" ><span>{{lang}}</span>
+								<ul class="down-menu" ng-show="is_open">
+									<a href="./index-en"><li ng-click="lang='EN'">EN</li></a>
+									<a href="./index"><li ng-click="lang='РУС'">РУС</li></a>
+								</ul>
 						</div>
 					</div>
 					<div class="row indent-top">
@@ -96,7 +94,7 @@
 					</div>
 					<div class="item-hist">
 						<div class="icon-hist-4"></div>
-						<p>3 5000</p>
+						<p>3 500</p>
 						<p>Проведённых<br>турниров</p>
 					</div>
 				</div>

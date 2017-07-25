@@ -59,6 +59,21 @@ p {
     .bg-heder .select-language:hover {
       opacity: 1;
       transition: opacity 0.2s; }
+    .bg-heder .select-language .down-menu {
+      position: absolute;
+      top: 33px;
+      left: -68px;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 110px;
+      padding-left: 0; }
+      .bg-heder .select-language .down-menu li {
+        display: block;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        padding: 5px; }
+        .bg-heder .select-language .down-menu li:hover {
+          color: #fff;
+          background-color: #000; }
     .bg-heder .select-language span {
       color: #fff;
       font-size: 14px;
