@@ -311,4 +311,64 @@ p {
     width: 1477px;
     z-index: -1; }
 
+.command h2 {
+  margin-top: 135px;
+  margin-bottom: 60px; }
+.command .box-item-command {
+  text-align: center; }
+  .command .box-item-command .item-command {
+    width: 255px;
+    display: inline-block;
+    height: 540px;
+    vertical-align: top;
+    text-align: left; }
+    .command .box-item-command .item-command:not(:last-child) {
+      margin-right: 2.3%; }
+    .command .box-item-command .item-command [class^=command-photo-] {
+      width: 100%;
+      height: 254px;
+      background-size: cover !important;
+      margin-bottom: 24px; }
+    .command .box-item-command .item-command .command-photo-1 {
+      background: url(../img/img-command-1.jpg) top no-repeat; }
+    .command .box-item-command .item-command .command-photo-2 {
+      background: url(../img/img-command-2.jpg) top no-repeat; }
+    .command .box-item-command .item-command .command-photo-3 {
+      background: url(../img/img-command-3.jpg) top no-repeat; }
+    .command .box-item-command .item-command .command-photo-4 {
+      background: url(../img/img-command-4.jpg) top no-repeat; }
+    .command .box-item-command .item-command .line {
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.5); }
+    .command .box-item-command .item-command .box-icon {
+      text-align: left; }
+      .command .box-item-command .item-command .box-icon .icon-soc-1 {
+        background: url(../img/icon-social-7.svg) no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 29px; }
+      .command .box-item-command .item-command .box-icon .icon-soc-2 {
+        background: url(../img/icon-social-8.svg) no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 24px; }
+    .command .box-item-command .item-command p:nth-child(2) {
+      color: #ff8d00;
+      font-family: "DINpro-regular", sans-serif;
+      font-size: 2.1rem;
+      font-weight: normal; }
+    .command .box-item-command .item-command p:nth-child(3) {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+      color: rgba(255, 255, 255, 0.5); }
+    .command .box-item-command .item-command [class^=icon-soc-] {
+      opacity: 0.5;
+      margin-top: 30px;
+      display: inline-block; }
+      .command .box-item-command .item-command [class^=icon-soc-]:not(:last-child) {
+        margin-right: 23px; }
+
 /*# sourceMappingURL=main.css.map */
