@@ -80,89 +80,89 @@ p {
       position: absolute;
       right: 51%;
       top: -22px; }
-  .bg-heder .box-input-mail p {
-    font-family: "DINpro-regular", sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 25px;
+
+.box-input-mail p {
+  font-family: "DINpro-regular", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #ff8d00;
+  position: absolute;
+  right: 195px;
+  top: -90px; }
+.box-input-mail .input-mail {
+  position: relative; }
+  .box-input-mail .input-mail label {
     color: #ff8d00;
-    position: absolute;
-    right: 195px;
-    top: -90px; }
-  .bg-heder .box-input-mail .input-mail {
-    position: relative; }
-    .bg-heder .box-input-mail .input-mail label {
-      color: #ff8d00;
-      font-size: 2.6rem;
-      line-height: 3rem;
-      margin-bottom: 3rem;
-      font-family: "DINpro-medium", sans-serif;
-      font-weight: normal;
-      display: block; }
-    .bg-heder .box-input-mail .input-mail .form-control {
-      width: 66.5%;
-      height: 42px;
-      border-radius: 0;
-      display: inline-block;
-      font-size: 16px; }
-    .bg-heder .box-input-mail .input-mail .btn-send {
-      height: 42px;
-      width: 29%;
-      background-color: #ff8d00;
-      color: #fff;
-      vertical-align: top;
-      margin-left: 10px;
-      padding: 9px 0 5px;
-      transition: transform 0.2s;
-      font-size: 16px; }
-      .bg-heder .box-input-mail .input-mail .btn-send:hover {
-        transform: scale(1.05); }
-  .bg-heder .in-social-networks {
-    width: 100%;
-    height: 125px;
-    display: block;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    line-height: 125px;
-    margin-top: 91px;
-    margin-bottom: 91px; }
-    .bg-heder .in-social-networks p {
-      color: rgba(255, 255, 255, 0.5); }
-    .bg-heder .in-social-networks li {
-      display: inline-block;
-      vertical-align: middle;
-      opacity: 0.5; }
-      .bg-heder .in-social-networks li:not(:last-child) {
-        margin-right: 9.5%; }
-    .bg-heder .in-social-networks .icon-social-1 {
-      background: url(../img/icon-social-1.svg) center no-repeat;
-      background-size: cover;
-      width: 40px;
-      height: 40px; }
-    .bg-heder .in-social-networks .icon-social-2 {
-      background: url(../img/icon-social-2.svg) center no-repeat;
-      background-size: cover;
-      width: 40px;
-      height: 36px; }
-    .bg-heder .in-social-networks .icon-social-3 {
-      background: url(../img/icon-social-3.svg) center no-repeat;
-      background-size: cover;
-      width: 40px;
-      height: 45px; }
-    .bg-heder .in-social-networks .icon-social-4 {
-      background: url(../img/icon-social-4.svg) center no-repeat;
-      background-size: cover;
-      width: 40px;
-      height: 34px; }
-    .bg-heder .in-social-networks .icon-social-5 {
-      background: url(../img/icon-social-5.svg) center no-repeat;
-      background-size: cover;
-      width: 40px;
-      height: 40px; }
-    .bg-heder .in-social-networks .icon-social-6 {
-      background: url(../img/icon-social-6.svg) center no-repeat;
-      background-size: cover;
-      width: 45px;
-      height: 39px; }
+    font-size: 2.6rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+    font-family: "DINpro-medium", sans-serif;
+    font-weight: normal;
+    display: block; }
+  .box-input-mail .input-mail .form-control {
+    width: 66.5%;
+    height: 42px;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 16px; }
+  .box-input-mail .input-mail .btn-send {
+    height: 42px;
+    width: 29%;
+    background-color: #ff8d00;
+    color: #fff;
+    vertical-align: top;
+    margin-left: 10px;
+    transition: transform 0.2s;
+    font-size: 16px; }
+    .box-input-mail .input-mail .btn-send:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); }
+
+.in-social-networks {
+  width: 100%;
+  height: 125px;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  line-height: 125px;
+  margin-top: 91px;
+  margin-bottom: 91px; }
+  .in-social-networks li {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.5; }
+    .in-social-networks li:not(:last-child) {
+      margin-right: 9.5%; }
+  .in-social-networks .icon-social-1 {
+    background: url(../img/icon-social-1.svg) center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px; }
+  .in-social-networks .icon-social-2 {
+    background: url(../img/icon-social-2.svg) center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 36px; }
+  .in-social-networks .icon-social-3 {
+    background: url(../img/icon-social-3.svg) center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 45px; }
+  .in-social-networks .icon-social-4 {
+    background: url(../img/icon-social-4.svg) center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 34px; }
+  .in-social-networks .icon-social-5 {
+    background: url(../img/icon-social-5.svg) center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px; }
+  .in-social-networks .icon-social-6 {
+    background: url(../img/icon-social-6.svg) center no-repeat;
+    background-size: cover;
+    width: 45px;
+    height: 39px; }
 
 .box-icon-partners {
   text-align: center;
@@ -300,7 +300,8 @@ p {
       z-index: 1;
       margin-top: 19px; }
       .sect-center .container .btn-game:hover {
-        transform: scale(1.05); }
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); }
   .sect-center .bg-center {
     background: url(../img/bg-center.png) center no-repeat;
     background-size: contain;
@@ -353,6 +354,16 @@ p {
         background-size: cover;
         width: 30px;
         height: 24px; }
+      .command .box-item-command .item-command .box-icon .icon-soc-3 {
+        background: url(../img/icon-social-4.svg) no-repeat;
+        background-size: cover;
+        width: 38px;
+        height: 31px; }
+      .command .box-item-command .item-command .box-icon .icon-soc-4 {
+        background: url(../img/icon-social-5.svg) no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px; }
     .command .box-item-command .item-command p:nth-child(2) {
       color: #ff8d00;
       font-family: "DINpro-regular", sans-serif;
@@ -370,5 +381,46 @@ p {
       display: inline-block; }
       .command .box-item-command .item-command [class^=icon-soc-]:not(:last-child) {
         margin-right: 23px; }
+
+.box-input-mail.box-bottom {
+  display: block;
+  width: 350px;
+  margin: 0 auto; }
+  .box-input-mail.box-bottom .form-control {
+    width: 100%; }
+  .box-input-mail.box-bottom .btn-send {
+    display: block;
+    margin: 42px auto 78px;
+    width: 130px; }
+
+.box-margin {
+  margin-top: 150px;
+  margin-bottom: 86px; }
+
+.contacts {
+  padding: 0;
+  text-align: center; }
+  .contacts li {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 14px; }
+    .contacts li:nth-child(2n) {
+      margin: 0 25px; }
+
+.bottom-logo-eloplay {
+  background: url(../img/logo-eloplay.svg) center no-repeat;
+  background-size: cover;
+  width: 145px;
+  height: 42px;
+  margin: 13.5rem auto 0; }
+
+.bg-bottom {
+  background: url(../img/bg-footer.png) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-bottom: 14rem; }
 
 /*# sourceMappingURL=main.css.map */
