@@ -45,7 +45,8 @@ p {
     width: 145px;
     height: 42px;
     float: left;
-    margin-top: 25px; }
+    margin-top: 25px;
+    margin-left: 17px; }
   .bg-heder .select-language {
     background: url(../img/icon-language.svg) center no-repeat;
     background-size: cover;
@@ -55,7 +56,8 @@ p {
     margin-top: 25px;
     position: relative;
     opacity: 0.5;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-right: 17px; }
     .bg-heder .select-language:hover {
       opacity: 1;
       transition: opacity 0.2s; }
@@ -100,14 +102,15 @@ p {
   .bg-heder .box-title {
     position: relative; }
     .bg-heder .box-title h1 {
-      margin-bottom: 4.8rem; }
+      margin-bottom: 4.8rem;
+      max-width: 54rem; }
     .bg-heder .box-title .icon-play {
       background: url(../img/icon-play.svg) center no-repeat;
       background-size: cover;
       width: 55px;
       height: 55px;
       position: absolute;
-      right: 50%;
+      left: 57%;
       top: -40px; }
 
 .box-input-mail p {
@@ -149,7 +152,6 @@ p {
 
 .in-social-networks {
   width: 100%;
-  height: 125px;
   display: block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -161,9 +163,8 @@ p {
   .in-social-networks li {
     display: inline-block;
     vertical-align: middle;
-    opacity: 0.5; }
-    .in-social-networks li:not(:last-child) {
-      margin-right: 9.5%; }
+    opacity: 0.5;
+    margin: 0 4.5%; }
   .in-social-networks .icon-social-1 {
     background: url(../img/icon-social-1.svg) center no-repeat;
     background-size: cover;
@@ -451,7 +452,8 @@ p {
   background-size: cover;
   width: 100%;
   height: auto;
-  padding-bottom: 14rem; }
+  padding-bottom: 14rem;
+  overflow: hidden; }
 
 .form-control:focus,
 .btn:focus {
@@ -459,8 +461,83 @@ p {
   border-color: #ff8d00;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ff8d00; }
 
+.mob-show {
+  display: none; }
+
+.mob-hide {
+  display: inline-block; }
+
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
-    display: none; } }
+    display: block;
+    margin-top: 45px; } }
+@media (max-width: 768px) {
+  .bg-heder .indent-top {
+    margin-top: 72px; }
+
+  .in-social-networks {
+    margin-bottom: 60px; }
+    .in-social-networks li {
+      margin: 0 9.5%; } }
+@media (max-width: 576px) {
+  .mob-show {
+    display: inline-block; }
+
+  .mob-hide {
+    display: none; }
+
+  .bg-heder .box-title .icon-play {
+    left: 76%; }
+
+  .bg-heder .box-title h1 {
+    font-size: 4.5rem;
+    max-width: 38rem; }
+
+  .box-text {
+    padding: 0; }
+    .box-text .text-pading {
+      padding: 3rem 3rem; }
+
+  .box-input-mail.box-bottom {
+    width: 90%; }
+
+  label[for=send-mail] {
+    margin-top: 76px; }
+
+  .box-icon-partners .icon-axon {
+    float: initial; }
+  .box-icon-partners .icon-forklog {
+    float: initial;
+    margin-top: 95px;
+    margin-bottom: 35px; }
+
+  .history-progect {
+    margin-top: 50px; }
+    .history-progect .box-item-hist .item-hist {
+      min-width: 210px; }
+
+  .sect-center .container {
+    padding-top: 102px; }
+    .sect-center .container h2 {
+      margin-bottom: 38px; }
+
+  .sect-center .bg-center {
+    height: 492px;
+    position: absolute;
+    left: -395px;
+    top: 294px; } }
+@media (max-width: 470px) {
+  .bg-heder .box-title h1 {
+    font-size: 3.9rem; }
+
+  .box-input-mail .input-mail .form-control {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+
+  .box-input-mail .input-mail .btn-send {
+    display: block;
+    margin: 45px auto 0;
+    width: 130px; } }
 
 /*# sourceMappingURL=main.css.map */
