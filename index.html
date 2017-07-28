@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Eloplay ICO</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/fonts.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Eloplay ICO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="stylesheet" href="./css/fonts.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 </head>
 <body ng-app="">
 		<div class="walpaper-full">
@@ -20,9 +21,9 @@
 					<div class="row">
 						<a href="http://eloplay.com"><div class="logo-eloplay"></div></a>
 						<div 
-								class    ="select-language" 
-								ng-init  ="lang='РУС'; is_open = false" 
-								ng-click ="is_open = !is_open" 
+								class    ="select-language"
+								ng-init  ="lang='РУС'; is_open = false"
+								ng-click ="is_open = !is_open"
 								ng-cloak>
 								<span>{{lang}}</span>
 								<ul class="down-menu" ng-show="is_open">
@@ -30,6 +31,29 @@
 									<a href="./index.html"><li ng-click="lang='РУС'">РУС</li></a>
 								</ul>
 						</div>
+
+						<div class="menu-top" ng-init="is_open_m = false" ng-click="is_open_m = !is_open_m" ng-cloak>
+							<i class="fa fa-bars" aria-hidden="true"></i>
+							<span> MENU</span>
+						</div>
+						<div class="menu_cont" ng-show="is_open_m">
+							<ul class="menu-top menu-show">
+								<li><a href=""><span>WHITEPAPER</span> (COMING SOON)</a></li>
+								<li><a href="">ДРУГОЙ ПУНКТ МЕНЮ</a></li>
+								<li><a href="">ЕЩЁ ПУНКТ МЕНЮ</a></li>
+								<li><a href="">И ЕЩЁ ПУНКТ МЕНЮ</a></li>
+							</ul>
+							<div class="button-close" ng-click="is_open_m = false"><span class="icon-close"></span><span>CLOSE</span></div>
+
+							<div class="bottom-language">
+								<a href="" ng-class="{'grey-color': lang=='EN'}">ENGLISH</a>
+								<a href="" ng-class="{'grey-color': lang=='РУС'}">РУССКИЙ</a>
+								<a href="">ESPANOL</a>
+								<a href="">DEUTSCH</a>
+								<a href="">中國</a>
+							</div>
+						</div>
+
 					</div>
 					<div class="row indent-top">
 						<div class="box-title col-md-7">
@@ -105,7 +129,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="sect-center">				
+			<div class="sect-center">
 				<div class="container">
 					<div class="bg-center"></div>
 					<h2>Уже можно пойти и поиграть<br>на платформе</h2>
@@ -129,7 +153,7 @@
 					<div class="item-command">
 						<div class="command-photo"><img class="img-responsive" src="./img/img-command-2.jpg" alt=""></div>
 						<div class="box-text-info">
-						<p>Андре Антуан</p>
+						<p>Андре Антуан<br><br></p>
 						<p>Французский режиссёр театра и кино, теоретик театра</p>
 						</div>
 						<div class="box-icon mob-hide">
@@ -162,7 +186,7 @@
 				</div>
 			</div>
 			<div class="bg-bottom">
-				<h2 class="box-margin">Следите за новостями</h2>
+				<h2 class="box-margin">Следите за новостями!</h2>
 				<div class="box-input-mail box-bottom">
 					<form class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8">
 						<input type="email" name="email" class="form-control" placeholder="E-mail address" id="send-mail" required>
