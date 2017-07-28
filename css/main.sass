@@ -41,6 +41,8 @@ p
 		float: left
 		margin-top: 25px
 		margin-left: 17px
+		z-index: 2
+		position: absolute
 	.select-language
 		background: url(../img/icon-language.svg) center no-repeat
 		background-size: cover
@@ -265,7 +267,7 @@ p
 			text-align: left
 			padding: 2.5%
 			box-shadow: 0 5px 0 #ff8d00
-			margin: 1.2%
+			margin: 2% 1.2%
 			vertical-align: top
 			p:nth-child(2)
 				font-family: "DINpro-medium", sans-serif
@@ -343,7 +345,7 @@ p
 		.item-command
 			width: 255px
 			display: inline-block
-			height: 540px
+			//height: 540px
 			vertical-align: top
 			text-align: left
 			margin: 10px
@@ -352,6 +354,26 @@ p
 				height: 254px
 				background-size: cover!important
 				margin-bottom: 24px
+			.command-photo
+				width: 100%
+			.box-text-info
+				border-bottom: 1px solid rgba(255,255,255,0.5)
+				margin-top: 34px
+				padding-bottom: 30px
+				height: 195px
+				p:nth-child(1)
+					color: #ff8d00
+					font-family: 'DINpro-regular', sans-serif
+					font-size: 2.1rem
+					font-weight: normal
+					line-height: 2.5rem
+					margin-bottom: 22px
+				p:nth-child(2)
+					font-family: "Ubuntu", sans-serif
+					font-weight: 300
+					font-size: 18px
+					line-height: 28px
+					color: rgba(255,255,255,0.5)
 			.command-photo-1
 				background: url(../img/img-command-1.jpg) top no-repeat
 			.command-photo-2
@@ -386,17 +408,6 @@ p
 					background-size: cover
 					width: 30px
 					height: 30px	
-			p:nth-child(2)
-				color: #ff8d00
-				font-family: 'DINpro-regular', sans-serif
-				font-size: 2.1rem
-				font-weight: normal
-			p:nth-child(3)
-				font-family: "Ubuntu", sans-serif
-				font-weight: 300
-				font-size: 18px
-				line-height: 28px
-				color: rgba(255,255,255,0.5)
 			[class^=icon-soc-]
 				opacity: 0.5
 				margin-top: 30px
@@ -406,20 +417,24 @@ p
 .box-input-mail
 	&.box-bottom
 		display: block
-		width: 350px
 		margin: 0 auto
 		.form-control
-			width: 100%
+			float: initial!important
+			display: block
+			margin: 0 auto
+			max-width: 360px
 		.btn-send
 			display: block
 			margin: 42px auto 78px
+			float: initial!important
 			width: 130px
 .box-margin
 	margin-top: 150px
 	margin-bottom: 86px
-.contacts
+.contacts.mob-hide
 	padding: 0
 	text-align: center
+	display: inherit
 	li
 		display: inline-block
 		color: rgba(255,255,255,0.5)
@@ -447,13 +462,110 @@ p
 		outline: #ff8d00
 		border-color: #ff8d00
 		box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #ff8d00
+.menu-show
+	display: none
+	padding-left: 0
+	li
+		a
+			text-decoration: none
+			color: rgba(255,255,255,0.5)
+			&:hover
+				text-decoration: none
+				color: #fff		
+				span
+					color: #fff
+		&:not(:last-child)
+			border-bottom: 1px solid rgba(255,255,255,0.5)
+	li
+		display: block
+		text-align: center
+		width: 100%
+		color: rgba(255,255,255,0.5)
+		font-size: 1.8rem
+		font-family: "DINpro-regular", sans-serif
+		font-weight: 300
+		padding: 2.5rem
+		span
+			color: rgba(255,255,255,0.3)
 
 .mob-show
 	display: none
 .mob-hide
 	display: inline-block
-
-
+.menu-top
+	display: none
+.button-close
+	position: absolute
+	right: 16px
+	font-size: 14px
+	color: #fff
+	top: 35px
+	cursor: pointer
+	.icon-close
+		&:before
+			content: '\2715'
+			position: absolute
+			color: #fff
+			font-size: 21px
+			right: 51px
+			top: -4px
+.bottom-language
+	background-color: #0e0c18
+	position: absolute
+	bottom: 0
+	width: 100%
+	display: block
+	left: 0
+	padding: 15px
+	text-align: center
+	a
+		color: #fff
+		text-decoration: none
+		margin: 25px
+		line-height: 47px
+		font-size: 1.8rem
+		&.grey-color
+			color: rgba(255,255,255,0.5)
+			cursor: default
+.menu-show
+	display: block
+	margin-top: 56px
+	margin-bottom: 30px
+.menu-top.menu-show
+	width: 100%
+	margin-right: 0
+	li
+		text-align: right
+.contacts.mob-hide
+	display: none
+.contacts.mob-show
+	padding: 0
+	text-align: center
+	li
+		display: inline-block
+		color: rgba(255,255,255,0.5)
+		font-family: "Ubuntu", sans-serif
+		font-weight: 300
+		font-size: 14px
+		&:nth-child(2n)
+			margin: 0 25px
+.menu_cont
+	width: 100%
+	position: absolute
+	top: 0
+	z-index: 1
+	right: 0
+	bottom: 0
+	background-color: #1d1930
+	padding: 15px
+.menu-top
+	display: none
+	color: rgba(255,255,255,0.5)
+	float: right
+	margin: 30px 17px 0 0
+	cursor: pointer	
+	&:hover
+		color: #fff
 
 @media (max-width: 1200px)
 	.in-social-networks
@@ -468,6 +580,10 @@ p
 		li
 			margin: 0 9.5%
 @media (max-width: 576px)
+	.menu-top
+		display: block
+	.select-language
+		display: none
 	.mob-show
 		display: inline-block
 	.mob-hide
@@ -498,8 +614,10 @@ p
 		margin-top: 50px
 		.box-item-hist .item-hist
 			min-width: 210px
-	.sect-center .container
-		padding-top: 102px
+	.sect-center
+		height: 740px
+		.container
+			padding-top: 102px
 		h2
 			margin-bottom: 38px
 	.sect-center .bg-center
@@ -507,6 +625,34 @@ p
 		position: absolute
 		left: -395px
 		top: 294px
+	.command
+		.box-item-command
+			.item-command
+				float: left
+				width: 100%
+				margin: 26px 0
+				.command-photo
+					width: 44%
+					float: left
+					margin-right: 6%
+				.box-text-info
+					//width: 46%
+					//float: left
+					margin-top: 0
+					border-bottom: none
+	.bg-bottom
+		//background-position-x: right
+	.box-input-mail .input-mail .form-control
+		width: 68%
+		float: left
+	.box-input-mail .input-mail .btn-send
+		width: 29%
+		float: left
+	.box-input-mail.box-bottom .form-control
+		width: 360px
+	.bottom-logo-eloplay
+		margin: 25px auto 0
+	
 @media (max-width: 470px)
 	.bg-heder .box-title h1
 		font-size: 3.9rem
@@ -514,7 +660,11 @@ p
 		display: block
 		margin: 0 auto
 		width: 100%
+		float: initial
 	.box-input-mail .input-mail .btn-send
 		display: block
 		margin: 45px auto 0
 		width: 130px
+		float: initial
+	.box-input-mail.box-bottom .form-control
+		width: 94%!important
