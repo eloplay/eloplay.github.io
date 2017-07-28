@@ -445,7 +445,7 @@ p {
 .contacts.mob-hide {
   padding: 0;
   text-align: center;
-  display: inherit; }
+  display: block; }
   .contacts.mob-hide li {
     display: inline-block;
     color: rgba(255, 255, 255, 0.5);
@@ -545,7 +545,7 @@ p {
       cursor: default; }
 
 .menu-show {
-  display: block;
+  display: none;
   margin-top: 56px;
   margin-bottom: 30px; }
 
@@ -554,9 +554,6 @@ p {
   margin-right: 0; }
   .menu-top.menu-show li {
     text-align: right; }
-
-.contacts.mob-hide {
-  display: none; }
 
 .contacts.mob-show {
   padding: 0;
@@ -602,6 +599,12 @@ p {
     .in-social-networks li {
       margin: 0 9.5%; } }
 @media (max-width: 576px) {
+  .contacts.mob-hide {
+    display: none; }
+
+  .menu-show {
+    display: block; }
+
   .menu-top {
     display: block; }
 
