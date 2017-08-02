@@ -555,7 +555,7 @@ p {
 .menu-top.menu-show {
   width: 100%;
   margin-right: 0;
-  margin-top: 98px; }
+  margin-top: 67px; }
   .menu-top.menu-show li {
     text-align: right; }
 
@@ -581,6 +581,30 @@ p {
   bottom: 0;
   background-color: #1d1930;
   padding: 15px; }
+
+#modal-menu {
+  width: 100%;
+  padding-right: 0 !important; }
+  #modal-menu .modal-dialog {
+    margin: 0; }
+    #modal-menu .modal-dialog .modal-content {
+      border-radius: 0;
+      background-color: #1d1930;
+      min-height: 100vh; }
+    #modal-menu .modal-dialog .modal-header {
+      border-bottom: none;
+      background-color: #1d1930; }
+      #modal-menu .modal-dialog .modal-header .button-close {
+        z-index: 1; }
+        #modal-menu .modal-dialog .modal-header .button-close:hover {
+          text-decoration: none;
+          color: #fff; }
+      #modal-menu .modal-dialog .modal-header .logo-eloplay {
+        margin-top: 10px; }
+    #modal-menu .modal-dialog .modal-footer {
+      border-top: none;
+      display: inline-block;
+      padding: 0; }
 
 .menu-top {
   display: none;
