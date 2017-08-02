@@ -597,7 +597,8 @@ p {
           text-decoration: none;
           color: #fff; }
       #modal-menu .modal-dialog .modal-header .logo-eloplay {
-        margin-top: 10px; }
+        margin-top: 10px;
+        margin-left: 0; }
     #modal-menu .modal-dialog .modal-footer {
       border-top: none;
       display: inline-block;

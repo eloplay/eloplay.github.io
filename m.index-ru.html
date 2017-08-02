@@ -27,33 +27,43 @@
 								ng-cloak>
 								<span>{{lang}}</span>
 								<ul class="down-menu" ng-show="is_open">
-									<a href="./m.index.html"><li ng-click="lang='EN'">EN</li></a>
-									<a href="./m.index-ru.html"><li ng-click="lang='РУС'">РУС</li></a>
+									<a href="./index.html"><li ng-click="lang='EN'">EN</li></a>
+									<a href="./index-ru.html"><li ng-click="lang='РУС'">РУС</li></a>
 								</ul>
 						</div>
 
-						<a class="menu-top" ng-init="is_open_m = false" ng-click="is_open_m = !is_open_m" href="#top" ng-cloak>
+						<a class="menu-top" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-menu">
 							<i class="fa fa-bars" aria-hidden="true"></i>
 							<span> MENU</span>
 						</a>
-						<div class="menu_cont" ng-show="is_open_m">
-							<ul class="menu-top menu-show">
-								<li><a href=""><span>WHITEPAPER</span> (COMING SOON)</a></li>
-								<li><a href="">ДРУГОЙ ПУНКТ МЕНЮ</a></li>
-								<li><a href="">ЕЩЁ ПУНКТ МЕНЮ</a></li>
-								<li><a href="">И ЕЩЁ ПУНКТ МЕНЮ</a></li>
-							</ul>
-							<div class="button-close" ng-click="is_open_m = false"><span class="icon-close"></span><span>CLOSE</span></div>
 
-							<div class="bottom-language">
-								<a href="./m.index.html" ng-class="{'grey-color': lang=='EN'}">ENGLISH</a>
-								<a href="./m.index-ru.html" ng-class="{'grey-color': lang=='РУС'}">РУССКИЙ</a>
-								<a href="">ESPANOL</a>
-								<a href="">DEUTSCH</a>
-								<a href="">中國</a>
+						<div class="modal fade" id="modal-menu" tabindex="-1" role="dialog" aria-labelledby="modal-menu" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<a href="http://eloplay.com"><div class="logo-eloplay"></div></a>
+										<a class="button-close" type="button" data-dismiss="modal" aria-label="Close"><span class="icon-close"></span><span>CLOSE</span></a>
+									</div>
+									<div class="modal-body">
+										<ul class="menu-top menu-show">
+											<li><a href=""><span>WHITEPAPER</span> (COMING SOON)</a></li>
+											<li><a href="">ДРУГОЙ ПУНКТ МЕНЮ</a></li>
+											<li><a href="">ЕЩЁ ПУНКТ МЕНЮ</a></li>
+											<li><a href="">И ЕЩЁ ПУНКТ МЕНЮ</a></li>
+										</ul>
+									</div>
+									<div class="modal-footer">
+										<div class="bottom-language">
+											<a href="./index.html" ng-class="{'grey-color': lang=='EN'}">ENGLISH</a>
+											<a href="./index-ru.html" ng-class="{'grey-color': lang=='РУС'}">РУССКИЙ</a>
+											<a href="">ESPANOL</a>
+											<a href="">DEUTSCH</a>
+											<a href="">中國</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-
 					</div>
 					<div class="row indent-top">
 						<div class="box-title col-md-7">
