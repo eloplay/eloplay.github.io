@@ -574,11 +574,8 @@ p {
 .menu_cont {
   width: 100%;
   height: 102vh;
-  position: absolute;
-  top: 0;
+  position: relative;
   z-index: 1;
-  right: 0;
-  bottom: 0;
   background-color: #1d1930;
   padding: 15px; }
 
@@ -590,7 +587,7 @@ p {
     #modal-menu .modal-dialog .modal-content {
       border-radius: 0;
       background-color: #1d1930;
-      min-height: 100vh; }
+      min-height: 700px; }
     #modal-menu .modal-dialog .modal-header {
       border-bottom: none;
       background-color: #1d1930; }
