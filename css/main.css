@@ -589,7 +589,8 @@ p {
   margin: 30px 17px 0 0;
   cursor: pointer; }
   .menu-top:hover {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
 
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
