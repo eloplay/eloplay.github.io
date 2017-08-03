@@ -599,6 +599,10 @@ p {
       #modal-menu .modal-dialog .modal-header .logo-eloplay {
         margin-top: 10px;
         margin-left: 0; }
+    #modal-menu .modal-dialog .modal-body {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 110px; }
     #modal-menu .modal-dialog .modal-footer {
       border-top: none;
       display: inline-block;
