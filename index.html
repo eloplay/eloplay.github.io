@@ -81,6 +81,7 @@
 							</form>
 						</div>
 					</div>
+					<button id="watch-update-btn">add to calendar</button>
 					<ul class="in-social-networks">
 						<li><p>Join our community</p></li>
 						<li class="icon-social-1"></li>
@@ -244,5 +245,10 @@
 				</ul>
 			</div>
 	</div>
+	<script src="./js/gapi_calendar.js"></script>  
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 </body>
 </html>
