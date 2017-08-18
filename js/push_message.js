@@ -104,7 +104,7 @@ function sendSubscriptionToServer(subscription){
 		return true;
 	}
 	var request = new XMLHttpRequest();
-	request.open('POST', '');
+	request.open('POST', 'https://iid.googleapis.com/v1/web/iid');
 	request.setRequestHeader('Content-Type', 'application/json');
 	request.setRequestHeader('Authorization', 'key=AIzaSyAp7sG5Dkx2UMlG6awI41NtAw7oClQF4gY');
 	request.send(subscription.toJSON());
