@@ -111,7 +111,9 @@ function sendSubscriptionToServer(subscription){
 			'Content-Type': 'application/json',
 			'Authorization': 'key=AIzaSyAp7sG5Dkx2UMlG6awI41NtAw7oClQF4gY'
 		},
-		data: subscription.toJSON()
+		data: {
+			payload: subscription.toJSON()
+		}
 	}).done(function( response ) {
 		console.log(response);
 	});
