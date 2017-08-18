@@ -1,4 +1,22 @@
-self.addEventListener('push', function(event) {
+importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js');
+
+const messaging = firebase.messaging();
+
+messaging.setBackgroundMessageHandler(function(payload) {
+	console.log('message ', payload);
+	// Customize notification here
+	const notificationTitle = 'Background Message Title';
+	const notificationOptions = {
+		body: 'Background Message body.',
+		icon: '/firebase-logo.png'
+	};
+
+	return self.registration.showNotification(notificationTitle,
+		notificationOptions);
+});
+
+/*self.addEventListener('push', function(event) {
 	var notification = event.data.json();
 
 	var title = notification.title;
@@ -29,3 +47,4 @@ self.addEventListener('notificationclick', function(event) {
 		console.log('url not provided');
 	}
 });
+*/
