@@ -97,6 +97,7 @@ function sendSubscriptionToServer(subscription){
 	request.open('POST', 'https://local.eloplay.com:23743/push_api/subscribe');
 	request.setRequestHeader('Content-Type', 'application/json');
 */
+	console.log(subscription.toJSON());
 	var storage = localStorage;
 	var storage_data = JSON.parse(storage.getItem('push_notify')),
 		now = new Date().getTime().toString();
