@@ -114,6 +114,6 @@ function sendSubscriptionToServer(subscription){
 	}).done(function( response ) {
 		console.log(response);
 	});
-	storage.setItem(key_auth, JSON.stringify({data: key_auth, timestamp: new Date().getTime()}));
+	storage.setItem('push_notify', JSON.stringify({last_update: new Date().getTime()}));
 	return true;
 }
