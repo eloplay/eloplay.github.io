@@ -8,5 +8,10 @@
   src: url("../fonts/DINPro-Regular_13937.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+@font-face {
+  font-family: "DINpro-light";
+  src: url("../fonts/DINPro-Light_13935.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
 /*# sourceMappingURL=fonts.css.map */
