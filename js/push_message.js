@@ -102,7 +102,7 @@ function sendSubscriptionToServer(subscription){
 	fetch('https://iid.googleapis.com/v1/web/iid', {
 		'method': 'POST',
 		'headers': {
-			'Authorization': 'key=AIzaSyAp7sG5Dkx2UMlG6awI41NtAw7oClQF4gY',
+			'Authorization': 'key=AAAA11A9fMg:APA91bGdPQJfbOOvSrFEbZHDJCp134BfylSgMv6lWKfNC-J7Oa2AlEtpCzVyB16e1kA7f8I-MT5WQEmArURBryezKesGU7srF39sDxjG6JkAXQCVLuKd_N_44mCU5PnKuMQuuD0OnzVK',
 			'Content-Type': 'application/json'
 		},
 		'body': JSON.stringify(subscription.toJSON())
