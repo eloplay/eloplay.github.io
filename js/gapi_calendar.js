@@ -57,7 +57,7 @@ function CreateNewEvent() {
 			'timeZone': 'UTC'
 		},
 		'recurrence': [
-			'RRULE:FREQ=WEEKLY;COUNT=2'
+			'RRULE:FREQ=WEEKLY;COUNT=1'
 		],
 		'reminders': {
 			'useDefault': false,
@@ -67,12 +67,37 @@ function CreateNewEvent() {
 			]
 		}
 	};
-	var request = gapi.client.calendar.events.insert({
+	var event_exists = false;
+	gapi.client.calendar.events.list({
 		'calendarId': 'primary',
-		'resource': event
-	});
-	request.execute(function(event) {
-		console.log('Event created: ' + event.htmlLink);
+		'timeMin': (new Date()).toISOString(),
+		'showDeleted': false,
+		'singleEvents': true,
+		'maxResults': 10,
+		'orderBy': 'startTime'
+	}).then(function(response) {
+		var events = response.result.items;
+		if (events.length > 0) {
+			for (i = 0; i < events.length; i++) {
+				var calendar_event = events[i];
+				if(calendar_event.summary == event.summary){
+					event_exists = true;
+					break;
+				}
+			}
+		}
+		if(event_exists === true){
+			return false;
+		}
+
+		var request = gapi.client.calendar.events.insert({
+			'calendarId': 'primary',
+			'resource': event
+		});
+		request.execute(function(event) {
+			console.log('Event created: ' + event.htmlLink);
+		});
 	});
 }
+
 
