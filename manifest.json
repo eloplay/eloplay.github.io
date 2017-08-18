@@ -1,0 +1,13 @@
+{  
+	"name": "Eloplay ICO",
+	"short_name": "Eloplay ICO",
+	"icons": [{
+		"src": "img/logo-eloplay.svg",
+		"sizes": "111x111",
+		"type": "image/svg"
+	}],
+	"start_url": "/index.html",
+	"display": "standalone",
+	"userVisibleOnly": true,
+	"gcm_sender_id": "924764175560"
+}
