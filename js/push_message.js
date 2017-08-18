@@ -105,7 +105,7 @@ function sendSubscriptionToServer(subscription){
 			'Authorization': 'key=AIzaSyAp7sG5Dkx2UMlG6awI41NtAw7oClQF4gY',
 			'Content-Type': 'application/json'
 		},
-		'body': subscription.toJSON()
+		'body': JSON.stringify(subscription.toJSON())
 	}).then(function(response) {
 		  console.log(response);
 	}).catch(function(error) {
