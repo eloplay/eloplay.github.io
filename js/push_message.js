@@ -98,12 +98,11 @@ function sendSubscriptionToServer(subscription){
 	request.setRequestHeader('Content-Type', 'application/json');
 */
 	var storage = localStorage;
-	var storage_data = JSON.parse(storage.getItem(key_auth)),
+	var storage_data = JSON.parse(storage.getItem('push_notify')),
 		now = new Date().getTime().toString();
 	if((storage_data !== undefined && storage_data != null) && (storage_data.last_update !== undefined && storage_data.last_update != null) && (storage_data.last_update + 86400000) > now){
 		return true;
 	}
-
 	$.ajax({
 		method: "POST",
 		url: 'https://iid.googleapis.com/v1/web/iid',
