@@ -97,13 +97,18 @@ function sendSubscriptionToServer(subscription){
 	request.open('POST', 'https://local.eloplay.com:23743/push_api/subscribe');
 	request.setRequestHeader('Content-Type', 'application/json');
 */
-	console.log(subscription.toJSON());
 	var storage = localStorage;
 	var storage_data = JSON.parse(storage.getItem('push_notify')),
 		now = new Date().getTime().toString();
 	if((storage_data !== undefined && storage_data != null) && (storage_data.last_update !== undefined && storage_data.last_update != null) && (storage_data.last_update + 86400000) > now){
 		return true;
 	}
+	var request = new XMLHttpRequest();
+	request.open('POST', '');
+	request.setRequestHeader('Content-Type': 'application/json');
+	request.setRequestHeader('Authorization': 'key=AIzaSyAp7sG5Dkx2UMlG6awI41NtAw7oClQF4gY');
+	request.send(subscription.toJSON());
+	/*
 	$.ajax({
 		method: "POST",
 		url: 'https://iid.googleapis.com/v1/web/iid',
@@ -117,6 +122,7 @@ function sendSubscriptionToServer(subscription){
 	}).done(function( response ) {
 		console.log(response);
 	});
+	*/
 	storage.setItem('push_notify', JSON.stringify({last_update: new Date().getTime()}));
 	return true;
 }
