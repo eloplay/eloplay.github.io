@@ -93,6 +93,8 @@ function subscribe() {
 }
 
 function sendSubscriptionToServer(subscription){
+	var key = 'AAAA11A9fMg:APA91bGdPQJfbOOvSrFEbZHDJCp134BfylSgMv6lWKfNC-J7Oa2AlEtpCzVyB16e1kA7f8I-MT5WQEmArURBryezKesGU7srF39sDxjG6JkAXQCVLuKd_N_44mCU5PnKuMQuuD0OnzVK';
+	var topic = 'eloplay_ico';
 	var storage = localStorage;
 	var storage_data = JSON.parse(storage.getItem('push_notify')),
 		now = new Date().getTime().toString();
@@ -102,28 +104,23 @@ function sendSubscriptionToServer(subscription){
 	fetch('https://iid.googleapis.com/v1/web/iid', {
 		'method': 'POST',
 		'headers': {
-			'Authorization': 'key=AAAA11A9fMg:APA91bGdPQJfbOOvSrFEbZHDJCp134BfylSgMv6lWKfNC-J7Oa2AlEtpCzVyB16e1kA7f8I-MT5WQEmArURBryezKesGU7srF39sDxjG6JkAXQCVLuKd_N_44mCU5PnKuMQuuD0OnzVK',
+			'Authorization': 'key=' + key,
 			'Content-Type': 'application/json'
 		},
 		'body': JSON.stringify(subscription.toJSON())
 	}).then(function(response) {
-		  console.log(response);
+		if(typeof response.token !== undefined && response.token != ''){
+			fetch('https://iid.googleapis.com/iid/v1/' + response.token + '/rel/topics/' + topic, {
+				'method': 'POST',
+				'headers': {
+					'Authorization': 'key=' + key,
+					'Content-Type': 'application/json'
+				}
+			});
+		}
 	}).catch(function(error) {
 		  console.error(error);
 	});
-	/*
-	$.ajax({
-		method: "POST",
-		url: 'https://iid.googleapis.com/v1/web/iid',
-		headers: {
-			'Content-Type': 'application/json',
-			'Authorization': 'key=AIzaSyAp7sG5Dkx2UMlG6awI41NtAw7oClQF4gY'
-		},
-		data: [subscription.toJSON()]
-	}).done(function( response ) {
-		console.log(response);
-	});
-	*/
 	storage.setItem('push_notify', JSON.stringify({last_update: new Date().getTime()}));
 	return true;
 }
