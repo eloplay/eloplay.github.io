@@ -103,12 +103,6 @@ function sendSubscriptionToServer(subscription){
 	if((storage_data !== undefined && storage_data != null) && (storage_data.last_update !== undefined && storage_data.last_update != null) && (storage_data.last_update + 86400000) > now){
 		return true;
 	}
-	var request = new XMLHttpRequest();
-	request.open('POST', 'https://iid.googleapis.com/v1/web/iid');
-	request.setRequestHeader('Content-Type', 'application/json');
-	request.setRequestHeader('Authorization', 'key=AIzaSyAp7sG5Dkx2UMlG6awI41NtAw7oClQF4gY');
-	request.send(subscription.toJSON());
-	/*
 	$.ajax({
 		method: "POST",
 		url: 'https://iid.googleapis.com/v1/web/iid',
@@ -116,13 +110,10 @@ function sendSubscriptionToServer(subscription){
 			'Content-Type': 'application/json',
 			'Authorization': 'key=AIzaSyAp7sG5Dkx2UMlG6awI41NtAw7oClQF4gY'
 		},
-		resource: {
-			data: [subscription.toJSON()]
-		}
+		data: [subscription.toJSON()]
 	}).done(function( response ) {
 		console.log(response);
 	});
-	*/
 	storage.setItem('push_notify', JSON.stringify({last_update: new Date().getTime()}));
 	return true;
 }
