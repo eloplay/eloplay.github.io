@@ -618,12 +618,31 @@ p {
     color: #fff;
     text-decoration: none; }
 
+.icon-button {
+  background: url(../img/icon-btn.svg);
+  background-size: contain;
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px; }
+
+.icon-btn-play {
+  background: url(../img/icon-btn-play.svg);
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px; }
+
 .no-padding {
   padding: 0; }
 
 .btn-large-color {
   text-transform: uppercase;
-  padding: 2.5rem 7.4rem;
+  padding: 2rem 3.3rem;
+  font-size: 1.6rem;
   color: #fff;
   transition: all 0.2s;
   background: linear-gradient(90deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
@@ -642,7 +661,7 @@ p {
 
 .btn-dark {
   color: rgba(255, 255, 255, 0.5);
-  padding: 2rem 6.8rem;
+  padding: 1.4rem 2.7rem;
   background-color: #000;
   text-transform: uppercase;
   transition: all 0.2s;
@@ -913,33 +932,55 @@ p {
       text-align: left;
       padding-left: 0;
       padding-right: 0; }
-    .full-bg .sect-top .in-social-networks {
-      border-bottom: none;
-      border-top: none;
-      margin: 0;
+    .full-bg .sect-top .in-social-p1 {
       opacity: 0.5;
-      display: inline-block; }
-      .full-bg .sect-top .in-social-networks .icon-social-1 {
-        width: 30px;
-        height: 30px; }
-      .full-bg .sect-top .in-social-networks .icon-social-2 {
-        width: 32px;
-        height: 28px; }
-      .full-bg .sect-top .in-social-networks .icon-social-3 {
-        width: 30px;
-        height: 33px; }
-      .full-bg .sect-top .in-social-networks .icon-social-4 {
-        width: 32px;
-        height: 26px; }
-      .full-bg .sect-top .in-social-networks .icon-social-5 {
-        width: 30px;
-        height: 30px; }
-      .full-bg .sect-top .in-social-networks .icon-social-6 {
-        width: 36px;
-        height: 31px; }
-      .full-bg .sect-top .in-social-networks [class^=icon-] {
-        margin-left: 11%;
-        display: inline-block; }
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: right;
+      margin-top: 14px; }
+      .full-bg .sect-top .in-social-p1 li {
+        display: inline-block;
+        width: 15.3%;
+        text-align: right;
+        min-width: 85px; }
+        .full-bg .sect-top .in-social-p1 li .icon-social-1 {
+          background: url(../img/icon-social-1.svg) no-repeat;
+          background-size: contain;
+          width: 30px;
+          height: 30px;
+          display: inline-block; }
+        .full-bg .sect-top .in-social-p1 li .icon-social-2 {
+          background: url(../img/icon-social-2.svg) no-repeat;
+          background-size: contain;
+          width: 32px;
+          height: 28px;
+          display: inline-block; }
+        .full-bg .sect-top .in-social-p1 li .icon-social-3 {
+          background: url(../img/icon-social-3.svg) no-repeat;
+          background-size: contain;
+          width: 30px;
+          height: 33px;
+          display: inline-block; }
+        .full-bg .sect-top .in-social-p1 li .icon-social-4 {
+          background: url(../img/icon-social-4.svg) no-repeat;
+          background-size: contain;
+          width: 32px;
+          height: 26px;
+          display: inline-block; }
+        .full-bg .sect-top .in-social-p1 li .icon-social-5 {
+          background: url(../img/icon-social-5.svg) no-repeat;
+          background-size: contain;
+          width: 30px;
+          height: 30px;
+          display: inline-block; }
+        .full-bg .sect-top .in-social-p1 li .icon-social-6 {
+          background: url(../img/icon-social-6.svg) no-repeat;
+          background-size: contain;
+          width: 36px;
+          height: 31px;
+          display: inline-block; }
 
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
@@ -953,7 +994,9 @@ p {
   .full-bg .top-bar .btn-nav-menu {
     display: block; } }
 @media (max-width: 992px) {
-  .full-bg .sect-top .box-dark-button {
+  .full-bg .sect-top .box-dark-button,
+  .full-bg .sect-top .in-social-p1 li,
+  .full-bg .sect-top .in-social-p1 {
     text-align: center; } }
 @media (max-width: 768px) {
   .bg-heder .indent-top {
@@ -1093,7 +1136,10 @@ p {
     .full-bg .sect-top .box-right .box-time ul li p:nth-child(1) {
       font-size: 6rem; }
     .full-bg .sect-top .box-right .box-time ul li:not(:last-child):after {
-      top: 40px; } }
+      top: 40px; }
+
+  .icon-button {
+    display: none; } }
 @media (max-width: 360px) {
   html {
     font-size: 9px; } }
