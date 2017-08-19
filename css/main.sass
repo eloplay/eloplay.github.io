@@ -835,6 +835,7 @@ p
 			color: #ff8d00
 	.sect-top
 		margin-top: 90px
+		margin-bottom: 85px
 		.indent-bottom
 			margin-bottom: 168px
 		.box-left
@@ -966,8 +967,42 @@ p
 					width: 36px
 					height: 31px
 					display: inline-block
-
-
+	.bg-white-center
+		background: url(../img/bg-white-center.png) no-repeat
+		background-size: cover
+		width: 100%
+		height: 1000px
+		padding-top: 11.3rem
+	.title-pay-token
+		position: relative
+		&:after
+			content: ''
+			width: 189px
+			height: 3px
+			background : linear-gradient(90deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+			position: absolute
+			bottom: -21px
+			left: 0
+	.box-time-token
+		width: 100%
+		margin-top: 72px
+	[class$=-pay-token]
+		display: inline-block
+		p
+			&:nth-child(1)
+				font-size: 2.1rem
+				color: #5c556b
+				font-family: "Ubuntu", sans-serif
+				font-weight: 500
+			&:nth-child(2)
+				font-size: 2.1rem
+				color: #5c556b
+				font-family: "Ubuntu", sans-serif
+				font-weight: 300
+				line-height: 7px
+	.end-pay-token
+		text-align: right
+		float: right
 // end page 1
 
 
@@ -986,6 +1021,8 @@ p
 	.full-bg .sect-top .in-social-p1 li,
 	.full-bg .sect-top .in-social-p1
 		text-align: center
+	.full-bg .sect-top .in-social-p1
+		margin-top: 45px
 			
 @media (max-width: 768px)
 	.bg-heder .indent-top
@@ -1075,7 +1112,13 @@ p
 	// page 1
 	.full-bg .sect-top
 		margin-top: 25px
-
+	.full-bg .box-time-token
+		text-align: center
+	.full-bg .end-pay-token
+		text-align: center
+		float: none
+		margin-top: 15px
+		
 @media (max-width: 470px)
 	.bg-heder .box-title h1
 		font-size: 3.9rem

@@ -851,7 +851,8 @@ p {
     .full-bg .font-l-48.color-or {
       color: #ff8d00; }
   .full-bg .sect-top {
-    margin-top: 90px; }
+    margin-top: 90px;
+    margin-bottom: 85px; }
     .full-bg .sect-top .indent-bottom {
       margin-bottom: 168px; }
     .full-bg .sect-top .box-left {
@@ -981,6 +982,41 @@ p {
           width: 36px;
           height: 31px;
           display: inline-block; }
+  .full-bg .bg-white-center {
+    background: url(../img/bg-white-center.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    padding-top: 11.3rem; }
+  .full-bg .title-pay-token {
+    position: relative; }
+    .full-bg .title-pay-token:after {
+      content: "";
+      width: 189px;
+      height: 3px;
+      background: linear-gradient(90deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+      position: absolute;
+      bottom: -21px;
+      left: 0; }
+  .full-bg .box-time-token {
+    width: 100%;
+    margin-top: 72px; }
+  .full-bg [class$=-pay-token] {
+    display: inline-block; }
+    .full-bg [class$=-pay-token] p:nth-child(1) {
+      font-size: 2.1rem;
+      color: #5c556b;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 500; }
+    .full-bg [class$=-pay-token] p:nth-child(2) {
+      font-size: 2.1rem;
+      color: #5c556b;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      line-height: 7px; }
+  .full-bg .end-pay-token {
+    text-align: right;
+    float: right; }
 
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
@@ -997,7 +1033,10 @@ p {
   .full-bg .sect-top .box-dark-button,
   .full-bg .sect-top .in-social-p1 li,
   .full-bg .sect-top .in-social-p1 {
-    text-align: center; } }
+    text-align: center; }
+
+  .full-bg .sect-top .in-social-p1 {
+    margin-top: 45px; } }
 @media (max-width: 768px) {
   .bg-heder .indent-top {
     margin-top: 72px; }
@@ -1097,7 +1136,15 @@ p {
     margin: 25px auto 0; }
 
   .full-bg .sect-top {
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  .full-bg .box-time-token {
+    text-align: center; }
+
+  .full-bg .end-pay-token {
+    text-align: center;
+    float: none;
+    margin-top: 15px; } }
 @media (max-width: 470px) {
   .bg-heder .box-title h1 {
     font-size: 3.9rem; }
