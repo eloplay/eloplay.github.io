@@ -1219,7 +1219,10 @@ p {
     text-align: center; }
 
   .full-bg .sect-top .in-social-p1 {
-    margin-top: 45px; } }
+    margin-top: 45px; }
+
+  .full-bg .bg-white-center {
+    background-position: center; } }
 @media (max-width: 768px) {
   .bg-heder .indent-top {
     margin-top: 72px; }
