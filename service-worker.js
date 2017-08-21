@@ -1,4 +1,3 @@
-/*
 importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js');
 
@@ -28,10 +27,9 @@ messaging.setBackgroundMessageHandler(function(payload) {
 });
 
 
-*/
+		/*
 self.addEventListener('push', function(event) {
 
-		/*
 	event.waitUntil(
 		fetch('https://pubsub.googleapis.com/v1/projects//subscriptions/mysubscription:pull').then(function(response) {
 			console.log(response);
@@ -44,7 +42,6 @@ self.addEventListener('push', function(event) {
 		})
 	);
 
-		*/
 	var notification = event.data.json();
 
 	var title = notification.title;
@@ -76,3 +73,4 @@ self.addEventListener('notificationclick', function(event) {
 	}
 });
 
+		*/
