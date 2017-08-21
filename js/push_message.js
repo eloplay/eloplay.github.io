@@ -9,6 +9,7 @@ messaging.onMessage(function(payload) {
 	new PNotify({
 		title: data.title,
 		text: data.body,
+		addclass: 'custom',
 		desktop: {
 			desktop: true
 		}
