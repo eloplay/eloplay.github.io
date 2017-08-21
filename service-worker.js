@@ -1,4 +1,4 @@
-importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js');
+/*importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js');
 
 firebase.initializeApp({
@@ -19,8 +19,11 @@ messaging.setBackgroundMessageHandler(function(payload) {
 	return self.registration.showNotification(notificationTitle,
 		notificationOptions);
 });
+*/
+self.addEventListener('push', function(event) {
 
-/*self.addEventListener('push', function(event) {
+console.log(event);
+
 	var notification = event.data.json();
 
 	var title = notification.title;
@@ -51,4 +54,4 @@ self.addEventListener('notificationclick', function(event) {
 		console.log('url not provided');
 	}
 });
-*/
+
