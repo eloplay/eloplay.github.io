@@ -8,11 +8,13 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 
 messaging.onMessage(function(payload) {
-  console.log("Message received. ", payload);
+  console.log("Message received. ");
+  console.log(payload);
 });
 
 messaging.setBackgroundMessageHandler(function(payload) {
-	console.log('message ', payload);
+	console.log('background message ', payload);
+	console.log(payload);
 	// Customize notification here
 	const notificationTitle = 'Background Message Title';
 	const notificationOptions = {
