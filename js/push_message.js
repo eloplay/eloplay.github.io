@@ -109,20 +109,17 @@ function sendSubscriptionToServer(subscription){
 		'body': JSON.stringify(subscription.toJSON())
 	}).then(function(response) {
 		return response.json().then(function(data) {
-			console.log(data);
+			if(typeof data.token !== undefined && data.token != ''){
+				fetch('https://iid.googleapis.com/iid/v1/' + data.token + '/rel/topics/' + topic, {
+					'method': 'POST',
+					'headers': {
+						'Authorization': 'key=' + key,
+						'Content-Type': 'application/json'
+					}
+				});
+				storage.setItem('push_notify', JSON.stringify({token: data.token}));
+			}
 		});
-		/*
-		if(typeof response.token !== undefined && response.token != ''){
-			fetch('https://iid.googleapis.com/iid/v1/' + response.token + '/rel/topics/' + topic, {
-				'method': 'POST',
-				'headers': {
-					'Authorization': 'key=' + key,
-					'Content-Type': 'application/json'
-				}
-			});
-			storage.setItem('push_notify', JSON.stringify({token: response.token}));
-		}
-		*/
 	}).catch(function(error) {
 		  console.error(error);
 	});
