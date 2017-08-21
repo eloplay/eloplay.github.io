@@ -670,6 +670,24 @@ p {
     color: rgba(255, 255, 255, 0.5);
     transform: scale(1.05); }
 
+.btn-go-game {
+  padding: 1rem 3.7rem;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.2s;
+  background: linear-gradient(90deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+  background: -moz-linear-gradient(0% 50% 0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+  background: -webkit-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, #d5718e), color-stop(0.1297, #d77386), color-stop(0.3302, #de7770), color-stop(0.5767, #e87e4d), color-stop(0.8569, #f7881c), color-stop(1, #ff8d00));
+  background: -o-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+  background: -ms-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+  border: none; }
+  .btn-go-game:hover {
+    transform: scale(1.05);
+    color: #fff; }
+  .btn-go-game:focus {
+    color: #fff; }
+
 .txt-caps {
   text-transform: uppercase; }
 
@@ -680,8 +698,8 @@ p {
   background: url(../img/bg-full-p1.jpg) center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 10000px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 10rem; }
   .full-bg .top-bar {
     width: 100%;
     height: 90px;
@@ -1228,7 +1246,7 @@ p {
     margin: 10px 0 76px 15px; }
     .full-bg .title-history:after {
       content: "";
-      width: 180px;
+      width: 173px;
       height: 3px;
       background: linear-gradient(90deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
       background: -moz-linear-gradient(0% 50% 0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
@@ -1239,6 +1257,59 @@ p {
       position: absolute;
       bottom: -21px;
       left: 4px; }
+  .full-bg .bg-go-game {
+    background: url(../img/img-tv.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1080px;
+    position: relative; }
+    .full-bg .bg-go-game .box-go-game {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+      .full-bg .bg-go-game .box-go-game .btn-go-game {
+        margin-top: 79px; }
+    .full-bg .bg-go-game p:nth-child(1) {
+      font-size: 4rem;
+      font-family: "DINpro-regular", sans-serif;
+      max-width: 456px;
+      line-height: normal; }
+    .full-bg .bg-go-game p:nth-child(2) {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-size: 1.8rem;
+      margin-top: 75px;
+      line-height: 28px; }
+  .full-bg .bg-in-media {
+    background: url(../img/bg-white-bottom.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1007px;
+    padding-top: 11.3rem; }
+  .full-bg .follow-news .form-group {
+    text-align: center; }
+    .full-bg .follow-news .form-group .btn-go-game {
+      padding: 1rem 2rem;
+      margin-top: 41px; }
+  .full-bg .follow-news .box-input-mail.box-bottom .form-control {
+    background: transparent;
+    border: none;
+    color: #fff; }
+    .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus {
+      outline: none;
+      box-shadow: none; }
+  .full-bg .follow-news .bord-bot:after {
+    content: "";
+    max-width: 360px;
+    height: 3px;
+    background: linear-gradient(90deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+    background: -moz-linear-gradient(0% 50% 0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+    background: -webkit-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, #d5718e), color-stop(0.1297, #d77386), color-stop(0.3302, #de7770), color-stop(0.5767, #e87e4d), color-stop(0.8569, #f7881c), color-stop(1, #ff8d00));
+    background: -o-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+    background: -ms-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+    display: block;
+    margin: 0 auto; }
 
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
@@ -1272,7 +1343,10 @@ p {
   .in-social-networ {
     margin-bottom: 60px; }
     .in-social-networ li {
-      margin: 0 9.5%; } }
+      margin: 0 9.5%; }
+
+  .full-bg .bg-go-game {
+    height: 612px; } }
 @media (max-width: 576px) {
   .contacts.mob-hide {
     display: none; }

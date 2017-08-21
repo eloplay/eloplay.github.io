@@ -7,12 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css" rel="stylesheet">
+<!-- 	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="stylesheet" href="./css/fonts.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>  
 </head>
 <body ng-app="">
 <div class="full-bg">
@@ -287,6 +290,88 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="bg-go-game">
+				<div class="container">
+					<div class="box-go-game">
+						<p class="font-l-48 color-or">Можно пойти и поиграть на платформе</p>
+						<p>ELOPLAY - это готовый продукт которым уже<br>успешно пользуются десятки тысяч<br>киберспортсменов. Присоединяйтесь!</p>						
+						<a href="" class="btn btn-go-game">Играть!</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-in-media">
+				<div class="container">
+					<p class="font-l-48 title-pay-token">Элоплей в медиа</p>
+					<div class="in-media">
+						<div style="color: #000; border: 1px solid #000; width: 70px; height: 100px">1</div>
+						<div style="color: #000; border: 1px solid #000; width: 70px; height: 100px">1</div>
+						<div style="color: #000; border: 1px solid #000; width: 70px; height: 100px">1</div>
+						<div style="color: #000; border: 1px solid #000; width: 70px; height: 100px">1</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="follow-news">
+				<h2 class="box-margin">Следите за новостями!</h2>
+				<div class="box-input-mail box-bottom">
+					<form class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8">
+						<div class="bord-bot">
+							<input type="email" name="email" class="form-control" placeholder="E-mail address" id="send-mail" required>
+						</div>
+						<input type="hidden" name="campaign_token" value="nTjtu" />
+						<input type="submit" class="btn btn-go-game" value="Подписаться"></input>
+					</form>
+				</div>
+				<div class="container">
+					<ul class="in-social-networks">
+						<li><p>Мы в соцсетях</p></li>
+						<li class="icon-social-1"></li>
+						<li class="icon-social-2"></li>
+						<li class="icon-social-3"></li>
+						<li class="icon-social-4"></li>
+						<li class="icon-social-5"></li>
+						<li class="icon-social-6"></li>
+					</ul>
+
+					<ul class="contacts mob-hide">
+						<li>Phone: +372 58 738 066</li>
+						<li>|</li>
+						<li>Email: info@eloplay.com</li>
+						<li>|</li>
+						<li>Post address: Tartu mnt 43 Tallinn 10128 Estonia</li>
+					</ul>
+
+				</div>
+
+				<a href="http://eloplay.com"><div class="bottom-logo-eloplay"></div></a>
+
+					<!-- <div class="container">
+						<ul class="menu-show">
+							<li><a href=""><span>WHITEPAPER</span> (COMING SOON)</a></li>
+							<li><a href="">ДРУГОЙ ПУНКТ МЕНЮ</a></li>
+							<li><a href="">ЕЩЁ ПУНКТ МЕНЮ</a></li>
+							<li><a href="">И ЕЩЁ ПУНКТ МЕНЮ</a></li>
+						</ul>
+					</div> -->
+
+					<ul class="contacts mob-show">
+						<li>Phone: +372 58 738 066</li>
+						<li>|</li>
+						<li>Email: info@eloplay.com</li>
+						<li>Post address: Tartu mnt 43 Tallinn 10128 Estonia</li>
+					</ul>
+				</div>
+
 </div>
 </body>
+<script>
+$('.in-media').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true
+});
+</script>
 </html>

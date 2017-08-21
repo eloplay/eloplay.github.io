@@ -648,6 +648,24 @@ p
 	&:hover
 		color: rgba(255,255,255,0.5)
 		transform: scale(1.05)
+.btn-go-game
+	padding: 1rem 3.7rem
+	font-size: 1.6rem
+	color: #fff
+	transition: all 0.2s
+	background : linear-gradient(90deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+	background : -moz-linear-gradient(0% 50% 0deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
+	background : -webkit-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+	background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(213, 113, 142, 1) ),color-stop(0.1297,rgba(215, 115, 134, 1) ),color-stop(0.3302,rgba(222, 119, 112, 1) ),color-stop(0.5767,rgba(232, 126, 77, 1) ),color-stop(0.8569,rgba(247, 136, 28, 1) ),color-stop(1,rgba(255, 141, 0, 1) ))
+	background : -o-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+	background : -ms-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+	border: none
+	//box-shadow: 1px 5px 30px rgba(0,0,0,0.4)
+	&:hover
+		transform: scale(1.05)
+		color: #fff
+	&:focus
+		color: #fff
 .txt-caps
 	text-transform: uppercase
 .command .box-item-command .item-command .box-text-info.no-line
@@ -657,8 +675,8 @@ p
 	background: url(../img/bg-full-p1.jpg) center no-repeat
 	background-size: cover
 	width: 100%
-	height: 10000px
 	overflow: hidden
+	padding-bottom: 10rem
 	.top-bar
 		width: 100%
 		height: 90px
@@ -1220,7 +1238,7 @@ p
 		margin: 10px 0 76px 15px
 		&:after
 			content: ''
-			width: 180px
+			width: 173px
 			height: 3px
 			background : linear-gradient(90deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
 			background : -moz-linear-gradient(0% 50% 0deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
@@ -1231,6 +1249,66 @@ p
 			position: absolute
 			bottom: -21px
 			left: 4px
+	.bg-go-game
+		background: url(../img/img-tv.png) center no-repeat
+		background-size: cover
+		width: 100%
+		height: 1080px
+		position: relative
+		.box-go-game
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			.btn-go-game
+				margin-top: 79px
+		p
+			&:nth-child(1)
+				font-size: 4rem
+				font-family: "DINpro-regular", sans-serif
+				max-width: 456px
+				line-height: normal
+			&:nth-child(2)
+				font-family: "Ubuntu", sans-serif
+				font-weight: 300
+				font-size: 1.8rem
+				margin-top: 75px
+				line-height: 28px
+	.bg-in-media
+		background: url(../img/bg-white-bottom.png) no-repeat
+		background-size: cover
+		width: 100%
+		height: 1007px
+		padding-top: 11.3rem
+	.follow-news
+		.form-group
+			text-align: center
+			.btn-go-game
+				padding: 1rem 2rem
+				margin-top: 41px
+		.box-input-mail.box-bottom .form-control
+			background: transparent
+			border: none
+			color: #fff
+			&:focus
+				outline: none
+				box-shadow: none
+		.bord-bot
+			&:after
+				content: ''
+				max-width: 360px
+				height: 3px
+				background : linear-gradient(90deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				background : -moz-linear-gradient(0% 50% 0deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
+				background : -webkit-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(213, 113, 142, 1) ),color-stop(0.1297,rgba(215, 115, 134, 1) ),color-stop(0.3302,rgba(222, 119, 112, 1) ),color-stop(0.5767,rgba(232, 126, 77, 1) ),color-stop(0.8569,rgba(247, 136, 28, 1) ),color-stop(1,rgba(255, 141, 0, 1) ))
+				background : -o-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				background : -ms-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				display: block
+				margin: 0 auto
+
+
+
+
 
 // end page 1
 
@@ -1263,6 +1341,8 @@ p
 		margin-bottom: 60px
 		li
 			margin: 0 9.5%
+	.full-bg .bg-go-game
+		height: 612px
 @media (max-width: 576px)
 	.contacts.mob-hide
 		display: none
