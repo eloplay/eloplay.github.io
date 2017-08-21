@@ -100,6 +100,7 @@ function sendSubscriptionToServer(subscription){
 	if((storage_data !== undefined && storage_data != null) && (storage_data.token !== undefined && storage_data.token != null)){
 		return true;
 	}
+	console.log(subscription.toJSON());
 	fetch('https://iid.googleapis.com/v1/web/iid', {
 		'method': 'POST',
 		'headers': {
@@ -109,8 +110,6 @@ function sendSubscriptionToServer(subscription){
 		'body': JSON.stringify(subscription.toJSON())
 	}).then(function(response) {
 		return response.json().then(function(data) {
-			console.log(data.token);
-			console.log(typeof data.token != "undefined");
 			if(typeof data.token !== "undefined"){
 				fetch('https://iid.googleapis.com/iid/v1/' + data.token + '/rel/topics/' + topic, {
 					'method': 'POST',
