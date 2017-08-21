@@ -1298,6 +1298,26 @@ p {
     .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus {
       outline: none;
       box-shadow: none; }
+      .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus::-webkit-input-placeholder {
+        text-indent: 500px; }
+      .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus:-moz-placeholder {
+        text-indent: 500px; }
+      .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus::-moz-placeholder {
+        text-indent: 500px; }
+      .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus:-ms-input-placeholder {
+        text-indent: 500px; }
+    .full-bg .follow-news .box-input-mail.box-bottom .form-control::-webkit-input-placeholder {
+      text-indent: 0px;
+      transition: text-indent 1s ease; }
+    .full-bg .follow-news .box-input-mail.box-bottom .form-control:-moz-placeholder {
+      text-indent: 0px;
+      transition: text-indent 1s ease; }
+    .full-bg .follow-news .box-input-mail.box-bottom .form-control::-moz-placeholder {
+      text-indent: 0px;
+      transition: text-indent 1s ease; }
+    .full-bg .follow-news .box-input-mail.box-bottom .form-control:-ms-input-placeholder {
+      text-indent: 0px;
+      transition: text-indent 1s ease; }
   .full-bg .follow-news .bord-bot:after {
     content: "";
     max-width: 360px;
@@ -1355,16 +1375,26 @@ p {
       opacity: 0.7; }
   .full-bg .history-progect .item-hist {
     cursor: pointer;
-    background: none; }
-    .full-bg .history-progect .item-hist:hover {
-      box-shadow: none;
-      height: 325px;
+    position: relative;
+    z-index: 0; }
+    .full-bg .history-progect .item-hist .bg-grad {
+      opacity: 0;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: opacity 0.2s ease-out;
       background: -moz-linear-gradient(0% 100% 45deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
       background: -webkit-linear-gradient(45deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
       background: -webkit-gradient(linear, 0% 100%, 100.39% -0.39%, color-stop(0, #d5718e), color-stop(0.1297, #d77386), color-stop(0.3302, #de7770), color-stop(0.5767, #e87e4d), color-stop(0.8569, #f7881c), color-stop(1, #ff8d00));
       background: -o-linear-gradient(45deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
       background: -ms-linear-gradient(45deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
       background: linear-gradient(45deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%); }
+    .full-bg .history-progect .item-hist:hover {
+      box-shadow: none;
+      height: 325px; }
       .full-bg .history-progect .item-hist:hover p:nth-child(2) {
         text-shadow: 10px 8px 12px rgba(0, 0, 0, 0.35); }
       .full-bg .history-progect .item-hist:hover .icon-hist-1 {
@@ -1375,6 +1405,9 @@ p {
         background: url(../img/icon-history-3w.svg) center no-repeat; }
       .full-bg .history-progect .item-hist:hover .icon-hist-4 {
         background: url(../img/icon-history-4w.svg) center no-repeat; }
+      .full-bg .history-progect .item-hist:hover .bg-grad {
+        transition: opacity 0.2s ease-out;
+        opacity: 1; }
 
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
