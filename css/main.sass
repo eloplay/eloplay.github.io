@@ -1305,7 +1305,46 @@ p
 				background : -ms-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
 				display: block
 				margin: 0 auto
-
+	.item-command
+		cursor: pointer		
+		.command-photo
+			position: relative
+			.hover-gradient
+				opacity: 0
+				transition: all .2s ease-out
+				&:before
+					content: ''
+					width: 92px
+					height: 92px
+					border-radius: 50%
+					position: absolute	
+				.fa-linkedin
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					color: #fff
+					font-size: 40px
+					&:after
+						content: ""
+						width: 92px
+						height: 92px
+						border-radius: 50%
+						position: absolute
+						border: 1px solid #fff
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+		&:hover
+			.command-photo
+				.hover-gradient
+					background : linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+					position: absolute
+					left: 0
+					right: 0
+					top: 0
+					bottom: 0
+					opacity: 0.7
 
 
 

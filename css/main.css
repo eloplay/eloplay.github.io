@@ -1310,6 +1310,44 @@ p {
     background: -ms-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
     display: block;
     margin: 0 auto; }
+  .full-bg .item-command {
+    cursor: pointer; }
+    .full-bg .item-command .command-photo {
+      position: relative; }
+      .full-bg .item-command .command-photo .hover-gradient {
+        opacity: 0;
+        transition: all 0.2s ease-out; }
+        .full-bg .item-command .command-photo .hover-gradient:before {
+          content: "";
+          width: 92px;
+          height: 92px;
+          border-radius: 50%;
+          position: absolute; }
+        .full-bg .item-command .command-photo .hover-gradient .fa-linkedin {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          font-size: 40px; }
+          .full-bg .item-command .command-photo .hover-gradient .fa-linkedin:after {
+            content: "";
+            width: 92px;
+            height: 92px;
+            border-radius: 50%;
+            position: absolute;
+            border: 1px solid #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+    .full-bg .item-command:hover .command-photo .hover-gradient {
+      background: linear-gradient(45deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0.7; }
 
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
