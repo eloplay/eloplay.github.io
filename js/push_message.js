@@ -110,7 +110,7 @@ function sendSubscriptionToServer(subscription){
 	}).then(function(response) {
 		return response.json().then(function(data) {
 			console.log(data.token);
-			console.log(typeof data.token !== undefined);
+			console.log(typeof data.token != undefined);
 			if(typeof data.token !== undefined){
 				fetch('https://iid.googleapis.com/iid/v1/' + data.token + '/rel/topics/' + topic, {
 					'method': 'POST',
