@@ -652,7 +652,7 @@ p
 	text-transform: uppercase
 .command .box-item-command .item-command .box-text-info.no-line
 	border-bottom: none
-
+	
 .full-bg
 	background: url(../img/bg-full-p1.jpg) center no-repeat
 	background-size: cover
@@ -1201,6 +1201,23 @@ p
 		color: #fff
 		margin: 178px 0 72px 17px
 		position: relative
+		&:after
+			content: ''
+			width: 180px
+			height: 3px
+			background : linear-gradient(90deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+			background : -moz-linear-gradient(0% 50% 0deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
+			background : -webkit-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+			background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(213, 113, 142, 1) ),color-stop(0.1297,rgba(215, 115, 134, 1) ),color-stop(0.3302,rgba(222, 119, 112, 1) ),color-stop(0.5767,rgba(232, 126, 77, 1) ),color-stop(0.8569,rgba(247, 136, 28, 1) ),color-stop(1,rgba(255, 141, 0, 1) ))
+			background : -o-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+			background : -ms-linear-gradient(0deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+			position: absolute
+			bottom: -21px
+			left: 4px
+	.title-history
+		color: #fff
+		position: relative
+		margin: 10px 0 76px 15px
 		&:after
 			content: ''
 			width: 180px
