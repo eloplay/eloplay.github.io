@@ -96,9 +96,8 @@ function sendSubscriptionToServer(subscription){
 	var key = 'AAAA11A9fMg:APA91bGdPQJfbOOvSrFEbZHDJCp134BfylSgMv6lWKfNC-J7Oa2AlEtpCzVyB16e1kA7f8I-MT5WQEmArURBryezKesGU7srF39sDxjG6JkAXQCVLuKd_N_44mCU5PnKuMQuuD0OnzVK';
 	var topic = 'eloplay_ico';
 	var storage = localStorage;
-	var storage_data = JSON.parse(storage.getItem('push_notify')),
-		now = new Date().getTime().toString();
-	if((storage_data !== undefined && storage_data != null) && (storage_data.last_update !== undefined && storage_data.last_update != null) && (storage_data.last_update + 86400000) > now){
+	var storage_data = JSON.parse(storage.getItem('push_notify'));
+	if((storage_data !== undefined && storage_data != null) && (storage_data.token !== undefined && storage_data.token != null)){
 		return true;
 	}
 	fetch('https://iid.googleapis.com/v1/web/iid', {
@@ -117,10 +116,10 @@ function sendSubscriptionToServer(subscription){
 					'Content-Type': 'application/json'
 				}
 			});
+			storage.setItem('push_notify', JSON.stringify({token: response.token}));
 		}
 	}).catch(function(error) {
 		  console.error(error);
 	});
-	storage.setItem('push_notify', JSON.stringify({last_update: new Date().getTime()}));
 	return true;
 }
