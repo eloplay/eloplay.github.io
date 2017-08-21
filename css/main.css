@@ -673,6 +673,9 @@ p {
 .txt-caps {
   text-transform: uppercase; }
 
+.command .box-item-command .item-command .box-text-info.no-line {
+  border-bottom: none; }
+
 .full-bg {
   background: url(../img/bg-full-p1.jpg) center no-repeat;
   background-size: cover;
@@ -857,7 +860,9 @@ p {
     margin-top: 90px;
     margin-bottom: 85px; }
     .full-bg .sect-top .indent-bottom {
-      margin-bottom: 168px; }
+      margin-bottom: 168px;
+      margin-right: 0;
+      margin-left: 0; }
     .full-bg .sect-top .box-left {
       padding-left: 0; }
       .full-bg .sect-top .box-left p:nth-child(2) {
@@ -1200,6 +1205,23 @@ p {
       line-height: 21px;
       display: block;
       margin-top: 7px; }
+  .full-bg .title-command {
+    color: #fff;
+    margin: 178px 0 72px 17px;
+    position: relative; }
+    .full-bg .title-command:after {
+      content: "";
+      width: 180px;
+      height: 3px;
+      background: linear-gradient(90deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+      background: -moz-linear-gradient(0% 50% 0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+      background: -webkit-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+      background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, #d5718e), color-stop(0.1297, #d77386), color-stop(0.3302, #de7770), color-stop(0.5767, #e87e4d), color-stop(0.8569, #f7881c), color-stop(1, #ff8d00));
+      background: -o-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+      background: -ms-linear-gradient(0deg, #d5718e 0%, #d77386 12.97%, #de7770 33.02%, #e87e4d 57.67%, #f7881c 85.69%, #ff8d00 100%);
+      position: absolute;
+      bottom: -21px;
+      left: 4px; }
 
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
@@ -1218,18 +1240,21 @@ p {
   .full-bg .sect-top .in-social-p1 {
     text-align: center; }
 
-  .full-bg .sect-top .in-social-p1 {
+  .full-bg .bg-white-center {
+    background-position: center; }
+
+  .full-bg .sect-top .in-social-p1 li {
     margin-top: 45px; }
 
-  .full-bg .bg-white-center {
-    background-position: center; } }
+  .full-bg .sect-top .indent-bottom {
+    margin-bottom: 100px; } }
 @media (max-width: 768px) {
   .bg-heder .indent-top {
     margin-top: 72px; }
 
-  .in-social-networks {
+  .in-social-networ {
     margin-bottom: 60px; }
-    .in-social-networks li {
+    .in-social-networ li {
       margin: 0 9.5%; } }
 @media (max-width: 576px) {
   .contacts.mob-hide {
