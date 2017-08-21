@@ -14,8 +14,6 @@ messaging.onMessage(function(payload) {
 });
 */
 messaging.setBackgroundMessageHandler(function(payload) {
-	console.log('background message ', payload);
-	console.log(payload);
 	// Customize notification here
 	const notificationTitle = 'Background Message Title';
 	const notificationOptions = {
