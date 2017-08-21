@@ -263,12 +263,12 @@ p
 		.item-hist
 			width: 22%
 			min-width: 216px
-			height: 320px
+			height: 325px
 			border: 1px solid #ff8d00
 			display: inline-block
 			text-align: left
 			padding: 25px 15px
-			box-shadow: 0 5px 0 #ff8d00
+			box-shadow: inset 0 -5px 0 #ff8d00
 			margin: 2% 1.2%
 			vertical-align: top
 			p:nth-child(2)
@@ -1338,6 +1338,11 @@ p
 		&:hover
 			.command-photo
 				.hover-gradient
+					background : -moz-linear-gradient(0% 100% 45deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
+					background : -webkit-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+					background : -webkit-gradient(linear,0% 100% ,100.39% -0.39% ,color-stop(0,rgba(213, 113, 142, 1) ),color-stop(0.1297,rgba(215, 115, 134, 1) ),color-stop(0.3302,rgba(222, 119, 112, 1) ),color-stop(0.5767,rgba(232, 126, 77, 1) ),color-stop(0.8569,rgba(247, 136, 28, 1) ),color-stop(1,rgba(255, 141, 0, 1) ))
+					background : -o-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+					background : -ms-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
 					background : linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
 					position: absolute
 					left: 0
@@ -1345,7 +1350,29 @@ p
 					top: 0
 					bottom: 0
 					opacity: 0.7
-
+	.history-progect
+		.item-hist
+			cursor: pointer
+			background: none
+			&:hover
+				box-shadow: none
+				height: 325px
+				background : -moz-linear-gradient(0% 100% 45deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
+				background : -webkit-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				background : -webkit-gradient(linear,0% 100% ,100.39% -0.39% ,color-stop(0,rgba(213, 113, 142, 1) ),color-stop(0.1297,rgba(215, 115, 134, 1) ),color-stop(0.3302,rgba(222, 119, 112, 1) ),color-stop(0.5767,rgba(232, 126, 77, 1) ),color-stop(0.8569,rgba(247, 136, 28, 1) ),color-stop(1,rgba(255, 141, 0, 1) ))
+				background : -o-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				background : -ms-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				background : linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				p:nth-child(2)
+					text-shadow: 10px 8px 12px rgba(0,0,0,0.35)
+				.icon-hist-1
+					background: url(../img/icon-history-1w.svg) center no-repeat
+				.icon-hist-2
+					background: url(../img/icon-history-2w.svg) center no-repeat
+				.icon-hist-3
+					background: url(../img/icon-history-3w.svg) center no-repeat
+				.icon-hist-4
+					background: url(../img/icon-history-4w.svg) center no-repeat
 
 
 
