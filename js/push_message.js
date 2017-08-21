@@ -1,5 +1,3 @@
-
-
 firebase.initializeApp({
 	'messagingSenderId': '924764175560'
 });
@@ -10,7 +8,10 @@ messaging.onMessage(function(payload) {
 	var data = payload.notification;
 	new PNotify({
 		title: data.title,
-		text: data.body
+		text: data.body,
+		desktop: {
+			desktop: true
+		}
 	});
 });
 /********************************************************************************************/
