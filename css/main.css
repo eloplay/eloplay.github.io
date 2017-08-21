@@ -618,6 +618,30 @@ p {
     color: #fff;
     text-decoration: none; }
 
+.form-control.st-placeh:focus {
+  outline: none;
+  box-shadow: none; }
+  .form-control.st-placeh:focus::-webkit-input-placeholder {
+    text-indent: 500px; }
+  .form-control.st-placeh:focus:-moz-placeholder {
+    text-indent: 500px; }
+  .form-control.st-placeh:focus::-moz-placeholder {
+    text-indent: 500px; }
+  .form-control.st-placeh:focus:-ms-input-placeholder {
+    text-indent: 500px; }
+.form-control.st-placeh::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 1s ease; }
+.form-control.st-placeh:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 1s ease; }
+.form-control.st-placeh::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 1s ease; }
+.form-control.st-placeh:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 1s ease; }
+
 .icon-button {
   background: url(../img/icon-btn.svg);
   background-size: contain;
@@ -1295,29 +1319,6 @@ p {
     background: transparent;
     border: none;
     color: #fff; }
-    .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus {
-      outline: none;
-      box-shadow: none; }
-      .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus::-webkit-input-placeholder {
-        text-indent: 500px; }
-      .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus:-moz-placeholder {
-        text-indent: 500px; }
-      .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus::-moz-placeholder {
-        text-indent: 500px; }
-      .full-bg .follow-news .box-input-mail.box-bottom .form-control:focus:-ms-input-placeholder {
-        text-indent: 500px; }
-    .full-bg .follow-news .box-input-mail.box-bottom .form-control::-webkit-input-placeholder {
-      text-indent: 0px;
-      transition: text-indent 1s ease; }
-    .full-bg .follow-news .box-input-mail.box-bottom .form-control:-moz-placeholder {
-      text-indent: 0px;
-      transition: text-indent 1s ease; }
-    .full-bg .follow-news .box-input-mail.box-bottom .form-control::-moz-placeholder {
-      text-indent: 0px;
-      transition: text-indent 1s ease; }
-    .full-bg .follow-news .box-input-mail.box-bottom .form-control:-ms-input-placeholder {
-      text-indent: 0px;
-      transition: text-indent 1s ease; }
   .full-bg .follow-news .bord-bot:after {
     content: "";
     max-width: 360px;

@@ -601,6 +601,30 @@ p
 
 
 // page 1
+.form-control.st-placeh
+	&:focus
+		outline: none
+		box-shadow: none
+		&::-webkit-input-placeholder
+			text-indent: 500px
+		&:-moz-placeholder
+			text-indent: 500px
+		&::-moz-placeholder
+			text-indent: 500px
+		&:-ms-input-placeholder
+			text-indent: 500px
+	&::-webkit-input-placeholder
+		text-indent: 0px
+		transition: text-indent 1s ease
+	&:-moz-placeholder
+		text-indent: 0px
+		transition: text-indent 1s ease
+	&::-moz-placeholder
+		text-indent: 0px
+		transition: text-indent 1s ease
+	&:-ms-input-placeholder
+		text-indent: 0px
+		transition: text-indent 1s ease
 .icon-button
 	background: url(../img/icon-btn.svg)
 	background-size: contain
@@ -1289,29 +1313,7 @@ p
 			background: transparent
 			border: none
 			color: #fff
-			&:focus
-				outline: none
-				box-shadow: none
-				&::-webkit-input-placeholder
-					text-indent: 500px
-				&:-moz-placeholder
-					text-indent: 500px
-				&::-moz-placeholder
-					text-indent: 500px
-				&:-ms-input-placeholder
-					text-indent: 500px
-			&::-webkit-input-placeholder
-				text-indent: 0px
-				transition: text-indent 1s ease
-			&:-moz-placeholder
-				text-indent: 0px
-				transition: text-indent 1s ease
-			&::-moz-placeholder
-				text-indent: 0px
-				transition: text-indent 1s ease
-			&:-ms-input-placeholder
-				text-indent: 0px
-				transition: text-indent 1s ease				 
+				 
 		.bord-bot
 			&:after
 				content: ''
