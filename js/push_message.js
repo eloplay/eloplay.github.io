@@ -100,14 +100,18 @@ function sendSubscriptionToServer(subscription){
 	if((storage_data !== undefined && storage_data != null) && (storage_data.token !== undefined && storage_data.token != null)){
 		return true;
 	}
-	console.log(subscription.toJSON());
+	console.log();
+	var subscription_data = subscription.toJSON();
+	if(typeof subscription_data.expirationTime !== "undefined"){
+		delete subscription_data.expirationTime;
+	}
 	fetch('https://iid.googleapis.com/v1/web/iid', {
 		'method': 'POST',
 		'headers': {
 			'Authorization': 'key=' + key,
 			'Content-Type': 'application/json'
 		},
-		'body': JSON.stringify(subscription.toJSON())
+		'body': JSON.stringify(subscription_data)
 	}).then(function(response) {
 		return response.json().then(function(data) {
 			if(typeof data.token !== "undefined"){
