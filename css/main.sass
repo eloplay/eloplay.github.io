@@ -1283,14 +1283,22 @@ p
 			position: absolute
 			top: 50%
 			transform: translateY(-50%)
+			width: 100%
 			.btn-go-game
 				margin-top: 79px
+			.mobil-img
+				display: none
+			.mobil-img
+				width: 100%
+				img
+					width: 100%
 		p
 			&:nth-child(1)
 				font-size: 4rem
 				font-family: "DINpro-regular", sans-serif
 				max-width: 456px
 				line-height: normal
+				display: inline-block
 			&:nth-child(2)
 				font-family: "Ubuntu", sans-serif
 				font-weight: 300
@@ -1298,7 +1306,7 @@ p
 				margin-top: 75px
 				line-height: 28px
 	.bg-in-media
-		background: url(../img/bg-white-bottom.png) right no-repeat
+		background: url(../img/bg-white-bottom_.png) center no-repeat
 		background-size: cover
 		width: 100%
 		height: 1007px
@@ -1596,6 +1604,15 @@ p
 	.box-input-mail
 		&.box-bottom
 			width: 90%
+	.full-bg .bg-go-game .box-go-game .mobil-img
+		display: block
+	.full-bg .bg-go-game
+		background: none
+		text-align: center
+		margin-top: 98px
+		margin-bottom: 80px
+	.full-bg .bg-go-game .container 
+		padding: 0
 	label
 		&[for=send-mail]
 			margin-top: 76px
