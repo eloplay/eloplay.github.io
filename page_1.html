@@ -8,10 +8,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css" rel="stylesheet">
-<!-- 	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet"> -->
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.ttf" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="stylesheet" href="./css/fonts.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
@@ -254,18 +257,62 @@
 				</div>
 			</div>
 
-			<div class="bg-in-media">
+			
+			<div class="bg-in-media" ng-cloak>
 				<div class="container">
 					<p class="font-l-48 title-pay-token">Элоплей в медиа</p>
+
+					<!-- карусель Элоплей в медиа -->
 					<div class="in-media">
-						<div style="color: #000; border: 1px solid #000; width: 70px; height: 100px">1</div>
-						<div style="color: #000; border: 1px solid #000; width: 70px; height: 100px">1</div>
-						<div style="color: #000; border: 1px solid #000; width: 70px; height: 100px">1</div>
-						<div style="color: #000; border: 1px solid #000; width: 70px; height: 100px">1</div>
+
+						<a href="" class="item-in-media">
+							<div class="header"><p>Forbes.com</p></div>
+							<div class="in-media-content">
+								<p class="data">08/08/2017</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
+								<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+							</div>
+						</a>
+
+						<a href="" class="item-in-media">
+							<div class="header"><p>Forbes.com</p></div>
+							<div class="in-media-content">
+								<p class="data">08/08/2017</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
+								<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+							</div>
+						</a>
+
+						<a href="" class="item-in-media">
+							<div class="header"><p>Forbes.com</p></div>
+							<div class="in-media-content">
+								<p class="data">08/08/2017</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
+								<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+							</div>
+						</a>
+
+						<a href="" class="item-in-media">
+							<div class="header"><p>Forbes.com</p></div>
+							<div class="in-media-content">
+								<p class="data">08/08/2017</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
+								<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+							</div>
+						</a>
+
 					</div>
+					<center>
+						<div class="sl-control-container">
+							<div class="sl-class-dots"></div>
+							<div class="sl-class-arrow"></div>
+						</div>
+					</center>
+					<!-- END карусель Элоплей в медиа -->
+
 				</div>
-			</div>
-		
+			</div>			
+
 			<div class="follow-news">
 				<h2 class="box-margin">Следите за новостями!</h2>
 				<div class="box-input-mail box-bottom">
@@ -310,11 +357,18 @@
 
 </body>
 <script>
-$('.in-media').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  dots: true
+$(function() {
+	$('.in-media').slick({
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  dots: true,
+	  appendArrows: $('.sl-class-arrow'),
+	  appendDots: $('.sl-class-dots'),
+	  prevArrow: '<i class="icon-arrow-left"></i>',
+	  nextArrow: '<i class="icon-arrow-right"></i>',
+	});
 });
+
 </script>
-</html>
+</html
