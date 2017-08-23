@@ -682,6 +682,8 @@ p {
   .btn-large-color:hover {
     transform: scale(1.05);
     box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.8); }
+  .btn-large-color span {
+    vertical-align: middle; }
 
 .btn-dark {
   color: rgba(255, 255, 255, 0.5);
@@ -693,6 +695,8 @@ p {
   .btn-dark:hover {
     color: rgba(255, 255, 255, 0.5);
     transform: scale(1.05); }
+  .btn-dark span {
+    vertical-align: middle; }
 
 .btn-go-game {
   padding: 1rem 3.7rem;
