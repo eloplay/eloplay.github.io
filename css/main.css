@@ -1543,6 +1543,65 @@ p {
     .in-media .item-in-media:focus {
       outline: none; }
 
+.lang-bord {
+  opacity: 0.5;
+  top: 27px;
+  right: 90px;
+  position: absolute;
+  width: 70px;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .lang-bord .sel-lang {
+    background: url(../img/icon-lang.svg) center no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 5px;
+    position: absolute; }
+    .lang-bord .sel-lang span {
+      position: absolute;
+      color: #fff;
+      top: 44%;
+      left: 43px;
+      transform: translate(-50%, -50%);
+      font-size: 16px; }
+    .lang-bord .sel-lang.dropdown-toggle.open [uib-dropdown-menu] {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin-top: 20px;
+      left: -126px;
+      min-width: 197px;
+      border-radius: 6px 0 6px 6px; }
+      .lang-bord .sel-lang.dropdown-toggle.open [uib-dropdown-menu] ul {
+        padding: 0;
+        margin: 0; }
+        .lang-bord .sel-lang.dropdown-toggle.open [uib-dropdown-menu] ul li {
+          display: block;
+          padding: 5px 15px; }
+          .lang-bord .sel-lang.dropdown-toggle.open [uib-dropdown-menu] ul li:hover {
+            background-color: #000;
+            color: #fff; }
+      .lang-bord .sel-lang.dropdown-toggle.open [uib-dropdown-menu] .icon-bg {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 6px 6px 0 0;
+        width: 82px;
+        height: 58px;
+        position: absolute;
+        top: -58px;
+        left: 113px; }
+  .lang-bord:hover {
+    opacity: 1; }
+
+a[href^=mailto] {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none; }
+  a[href^=mailto]:hover {
+    text-decoration: underline; }
+
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
     display: block;
