@@ -1551,61 +1551,65 @@ p
 		&:focus
 			outline: none
 
-.lang-bord
-	opacity: 0.5
-	top: 27px
-	right: 90px
-	position: absolute
+.sel-lang
 	width: 70px
-	height: 36px
-	border-radius: 5px
+	height: 32px
 	border: 1px solid #fff
+	border-radius: 4px
 	cursor: pointer
-	transition: all 0.2s
-	.sel-lang
-		background: url(../img/icon-lang.svg) center no-repeat
-		width: 24px
-		height: 24px
-		background-size: contain
-		transform: translateY(-50%)
-		top: 50%
-		left: 5px
+	display: inline-block
+	.icon-lang
+		background: url(../img/icon-lang.svg) no-repeat
+		background-size: cover
+		width: 22px
+		height: 22px
+		display: inline-block
 		position: absolute
-		span
-			position: absolute
-			color: #fff
-			top: 44%
-			left: 43px
-			transform: translate(-50%, -50%)
-			font-size: 16px
-		&.dropdown-toggle
-			&.open
-				[uib-dropdown-menu]
-					background-color: rgba(0,0,0,.7)
-					margin-top: 20px
-					left: -126px
-					min-width: 197px
-					border-radius: 6px 0 6px 6px
-					ul
-						padding: 0
-						margin: 0
-						li
-							display: block
-							padding: 5px 15px
-							&:hover
-								background-color: #000
-								color: #fff
-					.icon-bg
-						background-color: rgba(0,0,0,.7)
-						border-radius: 6px 6px 0 0
-						width: 82px
-						height: 58px
-						position: absolute
-						top: -58px
-						left: 113px
-	&:hover
-		opacity: 1
-
+		top: 50%
+		transform: translateY(-50%)
+		left: 4px
+	span
+		color: #fff
+		font-size: 13px
+		position: absolute
+		top: 50%
+		transform: translate(-50%, -50%)
+		left: 64%
+	&.dropdown-toggle
+		opacity: 0.5
+		transition: all .2s ease-out
+		&.open
+			[uib-dropdown-menu]
+				background-color: rgba(0, 0, 0, 0.7)
+				margin-top: 20px
+				left: -121px
+				min-width: 197px
+				border-radius: 6px 0 6px 6px
+				ul
+					padding: 0
+					margin: 0
+					li
+						display: block
+						padding: 5px 15px
+						color: #a5a3a3
+						&:hover
+							//background-color: #000
+							color: #fff
+			.icon-bg
+				background-color: rgba(0, 0, 0, 0.7)
+				border-radius: 6px 6px 0 0
+				width: 82px
+				height: 58px
+				position: absolute
+				top: -7px
+				left: -7px
+			opacity: 1
+		&:hover
+			opacity: 1
+	&.lang-nav
+		top: 29px
+		position: absolute
+		right: 90px
 
 a
 	&[href^=mailto]
