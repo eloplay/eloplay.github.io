@@ -1682,6 +1682,11 @@ a[href^=mailto] {
   .box-input-mail.box-bottom {
     width: 90%; }
 
+  .full-bg .bg-go-game .box-go-game p:nth-child(1) {
+    line-height: 117%; }
+  .full-bg .bg-go-game .box-go-game p:nth-child(3) {
+    padding: 15px;
+    line-height: 125%; }
   .full-bg .bg-go-game .box-go-game .mobil-img {
     display: block; }
 
@@ -1708,13 +1713,24 @@ a[href^=mailto] {
         .full-bg .sect-top .indent-bottom .box-right .box-time .time-title {
           margin: 20px auto 0; }
 
+  .full-bg .title-pay-token {
+    text-align: center;
+    line-height: 117%; }
+    .full-bg .title-pay-token:after {
+      left: 50%;
+      transform: translateX(-50%); }
+
   .full-bg .sect-top .box-left p:nth-child(1) {
     line-height: 106%;
-    font-size: 3.2rem; }
+    font-size: 3.2rem;
+    margin-bottom: 12px; }
   .full-bg .sect-top .box-left p:nth-child(2) {
     margin-top: 0;
     line-height: 125%;
     font-size: 1.8rem; }
+
+  .full-bg .title-bonus {
+    margin-top: 0; }
 
   label[for=send-mail] {
     margin-top: 76px; }
@@ -1773,15 +1789,31 @@ a[href^=mailto] {
     margin: 25px auto 0; }
 
   .full-bg .sect-top {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 40px; }
 
   .full-bg .box-time-token {
-    text-align: center; }
+    text-align: center;
+    margin-top: 28px; }
 
   .full-bg .end-pay-token {
     text-align: center;
     float: none;
-    margin-top: 15px; } }
+    margin-top: 15px; }
+
+  .full-bg .bg-white-center {
+    padding-top: 30px; }
+    .full-bg .bg-white-center .distribution-token {
+      text-align: center;
+      line-height: 117%;
+      margin-top: 32px;
+      display: inline-block; }
+      .full-bg .bg-white-center .distribution-token:after {
+        left: 50%;
+        transform: translateX(-50%); }
+
+  .box-bonus .text-token p {
+    line-height: 127%; } }
 @media (max-width: 470px) {
   .bg-heder .box-title h1 {
     font-size: 3.9rem; }
@@ -1820,7 +1852,7 @@ a[href^=mailto] {
     .full-bg .sect-top .indent-bottom .box-right .box-time ul li p:nth-child(1) {
       font-size: 5rem; }
     .full-bg .sect-top .indent-bottom .box-right .box-time ul li:not(:last-child):after {
-      top: 40px; }
+      top: 34px; }
 
   .icon-button {
     display: none; }
