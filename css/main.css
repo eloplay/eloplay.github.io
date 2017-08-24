@@ -1710,10 +1710,11 @@ a[href^=mailto] {
 
   .full-bg .sect-top .box-left p:nth-child(1) {
     line-height: 106%;
-    font-size: 3.5rem; }
+    font-size: 3.3rem; }
   .full-bg .sect-top .box-left p:nth-child(2) {
     margin-top: 0;
-    line-height: 117%; }
+    line-height: 125%;
+    font-size: 1.8rem; }
 
   label[for=send-mail] {
     margin-top: 76px; }
