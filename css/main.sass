@@ -1675,13 +1675,16 @@ a
 	.box-input-mail
 		&.box-bottom
 			width: 90%
-	.full-bg .bg-go-game .box-go-game
-		p
-			&:nth-child(1)
-				line-height: 117%
-			&:nth-child(3)
-				padding: 15px
-				line-height: 125%
+	.full-bg
+		background: none
+		background-color: #1d1930
+		.bg-go-game .box-go-game
+			p
+				&:nth-child(1)
+					line-height: 117%
+				&:nth-child(3)
+					padding: 15px
+					line-height: 125%
 		.mobil-img
 			display: block
 	.full-bg .bg-go-game
@@ -1755,7 +1758,7 @@ a
 			.item-command
 				float: left
 				width: 100%
-				margin: 26px 0
+				margin: 0
 				.command-photo
 					width: 44%
 					float: left
@@ -1799,8 +1802,16 @@ a
 			&:after
 				left: 50%
 				transform: translateX(-50%)
-	.box-bonus .text-token p
+	.bg-white-center .text-token p
 		line-height: 127%
+	.full-bg .title-command
+		line-height: 117%
+		text-align: center
+		margin-top: 40px		
+		margin-bottom: 63px
+		&:after
+			left: 50%
+			transform: translateX(-50%)
 		
 @media (max-width: 470px)
 	.bg-heder .box-title h1
