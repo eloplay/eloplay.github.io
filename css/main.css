@@ -1625,7 +1625,7 @@ a[href^=mailto] {
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
     display: block;
-    margin-top: 45px; }
+    margin-top: 15px; }
 
   .full-bg .top-bar .top-memu-p1 {
     display: none; }
@@ -1741,7 +1741,9 @@ a[href^=mailto] {
 
   .full-bg .title-pay-token {
     text-align: center;
-    line-height: 117%; }
+    line-height: 117%;
+    display: inline-block;
+    width: 100%; }
     .full-bg .title-pay-token:after {
       left: 50%;
       transform: translateX(-50%); }
@@ -1870,7 +1872,9 @@ a[href^=mailto] {
 
   .in-social-networks {
     margin-top: 32px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    line-height: 72px;
+    padding-bottom: 30px; }
 
   .contacts-bottom {
     margin-top: 40px; } }
