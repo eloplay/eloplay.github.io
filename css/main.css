@@ -1577,7 +1577,7 @@ p {
     .sel-lang.dropdown-toggle.open {
       opacity: 1; }
       .sel-lang.dropdown-toggle.open [uib-dropdown-menu] {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(8, 15, 23, 0.8);
         margin-top: 20px;
         left: -121px;
         min-width: 197px;
@@ -1592,7 +1592,7 @@ p {
             .sel-lang.dropdown-toggle.open [uib-dropdown-menu] ul li:hover {
               color: #fff; }
       .sel-lang.dropdown-toggle.open .icon-bg {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(8, 15, 23, 0.8);
         border-radius: 6px 6px 0 0;
         width: 82px;
         height: 58px;
