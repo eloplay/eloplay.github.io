@@ -1684,6 +1684,30 @@ a
 		margin-bottom: 80px
 	.full-bg .bg-go-game .container 
 		padding: 0
+	.full-bg .sect-top .indent-bottom
+		text-align: center
+		.box-right
+			margin-top: 10px
+			padding: 0
+			.box-time
+				height: 208px
+				ul
+					li
+						p
+							&:nth-child(1)
+								font-size: 6rem
+						&:not(:last-child):after
+							top: 41px
+				.time-title
+					margin: 20px auto 0
+	.full-bg .sect-top .box-left
+		p
+			&:nth-child(1)
+				line-height: 106%
+				font-size: 3.5rem
+			&:nth-child(2)
+				margin-top: 0
+				line-height: 117%
 	label
 		&[for=send-mail]
 			margin-top: 76px
@@ -1739,7 +1763,7 @@ a
 		margin: 25px auto 0
 	// page 1
 	.full-bg .sect-top
-		margin-top: 25px
+		margin-top: 0
 	.full-bg .box-time-token
 		text-align: center
 	.full-bg .end-pay-token
@@ -1777,12 +1801,12 @@ a
 	.full-bg .font-l-48
 		font-size: 4rem
 	.btn-large-color
-		padding: 2.5rem 1.7rem
-	.full-bg .sect-top .box-right .box-time
-		height: 242px
+		padding: 2rem 1.7rem
+	.full-bg .sect-top .indent-bottom .box-right .box-time
+		height: 197px
 		ul 
 			li p:nth-child(1)
-				font-size: 6rem
+				font-size: 5rem
 			li:not(:last-child):after
 				top: 40px
 	.icon-button
@@ -1796,3 +1820,5 @@ a
 	// page 1
 	.full-bg .distribution-token:after
 		width: 258px
+	.sel-lang.lang-nav
+		right: 76px
