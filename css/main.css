@@ -1766,7 +1766,9 @@ a[href^=mailto] {
   .command .box-item-command .item-command {
     float: left;
     width: 100%;
-    margin: 0; }
+    margin: 0 0 15px; }
+    .command .box-item-command .item-command .box-text-info p {
+      line-height: 117% !important; }
     .command .box-item-command .item-command .command-photo {
       width: 44%;
       float: left;
@@ -1775,7 +1777,8 @@ a[href^=mailto] {
       width: 46%;
       float: left;
       margin-top: 0;
-      border-bottom: none; }
+      border-bottom: none;
+      padding: 0; }
 
   .box-input-mail .input-mail .form-control {
     width: 68%;
