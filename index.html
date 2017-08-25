@@ -7,7 +7,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;subset=cyrillic" rel="stylesheet" />
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.ttf" rel="stylesheet" />
@@ -26,14 +25,15 @@
 </head>
 
 <body ng-app="app">
-<div class="full-bg">
+<div class="full-bg-p2">
 
 	<div class="top-bar">
+	<div class="container">
 		<div class="box-logo">
 			<a href="https://eloplay.com/"><div class="logo-eloplay"></div></a>
 		</div>
 
-		<div class="top-memu-p1">
+		<!-- <div class="top-memu-p1">
 			<ul>
 				<li><a id="ex1" href="#pay-token" title="">TOKEN SALE</a></li>
 				<li><a href="docs/roadmap.pdf" title="">ROADMAP</a></li>
@@ -42,7 +42,7 @@
 				<li><a href="https://github.com/eloplay" title="">GITHUB</a></li>
 				<li><a href="#follow-news" title="">CONTACTS</a></li>
 			</ul>
-		</div>
+		</div> -->
 
 		<button type="button" class="btn-nav" ng-init="is_btn_show=false" ng-click="is_btn_show=!is_btn_show">
 			<span class="icon-bar"></span>
@@ -59,7 +59,6 @@
 				<a href="#follow-news" ng-click="is_btn_show=false"><li>CONTACTS</li></a>
 			</ul>
 		</div>
-	</div>
 
 	<div ng-init="current_lang='РУС'">
 		<div class="sel-lang lang-nav" uib-dropdown uib-dropdown-toggle>
@@ -75,14 +74,20 @@
 		</div>
 	</div>
 
+	</div>
+	</div>
+
 	<div class="container">
 		<div class="sect-top">
 		<div class="row indent-bottom">
-			<div class="col-xs-12 col-sm-12 col-md-6 box-left">
-				<p class="font-l-48 color-or">Элоплей Токены для киберспортивных<br>Смарт Турниров</p>
-				<p>Платформа, где тысячи киберспортсменов получили возможность проводить децентрализованные турниры</p>
+			<div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
+				<p class="font-l-42">Предложение токенов Eloplay<br>для инвестиций в<br>киберспортивную платформу</p>
+				<p>Платформа создана для игроков и организаций,
+которые проводят смарт турниры на технологии блокчейн.
+Токен Eloplay является основной движущей силой экосистемы
+и единицой ценности для её владельцев.</p>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 box-right">
+			<div class="col-xs-12 col-sm-12 col-md-6 box-right padd-no">
 				<div class="box-time">
 					<div class="box-time-bg"></div>
 					<a href="#follow-news" class="btn btn-large-color"><span class="icon-button"></span><span>Следить за обновлениями</span></a>
