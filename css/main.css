@@ -1122,6 +1122,8 @@ p {
   min-height: 1974px;
   padding-top: 106px;
   text-align: center; }
+  .bg-sect-3 .add-padd {
+    padding-top: 146px; }
 
 .font-l-31 {
   font-size: 3.1rem;
@@ -1836,7 +1838,8 @@ a[href^=mailto] {
   background-size: contain;
   width: 456px;
   height: 585px;
-  float: right; }
+  float: right;
+  margin: 0 auto; }
 
 .perspective-pr,
 .col-medal {
@@ -1878,20 +1881,22 @@ a[href^=mailto] {
 
 .evro-ico-block {
   width: 83%;
-  padding: 10px;
+  padding: 32px 15px;
   background-color: #3f0023;
-  margin: 0 auto;
+  margin: 149px auto 0;
   text-align: left;
   border-radius: 6px;
   position: relative;
-  min-height: 80px; }
+  min-height: 90px;
+  vertical-align: middle;
+  display: table-cell; }
   .evro-ico-block p {
     font-family: "DINpro-light", sans-serif;
     font-size: 1.8rem;
-    margin-left: 175px;
+    margin-left: 165px;
     vertical-align: middle;
-    margin-top: 20px;
-    line-height: 17px; }
+    line-height: 17px;
+    margin-bottom: 0; }
 
 .icon-evro {
   background: url(../img/icon-evro.svg) no-repeat;
@@ -1941,7 +1946,10 @@ a[href^=mailto] {
     display: block; }
 
   .box-button-video {
-    text-align: center; } }
+    text-align: center; }
+
+  .img-medal {
+    float: none; } }
 @media (max-width: 768px) {
   .hide-768 {
     display: none !important; }
