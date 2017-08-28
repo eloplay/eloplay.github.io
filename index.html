@@ -27,23 +27,27 @@
 <body ng-app="app">
 <div class="full-bg-p2">
 
+<div class="bg-sect-1">
 	<div class="top-bar">
-	<div class="container">
-		<div class="box-logo">
-			<a href="https://eloplay.com/"><div class="logo-eloplay"></div></a>
+		<div class="container">
+			<div class="box-logo">
+				<a href="https://eloplay.com/"><div class="logo-eloplay"></div></a>
+			</div>
+
+			<div ng-init="current_lang='РУС'">
+				<div class="sel-lang lang-nav" uib-dropdown uib-dropdown-toggle>
+					<div class="icon-bg"></div>
+					<span class="icon-lang"></span>
+					<span ng-bind="current_lang"></span>
+					<div uib-dropdown-menu class="dropdown-menu">
+						<ul>
+							<li ng-click="current_lang='EN'">ENGLISH</li>
+							<li ng-click="current_lang='РУС'">РУССКИЙ</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-
-		<!-- <div class="top-memu-p1">
-			<ul>
-				<li><a id="ex1" href="#pay-token" title="">TOKEN SALE</a></li>
-				<li><a href="docs/roadmap.pdf" title="">ROADMAP</a></li>
-				<li><a href="docs/white_paper.pdf" title="">WHITE PAPER</a></li>
-				<li><a href="docs/sec_howey_test.pdf" title="">SEC HOWEY TEST</a></li>
-				<li><a href="https://github.com/eloplay" title="">GITHUB</a></li>
-				<li><a href="#follow-news" title="">CONTACTS</a></li>
-			</ul>
-		</div> -->
-
 		<button type="button" class="btn-nav" ng-init="is_btn_show=false" ng-click="is_btn_show=!is_btn_show">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -59,65 +63,92 @@
 				<a href="#follow-news" ng-click="is_btn_show=false"><li>CONTACTS</li></a>
 			</ul>
 		</div>
-
-	<div ng-init="current_lang='РУС'">
-		<div class="sel-lang lang-nav" uib-dropdown uib-dropdown-toggle>
-			<div class="icon-bg"></div>
-			<span class="icon-lang"></span>
-			<span ng-bind="current_lang"></span>
-			<div uib-dropdown-menu class="dropdown-menu">
-				<ul>
-					<li ng-click="current_lang='EN'">ENGLISH</li>
-					<li ng-click="current_lang='РУС'">РУССКИЙ</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	</div>
 	</div>
 
 	<div class="container">
 		<div class="sect-top">
-		<div class="row indent-bottom">
-			<div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
-				<p class="font-l-42">Предложение токенов Eloplay<br>для инвестиций в<br>киберспортивную платформу</p>
-				<p>Платформа создана для игроков и организаций,
-которые проводят смарт турниры на технологии блокчейн.
-Токен Eloplay является основной движущей силой экосистемы
-и единицой ценности для её владельцев.</p>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 box-right padd-no">
-				<div class="box-time">
-					<div class="box-time-bg"></div>
-					<a href="#follow-news" class="btn btn-large-color"><span class="icon-button"></span><span>Следить за обновлениями</span></a>
-					<p class="time-title">До старта торгов осталось:</p>
-					<ul>
-						<li><p>31</p><p>день</p></li>
-						<li><p>06</p><p>часов</p></li>
-						<li><p>15</p><p>минут</p></li>
-						<li><p>59</p><p>секунд</p></li>
-					</ul>
+			<div class="row indent-bottom">
+				<div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
+					<p class="font-l-42">Предложение токенов Eloplay<br>для инвестиций в<br>киберспортивную платформу</p>
+					<p>Платформа создана для игроков и организаций, которые проводят смарт турниры на технологии блокчейн. Токен Eloplay является основной движущей силой экосистемы и единицой ценности для её владельцев.</p>
+					<div class="box-button-video">
+						<a href="https://eloplay.com/about" class="btn btn-br-line"><span class="icon-btn-play-video"></span><span>Смотреть видео</span></a>
+					</div>
 				</div>
-			</div>
-			</div>
-			<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-4 box-dark-button">
-				<a href="https://eloplay.com/about" class="btn btn-dark"><span>что такое eloplay</span><span class="icon-btn-play"></span></a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-8">
-				<ul class="in-social-p1">
-					<li><div class="icon-social-6"></div></li>
-					<li><div class="icon-social-5"></div></li>
-					<li><div class="icon-social-4"></div></li>
-					<li><div class="icon-social-3"></div></li>
-					<li><div class="icon-social-2"></div></li>
-					<li><div class="icon-social-1"></div></li>
-				</ul>
-			</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 box-right padd-no">
+					<div class="box-time">
+						<div class="box-time-bg"></div>
+						<a href="#follow-news" class="btn btn-large-color-y"><!-- <span class="icon-button"></span> --><span>подписаться на новости</span></a>
+						<p class="time-title">До старта торгов осталось:</p>
+						<ul>
+							<li><p>31</p><p>день</p></li>
+							<li><p>06</p><p>часов</p></li>
+							<li><p>15</p><p>минут</p></li>
+							<li><p>59</p><p>секунд</p></li>
+						</ul>
+					</div>
+					<div class="box-in-social-p1">
+						<ul class="in-social-p1">
+							<li><div class="icon-social-1"></div></li>
+							<li><div class="icon-social-2"></div></li>
+							<li><div class="icon-social-3"></div></li>
+							<li><div class="icon-social-4"></div></li>
+							<li><div class="icon-social-5"></div></li>
+							<li><div class="icon-social-6"></div></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class="bg-sect-2">
+	<div class="container">
+		<p class="font-l-31 title-sect-2">Токен Eloplay (ELT)<br>позволяет своим держателям</p>
+		<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
+		<div class="sb-box-token">
+				<p class="title-col">Организовывать<br>турниры</p>
+				<div class="img-col1-token"></div>
+				<p>Токены являются наградой в киберспортивных смарт турнирах</p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
+		<div class="sb-box-token">
+				<p class="title-col">Размещать<br>рекламу</p>
+				<div class="img-col2-token"></div>
+				<p>Бренды могут предлагать свои товары и услуги киберспортивной аудитории</p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
+		<div class="sb-box-token">
+				<p class="title-col">Продавать токены<br>по более выгодной цене</p>
+				<div class="img-col3-token"></div>
+				<p>Токен будет размещён на биржах, где он может быть продан по более выгодной цене</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bg-sect-3">
+	<p class="font-l-42 title-sect-2">Перспективы проекта<br>и востребованность токена</p>
+	<div class="container">
+		<div class="col-xs-12 col-sm-12 col-md-6 perspective-pr">
+			<ul>
+				<li><p>Эксклюзивность права собственности</p><p>Токены будут выпущены в лимитированном количестве, что обусловит конкуренцию за права его использования</p></li>
+				<li><p>Выход на новые рынки</p><p>Проект работает в СНГ. Приток инвестиций обеспечит вывод проекта на мировой уровень</p></li>
+				<li><p>Добавление новых игр</p><p>Каждая новая игра на платформе расширяет аудиторию на десятки миллионов игроков</p></li>
+				<li><p>Привлечение рекламодателей</p><p>Рост количества брендов, которые заинтересованы в размещении рекламы в киберспорте</p></li>
+			</ul>
+		</div>		
+		<div class="col-xs-12 col-sm-12 col-md-6 col-medal">
+			<div class="img-medal"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="evro-ico-block"><span class="icon-evro"></span><p>Эмитент ICO токенов: Компания Qoors OU, учреждена в Эстонии</p></div>
+	</div>
+</div>
 
 	<div class="bg-white-center">
 		<div class="container">

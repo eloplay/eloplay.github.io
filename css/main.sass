@@ -664,6 +664,27 @@ p
 		box-shadow: 1px 5px 30px rgba(0,0,0,0.8)
 	span
 		vertical-align: middle
+.btn-large-color-y
+	text-transform: uppercase
+	padding: 2.4rem 7rem
+	font-size: 1.6rem
+	color: #fff
+	transition: all 0.2s
+	background : -moz-linear-gradient(20.28% -94.49% -45deg,rgba(242, 146, 34, 1) 0%,rgba(242, 101, 34, 1) 100%)
+	background : -webkit-linear-gradient(-45deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+	background : -webkit-gradient(linear,20.28% -94.49% ,79.72% 194.49% ,color-stop(0,rgba(242, 146, 34, 1) ),color-stop(1,rgba(242, 101, 34, 1) ))
+	background : -o-linear-gradient(-45deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+	background : -ms-linear-gradient(-45deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+	background : linear-gradient(135deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+	border: none
+	box-shadow: 1px 5px 30px rgba(0,0,0,0.4)
+	&:hover, &:focus
+		color: #fff
+	&:hover
+		transform: scale(1.05)
+		box-shadow: 1px 5px 30px rgba(0,0,0,0.8)
+	span
+		vertical-align: middle
 .btn-dark
 	color: rgba(255, 255, 255, 0.5)
 	padding: 1.4rem 2.7rem
@@ -676,6 +697,26 @@ p
 		transform: scale(1.05)
 	span
 		vertical-align: middle
+.btn-br-line
+	color: rgba(255, 255, 255, 0.5)
+	padding: 1.1rem 4.5rem
+	background-color: transparent
+	font-size: 1.8rem
+	transition: all 0.2s
+	border: 1px solid #f27022
+	&:hover
+		color: rgba(255,255,255,0.5)
+		transform: scale(1.05)
+	span
+		vertical-align: middle
+.icon-btn-play-video
+	background: url(../img/icon-btn-play-video.svg)
+	background-size: contain
+	width: 33px
+	height: 33px
+	display: inline-block
+	vertical-align: middle
+	margin-right: 30px	
 .btn-go-game
 	padding: 1rem 3.7rem
 	font-size: 16px
@@ -937,7 +978,8 @@ p
 				opacity : 0.4
 				z-index: -1
 				border-radius: 6px
-			.btn-large-color
+			.btn-large-color,
+			.btn-large-color-y
 				position: absolute
 				left: 50%
 				transform: translateX(-50%)
@@ -1032,7 +1074,74 @@ p
 				width: 36px
 				height: 31px
 				display: inline-block
+.box-button-video
+	display: block
+	margin-top: 34px
+	width: 100%
+	margin: 42px auto 50px
+	text-align: left
+.bg-sect-1
+	background: url(../img/bg-sec-0-pg2.png) no-repeat
+	background-size: cover
+	width: 100%
+	min-height: 695px
+.bg-sect-2
+	background: url(../img/bg-sec-1-pg2.png) no-repeat
+	background-size: cover
+	width: 100%
+	min-height: 795px
+	padding-top: 106px
+	text-align: center
+.bg-sect-3
+	background: url(../img/bg-sec-2-pg2.png) no-repeat
+	background-size: cover
+	width: 100%
+	min-height: 1974px
+	padding-top: 106px
+	text-align: center
 
+.font-l-31
+	font-size: 3.1rem
+	color: #fff
+	font-family: "DINpro-light", sans-serif
+	line-height: 120%
+.title-sect-2
+	text-align: center
+.img-col1-token
+	background: url(../img/icon-tournaments.svg) no-repeat
+	background-size: contain
+	width: 139px
+	height: 139px
+	display: block
+	margin: 46px auto 57px
+.img-col2-token
+	background: url(../img/icon-reclam.svg) no-repeat
+	background-size: contain
+	width: 113px
+	height: 113px
+	display: block
+	margin: 62px auto 69px
+.img-col3-token
+	background: url(../img/icon-tokens.svg) no-repeat
+	background-size: contain
+	width: 121px
+	height: 121px
+	display: block
+	margin: 58px auto 64px
+.title-col
+	font-family: "DINpro-light", sans-serif
+	font-size: 2.6rem
+	display: inline-block
+.box-col-token
+	margin-top: 87px
+	p
+		&:nth-child(3)
+			font-family: "DINpro-light", sans-serif
+			font-size: 1.8rem
+			line-height: 120%
+.sb-box-token
+	width: 317px
+	margin: 0 auto
 	
 .full-bg
 	background: url(../img/bg-full-p1.jpg) center no-repeat
@@ -1448,6 +1557,35 @@ p
 				transition: opacity .2s ease-out
 				opacity: 1
 
+.box-in-social-p1
+	margin-top: 62px
+	display: inline-block
+	width: 88%
+	float: right
+	.in-social-p1 
+		li
+			width: 15%
+			text-align: center
+			min-width: 60px
+			.icon-social-1
+				width: 23px
+				height: 23px
+			.icon-social-2
+				width: 22px
+				height: 22px
+			.icon-social-3
+				width: 22px
+				height: 25px
+			.icon-social-4
+				width: 24px
+				height: 20px
+			.icon-social-5
+				width: 23px
+				height: 23px
+			.icon-social-6
+				width: 27px
+				height: 23px
+
 
 
 // end page 1
@@ -1665,7 +1803,74 @@ a
 .full-bg-p2
 	.box-time
 		float: right
-
+	.sect-top
+		margin-bottom: 59px
+		.indent-bottom
+			margin-bottom: 59px
+.img-medal
+	background: url(../img/img-medal.png) no-repeat
+	background-size: contain
+	width: 456px
+	height: 585px
+	float: right
+.perspective-pr,
+.col-medal
+	text-align: left
+	margin-top: 79px
+	ul
+		padding-left: 81px
+		li
+			padding: 25px 0px
+			display: block
+			position: relative
+			p
+				&:nth-child(1)
+					color: #ff8d00
+					font-family: "DINpro-light", sans-serif
+					font-size: 2.6rem
+				&:nth-child(2)
+					color: #fff
+					font-family: "DINpro-light", sans-serif
+					font-size: 1.8rem
+					line-height: 124%
+			&:before
+				content: ''
+				position: absolute
+				top: 41px
+				width: 65px
+				height: 1px
+				background : -moz-linear-gradient(20.28% -94.49% -45deg,rgba(242, 146, 34, 1) 0%,rgba(242, 101, 34, 1) 100%)
+				background : -webkit-linear-gradient(-45deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+				background : -webkit-gradient(linear,20.28% -94.49% ,79.72% 194.49% ,color-stop(0,rgba(242, 146, 34, 1) ),color-stop(1,rgba(242, 101, 34, 1) ))
+				background : -o-linear-gradient(-45deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+				background : -ms-linear-gradient(-45deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+				background : linear-gradient(135deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+				left: -90px
+.evro-ico-block
+	width: 83%
+	padding: 10px
+	background-color: #3f0023
+	margin: 0 auto
+	text-align: left
+	border-radius: 6px
+	position: relative
+	min-height: 80px
+	p
+		font-family: "DINpro-light", sans-serif
+		font-size: 1.8rem
+		margin-left: 175px
+		vertical-align: middle
+		margin-top: 20px
+		line-height: 17px
+.icon-evro
+	background: url(../img/icon-evro.svg) no-repeat
+	background-size: contain
+	width: 95px
+	height: 65px
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: 45px
 
 
 
@@ -1693,6 +1898,15 @@ a
 	.full-bg-p2
 		.box-time
 			float: none
+		.sel-lang.lang-nav
+			right: 76px
+	.box-in-social-p1
+		float: none
+		margin: 62px auto 0
+		width: 76%
+		display: block
+	.box-button-video
+		text-align: center
 @media (max-width: 768px)
 	.hide-768
 		display: none!important
@@ -1909,6 +2123,8 @@ a
 		margin-top: 40px
 	.container.command
 		margin-top: -104px
+	.box-in-social-p1
+		width: 100%
 
 @media (max-width: 470px)
 	.bg-heder .box-title h1
@@ -1952,7 +2168,11 @@ a
 		display: none
 	.distribution-token:after
 		width: 303px
-
+	.btn-large-color-y
+		padding: 2rem 3.2rem
+	.sb-box-token
+		width: 260px
+	
 @media (max-width: 360px)
 	html
 		font-size: 9px
