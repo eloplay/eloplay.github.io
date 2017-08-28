@@ -1123,7 +1123,16 @@ p {
   padding-top: 106px;
   text-align: center; }
   .bg-sect-3 .add-padd {
-    padding-top: 146px; }
+    padding-top: 146px;
+    padding-bottom: 100px; }
+
+.img-monitor {
+  background: url(../img/img-monitor.png) no-repeat;
+  background-size: contain;
+  width: 982px;
+  height: 583px;
+  margin: 0 auto;
+  display: block; }
 
 .font-l-31 {
   font-size: 3.1rem;
