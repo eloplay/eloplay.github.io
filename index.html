@@ -152,7 +152,34 @@
 	</div>
 	<p class="font-l-31 title-sect-2">Eloplay - это работающая платформа<br>готовая к выходу на мировой уровень</p>
 	<div class="container">
-	<div class="img-monitor"><img class="img-responsive" src="./img/img-monitor.png" alt=""></div>
+		<div class="img-monitor"><img class="img-responsive" src="./img/img-monitor.png" alt=""></div>
+		<a href="https://eloplay.com/" class="btn btn-br-line sect-3"><span>Играть на Eloplay</span></a>
+	</div>
+</div>
+
+<div class="bg-sect-4">
+	<p class="font-l-31 title-sect-2">Рынок и проблематика<br>киберспорта</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 box-cont-left">
+				<ul>
+					<li><p>Рынок киберспорта стремительно растёт</p><p>Аудитория киберспорта — это 385.5 миллионов человек, которые тратят на киберспорт 230 миллионов долларов в год. О киберспорте знают 1.3 миллиарда и скоро он станет Олимпийским видом спорта.</p></li>
+					<li><p>Централизация турниров</p><p>Общий призовой фонд крупных мировых турниров достиг $93,3 миллиона в 2016 году. Их финансируют мировые бренды.<br><br></p></li>
+					<li><p>Крупные турниры для про игроков</p><p>Лишь небольшая группа элитных игроков и команд может соревноваться за эти призовые фонды.<br><br><br></p></li>
+					<li><p>Смарт турниры</p><p>Турниры на техлнологии блокчейн позволят игрокам и организациям самостоятельно собирать крупные призовые фонды на Eloplay.</p></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 box-img-right">
+				<center>
+					<div class="box-img-anime">
+						<div  class="img-market-top"><p>Профессиональные<br>киберспортсмены</p></div>
+						<p class="img-market-center-txt">385.5<br>миллионов</p>
+						<img class="img-market" src="./img/img-market.png" alt="">
+						<p class="img-market-bottom-txt">Аудитория<br>киберспорта</p>
+					</div>
+				</center>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -421,41 +448,40 @@
 
 </body>
 <script>
-angular.module('app', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+	angular.module('app', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 
-$(function() {
-	$('.in-media').slick({
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		dots: true,
-		appendArrows: $('.sl-class-arrow'),
-		appendDots: $('.sl-class-dots'),
-		prevArrow: '<i class="icon-arrow-left"></i>',
-		nextArrow: '<i class="icon-arrow-right"></i>',
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2
+	$(function() {
+		$('.in-media').slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			dots: true,
+			appendArrows: $('.sl-class-arrow'),
+			appendDots: $('.sl-class-dots'),
+			prevArrow: '<i class="icon-arrow-left"></i>',
+			nextArrow: '<i class="icon-arrow-right"></i>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 500,
+					settings: {
+						slidesToShow: 1
+					}
 				}
-			}, {
-				breakpoint: 500,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
+			]
+		});
+
+		$('a#ex1').on("click", function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 800);
+		});
+
 	});
-
-	$('a#ex1').on("click", function (event) {
-		event.preventDefault();
-		var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 800);
-	});
-
-});
-
 </script>
 </html>
