@@ -25,216 +25,215 @@
 </head>
 
 <body ng-app="app">
-<div class="full-bg-p2">
+	<div class="full-bg-p2">
 
-<div class="bg-sect-1">
-	<div class="top-bar">
+		<div class="bg-sect-1">
+			<div class="top-bar">
+				<div class="container">
+					<div class="box-logo">
+						<a href="https://eloplay.com/"><div class="logo-eloplay"></div></a>
+					</div>
+
+					<div ng-init="current_lang='РУС'">
+						<div class="sel-lang lang-nav" uib-dropdown uib-dropdown-toggle>
+							<div class="icon-bg"></div>
+							<span class="icon-lang"></span>
+							<span ng-bind="current_lang"></span>
+							<div uib-dropdown-menu class="dropdown-menu">
+								<ul>
+									<li ng-click="current_lang='EN'">ENGLISH</li>
+									<li ng-click="current_lang='РУС'">РУССКИЙ</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="btn-nav" ng-init="is_btn_show=false" ng-click="is_btn_show=!is_btn_show">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="btn-nav-menu" ng-class="{'d-menu-show': is_btn_show}" ng-cloak>
+					<ul>
+						<a id="ex1" href="#pay-token" ng-click="is_btn_show=false"><li>TOKEN SALE</li></a>
+						<a href="docs/roadmap.pdf" ng-click="is_btn_show=false"><li>ROADMAP</li></a>
+						<a href="docs/white_paper.pdf" ng-click="is_btn_show=false"><li>WHITE PAPER</li></a>
+						<a href="docs/sec_howey_test.pdf" ng-click="is_btn_show=false"><li>SEC HOWEY TEST</li></a>
+						<a href="https://github.com/eloplay" ng-click="is_btn_show=false"><li>GITHUB</li></a>
+						<a href="#follow-news" ng-click="is_btn_show=false"><li>CONTACTS</li></a>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="sect-top">
+					<div class="row indent-bottom">
+						<div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
+							<p class="font-l-42">Предложение токенов Eloplay<br>для инвестиций в<br>киберспортивную платформу</p>
+							<p>Платформа создана для игроков и организаций, которые проводят смарт турниры на технологии блокчейн. Токен Eloplay является основной движущей силой экосистемы и единицой ценности для её владельцев.</p>
+							<div class="box-button-video">
+								<a href="https://eloplay.com/about" class="btn btn-br-line"><span class="icon-btn-play-video"></span><span>Смотреть видео</span></a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 box-right padd-no">
+							<div class="box-time">
+								<div class="box-time-bg"></div>
+								<a href="#follow-news" class="btn btn-large-color-y"><!-- <span class="icon-button"></span> --><span>подписаться на новости</span></a>
+								<p class="time-title">До старта торгов осталось:</p>
+								<ul>
+									<li><p>31</p><p>день</p></li>
+									<li><p>06</p><p>часов</p></li>
+									<li><p>15</p><p>минут</p></li>
+									<li><p>59</p><p>секунд</p></li>
+								</ul>
+							</div>
+							<div class="box-in-social-p1">
+								<ul class="in-social-p1">
+									<li><div class="icon-social-1"></div></li>
+									<li><div class="icon-social-2"></div></li>
+									<li><div class="icon-social-3"></div></li>
+									<li><div class="icon-social-4"></div></li>
+									<li><div class="icon-social-5"></div></li>
+									<li><div class="icon-social-6"></div></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-sect-2">
+			<div class="container">
+				<p class="font-l-31 title-sect-2">Токен Eloplay (ELT)<br>позволяет своим держателям</p>
+				<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
+				<div class="sb-box-token">
+						<p class="title-col">Организовывать<br>турниры</p>
+						<div class="img-col1-token"></div>
+						<p>Токены являются наградой в киберспортивных смарт турнирах</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
+				<div class="sb-box-token">
+						<p class="title-col">Размещать<br>рекламу</p>
+						<div class="img-col2-token"></div>
+						<p>Бренды могут предлагать свои товары и услуги киберспортивной аудитории</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
+				<div class="sb-box-token">
+						<p class="title-col">Продавать токены<br>по более выгодной цене</p>
+						<div class="img-col3-token"></div>
+						<p>Токен будет размещён на биржах, где он может быть продан по более выгодной цене</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-sect-3">
+			<p class="font-l-42 title-sect-2">Перспективы проекта<br>и востребованность токена</p>
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-6 perspective-pr">
+					<ul>
+						<li><p>Эксклюзивность права собственности</p><p>Токены будут выпущены в лимитированном количестве, что обусловит конкуренцию за права его использования</p></li>
+						<li><p>Выход на новые рынки</p><p>Проект работает в СНГ. Приток инвестиций обеспечит вывод проекта на мировой уровень</p></li>
+						<li><p>Добавление новых игр</p><p>Каждая новая игра на платформе расширяет аудиторию на десятки миллионов игроков</p></li>
+						<li><p>Привлечение рекламодателей</p><p>Рост количества брендов, которые заинтересованы в размещении рекламы в киберспорте</p></li>
+					</ul>
+				</div>		
+				<div class="col-xs-12 col-sm-12 col-md-6 col-medal">
+				<center>
+					<div class="img-medal"><img src="./img/img-medal.png" alt=""></div>
+				</center>
+				</div>
+			</div>
+			<div class="container add-padd">
+				<center>
+					<div class="evro-ico-block"><span class="icon-evro"></span><p>Эмитент ICO токенов: Компания Qoors OU, учреждена в Эстонии</p></div>
+				</center>
+			</div>
+			<p class="font-l-31 title-sect-2">Eloplay - это работающая платформа<br>готовая к выходу на мировой уровень</p>
+			<div class="container">
+				<div class="img-monitor"><img class="img-responsive" src="./img/img-monitor.png" alt=""></div>
+				<a href="https://eloplay.com/" class="btn btn-br-line sect-3"><span>Играть на Eloplay</span></a>
+			</div>
+		</div>
+
+		<div class="bg-sect-4">
+			<p class="font-l-31 title-sect-2">Рынок и проблематика<br>киберспорта</p>
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-6 box-cont-left">
+					<ul>
+						<li><p>Рынок киберспорта стремительно растёт</p><p>Аудитория киберспорта — это 385.5 миллионов человек, которые тратят на киберспорт 230 миллионов долларов в год. О киберспорте знают 1.3 миллиарда и скоро он станет Олимпийским видом спорта.</p></li>
+						<li><p>Централизация турниров</p><p>Общий призовой фонд крупных мировых турниров достиг $93,3 миллиона в 2016 году. Их финансируют мировые бренды.<br><br></p></li>
+						<li><p>Крупные турниры для про игроков</p><p>Лишь небольшая группа элитных игроков и команд может соревноваться за эти призовые фонды.<br><br><br></p></li>
+						<li><p>Смарт турниры</p><p>Турниры на техлнологии блокчейн позволят игрокам и организациям самостоятельно собирать крупные призовые фонды на Eloplay.</p></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 box-img-right">
+					<center>
+						<div class="box-img-anime">
+							<div  class="img-market-top"><p>Профессиональные<br>киберспортсмены</p></div>
+							<p class="img-market-center-txt">385.5<br>миллионов</p>
+							<img class="img-market" src="./img/img-market.png" alt="">
+							<p class="img-market-bottom-txt">Аудитория<br>киберспорта</p>
+						</div>
+					</center>
+				</div>
+			</div>
+		</div>
+
 		<div class="container">
-			<div class="box-logo">
-				<a href="https://eloplay.com/"><div class="logo-eloplay"></div></a>
+			<div class="banner-link"><img src="./img/icon-star-kiber.svg" alt="">
+				<div>
+					<p>Киберспорт - это лучшая инвестиционная возможность десятилетия.</p>
+					<a href="">Статья Джоша Чепмена</a>
+				</div>
 			</div>
+		</div>
 
-			<div ng-init="current_lang='РУС'">
-				<div class="sel-lang lang-nav" uib-dropdown uib-dropdown-toggle>
-					<div class="icon-bg"></div>
-					<span class="icon-lang"></span>
-					<span ng-bind="current_lang"></span>
-					<div uib-dropdown-menu class="dropdown-menu">
-						<ul>
-							<li ng-click="current_lang='EN'">ENGLISH</li>
-							<li ng-click="current_lang='РУС'">РУССКИЙ</li>
-						</ul>
+		<div class="bg-white-center">
+			<div class="container">
+				<p id="pay-token" class="font-l-48 title-pay-token">Продажа Элоплей Токенов</p>
+				<div class="box-time-token">
+					<div class="start-pay-token">
+						<p>Начало: <span>17.08.2017</span></p>
+						<p>(12:00 PM NYC Time, UTC-4)</p>
+					</div>
+					<div class="end-pay-token">
+						<p>Конц: <span>21.08.2017</span></p>
+						<p>(12:00 PM NYC Time, UTC-4)</p>
 					</div>
 				</div>
-			</div>
-		</div>
-		<button type="button" class="btn-nav" ng-init="is_btn_show=false" ng-click="is_btn_show=!is_btn_show">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<div class="btn-nav-menu" ng-class="{'d-menu-show': is_btn_show}" ng-cloak>
-			<ul>
-				<a id="ex1" href="#pay-token" ng-click="is_btn_show=false"><li>TOKEN SALE</li></a>
-				<a href="docs/roadmap.pdf" ng-click="is_btn_show=false"><li>ROADMAP</li></a>
-				<a href="docs/white_paper.pdf" ng-click="is_btn_show=false"><li>WHITE PAPER</li></a>
-				<a href="docs/sec_howey_test.pdf" ng-click="is_btn_show=false"><li>SEC HOWEY TEST</li></a>
-				<a href="https://github.com/eloplay" ng-click="is_btn_show=false"><li>GITHUB</li></a>
-				<a href="#follow-news" ng-click="is_btn_show=false"><li>CONTACTS</li></a>
-			</ul>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="sect-top">
-			<div class="row indent-bottom">
-				<div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
-					<p class="font-l-42">Предложение токенов Eloplay<br>для инвестиций в<br>киберспортивную платформу</p>
-					<p>Платформа создана для игроков и организаций, которые проводят смарт турниры на технологии блокчейн. Токен Eloplay является основной движущей силой экосистемы и единицой ценности для её владельцев.</p>
-					<div class="box-button-video">
-						<a href="https://eloplay.com/about" class="btn btn-br-line"><span class="icon-btn-play-video"></span><span>Смотреть видео</span></a>
+				<div class="line-time-token"></div>
+				<div class="box-sub-line-time">
+					<p>Торги начнутся через <span>31</span> день</p>
+				</div>
+				<div class="box-bonus">
+					<p class="title-bonus">Бонусы:</p>
+					<div class="col-xs-12 col-sm-6 col-md-3 item-bonus">
+						<div class="box-20"><p>20%</p><p>бонусов</p></div>
+						<div class="shadow"></div>
+						<p>1-й час</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 item-bonus">
+						<div class="box-15"><p>15%</p><p>бонусов</p></div>
+						<div class="shadow"></div>
+						<p>1-й день</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 item-bonus">
+						<div class="box-10"><p>10%</p><p>бонусов</p></div>
+						<div class="shadow"></div>
+						<p>1-я неделя</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 item-bonus">
+						<div class="box-5"><p>5%</p><p>бонусов</p></div>
+						<div class="shadow"></div>
+						<p>2-я неделя</p>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 box-right padd-no">
-					<div class="box-time">
-						<div class="box-time-bg"></div>
-						<a href="#follow-news" class="btn btn-large-color-y"><!-- <span class="icon-button"></span> --><span>подписаться на новости</span></a>
-						<p class="time-title">До старта торгов осталось:</p>
-						<ul>
-							<li><p>31</p><p>день</p></li>
-							<li><p>06</p><p>часов</p></li>
-							<li><p>15</p><p>минут</p></li>
-							<li><p>59</p><p>секунд</p></li>
-						</ul>
-					</div>
-					<div class="box-in-social-p1">
-						<ul class="in-social-p1">
-							<li><div class="icon-social-1"></div></li>
-							<li><div class="icon-social-2"></div></li>
-							<li><div class="icon-social-3"></div></li>
-							<li><div class="icon-social-4"></div></li>
-							<li><div class="icon-social-5"></div></li>
-							<li><div class="icon-social-6"></div></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="bg-sect-2">
-	<div class="container">
-		<p class="font-l-31 title-sect-2">Токен Eloplay (ELT)<br>позволяет своим держателям</p>
-		<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
-		<div class="sb-box-token">
-				<p class="title-col">Организовывать<br>турниры</p>
-				<div class="img-col1-token"></div>
-				<p>Токены являются наградой в киберспортивных смарт турнирах</p>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
-		<div class="sb-box-token">
-				<p class="title-col">Размещать<br>рекламу</p>
-				<div class="img-col2-token"></div>
-				<p>Бренды могут предлагать свои товары и услуги киберспортивной аудитории</p>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4 box-col-token">
-		<div class="sb-box-token">
-				<p class="title-col">Продавать токены<br>по более выгодной цене</p>
-				<div class="img-col3-token"></div>
-				<p>Токен будет размещён на биржах, где он может быть продан по более выгодной цене</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="bg-sect-3">
-	<p class="font-l-42 title-sect-2">Перспективы проекта<br>и востребованность токена</p>
-	<div class="container">
-		<div class="col-xs-12 col-sm-12 col-md-6 perspective-pr">
-			<ul>
-				<li><p>Эксклюзивность права собственности</p><p>Токены будут выпущены в лимитированном количестве, что обусловит конкуренцию за права его использования</p></li>
-				<li><p>Выход на новые рынки</p><p>Проект работает в СНГ. Приток инвестиций обеспечит вывод проекта на мировой уровень</p></li>
-				<li><p>Добавление новых игр</p><p>Каждая новая игра на платформе расширяет аудиторию на десятки миллионов игроков</p></li>
-				<li><p>Привлечение рекламодателей</p><p>Рост количества брендов, которые заинтересованы в размещении рекламы в киберспорте</p></li>
-			</ul>
-		</div>		
-		<div class="col-xs-12 col-sm-12 col-md-6 col-medal">
-		<center>
-			<div class="img-medal"><img src="./img/img-medal.png" alt=""></div>
-		</center>
-		</div>
-	</div>
-	<div class="container add-padd">
-		<center>
-			<div class="evro-ico-block"><span class="icon-evro"></span><p>Эмитент ICO токенов: Компания Qoors OU, учреждена в Эстонии</p></div>
-		</center>
-	</div>
-	<p class="font-l-31 title-sect-2">Eloplay - это работающая платформа<br>готовая к выходу на мировой уровень</p>
-	<div class="container">
-		<div class="img-monitor"><img class="img-responsive" src="./img/img-monitor.png" alt=""></div>
-		<a href="https://eloplay.com/" class="btn btn-br-line sect-3"><span>Играть на Eloplay</span></a>
-	</div>
-</div>
-
-<div class="bg-sect-4">
-	<p class="font-l-31 title-sect-2">Рынок и проблематика<br>киберспорта</p>
-	<div class="container">
-		<div class="col-xs-12 col-sm-12 col-md-6 box-cont-left">
-			<ul>
-				<li><p>Рынок киберспорта стремительно растёт</p><p>Аудитория киберспорта — это 385.5 миллионов человек, которые тратят на киберспорт 230 миллионов долларов в год. О киберспорте знают 1.3 миллиарда и скоро он станет Олимпийским видом спорта.</p></li>
-				<li><p>Централизация турниров</p><p>Общий призовой фонд крупных мировых турниров достиг $93,3 миллиона в 2016 году. Их финансируют мировые бренды.<br><br></p></li>
-				<li><p>Крупные турниры для про игроков</p><p>Лишь небольшая группа элитных игроков и команд может соревноваться за эти призовые фонды.<br><br><br></p></li>
-				<li><p>Смарт турниры</p><p>Турниры на техлнологии блокчейн позволят игрокам и организациям самостоятельно собирать крупные призовые фонды на Eloplay.</p></li>
-			</ul>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-6 box-img-right">
-			<center>
-				<div class="box-img-anime">
-					<div  class="img-market-top"><p>Профессиональные<br>киберспортсмены</p></div>
-					<p class="img-market-center-txt">385.5<br>миллионов</p>
-					<img class="img-market" src="./img/img-market.png" alt="">
-					<p class="img-market-bottom-txt">Аудитория<br>киберспорта</p>
-				</div>
-			</center>
-		</div>
-	</div>
-</div>
-
-<div class="container">
-	<div class="banner-link"><img src="./img/icon-star-kiber.svg" alt="">
-		<div>
-			<p>Киберспорт - это лучшая инвестиционная возможность десятилетия.</p>
-			<a href="">Статья Джоша Чепмена</a>
-		</div>
-	</div>
-</div>
-
-
-	<div class="bg-white-center">
-		<div class="container">
-			<p id="pay-token" class="font-l-48 title-pay-token">Продажа Элоплей Токенов</p>
-			<div class="box-time-token">
-				<div class="start-pay-token">
-					<p>Начало: <span>17.08.2017</span></p>
-					<p>(12:00 PM NYC Time, UTC-4)</p>
-				</div>
-				<div class="end-pay-token">
-					<p>Конц: <span>21.08.2017</span></p>
-					<p>(12:00 PM NYC Time, UTC-4)</p>
-				</div>
-			</div>
-			<div class="line-time-token"></div>
-			<div class="box-sub-line-time">
-				<p>Торги начнутся через <span>31</span> день</p>
-			</div>
-			<div class="box-bonus">
-				<p class="title-bonus">Бонусы:</p>
-				<div class="col-xs-12 col-sm-6 col-md-3 item-bonus">
-					<div class="box-20"><p>20%</p><p>бонусов</p></div>
-					<div class="shadow"></div>
-					<p>1-й час</p>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-3 item-bonus">
-					<div class="box-15"><p>15%</p><p>бонусов</p></div>
-					<div class="shadow"></div>
-					<p>1-й день</p>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-3 item-bonus">
-					<div class="box-10"><p>10%</p><p>бонусов</p></div>
-					<div class="shadow"></div>
-					<p>1-я неделя</p>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-3 item-bonus">
-					<div class="box-5"><p>5%</p><p>бонусов</p></div>
-					<div class="shadow"></div>
-					<p>2-я неделя</p>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 text-token">
-				<p><span>Количество доступных токенов (Фаза No1):</span>
+				<div class="col-xs-12 col-sm-12 col-md-6 text-token">
+					<p><span>Количество доступных токенов (Фаза No1):</span>
 					50,000,000 Элоплей токенов<br>
 					<span>Минимальная сумма для запуска проекта:</span>
 					<br>5,000,000 Элоплей токенов<br>
@@ -244,216 +243,235 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 text-token">
 					<p><span>Количество токенов в одни руки:</span> не ограничено
-						<span>Минимальная сумма транзакции:</span> 0.1 ETH
-						<span>Минимальная сумма транзакции в Bitcoin:</span><br>
-						100 Элоплей токенов (обменный курс зависит от
-						колебаний курса BTC)<br>
-						<span>Максимальная сумма транзакции:</span> не ограничена</p>
-					</div>
-					<p class="col-md-12 font-l-48 distribution-token">Распределение Элоплей Токенов</p>
-					<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token">
-						<div class="distribution-80"><p>80%</p><p class="txt-caps">token sale</p></div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token">
-						<div class="distribution-10"><p>10%</p><p class="txt-caps">founder</p></div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token">
-						<div class="distribution-5"><p>5%</p><p class="txt-caps">advisory<br>board</p></div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token">
-						<div class="distribution-5"><p>5%</p><p class="txt-caps">bounty<br>program</p>
-							<p class="txt-info txt-caps">info+<br>tournaments</p>
-						</div>
-
+					<span>Минимальная сумма транзакции:</span> 0.1 ETH
+					<span>Минимальная сумма транзакции в Bitcoin:</span><br>
+					100 Элоплей токенов (обменный курс зависит от
+					колебаний курса BTC)<br>
+					<span>Максимальная сумма транзакции:</span> не ограничена</p>
+				</div>
+				<p class="col-md-12 font-l-48 distribution-token">Распределение Элоплей Токенов</p>
+				<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token">
+					<div class="distribution-80"><p>80%</p><p class="txt-caps">token sale</p></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token">
+					<div class="distribution-10"><p>10%</p><p class="txt-caps">founder</p></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token">
+					<div class="distribution-5"><p>5%</p><p class="txt-caps">advisory<br>board</p></div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token">
+					<div class="distribution-5"><p>5%</p><p class="txt-caps">bounty<br>program</p>
+						<p class="txt-info txt-caps">info+<br>tournaments</p>
 					</div>
 				</div>
 			</div>
+			<a class="btn btn-large-color-y" href="">Eloplay Roadmap</a>
+		</div>
 
-			<div class="container command">
-				<p class="font-l-48 title-command">Команда Элоплей</p>
-				<div class="box-item-command">
-					<div class="item-command">
-						<div class="command-photo">
-							<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							<img class="img-responsive" src="img/img-command-1.jpg" alt="">
-						</div>
-						<div class="box-text-info no-line">
-						<p>Станиславский Константин Сергеевич</p>
-						<p>Русский театральный режиссёр, актёр и педагог, реформатор театра</p>
-						</div>
-					</div>
-					<div class="item-command">
-						<div class="command-photo">
-							<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							<img class="img-responsive" src="img/img-command-2.jpg" alt="">
-						</div>
-						<div class="box-text-info no-line">
-						<p>Андре Антуан<br><br></p>
-						<p>Французский режиссёр театра и кино, теоретик театра</p>
+		<div class="container command">
+			<p class="font-l-48 title-command">Команда Элоплей</p>
+
+			<div class="box-item-command">
+				<div class="slick-command">
+					<div>
+						<div class="item-command">
+							<div class="command-photo">
+								<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+								<img class="img-responsive" src="img/photo-vital.jpg" alt="">
+							</div>
+							<div class="box-text-info no-line">
+								<p>Виталий Балахонов</p>
+								<p>СЕО<br>Русский театральный режиссёр, актёр и педагог, реформатор театра</p>
+							</div>
 						</div>
 					</div>
-					<div class="item-command">
-						<div class="command-photo">
-							<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							<img class="img-responsive" src="img/img-command-3.jpg" alt="">
-						</div>
-						<div class="box-text-info no-line">
-						<p>Герхарт Иоганн Роберт Гауптман</p>
-						<p>Лауреат Нобелевской премии по литературе за 1912 год</p>
-						</div>
-					</div>
-					<div class="item-command">
-						<div class="command-photo">
-							<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							<img class="img-responsive" src="img/img-command-4.jpg" alt="">
-						</div>
-						<div class="box-text-info no-line">
-						<p>Граф Лев Николаевич Толстой</p>
-						<p>Один из наиболее известных русских писателей и мыслителей</p>
+					<div>
+						<div class="item-command">
+							<div class="command-photo">
+								<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+								<img class="img-responsive" src="img/photo-yura.jpg" alt="">
+							</div>
+							<div class="box-text-info no-line">
+								<p>Юрий Высоцкий</p>
+								<p>СТО<br>Французский режиссёр театра и кино, теоретик театра</p>
+							</div>
 						</div>
 					</div>
+					<div>
+						<div class="item-command">
+							<div class="command-photo">
+								<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+								<img class="img-responsive" src="img/photo-dima.jpg" alt="">
+							</div>
+							<div class="box-text-info no-line">
+								<p>Дмитрий Сальников</p>
+								<p>CIO<br>Лауреат Нобелевской премии по литературе за 1912 год</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+							<div class="command-photo">
+								<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+								<img class="img-responsive" src="img/photo-andrey.jpg" alt="">
+							</div>
+							<div class="box-text-info no-line">
+								<p>Андрей Верессов</p>
+								<p>Legal Advisor<br>Один из наиболее известных русских писателей и мыслителей</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="command-control-container">
+					<!-- <div class="command-class-dots"></div> -->
+					<div class="command-class-arrow"></div>
 				</div>
 			</div>
 
-			<div class="container history-progect">
-				<p class="font-l-48 title-history">История Элоплей</p>
-				<div class="box-item-hist">
-					<div class="item-hist">
-						<div class="icon-hist-1"></div>
-						<p>1,5</p>
-						<p>Платформе ELOPLAY<br>уже 1,5 года</p>
-						<div class="bg-grad"></div>
-					</div>
-					<div class="item-hist">
-						<div class="icon-hist-2"></div>
-						<p>90 000</p>
-						<p>Зарегистрированных<br>игроков</p>
-						<div class="bg-grad"></div>
-					</div>
-					<div class="item-hist">
-						<div class="icon-hist-3"></div>
-						<p>80 000</p>
-						<p>Проведённых<br>боёв</p>
-						<div class="bg-grad"></div>
-					</div>
-					<div class="item-hist">
-						<div class="icon-hist-4"></div>
-						<p>3 500</p>
-						<p>Проведённых<br>турниров</p>
-						<div class="bg-grad"></div>
-					</div>
+
+		</div>
+
+		<div class="container history-progect">
+			<p class="font-l-48 title-history">История Элоплей</p>
+			<div class="box-item-hist">
+				<div class="item-hist">
+					<div class="icon-hist-1"></div>
+					<p>1,5</p>
+					<p>Платформе ELOPLAY<br>уже 1,5 года</p>
+					<div class="bg-grad"></div>
+				</div>
+				<div class="item-hist">
+					<div class="icon-hist-2"></div>
+					<p>90 000</p>
+					<p>Зарегистрированных<br>игроков</p>
+					<div class="bg-grad"></div>
+				</div>
+				<div class="item-hist">
+					<div class="icon-hist-3"></div>
+					<p>80 000</p>
+					<p>Проведённых<br>боёв</p>
+					<div class="bg-grad"></div>
+				</div>
+				<div class="item-hist">
+					<div class="icon-hist-4"></div>
+					<p>3 500</p>
+					<p>Проведённых<br>турниров</p>
+					<div class="bg-grad"></div>
 				</div>
 			</div>
+		</div>
 
-			<div class="bg-go-game">
-				<div class="container">
-					<div class="box-go-game">
-						<p class="font-l-48 color-or">Можно пойти и поиграть на платформе</p>
-						<div class="mobil-img"><img class="img-responsive" src="img/img-tv_.png" alt=""></div>
-						<p>ELOPLAY - это готовый продукт которым уже<br>успешно пользуются десятки тысяч<br>киберспортсменов. Присоединяйтесь!</p>						
-						<a href="https://eloplay.com/" class="btn btn-go-game">Играть!</a>
-					</div>
+		<div class="bg-go-game">
+			<div class="container">
+				<div class="box-go-game">
+					<p class="font-l-48 color-or">Можно пойти и поиграть на платформе</p>
+					<div class="mobil-img"><img class="img-responsive" src="img/img-tv_.png" alt=""></div>
+					<p>ELOPLAY - это готовый продукт которым уже<br>успешно пользуются десятки тысяч<br>киберспортсменов. Присоединяйтесь!</p>						
+					<a href="https://eloplay.com/" class="btn btn-go-game">Играть!</a>
 				</div>
 			</div>
+		</div>
 
-			
-			<div class="bg-in-media" ng-cloak>
-				<div class="container">
-					<p class="font-l-48 title-pay-token">Элоплей в медиа</p>
+				
+		<div class="bg-in-media" ng-cloak>
+					<div class="container">
+						<p class="font-l-48 title-pay-token">Элоплей в медиа</p>
 
-					<!-- карусель Элоплей в медиа -->
-					<div class="in-media">
+						<!-- карусель Элоплей в медиа -->
+						<div class="in-media">
 
-						<a href="https://eloplay.com/" class="item-in-media">
-							<div class="header"><p>Forbes.com</p></div>
-							<div class="in-media-content">
-								<p class="data">08/08/2017</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
-								<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+							<a href="https://eloplay.com/" class="item-in-media">
+								<div class="header"><p>Forbes.com</p></div>
+								<div class="in-media-content">
+									<p class="data">08/08/2017</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
+									<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+								</div>
+							</a>
+
+							<a href="https://eloplay.com/" class="item-in-media">
+								<div class="header"><p>Forbes.com</p></div>
+								<div class="in-media-content">
+									<p class="data">08/08/2017</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
+									<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+								</div>
+							</a>
+
+							<a href="https://eloplay.com/" class="item-in-media">
+								<div class="header"><p>Forbes.com</p></div>
+								<div class="in-media-content">
+									<p class="data">08/08/2017</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
+									<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+								</div>
+							</a>
+
+							<a href="https://eloplay.com/" class="item-in-media">
+								<div class="header"><p>Forbes.com</p></div>
+								<div class="in-media-content">
+									<p class="data">08/08/2017</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
+									<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
+								</div>
+							</a>
+
+						</div>
+						<center>
+							<div class="sl-control-container">
+								<div class="sl-class-dots"></div>
+								<div class="sl-class-arrow"></div>
 							</div>
-						</a>
-
-						<a href="https://eloplay.com/" class="item-in-media">
-							<div class="header"><p>Forbes.com</p></div>
-							<div class="in-media-content">
-								<p class="data">08/08/2017</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
-								<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
-							</div>
-						</a>
-
-						<a href="https://eloplay.com/" class="item-in-media">
-							<div class="header"><p>Forbes.com</p></div>
-							<div class="in-media-content">
-								<p class="data">08/08/2017</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
-								<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
-							</div>
-						</a>
-
-						<a href="https://eloplay.com/" class="item-in-media">
-							<div class="header"><p>Forbes.com</p></div>
-							<div class="in-media-content">
-								<p class="data">08/08/2017</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p>
-								<div class="read">Читать статью<i class="icon-arrow-right"></i></div>
-							</div>
-						</a>
+						</center>
+						<!-- END карусель Элоплей в медиа -->
 
 					</div>
+		</div>
+
+		<div id="follow-news" class="follow-news">
+					<h2 class="box-margin">Следите за новостями!</h2>
+					<div class="box-input-mail box-bottom">
+						<form class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8">
+							<div class="bord-bot">
+								<input type="email" name="email" class="form-control st-placeh" placeholder="E-mail address" id="send-mail" required>
+							</div>
+							<input type="hidden" name="campaign_token" value="nTjtu" />
+							<input type="submit" class="btn btn-go-game" value="Подписаться"></input>
+						</form>
+					</div>
+					<div class="container">
+						<ul class="in-social-networks">
+							<li><p>Мы в соцсетях</p></li>
+							<li class="icon-social-1"></li>
+							<li class="icon-social-2"></li>
+							<li class="icon-social-3"></li>
+							<li class="icon-social-4"></li>
+							<li class="icon-social-5"></li>
+							<li class="icon-social-6"></li>
+						</ul>
+
 					<center>
-						<div class="sl-control-container">
-							<div class="sl-class-dots"></div>
-							<div class="sl-class-arrow"></div>
-						</div>
+						<ul class="contacts-bottom">
+							<li>Phone: +372 58 738 066</li>
+							<li class="hide-768">&nbsp;|&nbsp;</li>
+							<li><a href="mailto:info@eloplay.com">Email: info@eloplay.com</a></li>
+							<li class="hide-768">&nbsp;|&nbsp;</li>
+							<li>Post address: Tartu mnt 43 Tallinn 10128 Estonia</li>
+						</ul>
 					</center>
-					<!-- END карусель Элоплей в медиа -->
 
-				</div>
-			</div>			
+					</div>
 
-			<div id="follow-news" class="follow-news">
-				<h2 class="box-margin">Следите за новостями!</h2>
-				<div class="box-input-mail box-bottom">
-					<form class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8">
-						<div class="bord-bot">
-							<input type="email" name="email" class="form-control st-placeh" placeholder="E-mail address" id="send-mail" required>
-						</div>
-						<input type="hidden" name="campaign_token" value="nTjtu" />
-						<input type="submit" class="btn btn-go-game" value="Подписаться"></input>
-					</form>
-				</div>
-				<div class="container">
-					<ul class="in-social-networks">
-						<li><p>Мы в соцсетях</p></li>
-						<li class="icon-social-1"></li>
-						<li class="icon-social-2"></li>
-						<li class="icon-social-3"></li>
-						<li class="icon-social-4"></li>
-						<li class="icon-social-5"></li>
-						<li class="icon-social-6"></li>
-					</ul>
+					<a href="https://eloplay.com/"><div class="bottom-logo-eloplay"></div></a>
+						<!-- <ul class="contacts mob-show">
+							<li>Phone: +372 58 738 066</li>
+							<li class="hide-576">|</li>
+							<li><a href="mailto:info@eloplay.com">Email: info@eloplay.com</a></li>
+							<li>Post address: Tartu mnt 43 Tallinn 10128 Estonia</li>
+						</ul> -->
+		</div>
 
-				<center>
-					<ul class="contacts-bottom">
-						<li>Phone: +372 58 738 066</li>
-						<li class="hide-768">&nbsp;|&nbsp;</li>
-						<li><a href="mailto:info@eloplay.com">Email: info@eloplay.com</a></li>
-						<li class="hide-768">&nbsp;|&nbsp;</li>
-						<li>Post address: Tartu mnt 43 Tallinn 10128 Estonia</li>
-					</ul>
-				</center>
-
-				</div>
-
-				<a href="https://eloplay.com/"><div class="bottom-logo-eloplay"></div></a>
-					<!-- <ul class="contacts mob-show">
-						<li>Phone: +372 58 738 066</li>
-						<li class="hide-576">|</li>
-						<li><a href="mailto:info@eloplay.com">Email: info@eloplay.com</a></li>
-						<li>Post address: Tartu mnt 43 Tallinn 10128 Estonia</li>
-					</ul> -->
-			</div>
 	</div>
 
 </body>
@@ -465,6 +483,8 @@
 			infinite: true,
 			slidesToShow: 3,
 			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
 			dots: true,
 			appendArrows: $('.sl-class-arrow'),
 			appendDots: $('.sl-class-dots'),
@@ -478,6 +498,37 @@
 					}
 				}, {
 					breakpoint: 500,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+
+		$('.slick-command').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			dots: false,
+			appendArrows: $('.command-class-arrow'),
+			//appendDots: $('.command-class-dots'),
+			prevArrow: '<i class="icon-arrow-left"></i>',
+			nextArrow: '<i class="icon-arrow-right"></i>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 650,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 576,
 					settings: {
 						slidesToShow: 1
 					}
