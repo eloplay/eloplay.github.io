@@ -1132,7 +1132,7 @@ p {
   width: 100%;
   min-height: 788px;
   padding-top: 41px;
-  padding-bottom: 100px; }
+  padding-bottom: 53px; }
 
 .img-monitor img {
   margin: 0 auto; }
@@ -1993,6 +1993,33 @@ a[href^=mailto] {
       bottom: -80px;
       left: 50%;
       transform: translateX(-50%); }
+
+.banner-link {
+  display: flex;
+  align-items: center;
+  background-color: #3f0023;
+  max-width: 925px;
+  padding: 20px 15px 20px 40px;
+  border-radius: 7px;
+  margin: 117px 0 117px 57px; }
+  .banner-link img {
+    width: 71px;
+    height: 71px;
+    margin-right: 8%; }
+  .banner-link p {
+    font-family: "DINpro-light", sans-serif;
+    font-size: 1.8rem;
+    line-height: normal;
+    margin: 0; }
+  .banner-link a {
+    font-family: "DINpro-light", sans-serif;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff; }
+    .banner-link a:hover {
+      border-bottom: none; }
 
 @media (max-width: 1200px) {
   .in-social-networks li:nth-child(1) {
