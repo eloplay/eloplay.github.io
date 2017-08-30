@@ -1020,6 +1020,11 @@ p {
       text-align: center;
       font-weight: 300;
       line-height: normal; }
+    .sect-top .box-right .box-time span#days, .sect-top .box-right .box-time span#hours, .sect-top .box-right .box-time span#minutes, .sect-top .box-right .box-time span#seconds {
+      color: #fff;
+      font-size: 8rem;
+      font-family: "DINpro-light", sans-serif;
+      text-shadow: 5px 6px 13px rgba(0, 0, 0, 0.7); }
     .sect-top .box-right .box-time ul {
       padding: 0;
       margin: 0;
@@ -2316,6 +2321,9 @@ a[href^=mailto] {
           top: 41px; }
         .sect-top .indent-bottom .box-right .box-time .time-title {
           margin: 20px auto 0; }
+        .sect-top .indent-bottom .box-right .box-time span#days, .sect-top .indent-bottom .box-right .box-time span#hours, .sect-top .indent-bottom .box-right .box-time span#minutes, .sect-top .indent-bottom .box-right .box-time span#seconds {
+          color: #fff;
+          font-size: 6rem; }
 
   .title-pay-token {
     text-align: center;
@@ -2506,6 +2514,8 @@ a[href^=mailto] {
       font-size: 5rem; }
     .sect-top .indent-bottom .box-right .box-time ul li:not(:last-child):after {
       top: 34px; }
+    .sect-top .indent-bottom .box-right .box-time span#days, .sect-top .indent-bottom .box-right .box-time span#hours, .sect-top .indent-bottom .box-right .box-time span#minutes, .sect-top .indent-bottom .box-right .box-time span#seconds {
+      font-size: 5rem; }
 
   .icon-button {
     display: none; }

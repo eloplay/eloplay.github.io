@@ -82,11 +82,11 @@
 								<div class="box-time-bg"></div>
 								<a href="#follow-news" class="btn btn-large-color-y"><!-- <span class="icon-button"></span> --><span>подписаться на новости</span></a>
 								<p class="time-title">До старта торгов осталось:</p>
-								<ul>
-									<li><p>31</p><p>день</p></li>
-									<li><p>06</p><p>часов</p></li>
-									<li><p>15</p><p>минут</p></li>
-									<li><p>59</p><p>секунд</p></li>
+								<ul id="timer">
+									<li><span id="days"></span><p>день</p></li>
+									<li><span id="hours"></span><p>часов</p></li>
+									<li><span id="minutes"></span><p>минут</p></li>
+									<li><span id="seconds"></span><p>секунд</p></li>
 								</ul>
 							</div>
 							<div class="box-in-social-p1">
@@ -483,6 +483,41 @@
 					top = $(id).offset().top;
 			$('body,html').animate({scrollTop: top}, 800);
 		});
+
+		var countDownDate = new Date(convertUTCDateToLocalDate(new Date('10 9, 2017 12:00:00'))).getTime();// мес день, год час:мин:сек
+
+		var x = setInterval(function() {
+
+				var now = new Date().getTime();
+
+				var distance = countDownDate - now;
+
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				$("#days").text(days);
+				$("#hours").text(hours);
+				$("#minutes").text(minutes);
+				$("#seconds").text(seconds);
+
+				/*    if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("demo").innerHTML = "EXPIRED";
+				}*/
+		}, 1000);
+
+		function convertUTCDateToLocalDate(date) {
+				var newDate = new Date(date.getTime()+date.getTimezoneOffset()*60*1000);
+
+				var offset = date.getTimezoneOffset() / 60;
+				var hours = date.getHours();
+
+				newDate.setHours(hours - offset);
+
+				return newDate;   
+		}
 
 	});
 </script>
