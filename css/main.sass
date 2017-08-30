@@ -1108,8 +1108,9 @@ p
 	padding-top: 106px
 	text-align: center
 	.add-padd
-		padding-top: 146px
-		padding-bottom: 100px
+		padding-top: 28px
+		padding-bottom: 0
+		padding-left: 50px
 .bg-sect-4
 	background: url(../img/bg-sec-3-pg2.png) no-repeat
 	background-size: cover
@@ -1805,6 +1806,8 @@ a
 		margin-bottom: 59px
 		.indent-bottom
 			margin-bottom: 59px
+	.indent-pl-50
+		padding-left: 50px
 .img-medal
 	img
 		width: 85%
@@ -1814,9 +1817,9 @@ a
 .perspective-pr,
 .col-medal
 	text-align: left
-	margin-top: 79px
+	margin-top: 77px
 	ul
-		padding-left: 81px
+		padding-left: 77px
 		li
 			padding: 25px 0px
 			display: block
@@ -1857,19 +1860,22 @@ a
 		vertical-align: middle
 		line-height: 17px
 		margin-bottom: 0
+.banner-link.evro-ico-block
+	padding: 11px 15px 11px 40px
 .icon-evro
 	background: url(../img/icon-evro.svg) no-repeat
 	background-size: contain
 	width: 95px
 	height: 65px
-	position: absolute
-	top: 50%
-	transform: translateY(-50%)
-	left: 45px
+	margin-right: 40px
+	//position: absolute
+	//top: 50%
+	//transform: translateY(-50%)
+	//left: 45px
 .box-cont-left
 	margin-top: 43px
 	ul
-		padding-left: 39px
+		padding-left: 77px
 		li
 			padding: 3px 0px
 			display: block
@@ -1937,6 +1943,7 @@ a
 	align-items: center
 	background-color: #3f0023
 	max-width: 925px
+	width: 100%
 	padding: 20px 15px 20px 40px
 	border-radius: 7px
 	margin: 117px 0 117px 57px
@@ -2009,8 +2016,8 @@ a
 		text-align: center
 		padding-bottom: 160px
 		.in-social-networks
-			margin-top: 180px
-			margin-bottom: 110px
+			margin-top: 210px
+			margin-bottom: 134px
 			display: flex
 			align-items: center
 			justify-content: center
@@ -2041,6 +2048,12 @@ a
 	.command .box-item-command
 		width: calc(100% - 80px)
 		margin: 0 auto
+	.full-bg-p2
+		.box-cont-left
+			br
+				content: ""
+				&:after
+					content: '\00a0'
 @media (max-width: 992px)
 	.top-bar .btn-nav,
 	.top-bar .btn-nav-menu
@@ -2060,6 +2073,41 @@ a
 			float: none
 		.sel-lang.lang-nav
 			right: 76px
+		.box-in-social-p1
+			margin: 31px auto 0
+		.bg-sect-2
+			padding-top: 50px
+		.box-col-token
+			margin-top: 50px
+		.col-medal
+			margin-top: 0
+		.bg-sect-3
+			padding-top: 60px
+		.title-sect-2
+			line-height: 95%
+			font-size: 4rem
+		.perspective-pr
+			margin-top: 0
+			ul li
+				padding: 3px 0
+		.evro-ico-block
+			.icon-evro
+				display: none
+		.bg-sect-3
+			min-height: 1839px
+			.add-padd
+				padding-left: 15px
+		.indent-pl-50
+			padding-left: 15px
+		.title-pairs
+			margin-top: 0
+		.items-pairs
+			padding-bottom: 60px
+		.sect-footer .box-bottom .in-social-networks
+			margin-top: 60px
+			margin-bottom: 30px
+		.sect-footer .box-bottom
+			padding-bottom: 40px
 	.box-in-social-p1
 		float: none
 		margin: 62px auto 0
@@ -2076,6 +2124,8 @@ a
 	.img-medal
 		img
 			float: none
+
+
 @media (max-width: 768px)
 	.hide-768
 		display: none!important
@@ -2210,8 +2260,6 @@ a
 		position: absolute
 		left: -395px
 		top: 294px
-
-
 	.bg-bottom
 		//background-position-x: right
 	.box-input-mail .input-mail .form-control
@@ -2284,10 +2332,13 @@ a
 	.perspective-pr ul li:before
 		width: 30px
 		left: -47px
-	.perspective-pr ul
+	.perspective-pr ul,
+	.box-cont-left ul
 		padding-left: 39px
 	.btn-br-line.sect-3
 		margin: 0
+	.sect-footer
+		text-align: center
 
 @media (max-width: 470px)
 	.bg-heder .box-title h1
