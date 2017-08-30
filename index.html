@@ -24,6 +24,9 @@
 	<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/moment-with-locales.js"></script>
+	<script src="js/main.js"></script>
 </head>
 
 <body ng-app="app">
@@ -412,113 +415,4 @@
 	</div>
 
 </body>
-
-<script>
-	angular.module('app', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
-
-	$(function() {
-
-		AOS.init();
-
-		$('.in-media').slick({
-			infinite: true,
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			dots: true,
-			appendArrows: $('.sl-class-arrow'),
-			appendDots: $('.sl-class-dots'),
-			prevArrow: '<i class="icon-arrow-left"></i>',
-			nextArrow: '<i class="icon-arrow-right"></i>',
-			responsive: [
-				{
-					breakpoint: 992,
-					settings: {
-						slidesToShow: 2
-					}
-				}, {
-					breakpoint: 500,
-					settings: {
-						slidesToShow: 1
-					}
-				}
-			]
-		});
-
-		$('.slick-command').slick({
-			infinite: true,
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			dots: false,
-			appendArrows: $('.command-class-arrow'),
-			//appendDots: $('.command-class-dots'),
-			prevArrow: '<i class="icon-arrow-left"></i>',
-			nextArrow: '<i class="icon-arrow-right"></i>',
-			responsive: [
-				{
-					breakpoint: 992,
-					settings: {
-						slidesToShow: 3
-					}
-				}, {
-					breakpoint: 650,
-					settings: {
-						slidesToShow: 2
-					}
-				}, {
-					breakpoint: 576,
-					settings: {
-						slidesToShow: 1
-					}
-				}
-			]
-		});
-
-		$('a#ex1').on("click", function (event) {
-			event.preventDefault();
-			var id  = $(this).attr('href'),
-					top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 800);
-		});
-
-		var countDownDate = new Date(convertUTCDateToLocalDate(new Date('10 9, 2017 12:00:00'))).getTime();// мес день, год час:мин:сек
-
-		var x = setInterval(function() {
-
-				var now = new Date().getTime();
-
-				var distance = countDownDate - now;
-
-				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-				$("#days").text(days);
-				$("#hours").text(hours);
-				$("#minutes").text(minutes);
-				$("#seconds").text(seconds);
-
-				/*    if (distance < 0) {
-						clearInterval(x);
-						document.getElementById("demo").innerHTML = "EXPIRED";
-				}*/
-		}, 1000);
-
-		function convertUTCDateToLocalDate(date) {
-				var newDate = new Date(date.getTime()+date.getTimezoneOffset()*60*1000);
-
-				var offset = date.getTimezoneOffset() / 60;
-				var hours = date.getHours();
-
-				newDate.setHours(hours - offset);
-
-				return newDate;   
-		}
-
-	});
-</script>
 </html>
