@@ -757,6 +757,8 @@ p
 	.container
 		position: relative
 		height: 100%
+		display: flex
+		align-items: center
 		.box-logo
 			text-align: left
 	.btn-nav
@@ -835,6 +837,28 @@ p
 			top: 6px
 			left: 50%
 			transform: translateX(-50%)
+	.nav-links
+		display: inline-block
+		width: 350px
+		text-align: right
+		position: absolute
+		right: 101px
+		margin-top: 5px
+		ul
+			padding-left: 0
+			li
+				display: inline-block
+				width: 32%
+				padding-right: 20px
+				a
+					color: #fff
+					opacity: 0.5
+					font-family: "DINpro-light", sans-serif
+					&:hover
+						text-decoration: none
+						opacity: 1
+					&:focus
+						text-decoration: none
 	.top-memu-p1
 		font-size: 1.6rem
 		font-family: "DINpro-regular", sans-serif
@@ -1070,8 +1094,7 @@ p
 		text-align: left
 		padding-left: 0
 		padding-right: 0
-	.in-social-p1
-		opacity: 0.5
+	.in-social-p1		
 		display: inline-block
 		padding: 0
 		margin: 0
@@ -1083,6 +1106,12 @@ p
 			width: 15.3%
 			text-align: right
 			min-width: 85px
+			[class^=icon-]
+				opacity: 0.5
+				transition: all .2s ease-out
+				cursor: pointer
+				&:hover
+					opacity: 1
 			.icon-social-1
 				background: url(../img/icon-social-1.svg) no-repeat
 				background-size: contain
@@ -1553,12 +1582,7 @@ p
 	&:hover
 		.command-photo
 			.hover-gradient
-				background : -moz-linear-gradient(0% 100% 45deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
-				background : -webkit-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-				background : -webkit-gradient(linear,0% 100% ,100.39% -0.39% ,color-stop(0,rgba(213, 113, 142, 1) ),color-stop(0.1297,rgba(215, 115, 134, 1) ),color-stop(0.3302,rgba(222, 119, 112, 1) ),color-stop(0.5767,rgba(232, 126, 77, 1) ),color-stop(0.8569,rgba(247, 136, 28, 1) ),color-stop(1,rgba(255, 141, 0, 1) ))
-				background : -o-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-				background : -ms-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-				background : linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+				@include gradient-gold
 				position: absolute
 				left: 0
 				right: 0
@@ -2053,8 +2077,7 @@ a
 	padding-bottom: 210px
 	.icon-bright
 		width: 314px
-		height: 90px
-		opacity: 0.5
+		height: 90px		
 .sect-footer
 	.box-bottom
 		background-color: #0c0007
@@ -2068,10 +2091,16 @@ a
 			align-items: center
 			justify-content: center
 			flex-wrap: wrap
+			li
+				opacity: 1
 			&.no-bord
 				border: none
 			[class^=icon-]
 				margin: 12px
+				opacity: 0.5
+				cursor: pointer
+				&:hover
+					opacity: 1
 		.bottom-logo
 			margin: 110px auto 160px
 			img
