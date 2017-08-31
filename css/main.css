@@ -767,7 +767,8 @@ p {
 .top-bar {
   width: 100%;
   height: 90px;
-  position: relative; }
+  position: fixed;
+  z-index: 5; }
   .top-bar .container {
     position: relative;
     height: 100%; }
@@ -980,6 +981,29 @@ p {
     position: relative;
     z-index: 0;
     box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.3); }
+    .sect-top .box-right .box-time .hide-time {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 6px;
+      background: #250715;
+      background: -moz-linear-gradient(left, #250715 0%, #451227 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #250715), color-stop(100%, #451227));
+      background: -webkit-linear-gradient(left, #250715 0%, #451227 100%);
+      background: -o-linear-gradient(left, #250715 0%, #451227 100%);
+      background: -ms-linear-gradient(left, #250715 0%, #451227 100%);
+      background: linear-gradient(to right, #250715 0%, #451227 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#250715', endColorstr='#451227', GradientType=1 );
+      z-index: 1;
+      text-align: center; }
+      .sect-top .box-right .box-time .hide-time p {
+        display: inline-block;
+        font-size: 3.1rem;
+        line-height: 133%;
+        font-family: DINpro-light;
+        margin-top: 100px; }
     .sect-top .box-right .box-time .time-title {
       display: inline-block;
       margin: 39px auto 19px;
@@ -1003,6 +1027,7 @@ p {
       left: 50%;
       transform: translateX(-50%);
       bottom: -3.6rem;
+      z-index: 2;
       background: -moz-linear-gradient(20.28% -94.49% -45deg, #f29222 0%, #f26522 100%);
       background: -webkit-linear-gradient(-45deg, #f29222 0%, #f26522 100%);
       background: -webkit-gradient(linear, 20.28% -94.49%, 79.72% 194.49%, color-stop(0, #f29222), color-stop(1, #f26522));
@@ -1997,14 +2022,22 @@ a[href^=mailto] {
     display: inline-block;
     float: right;
     margin-top: 58px; }
+    .box-img-right .box-img-anime .img-market-2 {
+      position: absolute;
+      top: 43%;
+      left: 50%; }
+    .box-img-right .box-img-anime .img-market-3 {
+      position: absolute;
+      top: 50%;
+      left: 50%; }
     .box-img-right .box-img-anime .img-market-top {
       background: url(../img/img-line-pro.png) no-repeat;
       background-size: contain;
       width: 41px;
       height: 74px;
       position: absolute;
-      top: -49px;
-      left: 68px; }
+      top: -51px;
+      left: 32px; }
       .box-img-right .box-img-anime .img-market-top p {
         font-size: 18px;
         line-height: 120%;
@@ -2014,12 +2047,13 @@ a[href^=mailto] {
         text-align: left; }
     .box-img-right .box-img-anime .img-market-center-txt {
       position: absolute;
-      top: 55%;
-      left: 52%;
+      top: 49%;
+      left: 51%;
       transform: translate(-50%, -50%);
       color: #0061b1;
       text-align: center;
-      line-height: 120%; }
+      line-height: 120%;
+      z-index: 1; }
     .box-img-right .box-img-anime .img-market-bottom-txt {
       line-height: 120%;
       font-size: 20px;
