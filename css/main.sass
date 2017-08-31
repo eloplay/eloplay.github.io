@@ -747,9 +747,13 @@ p
 
 .top-bar
 	width: 100%
-	height: 90px
+	height: 100px
 	position: fixed
 	z-index: 5
+	transition: all .2s ease-out
+	&.no-transparent
+		background-color: rgba(7,10,14,.7)
+		height: 70px
 	.container
 		position: relative
 		height: 100%
@@ -944,6 +948,9 @@ p
 		right: 15px
 	.bg-white-center .container
 		padding-bottom: 104px
+	.sel-lang.lang-nav
+		top: 50%
+		transform: translateY(-50%)
 
 .sect-top
 	margin-top: 90px

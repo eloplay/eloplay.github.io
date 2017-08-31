@@ -1,4 +1,18 @@
-	angular.module('app', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+	angular
+	.module('app', ['ngAnimate', 'ngSanitize', 'ui.bootstrap'])
+	.controller('pageICO_Ctr', function($scope, $window) {
+
+		$scope.scrollPos = 0;
+
+		$window.onscroll = function(){
+			$scope.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
+			$scope.bottomScrolPos = document.body.clientHeight - $scope.scrollPos;
+			$scope.$apply(); //or simply $scope.$digest();
+			//console.log('$scope.scrollPos= '+$scope.scrollPos);// проверяем значение скролла
+			//console.log( $scope.bottomScrolPos );
+	};
+
+	});
 
 	$(function() {
 
