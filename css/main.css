@@ -2302,7 +2302,8 @@ a[href^=mailto] {
     display: block; }
 
   .box-button-video {
-    text-align: center; }
+    text-align: center;
+    margin-top: 47px; }
 
   .img-medal {
     float: none; }
