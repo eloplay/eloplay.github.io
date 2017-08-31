@@ -984,7 +984,8 @@ p {
       font-size: 2rem;
       font-family: "Ubuntu-light", sans-serif;
       margin-top: 36px;
-      line-height: 134%; }
+      line-height: 134%;
+      margin-bottom: 42px; }
   .full-bg-p2 .sel-lang.lang-nav {
     right: 15px; }
   .full-bg-p2 .bg-white-center .container {
@@ -1175,9 +1176,8 @@ p {
 
 .box-button-video {
   display: block;
-  margin-top: 34px;
   width: 100%;
-  margin: 42px auto 50px;
+  margin: 79px auto 44px;
   text-align: left; }
 
 .bg-sect-1 {
