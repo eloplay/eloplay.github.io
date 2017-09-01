@@ -6,6 +6,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="manifest" href="/manifest.json">
 	
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css" rel="stylesheet" />
@@ -24,6 +25,9 @@
 	<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>  
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js"></script>  
+	<script src="js/pnotify.js"></script>  
 	<script src="js/moment.js"></script>
 	<script src="js/moment-with-locales.js"></script>
 	<script src="js/main.js?v=1"></script>
@@ -423,5 +427,12 @@
 
 	</div>
 
+	<script src="js/push_message.js"></script>
+	<!--	<script src="./js/gapi_calendar.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+	-->
 </body>
 </html>
