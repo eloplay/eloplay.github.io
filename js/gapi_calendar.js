@@ -1,8 +1,8 @@
-//var CLIENT_ID = '360396386092-brlch566ifd681ncmkuboqnf05itfchv.apps.googleusercontent.com'; // my test client_id
-var CLIENT_ID = '82833938-o9dgbcu490eafj0h3voq694ubr4hipl5.apps.googleusercontent.com';
+var CLIENT_ID = '360396386092-brlch566ifd681ncmkuboqnf05itfchv.apps.googleusercontent.com'; // my test client_id
+//var CLIENT_ID = '82833938-o9dgbcu490eafj0h3voq694ubr4hipl5.apps.googleusercontent.com';
 
 var SCOPES = "https://www.googleapis.com/auth/calendar";
-var authorizeButton = document.getElementById('watch-update-btn');
+var authorizeButton = document.getElementById('subscribeBtn');
 var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 /**
  *  On load, called to load the auth2 library and API client library.
@@ -42,7 +42,10 @@ function updateSigninStatus(isSignedIn) {
  *  Sign in the user upon button click.
  */
 function handleAuthClick(event) {
-	gapi.auth2.getAuthInstance().signIn();
+	var check_calendar = $('#calendar_event').prop( "checked" );
+	if(check_calendar == true){
+		gapi.auth2.getAuthInstance().signIn();
+	}
 }
 function CreateNewEvent() {
 	var event = {
