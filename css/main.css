@@ -988,6 +988,9 @@ p {
       margin-bottom: 42px; }
   .full-bg-p2 .sel-lang.lang-nav {
     right: 15px; }
+  .full-bg-p2 .bg-white-center .font-l-42 {
+    color: #1d1930;
+    margin-top: 10px; }
   .full-bg-p2 .bg-white-center .container {
     padding-bottom: 104px; }
   .full-bg-p2 .sel-lang.lang-nav {
@@ -1124,7 +1127,7 @@ p {
     padding: 0;
     margin: 0;
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin-top: 14px; }
     .sect-top .in-social-p1 li {
       display: inline-block;
@@ -1219,7 +1222,6 @@ p {
 
 .font-l-31 {
   font-size: 3.1rem;
-  color: #fff;
   font-family: "DINpro-light", sans-serif;
   line-height: 120%; }
 
@@ -1282,9 +1284,10 @@ p {
   background: url(../img/bg-sec-4.png) center no-repeat;
   background-size: cover;
   width: 100%;
+  min-height: 2075px;
   padding-top: 172px;
   padding-bottom: 183px;
-  margin-top: -60px;
+  margin-top: -51px;
   margin-bottom: -73px; }
   .bg-white-center .container {
     padding-bottom: 470px; }
@@ -1602,6 +1605,8 @@ p {
   padding-top: 11.3rem; }
   .bg-in-media .container {
     padding-bottom: 180px; }
+  .bg-in-media .font-l-42 {
+    color: #1d1930; }
 
 .follow-news .form-group {
   text-align: center; }
@@ -1936,7 +1941,6 @@ a[href^=mailto] {
     display: inline-block; }
 
 .font-l-42 {
-  color: #fff;
   font-size: 4.2rem;
   font-family: "DINpro-light", sans-serif;
   line-height: 120%; }
@@ -2068,20 +2072,20 @@ a[href^=mailto] {
     margin-top: 58px; }
     .box-img-right .box-img-anime .img-market-2 {
       position: absolute;
-      top: 11%;
-      left: -8%; }
+      top: 13%;
+      left: 1%; }
     .box-img-right .box-img-anime .img-market-3 {
       position: absolute;
       top: 29%;
-      left: 14%; }
+      left: 21%; }
     .box-img-right .box-img-anime .img-market-top {
       background: url(../img/img-line-pro.png) no-repeat;
       background-size: contain;
       width: 41px;
       height: 74px;
       position: absolute;
-      top: -51px;
-      left: 32px; }
+      top: -37px;
+      left: 73px; }
       .box-img-right .box-img-anime .img-market-top p {
         font-size: 18px;
         line-height: 120%;
@@ -2091,8 +2095,8 @@ a[href^=mailto] {
         text-align: left; }
     .box-img-right .box-img-anime .img-market-center-txt {
       position: absolute;
-      top: 50%;
-      left: 33%;
+      top: 48%;
+      left: 36%;
       color: #0061b1;
       text-align: center;
       line-height: 120%;
