@@ -1663,8 +1663,6 @@ p
 		cursor: pointer
 		position: relative
 		z-index: 0
-		&:hover
-			@include gradient-gold
 		.bg-grad
 			opacity: 0
 			z-index: -1
@@ -1674,12 +1672,7 @@ p
 			left: 0
 			right: 0
 			transition: opacity .2s ease-out
-			background : -moz-linear-gradient(0% 100% 45deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
-			background : -webkit-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-			background : -webkit-gradient(linear,0% 100% ,100.39% -0.39% ,color-stop(0,rgba(213, 113, 142, 1) ),color-stop(0.1297,rgba(215, 115, 134, 1) ),color-stop(0.3302,rgba(222, 119, 112, 1) ),color-stop(0.5767,rgba(232, 126, 77, 1) ),color-stop(0.8569,rgba(247, 136, 28, 1) ),color-stop(1,rgba(255, 141, 0, 1) ))
-			background : -o-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-			background : -ms-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-			background : linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+			@include gradient-gold
 		&:hover
 			box-shadow: none
 			height: 325px
@@ -1695,7 +1688,7 @@ p
 				background: url(../img/icon-history-4w.svg) center no-repeat
 			.bg-grad
 				transition: opacity .2s ease-out
-				opacity: 1
+				opacity: 0.8
 
 .box-in-social-p1
 	margin-top: 62px
