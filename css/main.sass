@@ -964,20 +964,27 @@ p
 	width: 100%
 	overflow: hidden	
 	.sect-top
+		margin-top: 180px
 		.box-left 
 			p:nth-child(2)
 				font-size: 2rem
 				font-family: "Ubuntu-light", sans-serif
+				margin-top: 36px
+				line-height: 134%
+				margin-bottom: 42px
 	.sel-lang.lang-nav
 		right: 15px
-	.bg-white-center .container
-		padding-bottom: 104px
+	.bg-white-center
+		.font-l-42
+			color: #1d1930
+			margin-top: 10px
+		.container
+			padding-bottom: 104px
 	.sel-lang.lang-nav
 		top: 50%
 		transform: translateY(-50%)
 
-.sect-top
-	margin-top: 90px
+.sect-top	
 	margin-bottom: 85px
 	.indent-bottom
 		margin-bottom: 168px
@@ -1018,11 +1025,14 @@ p
 				z-index: 1
 				text-align: center
 				p
-					display: inline-block
 					font-size: 3.1rem
 					line-height: 133%
 					font-family: DINpro-light
-					margin-top: 100px
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					width: 100%
 			.time-title
 				display: inline-block
 				margin: 39px auto 19px
@@ -1099,7 +1109,7 @@ p
 		padding: 0
 		margin: 0
 		width: 100%
-		text-align: right
+		text-align: center
 		margin-top: 14px
 		li
 			display: inline-block
@@ -1109,7 +1119,7 @@ p
 			[class^=icon-]
 				opacity: 0.5
 				transition: all .2s ease-out
-				cursor: pointer
+				cursor: pointer				
 				&:hover
 					opacity: 1
 			.icon-social-1
@@ -1150,9 +1160,9 @@ p
 				display: inline-block
 .box-button-video
 	display: block
-	margin-top: 34px
+	//margin-top: 34px
 	width: 100%
-	margin: 42px auto 50px
+	margin: 79px auto 44px
 	text-align: left
 .bg-sect-1
 	background: url(../img/bg-sec-0-pg2.png) no-repeat
@@ -1185,13 +1195,15 @@ p
 	padding-top: 41px
 	padding-bottom: 53px
 .img-monitor
+	position: relative
 	img
-		margin: 0 auto
-
+		margin: 58px auto
+		border: 23px solid #533f4c
+		border-radius: 3px
+		width: 73%
 
 .font-l-31
 	font-size: 3.1rem
-	color: #fff
 	font-family: "DINpro-light", sans-serif
 	line-height: 120%
 .title-sect-2
@@ -1232,7 +1244,7 @@ p
 	width: 317px
 	margin: 0 auto
 .btn-br-line.sect-3
-	margin: -69px 0 0
+	margin: -11px 0 0
 	padding: 1.1rem 4.5rem 1.5rem
 	color: #fff
 
@@ -1248,9 +1260,10 @@ p
 	background: url(../img/bg-sec-4.png) center no-repeat
 	background-size: cover
 	width: 100%
+	min-height: 2075px
 	padding-top: 172px
 	padding-bottom: 183px
-	margin-top: -60px
+	margin-top: -51px
 	margin-bottom: -73px
 	.container
 		padding-bottom: 470px
@@ -1530,6 +1543,8 @@ p
 	padding-top: 11.3rem
 	.container
 		padding-bottom: 180px
+	.font-l-42
+		color: #1d1930
 .follow-news
 	.form-group
 		text-align: center
@@ -1852,7 +1867,6 @@ a
 		display: inline-block
 
 .font-l-42
-	color: #fff
 	font-size: 4.2rem
 	font-family: "DINpro-light", sans-serif
 	line-height: 120%
@@ -1865,6 +1879,7 @@ a
 		float: right
 	.sect-top
 		margin-bottom: 59px
+		margin-top: 180px
 		.indent-bottom
 			margin-bottom: 59px
 	.indent-pl-50
@@ -1968,13 +1983,13 @@ a
 		margin-top: 58px
 		.img-market-2
 			position: absolute
-			top: 11%
-			left: -8%
+			top: 13%
+			left: 1%
 			//transform: translate(-50%, -50%)
 		.img-market-3
 			position: absolute
 			top: 29%
-			left: 14%
+			left: 21%
 			//transform: translate(-50%, -50%)
 		.img-market-top
 			background: url(../img/img-line-pro.png) no-repeat
@@ -1982,8 +1997,8 @@ a
 			width: 41px
 			height: 74px
 			position: absolute
-			top: -51px
-			left: 32px
+			top: -37px
+			left: 73px
 			p
 				font-size: 18px
 				line-height: 120%
@@ -1993,8 +2008,8 @@ a
 				text-align: left
 		.img-market-center-txt
 			position: absolute
-			top: 50%
-			left: 33%
+			top: 48%
+			left: 36%
 			//transform: translate(-50%, -50%)
 			color: #0061b1
 			text-align: center
@@ -2099,6 +2114,7 @@ a
 				margin: 12px
 				opacity: 0.5
 				cursor: pointer
+				transition: all .2s ease-out
 				&:hover
 					opacity: 1
 		.bottom-logo
@@ -2183,6 +2199,10 @@ a
 			margin-bottom: 30px
 		.sect-footer .box-bottom
 			padding-bottom: 40px
+		.sect-top
+			margin-top: 85px
+		.nav-links
+			display: none
 	.box-in-social-p1
 		float: none
 		margin: 62px auto 0
@@ -2190,6 +2210,7 @@ a
 		display: block
 	.box-button-video
 		text-align: center
+		margin-top: 47px
 	.img-medal
 		float: none
 	.box-img-right .box-img-anime
@@ -2199,6 +2220,8 @@ a
 	.img-medal
 		img
 			float: none
+	.sect-top
+		margin-top: 80px
 
 
 @media (max-width: 768px)

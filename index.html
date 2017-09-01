@@ -6,6 +6,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="manifest" href="/manifest.json">
 	
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css" rel="stylesheet" />
@@ -24,6 +25,9 @@
 	<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>  
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js"></script>  
+	<script src="js/pnotify.js"></script>  
 	<script src="js/moment.js"></script>
 	<script src="js/moment-with-locales.js"></script>
 	<script src="js/main.js?v=1"></script>
@@ -33,7 +37,7 @@
 	<div class="full-bg-p2" ng-controller="pageICO_Ctr">
 
 		<div class="bg-sect-1">
-			<div class="top-bar" ng-class="{'no-transparent': scrollPos > 200}" ng-cloak>
+			<div class="top-bar" ng-class="{'no-transparent': scrollPos > 150}" ng-cloak>
 				<div class="container">
 					<div class="box-logo">
 						<a href="https://eloplay.com/"><div class="logo-eloplay"></div></a>
@@ -102,7 +106,7 @@
 							</div>
 							<div class="box-in-social-p1">
 								<ul class="in-social-p1">
-									<li><div class="icon-social-1"></div></li>
+									<!-- <li><div class="icon-social-1"></div></li> -->
 									<li><div class="icon-social-2"></div></li>
 									<li><div class="icon-social-3"></div></li>
 									<li><div class="icon-social-4"></div></li>
@@ -144,7 +148,7 @@
 		</div>
 
 		<div class="bg-sect-3" id="why-token">
-			<p class="font-l-42 title-sect-2" data-aos="zoom-in">Перспективы проекта<br>и востребованность токена</p>
+			<p class="font-l-31 title-sect-2" data-aos="zoom-in">Перспективы проекта<br>и востребованность токена</p>
 			<div class="container">
 				<div class="col-xs-12 col-sm-12 col-md-6 perspective-pr" data-aos="zoom-in">
 					<ul>
@@ -162,12 +166,15 @@
 			</div>
 			<div class="container add-padd">
 				<!-- <center> -->
-					<div class="banner-link evro-ico-block" data-aos="zoom-in"><span class="icon-evro"></span><p>Эмитент ICO токенов: Компания Qoors OU, учреждена в Эстонии</p></div>
+					<div class="banner-link evro-ico-block" data-aos="zoom-in" data-aos-duration="1200"><span class="icon-evro"></span><p>Эмитент ICO токенов: Компания Qoors OU, учреждена в Эстонии</p></div>
 				<!-- </center> -->
 			</div>
 			<p class="font-l-31 title-sect-2" data-aos="zoom-in">Eloplay - это работающая платформа<br>готовая к выходу на мировой уровень</p>
 			<div class="container" data-aos="zoom-in">
-				<div class="img-monitor"><img class="img-responsive" src="./img/img-monitor.png" alt=""></div>
+				<div class="img-monitor">
+				<!-- <img class="img-responsive" src="./img/img-monitor.png" alt=""> -->
+				<img class="img-responsive" src="./img/toptal-blog-image-1.gif" alt="">
+				</div>
 				<a href="https://eloplay.com/" class="btn btn-br-line sect-3"><span>Играть на Eloplay</span></a>
 			</div>
 		</div>
@@ -189,7 +196,7 @@
 							<div  class="img-market-top" data-aos="fade-left" data-aos-duration="1200"><p>Профессиональные<br>киберспортсмены</p></div>
 							<p class="img-market-center-txt" data-aos="zoom-out-down" data-aos-offset="200" data-aos-delay="2000">385.5<br>миллионов</p>
 							<div>
-								<img class="img-market-1" data-aos="fade-up" data-aos-offset="200" data-aos-delay="600" src="./img/img-market-1.png" alt="">
+								<img class="img-market-1" data-aos="fade-up" data-aos-offset="200" data-aos-delay="600" src="./img/img-market-1_.png" alt="">
 								<img class="img-market-2" data-aos="fade-left" data-aos-offset="200" data-aos-delay="1000" src="./img/img-market-3.png" alt="">
 								<img class="img-market-3" data-aos="zoom-out-down" data-aos-offset="200" data-aos-delay="1300" src="./img/img-market-2.png" alt="">
 							</div>
@@ -211,7 +218,7 @@
 
 		<div class="bg-white-center" id="tokensale">
 			<div class="container">
-				<p id="pay-token" class="font-l-48 title-pay-token" data-aos="zoom-in">Продажа Элоплей Токенов</p>
+				<p id="pay-token" class="font-l-42 title-pay-token" data-aos="zoom-in">Продажа Элоплей Токенов</p>
 				<div class="box-time-token">
 					<div class="start-pay-token">
 						<p>Начало: <span>09.10.2017</span></p>
@@ -263,18 +270,18 @@
 					<span>Максимальная сумма транзакции:</span> не ограничена</p>
 					<span>Минимальная сумма транзакции:</span> 0.1 ETH
 				</div>
-				<p class="col-md-12 font-l-48 distribution-token">Распределение Элоплей Токенов</p>
+				<p class="col-md-12 font-l-42 distribution-token">Распределение Элоплей Токенов</p>
 				<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token" data-aos="fade-left" data-aos-offset="300">
-					<div class="distribution-80"><p>80%</p><p class="txt-caps">token sale</p></div>
+					<div class="distribution-80"><p>80%</p><p class="txt-caps">Токен Сейл</p></div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token" data-aos="fade-left" data-aos-delay="200" data-aos-offset="300">
-					<div class="distribution-10"><p>10%</p><p class="txt-caps">founder</p></div>
+					<div class="distribution-10"><p>10%</p><p class="txt-caps">Команда</p></div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token" data-aos="fade-left" data-aos-delay="500" data-aos-offset="300">
-					<div class="distribution-5"><p>5%</p><p class="txt-caps">advisory<br>board</p></div>
+					<div class="distribution-5"><p>5%</p><p class="txt-caps">Консультанты</p></div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 item-distribution-token" data-aos="fade-left" data-aos-delay="800" data-aos-offset="300">
-					<div class="distribution-5"><p>5%</p><p class="txt-caps">bounty<br>program</p>
+					<div class="distribution-5"><p>5%</p><p class="txt-caps">Баунти<br>программа</p>
 						<p class="txt-info txt-caps">info+<br>tournaments</p>
 					</div>
 				</div>
@@ -283,7 +290,7 @@
 		</div>
 
 		<div class="container command" data-aos="fade-down" data-aos-delay="800" data-aos-offset="300">
-			<p class="font-l-48 title-command" id="team">Команда Элоплей</p>
+			<p class="font-l-42 title-command" id="team">Команда Eloplay</p>
 
 			<div class="box-item-command" ng-cloak>
 				<div class="slick-command">
@@ -480,7 +487,7 @@
 			
 		<div class="bg-in-media" id="media">
 				<div class="container">
-					<p class="font-l-48 title-pay-token">Элоплей в медиа</p>
+					<p class="font-l-42 title-pay-token">Eloplay в медиа</p>
 
 					<!-- карусель Элоплей в медиа -->
 					<div class="in-media" ng-cloak>
@@ -535,7 +542,7 @@
 
 		<div class="sect-footer" id="partners">
 			<div class="container">
-				<p class="font-l-48 title-pairs">Партнеры Eloplay</p>
+				<p class="font-l-42 title-pairs">Партнеры Eloplay</p>
 				<div class="items-pairs">
 					<img class="icon-bright" src="./img/icon-bright.svg" alt="">
 				</div>
@@ -543,7 +550,7 @@
 			<div class="box-bottom">
 				<div class="container">
 					<ul class="in-social-networks no-bord">
-						<li><div class="icon-social-1"></div></li>
+						<!-- <li><div class="icon-social-1"></div></li> -->
 						<li><div class="icon-social-2"></div></li>
 						<li><div class="icon-social-3"></div></li>
 						<li><div class="icon-social-4"></div></li>
@@ -557,5 +564,12 @@
 
 	</div>
 
+	<script src="js/push_message.js"></script>
+	<!--	<script src="./js/gapi_calendar.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+	-->
 </body>
 </html>
