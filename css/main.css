@@ -2209,7 +2209,8 @@ a[href^=mailto] {
     .sect-footer .box-bottom .in-social-networks [class^=icon-] {
       margin: 12px;
       opacity: 0.5;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 0.2s ease-out; }
       .sect-footer .box-bottom .in-social-networks [class^=icon-]:hover {
         opacity: 1; }
   .sect-footer .box-bottom .bottom-logo {
