@@ -41,9 +41,9 @@
 					
 					<div class="nav-links">
 						<ul>
-							<li><a href="">Team</a></li>
-							<li><a href="">Tokensale</a></li>
-							<li><a href="">Whitepaper</a></li>
+							<li><a href="#team">Команда</a></li>
+							<li><a href="#tokensale">Токенсейл</a></li>
+							<li><a href="#whitepaper">Whitepaper</a></li>
 						</ul>
 					</div>
 					<div ng-init="current_lang='РУС'">
@@ -77,7 +77,7 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container" id="main-screen">
 				<div class="sect-top">
 					<div class="row indent-bottom">
 						<div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
@@ -116,7 +116,7 @@
 			</div>
 		</div>
 
-		<div class="bg-sect-2">
+		<div class="bg-sect-2" id="token-desc">
 			<div class="container">
 				<p class="font-l-31 title-sect-2">Токен Eloplay (ELT)<br>позволяет своим держателям</p>
 				<div class="col-xs-12 col-sm-12 col-md-4 box-col-token" data-aos="zoom-in">
@@ -143,7 +143,7 @@
 			</div>
 		</div>
 
-		<div class="bg-sect-3">
+		<div class="bg-sect-3" id="why-token">
 			<p class="font-l-42 title-sect-2" data-aos="zoom-in">Перспективы проекта<br>и востребованность токена</p>
 			<div class="container">
 				<div class="col-xs-12 col-sm-12 col-md-6 perspective-pr" data-aos="zoom-in">
@@ -172,7 +172,7 @@
 			</div>
 		</div>
 
-		<div class="bg-sect-4">
+		<div class="bg-sect-4" id="market">
 			<p class="font-l-31 title-sect-2" data-aos="zoom-in">Рынок и проблематика<br>киберспорта</p>
 			<div class="container">
 				<div class="col-xs-12 col-sm-12 col-md-7 box-cont-left" data-aos="zoom-in" data-aos-delay="500">
@@ -200,7 +200,7 @@
 			</div>
 		</div>
 
-		<div class="container indent-pl-50" data-aos="zoom-in">
+		<div class="container indent-pl-50" id="cybersport" data-aos="zoom-in">
 			<div class="banner-link"><img src="./img/icon-star-kiber.svg" alt="">
 				<div>
 					<p>Киберспорт - это лучшая инвестиционная возможность десятилетия.</p>
@@ -209,7 +209,7 @@
 			</div>
 		</div>
 
-		<div class="bg-white-center">
+		<div class="bg-white-center" id="tokensale">
 			<div class="container">
 				<p id="pay-token" class="font-l-48 title-pay-token" data-aos="zoom-in">Продажа Элоплей Токенов</p>
 				<div class="box-time-token">
@@ -283,16 +283,18 @@
 		</div>
 
 		<div class="container command" data-aos="fade-down" data-aos-delay="800" data-aos-offset="300">
-			<p class="font-l-48 title-command">Команда Элоплей</p>
+			<p class="font-l-48 title-command" id="team">Команда Элоплей</p>
 
 			<div class="box-item-command" ng-cloak>
 				<div class="slick-command">
 					<div>
 						<div class="item-command">
-							<div class="command-photo">
-								<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-								<img class="img-responsive" src="img/photo-vital.jpg" alt="">
-							</div>
+							<a href="https://linkedin.com/in/vitalybalakhonov">
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-vital.jpg" alt="">
+								</div>
+							</a>
 							<div class="box-text-info no-line">
 								<p>Виталий Балахонов</p>
 								<p>СЕО<br>Chief Executive Officer</p>
@@ -301,10 +303,12 @@
 					</div>
 					<div>
 						<div class="item-command">
-							<div class="command-photo">
-								<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-								<img class="img-responsive" src="img/photo-yura.jpg" alt="">
-							</div>
+							<a href="https://linkedin.com/in/imyfix">
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-yura.jpg" alt="">
+								</div>
+							</a>
 							<div class="box-text-info no-line">
 								<p>Юрий Высоцкий</p>
 								<p>СТО<br>Chief Technology Officer</p>
@@ -313,10 +317,12 @@
 					</div>
 					<div>
 						<div class="item-command">
-							<div class="command-photo">
-								<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-								<img class="img-responsive" src="img/photo-dima.jpg" alt="">
-							</div>
+							<a href="https://linkedin.com/in/dmytro-salnikov-55a051147">
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-dima.jpg" alt="">
+								</div>
+							</a>
 							<div class="box-text-info no-line">
 								<p>Дмитрий Сальников</p>
 								<p>CIO<br>Chief Information Officer</p>
@@ -325,13 +331,141 @@
 					</div>
 					<div>
 						<div class="item-command">
-							<div class="command-photo">
-								<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-								<img class="img-responsive" src="img/photo-andrey.jpg" alt="">
-							</div>
+<!--							<a href="https://linkedin.com/in/">-->
+								<div class="command-photo">
+<!--									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>-->
+									<img class="img-responsive" src="img/photo-andrey.jpg" alt="">
+								</div>
+<!--							</a>-->
 							<div class="box-text-info no-line">
 								<p>Андрей Верессов</p>
 								<p>Legal Advisor<br>Chief Legal Officer</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+							<a href="https://linkedin.com/in/sergeymushta">
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-smushta.jpg" alt="">
+								</div>
+							</a>
+							<div class="box-text-info no-line">
+								<p>Sergey Mushta</p>
+								<p>Solidity and fullstack developer<br></p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+							<a href="https://linkedin.com/in/imyyv">
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-yaroslav.jpg" alt="">
+								</div>
+							</a>
+							<div class="box-text-info no-line">
+								<p>Yaroslav Yakovenko</p>
+								<p>Fullstack developer<br></p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+							<a href="https://linkedin.com/in/sergeykorzhikov">
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-skorzhikov.jpg" alt="">
+								</div>
+							</a>
+							<div class="box-text-info no-line">
+								<p>Sergey Korzhikov</p>
+								<p>Fullstack developer<br></p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+							<a href="https://linkedin.com/in/larvs">
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-alezhenko.jpg" alt="">
+								</div>
+							</a>
+							<div class="box-text-info no-line">
+								<p>Alexander Lezhenko</p>
+								<p>Senior Fullstack developer<br></p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+							<a href="https://linkedin.com/in/pavel-zakhovalko-408200139">
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-pavel.jpg" alt="">
+								</div>
+							</a>
+							<div class="box-text-info no-line">
+								<p>Pavel Zakhovalko</p>
+								<p>Fullstack developer<br></p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+<!--							<a href="https://linkedin.com/in/">-->
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-apashenko.jpg" alt="">
+								</div>
+<!--							</a>-->
+							<div class="box-text-info no-line">
+								<p>Andrey Pashenko</p>
+								<p>Frontend developer<br></p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+<!--							<a href="https://linkedin.com/in/">-->
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-vika.jpg" alt="">
+								</div>
+<!--							</a>-->
+							<div class="box-text-info no-line">
+								<p>Victory Moskalenko</p>
+								<p>Human Resources<br></p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+<!--							<a href="https://linkedin.com/in/">-->
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-dmakushin.jpg" alt="">
+								</div>
+<!--							</a>-->
+							<div class="box-text-info no-line">
+								<p>Dmitry Makushin</p>
+								<p>Developer<br></p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item-command">
+<!--							<a href="https://linkedin.com/in/">-->
+								<div class="command-photo">
+									<div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<img class="img-responsive" src="img/photo-svirid.jpg" alt="">
+								</div>
+<!--							</a>-->
+							<div class="box-text-info no-line">
+								<p>Olexandr Sviridovskiy</p>
+								<p>Quality Assurance<br></p>
 							</div>
 						</div>
 					</div>
@@ -344,7 +478,7 @@
 			</div>
 		</div>
 			
-		<div class="bg-in-media">
+		<div class="bg-in-media" id="media">
 				<div class="container">
 					<p class="font-l-48 title-pay-token">Элоплей в медиа</p>
 
@@ -399,7 +533,7 @@
 				</div>
 		</div>
 
-		<div class="sect-footer">
+		<div class="sect-footer" id="partners">
 			<div class="container">
 				<p class="font-l-48 title-pairs">Партнеры Eloplay</p>
 				<div class="items-pairs">
