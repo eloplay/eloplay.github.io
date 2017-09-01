@@ -575,16 +575,19 @@
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<form method="post" action="/">
-					<div class="modal-body">
-						<input type="email" placeholder="Введите Ваш e-mail" id="subscribeEmail" /><br />
-						<input type="checkbox" checked name="tockensale_start" value="tockensale_start">Сообщать мне о старте продаж токенов через браузер<br />
-						<input type="checkbox" checked name="calendar_event" value="calendar_event" id="calendar_event">Добавить событие в календарь<br />
+				<div class="modal-body">
+					<div class="box-input-mail">
+						<form id="subscribeNews" class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8">
+							<input type="email" name="email" class="form-control st-placeh" placeholder="Введите Ваш e-mail" id="send-mail" required /><br />
+							<input type="checkbox" checked name="tockensale_start" value="tockensale_start">Сообщать мне о старте продаж токенов через браузер<br />
+							<input type="checkbox" checked name="calendar_event" value="calendar_event" id="calendar_event">Добавить событие в календарь<br />
+							<input type="hidden" name="campaign_token" value="nTjtu" />
+						</form>
 					</div>
-					<div class="modal-footer box-time">
-						<button type="button" class="btn-large-color-y" id="subscribeBtn"><span>Подписаться</span></button>
-					</div>
-				</form>
+				</div>
+				<div class="modal-footer box-time">
+					<button type="button" class="btn btn-send" id="subscribeBtn"><span>Подписаться</span></button>
+				</div>
 			</div>
 		</div>
 	</div>

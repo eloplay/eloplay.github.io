@@ -45,6 +45,11 @@ function handleAuthClick(event) {
 	var check_calendar = $('#calendar_event').prop( "checked" );
 	if(check_calendar == true){
 		gapi.auth2.getAuthInstance().signIn();
+	}else{
+		var is_modal = $('#subscriptionModal').is(':visible');
+		if(is_modal == true){
+			$( "#subscribeNews" ).submit();
+		}
 	}
 }
 function CreateNewEvent() {
@@ -98,7 +103,11 @@ function CreateNewEvent() {
 			'resource': event
 		});
 		request.execute(function(event) {
-			console.log('Event created: ' + event.htmlLink);
+			var is_modal = $('#subscriptionModal').is(':visible');
+			if(is_modal == true){
+				$( "#subscribeNews" ).submit();
+			}
+			//console.log('Event created: ' + event.htmlLink);
 		});
 	});
 }
