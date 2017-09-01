@@ -511,6 +511,8 @@ p
 		span
 			color: rgba(255,255,255,0.3)
 
+.hide-item
+	display: none
 .mob-show
 	display: none
 .mob-hide
@@ -1464,28 +1466,49 @@ p
 		position: absolute
 		bottom: -21px
 		left: 19px
+.row-tokens
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	padding: 0
+	margin-top: 37px
 .item-distribution-token
 	text-align: center
 	padding: 0
 	.distribution-80
 		background: url(../img/token-80.png) no-repeat
 		background-size: contain
-		width: 299px
-		height: 299px
+		width: 225px
+		height: 225px
 		display: inline-block
 	.distribution-10
 		background: url(../img/token-10.png) no-repeat
 		background-size: contain
-		width: 299px
-		height: 299px
+		width: 225px
+		height: 225px
 		display: inline-block
 	.distribution-5
 		background: url(../img/token-5.png) no-repeat
 		background-size: contain
-		width: 299px
-		height: 299px
+		width: 225px
+		height: 225px
 		display: inline-block
-		.txt-info   
+	.distribution-3
+		background: url(../img/token-3.png) no-repeat
+		background-size: contain
+		width: 225px
+		height: 225px
+		display: inline-block
+	.distribution-2
+		background: url(../img/token-2.png) no-repeat
+		background-size: contain
+		width: 225px
+		height: 225px
+		display: inline-block
+		position: relative
+		.txt-info
+			position: absolute
 			font-size: 14px
 			color: #5c556b
 			font-family: "Ubuntu", sans-serif
@@ -1496,18 +1519,20 @@ p
 		p				
 			&:nth-child(1)
 				font-family: "DINpro-light", sans-serif
-				font-size: 60px
+				font-size: 36px
 				display: inline-block
-				margin-top: 105px
-				color: #5c556b			
+				margin-top: 76px
+				color: rgba(92,85,107,0.8)
+				margin-left: -9px
 			&:nth-child(2)
 				font-family: "Ubuntu", sans-serif
-				font-weight: 400
-				font-size: 18px
-				color: rgba(92,85,107,0.5)
-				line-height: 21px
+				font-weight: 500
+				font-size: 12px
+				color: rgba(92, 85, 107, 0.5)
+				line-height: 110%
 				display: block
-				margin-top: 7px
+				margin-top: 0
+				margin-left: -9px
 .title-command
 	color: #fff
 	margin: 178px 0 72px 17px
