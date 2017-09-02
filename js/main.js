@@ -67,8 +67,10 @@
 						slidesToShow: 2
 					}
 				}, {
-					breakpoint: 576,
+					breakpoint: 576,					
 					settings: {
+						verticalSwiping: true,
+						vertical: true,
 						slidesToShow: 1
 					}
 				}

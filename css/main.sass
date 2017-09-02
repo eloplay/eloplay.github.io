@@ -985,6 +985,25 @@ p
 	.sel-lang.lang-nav
 		top: 50%
 		transform: translateY(-50%)
+	.command .box-item-command.show-mobil
+		display: none
+	.command .box-item-command.show-desktop
+		.item-command
+			max-width: 179px
+			margin: 10px 22px
+			.box-text-info
+				margin-top: 16px
+				min-height: 50px
+				padding-bottom: 0px
+				p:nth-child(1)
+					font-size: 1.6rem
+					text-align: left
+					margin-bottom: 5px
+				p:nth-child(2)
+					text-align: left
+					font-size: 1.4rem
+					line-height: 136%
+
 
 .sect-top	
 	margin-bottom: 85px
@@ -2277,6 +2296,10 @@ a
 			float: none
 	.sect-top
 		margin-top: 80px
+	.full-bg-p2 .command .box-item-command.show-mobil
+		display: block
+	.full-bg-p2 .command .box-item-command.show-desktop
+		display: none
 
 
 @media (max-width: 768px)
