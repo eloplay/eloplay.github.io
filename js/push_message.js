@@ -104,7 +104,6 @@ function subscribe() {
 				// include network errors, and lacking gcm_sender_id and/or  
 				// gcm_user_visible_only in the manifest.  
 				console.error('Unable to subscribe to push.', e);  
-				pushButton.textContent = 'Enable Push Messages';  
 			}  
 		});  
 	});  

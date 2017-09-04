@@ -511,6 +511,8 @@ p
 		span
 			color: rgba(255,255,255,0.3)
 
+.hide-item
+	display: none
 .mob-show
 	display: none
 .mob-hide
@@ -960,7 +962,7 @@ p
 
 // ---------------------------------------------------------------
 .full-bg-p2
-	background-color: #1c000e
+	background-color: #1b0006
 	width: 100%
 	overflow: hidden	
 	.sect-top
@@ -983,6 +985,25 @@ p
 	.sel-lang.lang-nav
 		top: 50%
 		transform: translateY(-50%)
+	.command .box-item-command.show-mobil
+		display: none
+	.command .box-item-command.show-desktop
+		.item-command
+			max-width: 179px
+			margin: 10px 22px
+			.box-text-info
+				margin-top: 16px
+				min-height: 50px
+				padding-bottom: 0px
+				p:nth-child(1)
+					font-size: 1.6rem
+					text-align: left
+					margin-bottom: 5px
+				p:nth-child(2)
+					text-align: left
+					font-size: 1.4rem
+					line-height: 136%
+
 
 .sect-top	
 	margin-bottom: 85px
@@ -1177,10 +1198,10 @@ p
 	padding-top: 106px
 	text-align: center
 .bg-sect-3
-	background: url(../img/bg-sec-2-pg2.png) no-repeat
+	background: url(../img/bg-sec-21-pg2.png) no-repeat
 	background-size: cover
 	width: 100%
-	min-height: 1974px
+	min-height: 1007px//1195px
 	padding-top: 106px
 	text-align: center
 	.add-padd
@@ -1201,6 +1222,40 @@ p
 		border: 23px solid #533f4c
 		border-radius: 3px
 		width: 73%
+.bg-sect-31
+	position: relative
+	width: 100%
+	min-height: 610px
+	margin-top: 68px
+	padding: 46px
+	text-align: center
+	.fl-bg-mam
+		background: url(../img/bg-man.png) center no-repeat
+		background-size: cover
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		opacity: 0.4
+	.container.history-progect
+		margin-top: 0
+	.btn-br-line.sect-3
+		margin: 71px 0 0
+		position: relative
+.bg-sect-32
+	margin-top: 112px
+	//margin-bottom: 81px
+	background: url(../img/bg-sec-22-pg2.png) no-repeat
+	background-size: cover
+	width: 100%
+	min-height: 779px
+	.link-guard
+		position: absolute
+		color: rgba(255,255,255,0.4)
+		font-size: 10px
+		right: 13.5%
+		bottom: -24px
 
 .font-l-31
 	font-size: 3.1rem
@@ -1435,28 +1490,49 @@ p
 		position: absolute
 		bottom: -21px
 		left: 19px
+.row-tokens
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	padding: 0
+	margin-top: 37px
 .item-distribution-token
 	text-align: center
 	padding: 0
 	.distribution-80
 		background: url(../img/token-80.png) no-repeat
 		background-size: contain
-		width: 299px
-		height: 299px
+		width: 225px
+		height: 225px
 		display: inline-block
 	.distribution-10
 		background: url(../img/token-10.png) no-repeat
 		background-size: contain
-		width: 299px
-		height: 299px
+		width: 225px
+		height: 225px
 		display: inline-block
 	.distribution-5
 		background: url(../img/token-5.png) no-repeat
 		background-size: contain
-		width: 299px
-		height: 299px
+		width: 225px
+		height: 225px
 		display: inline-block
-		.txt-info   
+	.distribution-3
+		background: url(../img/token-3.png) no-repeat
+		background-size: contain
+		width: 225px
+		height: 225px
+		display: inline-block
+	.distribution-2
+		background: url(../img/token-2.png) no-repeat
+		background-size: contain
+		width: 225px
+		height: 225px
+		display: inline-block
+		position: relative
+		.txt-info
+			position: absolute
 			font-size: 14px
 			color: #5c556b
 			font-family: "Ubuntu", sans-serif
@@ -1467,18 +1543,20 @@ p
 		p				
 			&:nth-child(1)
 				font-family: "DINpro-light", sans-serif
-				font-size: 60px
+				font-size: 36px
 				display: inline-block
-				margin-top: 105px
-				color: #5c556b			
+				margin-top: 76px
+				color: rgba(92,85,107,0.8)
+				margin-left: -9px
 			&:nth-child(2)
 				font-family: "Ubuntu", sans-serif
-				font-weight: 400
-				font-size: 18px
-				color: rgba(92,85,107,0.5)
-				line-height: 21px
+				font-weight: 500
+				font-size: 12px
+				color: rgba(92, 85, 107, 0.5)
+				line-height: 110%
 				display: block
-				margin-top: 7px
+				margin-top: 0
+				margin-left: -9px
 .title-command
 	color: #fff
 	margin: 178px 0 72px 17px
@@ -1618,12 +1696,7 @@ p
 			left: 0
 			right: 0
 			transition: opacity .2s ease-out
-			background : -moz-linear-gradient(0% 100% 45deg,rgba(213, 113, 142, 1) 0%,rgba(215, 115, 134, 1) 12.97%,rgba(222, 119, 112, 1) 33.02%,rgba(232, 126, 77, 1) 57.67%,rgba(247, 136, 28, 1) 85.69%,rgba(255, 141, 0, 1) 100%)
-			background : -webkit-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-			background : -webkit-gradient(linear,0% 100% ,100.39% -0.39% ,color-stop(0,rgba(213, 113, 142, 1) ),color-stop(0.1297,rgba(215, 115, 134, 1) ),color-stop(0.3302,rgba(222, 119, 112, 1) ),color-stop(0.5767,rgba(232, 126, 77, 1) ),color-stop(0.8569,rgba(247, 136, 28, 1) ),color-stop(1,rgba(255, 141, 0, 1) ))
-			background : -o-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-			background : -ms-linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
-			background : linear-gradient(45deg, rgba(213, 113, 142, 1) 0%, rgba(215, 115, 134, 1) 12.97%, rgba(222, 119, 112, 1) 33.02%, rgba(232, 126, 77, 1) 57.67%, rgba(247, 136, 28, 1) 85.69%, rgba(255, 141, 0, 1) 100%)
+			@include gradient-gold
 		&:hover
 			box-shadow: none
 			height: 325px
@@ -1639,7 +1712,7 @@ p
 				background: url(../img/icon-history-4w.svg) center no-repeat
 			.bg-grad
 				transition: opacity .2s ease-out
-				opacity: 1
+				opacity: 0.8
 
 .box-in-social-p1
 	margin-top: 62px
@@ -1938,6 +2011,7 @@ a
 		margin-bottom: 0
 .banner-link.evro-ico-block
 	padding: 11px 15px 11px 40px
+	margin: -4px auto 90px
 .icon-evro
 	background: url(../img/icon-evro.svg) no-repeat
 	background-size: contain
@@ -2069,6 +2143,13 @@ a
 		color: #fff
 		font-size: 26px
 .slick-command
+	.item-command
+		display: inline-block
+		img
+			display: inline-block
+		.box-text-info
+			text-align: left
+.slick-advisors
 	.item-command
 		display: inline-block
 		img
@@ -2334,6 +2415,10 @@ a
 			float: none
 	.sect-top
 		margin-top: 80px
+	.full-bg-p2 .command .box-item-command.show-mobil
+		display: block
+	.full-bg-p2 .command .box-item-command.show-desktop
+		display: none
 
 
 @media (max-width: 768px)

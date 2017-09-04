@@ -67,8 +67,43 @@
 						slidesToShow: 2
 					}
 				}, {
-					breakpoint: 576,
+					breakpoint: 576,					
 					settings: {
+						verticalSwiping: true,
+						vertical: true,
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+
+		$('.slick-advisors').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			dots: false,
+			appendArrows: $('.advisors-class-arrow'),
+			//appendDots: $('.command-class-dots'),
+			prevArrow: '<i class="icon-arrow-left"></i>',
+			nextArrow: '<i class="icon-arrow-right"></i>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 650,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 576,					
+					settings: {
+						verticalSwiping: true,
+						vertical: true,
 						slidesToShow: 1
 					}
 				}
@@ -76,6 +111,12 @@
 		});
 
 		$('a#ex1').on("click", function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 800);
+		});
+		$('a#ex2').on("click", function (event) {
 			event.preventDefault();
 			var id  = $(this).attr('href'),
 					top = $(id).offset().top;
