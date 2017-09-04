@@ -53,15 +53,36 @@ function handleAuthClick(event) {
 	}
 }
 function CreateNewEvent() {
+	var storage = localStorage;
+	var storage_data = JSON.parse(storage.getItem('calendar_event'));
+	if((storage_data !== undefined && storage_data != null) && (storage_data.id !== undefined && storage_data.id != null)){
+		var event_request = gapi.client.calendar.events.get({
+			'calendarId': 'primary',
+			'eventId': storage_data.id
+		});
+		event_request.execute(function(resp) {
+			if(resp.htmlLink !== undefined){
+				return true;
+			}else{
+				sendEvent();
+			}
+		});
+	}else{
+		sendEvent();
+	}
+	return true;
+}
+
+function sendEvent(){
 	var event = {
 		'summary': 'Eloplay ICO',
 		'description': 'Eloplay ICO',
 		'start': {
-			'dateTime': '2017-08-21T12:00:00',
+			'dateTime': '2017-10-09T12:00:00',
 			'timeZone': 'UTC'
 		},
 		'end': {
-			'dateTime': '2017-09-04T12:00:00',
+			'dateTime': '2017-11-08T12:00:00',
 			'timeZone': 'UTC'
 		},
 		'recurrence': [
@@ -75,41 +96,15 @@ function CreateNewEvent() {
 			]
 		}
 	};
-	var event_exists = false;
-	gapi.client.calendar.events.list({
+	var request = gapi.client.calendar.events.insert({
 		'calendarId': 'primary',
-		'timeMin': (new Date()).toISOString(),
-		'showDeleted': false,
-		'singleEvents': true,
-		'maxResults': 10,
-		'orderBy': 'startTime'
-	}).then(function(response) {
-		var events = response.result.items;
-		if (events.length > 0) {
-			for (i = 0; i < events.length; i++) {
-				var calendar_event = events[i];
-				if(calendar_event.summary == event.summary){
-					event_exists = true;
-					break;
-				}
-			}
+		'resource': event
+	});
+	request.execute(function(event) {
+		storage.setItem('calendar_event', JSON.stringify({id: event.id}));
+		var is_modal = $('#subscriptionModal').is(':visible');
+		if(is_modal == true){
+			$( "#subscribeNews" ).submit();
 		}
-		if(event_exists === true){
-			return false;
-		}
-
-		var request = gapi.client.calendar.events.insert({
-			'calendarId': 'primary',
-			'resource': event
-		});
-		request.execute(function(event) {
-			var is_modal = $('#subscriptionModal').is(':visible');
-			if(is_modal == true){
-				$( "#subscribeNews" ).submit();
-			}
-			//console.log('Event created: ' + event.htmlLink);
-		});
 	});
 }
-
-
