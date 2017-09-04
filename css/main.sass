@@ -359,7 +359,8 @@ p
 		margin-top: 135px
 		margin-bottom: 60px
 	.box-item-command
-		text-align: center
+		//text-align: center
+		text-align: left
 		position: relative
 		.slick-slide:focus
 			outline: none
@@ -1618,9 +1619,9 @@ p
 	background-size: cover
 	width: 100%
 	margin-top: 58px
-	padding-top: 11.3rem
+	padding-top: 143px
 	.container
-		padding-bottom: 180px
+		padding-bottom: 252px
 	.font-l-42
 		color: #1d1930
 .follow-news
@@ -1792,7 +1793,7 @@ p
 			color: rgba(0,0,0,0.4)
 			cursor: pointer
 .in-media
-	height: 490px
+	height: 338px
 	margin-top: 87px
 	.slick-list
 		height: 100%
@@ -1800,17 +1801,20 @@ p
 			height: 100%
 	.item-in-media
 		height: calc(100% - 40px)
-		margin: 16px 17px
+		margin: 16px 35px
 		text-decoration: none
 		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15)
 		position: relative
 		cursor: pointer
+		max-width: 214px
+		min-width: 214px
 		.header
 			width: 100%
 			height: 135px
 			background-color: #5c556b
 			vertical-align: bottom
 			padding: 20px
+			display: inline-block
 			p
 				color: #fff
 				font-family: "DINpro-light", sans-serif
@@ -1822,18 +1826,26 @@ p
 					display: inline-block
 					height: 100%
 					vertical-align: bottom
+			&.duble-line
+				p
+					padding-bottom: 25px
 		.in-media-content
-			padding: 20px 30px
+			padding: 20px 18px
 			max-height: 250px
 			overflow: hidden
 			p
-				color: #5c556b
+				//color: #5c556b
+				color: #423d4c
 				&:nth-child(2)
 					font-size: 18px
 					line-height: 26px
 			.data
 				font-family: "DINpro-light", sans-serif
 				font-size: 15px
+			.format-doc
+				font-family: "DINpro-light", sans-serif
+				font-size: 19px
+
 		.read
 			display: none
 			position: absolute
@@ -1841,16 +1853,17 @@ p
 			color: rgba(213, 113, 142, 1)
 			font-size: 16px
 			width: 100%
-			.icon-arrow-right
+			.icon-arrow-right, .icon-arrow-down-circle
 				position: absolute
 				top: 7px
 				font-size: 18px
 				color: rgba(255, 141, 0, 1)
-				right: 60px
+				//right: 60px
+				right: 40px
 			&:before
 				content: ''
 				position: absolute
-				width: 101px
+				width: 175px
 				height: 2px
 				left: 0
 				bottom: -8px
@@ -2204,6 +2217,48 @@ a
 				width: 145px
 				height: 42px
 
+.elo-in-media
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	justify-content: center
+	.item-media-vc
+		img
+			width: 48px
+			height: 48px
+	.item-media-playua
+		img
+			width: 160px
+			height: 38px
+	.item-media-lebedev
+		img
+			width: 132px
+			height: 44px
+	.item-media-openg
+		img
+			width: 68px
+			height: 68px
+	.item-media-shpil
+		img
+			width: 144px
+			height: 30px
+	[class^=item-media-]
+		width: 216px
+		height: 150px
+		display: inline-block
+		position: relative
+		cursor: pointer
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			opacity: 0.5
+			transition: all .2s ease-out
+		&:hover
+			background-color: #000
+			img
+				opacity: 1
 
 
 @media (max-width: 1200px)
@@ -2284,6 +2339,9 @@ a
 			margin-top: 85px
 		.nav-links
 			display: none
+		.command
+			.box-item-command
+				text-align: center
 	.box-in-social-p1
 		float: none
 		margin: 62px auto 0

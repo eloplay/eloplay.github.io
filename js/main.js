@@ -20,7 +20,7 @@
 
 		$('.in-media').slick({
 			infinite: true,
-			slidesToShow: 3,
+			slidesToShow: 4,
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 2000,
@@ -33,7 +33,7 @@
 				{
 					breakpoint: 992,
 					settings: {
-						slidesToShow: 2
+						slidesToShow: 3
 					}
 				}, {
 					breakpoint: 500,
