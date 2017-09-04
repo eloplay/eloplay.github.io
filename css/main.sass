@@ -841,22 +841,23 @@ p
 			left: 50%
 			transform: translateX(-50%)
 	.nav-links
-		display: inline-block
-		width: 350px
 		text-align: right
 		position: absolute
-		right: 101px
+		right: 85px
 		margin-top: 5px
 		ul
 			padding-left: 0
+			display: flex
+			align-items: center
+			justify-content: flex-start
 			li
 				display: inline-block
-				width: 32%
-				padding-right: 20px
+				padding-right: 21px
 				a
 					color: #fff
 					opacity: 0.5
 					font-family: "DINpro-light", sans-serif
+					font-size: 1.8rem
 					&:hover
 						text-decoration: none
 						opacity: 1
@@ -2365,6 +2366,7 @@ a
 		display: inline-block
 		position: relative
 		cursor: pointer
+		transition: all 0.2s ease-out
 		img
 			position: absolute
 			top: 50%
