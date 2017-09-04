@@ -128,17 +128,17 @@
 		var dataEnd = moment('2017-11-08 12:00:00Z').valueOf();//2017-11-08 12:00:00 UTC
 		var toStart = dataStart - moment().valueOf(),
 			toEnd = dataEnd - moment().valueOf();
-
 		if(toStart > 0){
 			setInterval(function() {
 				var distance = dataStart - moment().valueOf();
+				var formatted_data = moment(dataStart).fromNow();
 				if (distance > 0) {
 					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-					$(".timer_days").text(days);
+					$(".timer_days").text(formatted_data);
 					$("#hours").text(hours);
 					$("#minutes").text(minutes);
 					$("#seconds").text(seconds);
@@ -155,6 +155,7 @@
 			$('#main-screen').addClass( "fade" );
 			$('#sale-started').removeClass( "fade" );
 			setInterval(function() {
+				var formatted_data = moment(dataEnd).fromNow();
 				var distance = dataEnd - moment().valueOf();
 				if (distance > 0) {
 					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -162,7 +163,7 @@
 					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-					$(".timer_days").text(days);
+					$(".timer_days").text(formatted_data);
 					$("#hours").text(hours);
 					$("#minutes").text(minutes);
 					$("#seconds").text(seconds);
