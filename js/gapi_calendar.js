@@ -1,5 +1,5 @@
-var CLIENT_ID = '360396386092-brlch566ifd681ncmkuboqnf05itfchv.apps.googleusercontent.com'; // my test client_id
-//var CLIENT_ID = '82833938-o9dgbcu490eafj0h3voq694ubr4hipl5.apps.googleusercontent.com';
+//var CLIENT_ID = '360396386092-brlch566ifd681ncmkuboqnf05itfchv.apps.googleusercontent.com'; // my test client_id
+var CLIENT_ID = '82833938-o9dgbcu490eafj0h3voq694ubr4hipl5.apps.googleusercontent.com';
 
 var SCOPES = "https://www.googleapis.com/auth/calendar";
 var authorizeButton = document.getElementById('subscribeBtn');
@@ -45,9 +45,11 @@ function handleAuthClick(event) {
 	var check_calendar = $('#calendar_event').prop( "checked" );
 	if(check_calendar == true){
 		gapi.auth2.getAuthInstance().signIn();
+		CreateNewEvent();
 	}else{
 		var is_modal = $('#subscriptionModal').is(':visible');
-		if(is_modal == true){
+		var is_valid = $('#subscribeNews')[0].checkValidity();
+		if(is_modal == true && is_valid == true){
 			$( "#subscribeNews" ).submit();
 		}
 	}
@@ -61,8 +63,13 @@ function CreateNewEvent() {
 			'eventId': storage_data.id
 		});
 		event_request.execute(function(resp) {
-			if(resp.htmlLink !== undefined){
-				return true;
+			if(resp.status !== undefined && resp.status != 'cancelled'){
+				var is_modal = $('#subscriptionModal').is(':visible');
+				var is_valid = $('#subscribeNews')[0].checkValidity();
+				if(is_modal == true && is_valid == true){
+					$( "#subscribeNews" ).submit();
+				}
+//				return true;
 			}else{
 				sendEvent();
 			}
@@ -74,6 +81,7 @@ function CreateNewEvent() {
 }
 
 function sendEvent(){
+	var storage = localStorage;
 	var event = {
 		'summary': 'Eloplay ICO',
 		'description': 'Eloplay ICO',
@@ -103,7 +111,8 @@ function sendEvent(){
 	request.execute(function(event) {
 		storage.setItem('calendar_event', JSON.stringify({id: event.id}));
 		var is_modal = $('#subscriptionModal').is(':visible');
-		if(is_modal == true){
+		var is_valid = $('#subscribeNews')[0].checkValidity();
+		if(is_modal == true && is_valid == true){
 			$( "#subscribeNews" ).submit();
 		}
 	});
