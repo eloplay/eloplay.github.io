@@ -128,12 +128,9 @@
 		var dataEnd = moment('2017-11-08 12:00:00Z').valueOf();//2017-11-08 12:00:00 UTC
 		var toStart = dataStart - moment().valueOf(),
 			toEnd = dataEnd - moment().valueOf();
-		console.log(toStart);
-		console.log(toEnd);
 
 		if(toStart > 0){
-			var refreshIntervalId = setInterval(function() {
-
+			setInterval(function() {
 				var distance = dataStart - moment().valueOf();
 				if (distance > 0) {
 					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -146,9 +143,31 @@
 					$("#minutes").text(minutes);
 					$("#seconds").text(seconds);
 				}else{
-					clearInterval(refreshIntervalId);
-					$('#main-screen').addClass( "fade" );
+					window.location.reload(true);
+/*					$('#main-screen').addClass( "fade" );
 					$('#sale-started').removeClass( "fade" );
+					clearInterval(refreshIntervalId);
+					*/
+				}
+			}, 1000);
+		}
+		if(toStart <= 0 && toEnd > 0){
+			$('#main-screen').addClass( "fade" );
+			$('#sale-started').removeClass( "fade" );
+			setInterval(function() {
+				var distance = dataEnd - moment().valueOf();
+				if (distance > 0) {
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					$(".timer_days").text(days);
+					$("#hours").text(hours);
+					$("#minutes").text(minutes);
+					$("#seconds").text(seconds);
+				}else{
+					window.location.reload(true);
 				}
 			}, 1000);
 		}
