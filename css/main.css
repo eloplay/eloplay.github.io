@@ -374,8 +374,7 @@ p {
     .command .box-item-command .item-command .box-text-info {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       margin-top: 3.4rem;
-      padding-bottom: 30px;
-      min-height: 195px; }
+      padding-bottom: 30px; }
       .command .box-item-command .item-command .box-text-info p:nth-child(1) {
         color: #ff8d00;
         font-family: "DINpro-regular", sans-serif;
@@ -2762,9 +2761,6 @@ a[href^=mailto] {
 
   .contacts-bottom {
     margin-top: 40px; }
-
-  .container.command {
-    margin-top: -104px; }
 
   .box-in-social-p1 {
     width: 100%; }
