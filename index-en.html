@@ -77,15 +77,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<li><a href="#whitepaper">Whitepaper</a></li>
 						</ul>
 					</div>
-					<div ng-init="current_lang='РУС'">
+					<div ng-init="current_lang='EN'">
 						<div class="sel-lang lang-nav" uib-dropdown uib-dropdown-toggle>
 							<div class="icon-bg"></div>
 							<span class="icon-lang"></span>
 							<span ng-bind="current_lang"></span>
 							<div uib-dropdown-menu class="dropdown-menu">
 								<ul>
-									<li ng-click="current_lang='EN'">ENGLISH</li>
-									<li ng-click="current_lang='РУС'">РУССКИЙ</li>
+									<a  href="index-en.html"><li ng-click="current_lang='EN'">ENGLISH</li></a>
+									<a  href="index.html"><li ng-click="current_lang='РУС'">РУССКИЙ</li></a>
 								</ul>
 							</div>
 						</div>
