@@ -1983,6 +1983,9 @@ p {
     top: 50%;
     transform: translate(-50%, -50%);
     left: 64%; }
+  .sel-lang .dropdown-toggle {
+    width: 100%;
+    height: 100%; }
   .sel-lang.dropdown {
     opacity: 0.5;
     transition: all 0.2s ease-out; }
