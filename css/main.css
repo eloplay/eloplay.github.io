@@ -2250,6 +2250,13 @@ a[href^=mailto] {
   .slick-command .item-command .box-text-info {
     text-align: left; }
 
+.slick-advisors .item-command {
+  display: inline-block; }
+  .slick-advisors .item-command img {
+    display: inline-block; }
+  .slick-advisors .item-command .box-text-info {
+    text-align: left; }
+
 .title-pairs {
   position: relative;
   color: #fff;
