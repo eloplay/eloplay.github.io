@@ -1983,27 +1983,29 @@ p {
     top: 50%;
     transform: translate(-50%, -50%);
     left: 64%; }
-  .sel-lang.dropdown-toggle {
+  .sel-lang.dropdown {
     opacity: 0.5;
     transition: all 0.2s ease-out; }
-    .sel-lang.dropdown-toggle.open {
+    .sel-lang.dropdown.open {
       opacity: 1; }
-      .sel-lang.dropdown-toggle.open [uib-dropdown-menu] {
+      .sel-lang.dropdown.open [uib-dropdown-menu] {
         background-color: rgba(8, 15, 23, 0.8);
         margin-top: 20px;
         left: -121px;
         min-width: 197px;
         border-radius: 6px 0 6px 6px; }
-        .sel-lang.dropdown-toggle.open [uib-dropdown-menu] ul {
+        .sel-lang.dropdown.open [uib-dropdown-menu] ul {
           padding: 0;
           margin: 0; }
-          .sel-lang.dropdown-toggle.open [uib-dropdown-menu] ul li {
-            display: block;
-            padding: 5px 15px;
-            color: #a5a3a3; }
-            .sel-lang.dropdown-toggle.open [uib-dropdown-menu] ul li:hover {
-              color: #fff; }
-      .sel-lang.dropdown-toggle.open .icon-bg {
+          .sel-lang.dropdown.open [uib-dropdown-menu] ul a {
+            text-decoration: none; }
+            .sel-lang.dropdown.open [uib-dropdown-menu] ul a li {
+              display: block;
+              padding: 5px 15px;
+              color: #a5a3a3; }
+              .sel-lang.dropdown.open [uib-dropdown-menu] ul a li:hover {
+                color: #fff; }
+      .sel-lang.dropdown.open .icon-bg {
         background-color: rgba(8, 15, 23, 0.8);
         border-radius: 6px 6px 0 0;
         width: 82px;
@@ -2011,7 +2013,7 @@ p {
         position: absolute;
         top: -7px;
         left: -7px; }
-    .sel-lang.dropdown-toggle:hover {
+    .sel-lang.dropdown:hover {
       opacity: 1; }
   .sel-lang.lang-nav {
     top: 29px;
