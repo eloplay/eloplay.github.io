@@ -694,12 +694,13 @@ p {
 
 .btn-large-color-y {
   text-transform: uppercase;
-  padding: 2.4rem 7rem;
+  padding: 2.4rem 1rem;
   font-size: 1.6rem;
   color: #fff;
   transition: all 0.2s;
   border: none;
-  box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.4); }
+  box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.4);
+  width: 71%; }
   .btn-large-color-y:hover, .btn-large-color-y:focus {
     color: #fff; }
   .btn-large-color-y:hover {
@@ -2244,7 +2245,8 @@ a[href^=mailto] {
     text-decoration: none;
     border-bottom: 1px solid #fff; }
     .banner-link a:hover {
-      border-bottom: none; }
+      border-bottom: none;
+      padding-bottom: 2px; }
 
 .command-control-container {
   top: 50%;
@@ -2919,14 +2921,19 @@ a[href^=mailto] {
     width: 303px; }
 
   .btn-large-color-y {
-    padding: 2rem 3.2rem; }
+    padding: 2rem 1rem;
+    width: 88%; }
 
   .sb-box-token {
     width: 260px; }
 
   .bg-white-center .btn-large-color-y {
     max-width: 270px;
-    padding: 1.8rem 1rem; } }
+    padding: 1.8rem 1rem; }
+
+  .sect-top .box-right .box-time .hide-time p {
+    line-height: 100%;
+    font-size: 2.5rem; } }
 @media (max-width: 360px) {
   html {
     font-size: 9px; }
