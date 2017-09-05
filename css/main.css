@@ -2629,6 +2629,8 @@ a[href^=mailto] {
   .full-bg-p2 .bg-sect-4 .title-sect-2 {
     padding-right: 15px;
     padding-left: 15px; }
+  .full-bg-p2 .bg-sect-32 .link-guard {
+    right: 0; }
 
   .box-in-social-p1 {
     float: none;
