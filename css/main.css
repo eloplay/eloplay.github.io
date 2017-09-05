@@ -1688,7 +1688,8 @@ p {
   background-size: cover;
   width: 100%;
   margin-top: 58px;
-  padding-top: 143px; }
+  padding-top: 180px;
+  min-height: 942px; }
   .bg-in-media .container {
     padding-bottom: 252px; }
   .bg-in-media .font-l-42 {
@@ -2307,6 +2308,7 @@ a[href^=mailto] {
     position: relative;
     width: 235px;
     height: 165px;
+    cursor: pointer;
     transition: all 0.2s ease-out; }
     .box-pairs .items-pairs img {
       position: absolute;
