@@ -2613,7 +2613,8 @@ a[href^=mailto] {
   .full-bg-p2 .box-pairs {
     justify-content: center; }
   .full-bg-p2 .img-monitor img {
-    border: 10px solid #533f4c; }
+    border: 10px solid #533f4c;
+    width: 100%; }
   .full-bg-p2 .banner-link {
     margin: 50px 0 50px 0; }
     .full-bg-p2 .banner-link img {
