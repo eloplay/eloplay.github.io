@@ -1805,13 +1805,13 @@ p
 			height: 100%
 	.item-in-media
 		height: calc(100% - 40px)
-		margin: 16px 35px
+		margin: 16px auto
 		text-decoration: none
 		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15)
 		position: relative
 		cursor: pointer
-		max-width: 214px
-		min-width: 214px
+		width: 214px
+		display: block
 		.header
 			width: 100%
 			height: 135px
@@ -2413,6 +2413,11 @@ a
 
 
 @media (max-width: 1200px)
+	.del-br-1200
+		br
+			content: ""
+			&:after
+				content: '\00a0'
 	.in-social-networks
 		li:nth-child(1)
 			display: block
@@ -2432,7 +2437,14 @@ a
 				content: ""
 				&:after
 					content: '\00a0'
+	.elo-in-media
+		justify-content: center
 @media (max-width: 992px)
+	.del-br-992
+		br
+			content: ""
+			&:after
+				content: '\00a0'
 	.top-bar .btn-nav,
 	.top-bar .btn-nav-menu
 		display: block
