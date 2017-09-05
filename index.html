@@ -16,7 +16,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet" />
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-	<link href="css/main.css?v=9" rel="stylesheet" />
+	<link href="css/main.css?v=10" rel="stylesheet" />
 	<link href="css/fonts.css?v=1" rel="stylesheet" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<ul>
 							<li><a href="http://eloplay.com" target="_blank">Eloplay.com</a></li>
 							<li><a href="#team">Команда</a></li>
-							<li><a id="ex2" href="#tokensale">Токенсейл</a></li>
+							<li><a href="#tokensale" id="ex2">Токенсейл</a></li>
 							<li><a href="#whitepaper">Whitepaper</a></li>
 						</ul>
 					</div>
@@ -87,8 +87,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>
 							<div uib-dropdown-menu class="dropdown-menu">
 								<ul>
-									<a  href="./index-en.html"><li ng-click="current_lang='EN'">ENGLISH</li></a>
-									<a  href="./index.html"><li ng-click="current_lang='РУС'">РУССКИЙ</li></a>
+									<a href="index-en.html"><li ng-click="current_lang='EN'">ENGLISH</li></a>
+									<a href="index.html"><li ng-click="current_lang='РУС'">РУССКИЙ</li></a>
 								</ul>
 							</div>
 						</div>
@@ -102,9 +102,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="btn-nav-menu" ng-class="{'d-menu-show': is_btn_show}" ng-cloak>
 					<ul>
 						<a id="ex1" href="#pay-token" ng-click="is_btn_show=false"><li>TOKEN SALE</li></a>
-						<a href="docs/roadmap.pdf" ng-click="is_btn_show=false"><li>ROADMAP</li></a>
-						<a href="docs/white_paper.pdf" ng-click="is_btn_show=false"><li>WHITE PAPER</li></a>
-						<a href="docs/sec_howey_test.pdf" ng-click="is_btn_show=false"><li>SEC HOWEY TEST</li></a>
+						<a href="docs/ru/eloplay_roadmap.pdf" ng-click="is_btn_show=false"><li>ROADMAP</li></a>
+						<a href="docs/ru/eloplay_whitepaper.pdf" ng-click="is_btn_show=false"><li>WHITE PAPER</li></a>
+						<a href="docs/ru/eloplay_sec_howey_test.pdf" ng-click="is_btn_show=false"><li>SEC HOWEY TEST</li></a>
 						<a href="https://github.com/eloplay" target="_blank" ng-click="is_btn_show=false"><li>GITHUB</li></a>
 						<a href="#follow-news" ng-click="is_btn_show=false"><li>CONTACTS</li></a>
 					</ul>
@@ -859,7 +859,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<!-- карусель Eloplay в медиа -->
 					<div class="in-media" ng-cloak>
 
-						<a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="item-in-media">
+						<a href="docs/ru/eloplay_overview.pdf" target="_blank" class="item-in-media">
 							<div class="header"><p>Презентация</p></div>
 							<div class="in-media-content">
 								<p class="format-doc">Pdf</p>
@@ -867,8 +867,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="read">Скачать<i class="icon-arrow-down-circle"></i></div>
 							</div>
 						</a>
-
-						<a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="item-in-media">
+						<a href="docs/ru/eloplay_wp.pdf" target="_blank" class="item-in-media">
 							<div class="header"><p>Whitepaper</p></div>
 							<div class="in-media-content">
 								<p class="format-doc">Pdf</p>
@@ -876,8 +875,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="read">Скачать<i class="icon-arrow-down-circle"></i></div>
 							</div>
 						</a>
-
-						<a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="item-in-media">
+						<a href="docs/ru/eloplay_roadmap.pdf" target="_blank" class="item-in-media">
 							<div class="header"><p>Roadmap</p></div>
 							<div class="in-media-content">
 								<p class="format-doc">Pdf</p>
@@ -885,9 +883,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="read">Скачать<i class="icon-arrow-down-circle"></i></div>
 							</div>
 						</a>
-
-						<a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="item-in-media">
-							<div class="header duble-line"><p>Архитектура<br>платформа</p></div>
+						<a href="docs/ru/eloplay_arch.pdf" target="_blank" class="item-in-media">
+							<div class="header duble-line"><p>Архитектура<br>платформы</p></div>
 							<div class="in-media-content">
 								<p class="format-doc">Pdf</p>
 								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p> -->
@@ -914,19 +911,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<p class="font-l-42 title-pairs">Eloplay в медиа</p>
 			<div class="elo-in-media">
 				<div class="item-media-vc">
-					<img src="./img/icon-partn-1.png" alt="">
+					<img src="img/icon-partn-1.png" alt="">
 				</div>
 				<div class="item-media-playua">
-					<img src="./img/icon-partn-2.png" alt="">
+					<img src="img/icon-partn-2.png" alt="">
 				</div>
 				<div class="item-media-lebedev">
-					<img src="./img/icon-partn-5.svg" alt="">
+					<img src="img/icon-partn-5.svg" alt="">
 				</div>
 				<div class="item-media-openg">
-					<img src="./img/icon-partn-3.png" alt="">
+					<img src="img/icon-partn-3.png" alt="">
 				</div>
 				<div class="item-media-shpil">
-					<img src="./img/icon-partn-4.svg" alt="">
+					<img src="img/icon-partn-4.svg" alt="">
 				</div>
 			</div>
 
@@ -984,7 +981,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 	<script src="js/push_message.js"></script>
-	<script src="./js/gapi_calendar.js"></script>
+	<script src="js/gapi_calendar.js"></script>
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">

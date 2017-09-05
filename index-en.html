@@ -16,7 +16,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet" />
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-	<link href="css/main.css?v=9" rel="stylesheet" />
+	<link href="css/main.css?v=10" rel="stylesheet" />
 	<link href="css/fonts.css?v=1" rel="stylesheet" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -73,8 +73,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="nav-links">
 						<ul>
 							<li><a href="http://eloplay.com" target="_blank">Eloplay.com</a></li>
-							<li><a href="#team">Команда</a></li>
-							<li><a id="ex2" href="#tokensale">Токенсейл</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#tokensale" id="ex2">Token Sale</a></li>
 							<li><a href="#whitepaper">Whitepaper</a></li>
 						</ul>
 					</div>
@@ -87,8 +87,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>
 							<div uib-dropdown-menu class="dropdown-menu">
 								<ul>
-									<a  href="./index-en.html"><li ng-click="current_lang='EN'">ENGLISH</li></a>
-									<a  href="./index.html"><li ng-click="current_lang='РУС'">РУССКИЙ</li></a>
+									<a href="index-en.html"><li ng-click="current_lang='EN'">ENGLISH</li></a>
+									<a href="index.html"><li ng-click="current_lang='РУС'">РУССКИЙ</li></a>
 								</ul>
 							</div>
 						</div>
@@ -102,9 +102,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="btn-nav-menu" ng-class="{'d-menu-show': is_btn_show}" ng-cloak>
 					<ul>
 						<a id="ex1" href="#pay-token" ng-click="is_btn_show=false"><li>TOKEN SALE</li></a>
-						<a href="docs/roadmap.pdf" ng-click="is_btn_show=false"><li>ROADMAP</li></a>
-						<a href="docs/white_paper.pdf" ng-click="is_btn_show=false"><li>WHITE PAPER</li></a>
-						<a href="docs/sec_howey_test.pdf" ng-click="is_btn_show=false"><li>SEC HOWEY TEST</li></a>
+						<a href="docs/en/eloplay_roadmap.pdf" target="_blank" ng-click="is_btn_show=false"><li>ROADMAP</li></a>
+						<a href="docs/en/eloplay_whitepaper.pdf" target="_blank" ng-click="is_btn_show=false"><li>WHITE PAPER</li></a>
+						<a href="docs/en/eloplay_sec_howey_test.pdf" target="_blank" ng-click="is_btn_show=false"><li>SEC HOWEY TEST</li></a>
 						<a href="https://github.com/eloplay" target="_blank" ng-click="is_btn_show=false"><li>GITHUB</li></a>
 						<a href="#follow-news" ng-click="is_btn_show=false"><li>CONTACTS</li></a>
 					</ul>
@@ -251,7 +251,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="container">
 			<div class="banner-link evro-ico-block" data-aos="zoom-in" data-aos-duration="1200">
 				<span class="icon-evro"></span>
-				<p>ICO token issuer: Qooors OU company, incorporated in Estonia</p>
+				<p>ICO token issuer: Qooors OÜ company, incorporated in Estonia</p>
 			</div>
 		</div>
 
@@ -310,7 +310,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							Source: The Guardian
 						</a>
 					</div>
-					<!-- <a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="btn btn-br-line sect-3"><span>Играть на Eloplay</span></a> -->
+					<!-- <a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="btn btn-br-line sect-3"><span>ИгратьPlay on Eloplay</span></a> -->
 				</div>
 		</div>	
 
@@ -344,10 +344,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<center>
 						<div class="box-img-anime">
 							<div  class="img-market-top" data-aos="fade-left" data-aos-duration="1200">
-								<p>Профессиональные<br>киберспортсмены</p>
+								<p>Professional<br>cybersportsmen</p>
 							</div>
 							<p class="img-market-center-txt" data-aos="zoom-out-down" data-aos-offset="200" data-aos-delay="2000">
-								385.5<br>миллионов
+								385.5<br>millions
 							</p>
 							<div>
 								<img class="img-market-1" data-aos="fade-up" data-aos-offset="200" data-aos-delay="600" src="./img/img-market-1_.png" alt="">
@@ -355,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<img class="img-market-3" data-aos="zoom-out-down" data-aos-offset="200" data-aos-delay="1300" src="./img/img-market-2.png" alt="">
 							</div>
 							<div data-aos="fade-left" data-aos-delay="800" data-aos-duration="800">
-								<p class="img-market-bottom-txt">Аудитория<br>киберспорта</p>
+								<p class="img-market-bottom-txt">Cybersport<br>audience</p>
 							</div>
 						</div>
 					</center>
@@ -379,17 +379,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</p>
 				<div class="box-time-token">
 					<div class="start-pay-token">
-						<p>Начало: <span>09.10.2017</span></p>
+						<p>Begin: <span>09.10.2017</span></p>
 						<p>(12:00 PM London Time, UTC+0)</p>
 					</div>
 					<div class="end-pay-token">
-						<p>Завершение: <span>06.11.2017</span></p>
+						<p>End: <span>06.11.2017</span></p>
 						<p>(12:00 PM London Time, UTC+0)</p>
 					</div>
 				</div>
 				<div class="line-time-token"></div>
 				<div class="box-sub-line-time">
-					<p>Старт через <span>31</span> день</p>
+					<p>Begins in <span>31</span> days</p>
 				</div>
 				<div class="box-bonus">
 					<p class="title-bonus">Bonuses:</p>
@@ -472,7 +472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Виталий Балахонов</p>
+								<p>Vitaly Balakhonov</p>
 								<p>СЕО</p>
 							</div>
 						</div>
@@ -486,7 +486,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Юрий Высоцкий</p>
+								<p>Yuri Vysotskiy</p>
 								<p>СТО</p>
 							</div>
 						</div>
@@ -500,7 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Дмитрий Сальников</p>
+								<p>Dmytro Salnikov</p>
 								<p>CIO</p>
 							</div>
 						</div>
@@ -514,7 +514,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Сергей Мушта</p>
+								<p>Sergey Mushta</p>
 								<p>Solidity and Fullstack Developer<br></p>
 							</div>
 						</div>
@@ -528,7 +528,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Ярослав Яковенко</p>
+								<p>Yaroslav Yakovenko</p>
 								<p>Fullstack Developer<br></p>
 							</div>
 						</div>
@@ -542,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Сергей Коржиков</p>
+								<p>Sergey Korzhikov</p>
 								<p>Fullstack Developer<br></p>
 							</div>
 						</div>
@@ -556,7 +556,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Александр Леженко</p>
+								<p>Aleksandr Lezhenko</p>
 								<p>Senior Fullstack Developer<br></p>
 							</div>
 						</div>
@@ -570,7 +570,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Павел Заховалко</p>
+								<p>Pavel Zakhovalko</p>
 								<p>Fullstack Developer<br></p>
 							</div>
 						</div>
@@ -584,7 +584,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>
 							<!--							</a>-->
 							<div class="box-text-info no-line">
-								<p>Андрей Пащенко</p>
+								<p>Andrey Pashchenko</p>
 								<p>Frontend Developer<br></p>
 							</div>
 						</div>
@@ -598,7 +598,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Виктория Москаленко</p>
+								<p>Victoria Moskalenko</p>
 								<p>Human Resources<br></p>
 							</div>
 						</div>
@@ -612,7 +612,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Дмитрий Макушин</p>
+								<p>Dmitriy Makushin</p>
 								<p>Frontend Developer<br></p>
 							</div>
 						</div>
@@ -626,7 +626,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Олександр Свиридовський</p>
+								<p>Oleksandr Sviridovskiy</p>
 								<p>Quality Assurance<br></p>
 							</div>
 						</div>
@@ -647,7 +647,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Виталий Балахонов</p>
+						<p>Vitaly Balakhonov</p>
 						<p>СЕО</p>
 					</div>
 				</div>
@@ -659,7 +659,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Юрий Высоцкий</p>
+						<p>Yuri Vysotskiy</p>
 						<p>СТО</p>
 					</div>
 				</div>
@@ -671,7 +671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Дмитрий Сальников</p>
+						<p>Dmytro Salnikov</p>
 						<p>CIO</p>
 					</div>
 				</div>
@@ -683,7 +683,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Сергей Мушта</p>
+						<p>Sergey Mushta</p>
 						<p>Solidity and Fullstack Developer<br></p>
 					</div>
 				</div>
@@ -695,7 +695,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Ярослав Яковенко</p>
+						<p>Yaroslav Yakovenko</p>
 						<p>Fullstack Developer<br></p>
 					</div>
 				</div>						
@@ -707,7 +707,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Сергей Коржиков</p>
+						<p>Sergey Korzhikov</p>
 						<p>Fullstack Developer<br></p>
 					</div>
 				</div>
@@ -719,7 +719,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Александр Леженко</p>
+						<p>Aleksandr Lezhenko</p>
 						<p>Senior Fullstack Developer<br></p>
 					</div>
 				</div>
@@ -731,7 +731,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Павел Заховалко</p>
+						<p>Pavel Zakhovalko</p>
 						<p>Fullstack Developer<br></p>
 					</div>
 				</div>
@@ -743,7 +743,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<!--							</a>-->
 					<div class="box-text-info no-line">
-						<p>Андрей Пащенко</p>
+						<p>Andrey Pashchenko</p>
 						<p>Frontend Developer<br></p>
 					</div>
 				</div>
@@ -755,7 +755,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Виктория Москаленко</p>
+						<p>Victoria Moskalenko</p>
 						<p>Human Resources<br></p>
 					</div>
 				</div>
@@ -767,7 +767,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Дмитрий Макушин</p>
+						<p>Dmitriy Makushin</p>
 						<p>Frontend Developer<br></p>
 					</div>
 				</div>
@@ -779,7 +779,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</a>
 					<div class="box-text-info no-line">
-						<p>Олександр Свиридовський</p>
+						<p>Oleksandr Sviridovskiy</p>
 						<p>Quality Assurance<br></p>
 					</div>
 				</div>
@@ -799,7 +799,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</div>
 							</a>
 							<div class="box-text-info no-line">
-								<p>Андрей Верессов</p>
+								<p>Andrei Veresov</p>
 								<p>Legal Advisor</p>
 							</div>
 						</div>
@@ -855,44 +855,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			
 		<div class="bg-in-media" id="media">
 				<div class="container">
-					<p class="font-l-42 title-pay-token">Документы</p>
+					<p class="font-l-42 title-pay-token">Documents</p>
 
 					<!-- карусель Eloplay в медиа -->
 					<div class="in-media" ng-cloak>
 
-						<a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="item-in-media">
-							<div class="header"><p>Презентация</p></div>
+						<a href="docs/en/eloplay_overview.pdf" target="_blank" class="item-in-media">
+							<div class="header"><p>Presentation</p></div>
 							<div class="in-media-content">
 								<p class="format-doc">Pdf</p>
 								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p> -->
-								<div class="read">Скачать<i class="icon-arrow-down-circle"></i></div>
+								<div class="read">Download<i class="icon-arrow-down-circle"></i></div>
 							</div>
 						</a>
-
-						<a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="item-in-media">
+						<a href="docs/en/eloplay_whitepaper.pdf" target="_blank" class="item-in-media">
 							<div class="header"><p>Whitepaper</p></div>
 							<div class="in-media-content">
 								<p class="format-doc">Pdf</p>
-								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p> -->
-								<div class="read">Скачать<i class="icon-arrow-down-circle"></i></div>
+								<div class="read">Download<i class="icon-arrow-down-circle"></i></div>
 							</div>
 						</a>
-
-						<a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="item-in-media">
+						<a href="docs/en/eloplay_roadmap.pdf" target="_blank" class="item-in-media">
 							<div class="header"><p>Roadmap</p></div>
 							<div class="in-media-content">
 								<p class="format-doc">Pdf</p>
-								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p> -->
-								<div class="read">Скачать<i class="icon-arrow-down-circle"></i></div>
+								<div class="read">Download<i class="icon-arrow-down-circle"></i></div>
 							</div>
 						</a>
-
-						<a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="item-in-media">
-							<div class="header duble-line"><p>Архитектура<br>платформа</p></div>
+						<a href="docs/en/eloplay_arch.pdf" target="_blank" class="item-in-media">
+							<div class="header duble-line"><p>Platform<br>architecture</p></div>
 							<div class="in-media-content">
 								<p class="format-doc">Pdf</p>
-								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, totam</p> -->
-								<div class="read">Скачать<i class="icon-arrow-down-circle"></i></div>
+								<div class="read">Download<i class="icon-arrow-down-circle"></i></div>
 							</div>
 						</a>
 
@@ -915,19 +909,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<p class="font-l-42 title-pairs">Eloplay in Media</p>
 			<div class="elo-in-media">
 				<div class="item-media-vc">
-					<img src="./img/icon-partn-1.png" alt="">
+					<img src="img/icon-partn-1.png" alt="">
 				</div>
 				<div class="item-media-playua">
-					<img src="./img/icon-partn-2.png" alt="">
+					<img src="img/icon-partn-2.png" alt="">
 				</div>
 				<div class="item-media-lebedev">
-					<img src="./img/icon-partn-5.svg" alt="">
+					<img src="img/icon-partn-5.svg" alt="">
 				</div>
 				<div class="item-media-openg">
-					<img src="./img/icon-partn-3.png" alt="">
+					<img src="img/icon-partn-3.png" alt="">
 				</div>
 				<div class="item-media-shpil">
-					<img src="./img/icon-partn-4.svg" alt="">
+					<img src="img/icon-partn-4.svg" alt="">
 				</div>
 			</div>
 
@@ -985,7 +979,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 	<script src="js/push_message.js"></script>
-	<script src="./js/gapi_calendar.js"></script>
+	<script src="js/gapi_calendar.js"></script>
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
