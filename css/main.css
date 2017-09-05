@@ -2588,7 +2588,7 @@ a[href^=mailto] {
   .full-bg-p2 .evro-ico-block .icon-evro {
     display: none; }
   .full-bg-p2 .bg-sect-3 {
-    min-height: 1839px; }
+    min-height: 952px; }
     .full-bg-p2 .bg-sect-3 .add-padd {
       padding-left: 15px; }
   .full-bg-p2 .indent-pl-50 {
@@ -2608,6 +2608,8 @@ a[href^=mailto] {
     display: none; }
   .full-bg-p2 .command .box-item-command {
     text-align: center; }
+  .full-bg-p2 .bg-sect-32 {
+    min-height: 500px; }
 
   .box-in-social-p1 {
     float: none;
@@ -2628,7 +2630,8 @@ a[href^=mailto] {
     margin-bottom: 85px; }
 
   .img-medal img {
-    float: none; }
+    float: none;
+    width: 47%; }
 
   .sect-top {
     margin-top: 80px; }

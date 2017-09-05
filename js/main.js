@@ -16,7 +16,10 @@
 
 	$(function() {
 
-		AOS.init();
+		AOS.init({
+      //disable: window.innerWidth < 1024
+      disable: true
+    });
 
 		$('.in-media').slick({
 			infinite: true,
