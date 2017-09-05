@@ -2193,11 +2193,33 @@ a
 		position: absolute
 		bottom: -21px
 		left: 0
-.items-pairs
-	padding-bottom: 210px
-	.icon-bright
-		width: 314px
-		height: 90px		
+.box-pairs
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	justify-content: flex-start
+	padding-bottom: 162px
+	.items-pairs
+		position: relative
+		width: 235px
+		height: 165px
+		transition: all .2s ease-out
+		img
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			opacity: 0.5
+		.icon-bright
+			width: 190px
+			height: 55px
+		.icon-synergis
+			width: 190px
+			height: 30px
+		&:hover
+			background-color: #000
+			img
+				opacity: 1
 .sect-footer
 	.box-bottom
 		background-color: #0c0007
@@ -2344,7 +2366,7 @@ a
 	display: flex
 	align-items: center
 	flex-wrap: wrap
-	justify-content: center
+	justify-content: flex-start
 	.item-media-vc
 		img
 			width: 48px

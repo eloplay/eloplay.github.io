@@ -2297,11 +2297,33 @@ a[href^=mailto] {
     bottom: -21px;
     left: 0; }
 
-.items-pairs {
-  padding-bottom: 210px; }
-  .items-pairs .icon-bright {
-    width: 314px;
-    height: 90px; }
+.box-pairs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 162px; }
+  .box-pairs .items-pairs {
+    position: relative;
+    width: 235px;
+    height: 165px;
+    transition: all 0.2s ease-out; }
+    .box-pairs .items-pairs img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.5; }
+    .box-pairs .items-pairs .icon-bright {
+      width: 190px;
+      height: 55px; }
+    .box-pairs .items-pairs .icon-synergis {
+      width: 190px;
+      height: 30px; }
+    .box-pairs .items-pairs:hover {
+      background-color: #000; }
+      .box-pairs .items-pairs:hover img {
+        opacity: 1; }
 
 .sect-footer .box-bottom {
   background-color: #0c0007;
@@ -2451,7 +2473,7 @@ a[href^=mailto] {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: flex-start; }
   .elo-in-media .item-media-vc img {
     width: 48px;
     height: 48px; }
