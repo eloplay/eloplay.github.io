@@ -2986,6 +2986,9 @@ a[href^=mailto] {
     right: 76px; }
 
   .box-img-right .box-img-anime {
-    left: -18%; } }
+    left: -18%; }
+
+  .full-bg-p2 .bg-sect-3 {
+    min-height: 712px; } }
 
 /*# sourceMappingURL=main.css.map */
