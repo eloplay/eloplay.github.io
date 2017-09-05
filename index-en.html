@@ -72,10 +72,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 					<div class="nav-links">
 						<ul>
-							<li><a href="http://eloplay.com" target="_blank">Eloplay.com</a></li>
+							<li><a href="https://eloplay.com/" target="_blank">Eloplay.com</a></li>
 							<li><a href="#team">Team</a></li>
 							<li><a href="#tokensale" id="ex2">Token Sale</a></li>
-							<li><a href="#whitepaper">Whitepaper</a></li>
+							<li><a href="#docs">Whitepaper</a></li>
 						</ul>
 					</div>
 					<div ng-init="current_lang='EN'">
@@ -104,7 +104,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<a id="ex1" href="#pay-token" ng-click="is_btn_show=false"><li>TOKEN SALE</li></a>
 						<a href="docs/en/eloplay_roadmap.pdf" target="_blank" ng-click="is_btn_show=false"><li>ROADMAP</li></a>
 						<a href="docs/en/eloplay_whitepaper.pdf" target="_blank" ng-click="is_btn_show=false"><li>WHITE PAPER</li></a>
-						<a href="docs/en/eloplay_sec_howey_test.pdf" target="_blank" ng-click="is_btn_show=false"><li>SEC HOWEY TEST</li></a>
+						<!--<a href="docs/en/eloplay_sec_howey_test.pdf" target="_blank" ng-click="is_btn_show=false"><li>SEC HOWEY TEST</li></a>-->
 						<a href="https://github.com/eloplay" target="_blank" ng-click="is_btn_show=false"><li>GITHUB</li></a>
 						<a href="#follow-news" ng-click="is_btn_show=false"><li>CONTACTS</li></a>
 					</ul>
@@ -853,7 +853,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</div>
 			
-		<div class="bg-in-media" id="media">
+		<div class="bg-in-media" id="docs">
 			<div class="container">
 				<p class="font-l-42 title-pay-token">Documents</p>
 				<!-- карусель Eloplay в медиа -->
@@ -906,7 +906,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</div>
 
-		<div class="sect-footer" id="partners">
+		<div class="sect-footer" id="media">
 			<div class="container">
 			<p class="font-l-42 title-pairs">Eloplay in Media</p>
 			<div class="elo-in-media">
@@ -928,10 +928,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 				<p class="font-l-42 title-pairs">Eloplay Partners</p>
 				<div class="box-pairs">
-					<a href="" class="items-pairs">
+					<a href="http://brightlaw.ee/en/team/" target="_blank" class="items-pairs">
 						<img class="icon-bright" src="./img/icon-bright.svg" alt="">
 					</a>
-					<a href="" class="items-pairs">
+					<a href="http://itsynergis.ru/" target="_blank" class="items-pairs">
 						<img class="icon-synergis" src="./img/icon-synergis.png" alt="">
 					</a>
 				</div>
@@ -958,7 +958,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-title" id="exampleModalLabel">Следите за новостями<br />токенсейла</h2>
+					<h2 class="modal-title" id="exampleModalLabel">Follow token sale news</h2>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="close-sign" aria-hidden="true"></span>
 					</button>
@@ -966,19 +966,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="modal-body">
 					<div class="box-input-mail">
 						<form id="subscribeNews" class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8" name="reg_form" novalidate>
-							<input type="email" name="email" class="form-control st-placeh" placeholder="Введите Ваш e-mail" id="send-mail" maxlength="50" ng-class = "{ 'input-error-mail-top': reg_form.email.$error.required && reg_form.email.$touched || !reg_form.email.$error.required && reg_form.email.$touched && !reg_form.email.$valid || reg_form.email.$dirty && reg_form.email.$error.pattern, 'input-error-mail-bottom': !reg_form.password.$valid && reg_form.password.$touched && !reg_form.password.$error.minlength || reg_form.password.$error.minlength && reg_form.password.$touched }" type="email" name="email" ng-model="register.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required ng-keyup="$event.keyCode == 13 && do_register()" autocomplete="off" />
-							<div class="error_message" ng-show = "reg_form.email.$error.required && reg_form.email.$touched">Введите E-mail</div>
-							<div class="error_message" ng-show = "reg_form.email.$dirty && reg_form.email.$error.pattern">E-mail в формате: mymail@doman.com</div>
+							<input type="email" name="email" class="form-control st-placeh" placeholder="Enter your E-mail" id="send-mail" maxlength="50" ng-class = "{ 'input-error-mail-top': reg_form.email.$error.required && reg_form.email.$touched || !reg_form.email.$error.required && reg_form.email.$touched && !reg_form.email.$valid || reg_form.email.$dirty && reg_form.email.$error.pattern, 'input-error-mail-bottom': !reg_form.password.$valid && reg_form.password.$touched && !reg_form.password.$error.minlength || reg_form.password.$error.minlength && reg_form.password.$touched }" type="email" name="email" ng-model="register.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required ng-keyup="$event.keyCode == 13 && do_register()" autocomplete="off" />
+							<div class="error_message" ng-show = "reg_form.email.$error.required && reg_form.email.$touched">Enter E-mail</div>
+							<div class="error_message" ng-show = "reg_form.email.$dirty && reg_form.email.$error.pattern">E-mail format: mymail@doman.com</div>
 							<input id="check1" type="checkbox" checked name="tockensale_start" value="tockensale_start">							
-							<label for="check1" class="label-checkbox">Сообщать мне о старте продаж токенов<br>через браузер</label>
+							<label for="check1" class="label-checkbox">Tell me about token sale start<br>with browser push notification</label>
 							<input type="hidden" name="campaign_token" value="nTjtu" />
 							<input type="checkbox" checked name="calendar_event" value="calendar_event" id="calendar_event">
-							<label for="calendar_event" class="label-checkbox">Добавить событие в календарь</label>
+							<label for="calendar_event" class="label-checkbox">Add event to calendar</label>
 						</form>
 					</div>
 				</div>
 				<div class="modal-footer box-time">
-					<button type="button" class="btn btn-large-color" id="subscribeBtn" ng-disabled = "!reg_form.$valid" ><span>Подписаться</span></button>
+					<button type="button" class="btn btn-large-color" id="subscribeBtn" ng-disabled = "!reg_form.$valid" ><span>Subscribe</span></button>
 				</div>
 			</div>
 		</div>
