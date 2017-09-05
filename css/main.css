@@ -2447,7 +2447,7 @@ a[href^=mailto] {
   font-size: 28px; }
 .modal-dialog .error_message {
   position: absolute;
-  left: 51px;
+  left: 10%;
   top: 47px;
   font-size: 12px;
   color: red; }
@@ -2820,8 +2820,7 @@ a[href^=mailto] {
     top: 294px; }
 
   .box-input-mail .input-mail .form-control {
-    width: 68%;
-    float: left; }
+    width: 68%; }
 
   .box-input-mail .input-mail .btn-send {
     width: 29%;
@@ -2914,6 +2913,11 @@ a[href^=mailto] {
   .full-bg-p2 .bg-sect-3 {
     min-height: 800px; } }
 @media (max-width: 470px) {
+  .del-br-470 br {
+    content: ""; }
+    .del-br-470 br:after {
+      content: " "; }
+
   .bg-heder .box-title h1 {
     font-size: 3.9rem; }
 
@@ -2974,7 +2978,15 @@ a[href^=mailto] {
 
   .sect-top .box-right .box-time .hide-time p {
     line-height: 100%;
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+
+  .modal-dialog {
+    width: calc(100% - 22px); }
+    .modal-dialog .modal-header h2 {
+      font-size: 28px;
+      line-height: 100%; }
+    .modal-dialog .box-input-mail .input-mail label {
+      margin-left: 0; } }
 @media (max-width: 360px) {
   html {
     font-size: 9px; }

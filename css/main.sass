@@ -2344,7 +2344,7 @@ a
 		font-size: 28px
 	.error_message
 		position: absolute
-		left: 51px
+		left: 10%
 		top: 47px
 		font-size: 12px
 		color: red
@@ -2710,7 +2710,7 @@ a
 		//background-position-x: right
 	.box-input-mail .input-mail .form-control
 		width: 68%
-		float: left
+		//float: left
 	.box-input-mail .input-mail .btn-send
 		width: 29%
 		float: left
@@ -2792,6 +2792,11 @@ a
 		min-height: 800px
 
 @media (max-width: 470px)
+	.del-br-470
+		br
+			content: ""
+			&:after
+				content: '\00a0'
 	.bg-heder .box-title h1
 		font-size: 3.9rem
 	.box-input-mail .input-mail .form-control
@@ -2846,6 +2851,17 @@ a
 	.sect-top .box-right .box-time .hide-time p
 		line-height: 100%
 		font-size: 2.5rem
+	.modal-dialog
+		width: calc(100% - 22px) 
+		.modal-header 
+			h2
+				font-size: 28px
+				line-height: 100%
+		.box-input-mail 
+			.input-mail 
+				label
+					margin-left: 0
+
 @media (max-width: 360px)
 	html
 		font-size: 9px
