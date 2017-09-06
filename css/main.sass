@@ -2311,7 +2311,7 @@ a
 		.btn-large-color
 			left: 50%
 			transform: translateX(-50%)
-			bottom: 54px
+			top: -38px
 			padding: 25px 64px
 			border: none
 			position: absolute
@@ -2855,14 +2855,25 @@ a
 		font-size: 2.5rem
 	.modal-dialog
 		width: calc(100% - 22px) 
-		.modal-header 
+		.modal-header
+			padding: 40px 15px
 			h2
 				font-size: 28px
-				line-height: 100%
+				line-height: 100%				
+		.modal-body
+			padding: 15px 15px 40px
 		.box-input-mail 
 			.input-mail 
 				label
 					margin-left: 0
+					margin-bottom: 17px
+				.form-control
+					margin: 0 auto 28px
+		.modal-footer
+			height: 70px
+			.btn-large-color
+				padding: 16px 64px
+				top: -29px
 
 @media (max-width: 360px)
 	html

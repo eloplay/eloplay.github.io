@@ -2414,7 +2414,7 @@ a[href^=mailto] {
   .modal-dialog .modal-footer .btn-large-color {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 54px;
+    top: -38px;
     padding: 25px 64px;
     border: none;
     position: absolute; }
@@ -2984,11 +2984,23 @@ a[href^=mailto] {
 
   .modal-dialog {
     width: calc(100% - 22px); }
-    .modal-dialog .modal-header h2 {
-      font-size: 28px;
-      line-height: 100%; }
+    .modal-dialog .modal-header {
+      padding: 40px 15px; }
+      .modal-dialog .modal-header h2 {
+        font-size: 28px;
+        line-height: 100%; }
+    .modal-dialog .modal-body {
+      padding: 15px 15px 40px; }
     .modal-dialog .box-input-mail .input-mail label {
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-bottom: 17px; }
+    .modal-dialog .box-input-mail .input-mail .form-control {
+      margin: 0 auto 28px; }
+    .modal-dialog .modal-footer {
+      height: 70px; }
+      .modal-dialog .modal-footer .btn-large-color {
+        padding: 16px 64px;
+        top: -29px; } }
 @media (max-width: 360px) {
   html {
     font-size: 9px; }
