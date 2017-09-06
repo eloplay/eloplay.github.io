@@ -2007,8 +2007,8 @@ p {
       .sel-lang.dropdown.open [uib-dropdown-menu] {
         background-color: rgba(8, 15, 23, 0.8);
         margin-top: 20px;
-        left: -121px;
-        min-width: 197px;
+        left: -52px;
+        min-width: 128px;
         border-radius: 6px 0 6px 6px; }
         .sel-lang.dropdown.open [uib-dropdown-menu] ul {
           padding: 0;
