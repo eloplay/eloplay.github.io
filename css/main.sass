@@ -180,37 +180,45 @@ p
 		display: inline-block
 		vertical-align: middle
 		opacity: 0.5
-		margin: 0 4.2%
-	.icon-social-1
+		//margin: 0 4.2%
+	.fa
+		font-size: 46px
+		vertical-align: middle
+	.icon-social-slack
 		background: url(../img/icon-social-1.svg) center no-repeat
 		background-size: cover
 		width: 40px
 		height: 40px
-	.icon-social-2
+	.icon-social-telegram
 		background: url(../img/icon-social-2.svg) center no-repeat
 		background-size: cover
 		width: 40px
 		height: 36px
-	.icon-social-3
+	.icon-social-discord
 		background: url(../img/icon-social-3.svg) center no-repeat
 		background-size: cover
 		width: 40px
 		height: 45px
-	.icon-social-4
+	.icon-social-medium
 		background: url(../img/icon-social-4.svg) center no-repeat
 		background-size: cover
 		width: 40px
 		height: 34px
-	.icon-social-5
+	.icon-social-fb
 		background: url(../img/icon-social-5.svg) center no-repeat
 		background-size: cover
 		width: 40px
 		height: 40px
-	.icon-social-6
+	.icon-social-wechat
 		background: url(../img/icon-social-6.svg) center no-repeat
 		background-size: cover
 		width: 45px
 		height: 39px
+	.icon-social-steemit
+		background: url(../img/steemit.png) center no-repeat
+		background-size: cover
+		width: 103px
+		height: 42px
 .box-icon-partners
 	text-align: center
 	width: 75%
@@ -1131,59 +1139,74 @@ p
 		padding-left: 0
 		padding-right: 0
 	.in-social-p1		
-		display: inline-block
 		padding: 0
 		margin: 0
 		width: 100%
-		text-align: center
 		margin-top: 14px
+		display: flex
+		align-items: center
+		justify-content: space-around
+		flex-wrap: wrap
 		li
 			display: inline-block
-			width: 15.3%
+			//width: 15.3%
 			text-align: right
-			min-width: 85px
+			//min-width: 85px
+			a
+				font-size: 32px
+				.fa
+					color: #fff
+					opacity: 0.5
+					transition: all .2s ease-out
+					&:hover
+						opacity: 1
 			[class^=icon-]
 				opacity: 0.5
 				transition: all .2s ease-out
 				cursor: pointer				
 				&:hover
 					opacity: 1
-			.icon-social-1
+			.icon-social-slack
 				background: url(../img/icon-social-1.svg) no-repeat
 				background-size: contain
 				width: 30px
 				height: 30px
 				display: inline-block
-			.icon-social-2
+			.icon-social-telegram
 				background: url(../img/icon-social-2.svg) no-repeat
 				background-size: contain
 				width: 32px
 				height: 28px
 				display: inline-block
-			.icon-social-3
+			.icon-social-discord
 				background: url(../img/icon-social-3.svg) no-repeat
 				background-size: contain
 				width: 30px
 				height: 33px
 				display: inline-block
-			.icon-social-4
+			.icon-social-medium
 				background: url(../img/icon-social-4.svg) no-repeat
 				background-size: contain
 				width: 32px
 				height: 26px
 				display: inline-block
-			.icon-social-5
+			.icon-social-fb
 				background: url(../img/icon-social-5.svg) no-repeat
 				background-size: contain
 				width: 30px
 				height: 30px
 				display: inline-block
-			.icon-social-6
+			.icon-social-wechat
 				background: url(../img/icon-social-6.svg) no-repeat
 				background-size: contain
 				width: 36px
 				height: 31px
 				display: inline-block
+			.icon-social-steemit
+				background: url(../img/steemit.png) center no-repeat
+				background-size: cover
+				width: 75px
+				height: 30px
 .box-button-video
 	display: block
 	//margin-top: 34px
@@ -1728,9 +1751,9 @@ p
 	float: right
 	.in-social-p1 
 		li
-			width: 15%
+			//width: 15%
 			text-align: center
-			min-width: 60px
+			min-width: 58px
 			.icon-social-1
 				width: 23px
 				height: 23px
@@ -2249,10 +2272,17 @@ a
 			margin-bottom: 134px
 			display: flex
 			align-items: center
-			justify-content: center
+			justify-content: space-around
 			flex-wrap: wrap
 			li
 				opacity: 1
+				min-width: 80px
+				a
+					opacity: 0.5
+					color: #fff
+					transition: all .2s ease-out
+					&:hover
+						opacity: 1
 			&.no-bord
 				border: none
 			[class^=icon-]
@@ -2434,7 +2464,7 @@ a
 	.in-social-networks
 		li:nth-child(1)
 			display: block
-			margin-top: 15px
+			//margin-top: 15px
 	.sect-footer
 		.in-social-networks
 			li:nth-child(1)

@@ -168,38 +168,45 @@ p {
   .in-social-networks li {
     display: inline-block;
     vertical-align: middle;
-    opacity: 0.5;
-    margin: 0 4.2%; }
-  .in-social-networks .icon-social-1 {
+    opacity: 0.5; }
+  .in-social-networks .fa {
+    font-size: 46px;
+    vertical-align: middle; }
+  .in-social-networks .icon-social-slack {
     background: url(../img/icon-social-1.svg) center no-repeat;
     background-size: cover;
     width: 40px;
     height: 40px; }
-  .in-social-networks .icon-social-2 {
+  .in-social-networks .icon-social-telegram {
     background: url(../img/icon-social-2.svg) center no-repeat;
     background-size: cover;
     width: 40px;
     height: 36px; }
-  .in-social-networks .icon-social-3 {
+  .in-social-networks .icon-social-discord {
     background: url(../img/icon-social-3.svg) center no-repeat;
     background-size: cover;
     width: 40px;
     height: 45px; }
-  .in-social-networks .icon-social-4 {
+  .in-social-networks .icon-social-medium {
     background: url(../img/icon-social-4.svg) center no-repeat;
     background-size: cover;
     width: 40px;
     height: 34px; }
-  .in-social-networks .icon-social-5 {
+  .in-social-networks .icon-social-fb {
     background: url(../img/icon-social-5.svg) center no-repeat;
     background-size: cover;
     width: 40px;
     height: 40px; }
-  .in-social-networks .icon-social-6 {
+  .in-social-networks .icon-social-wechat {
     background: url(../img/icon-social-6.svg) center no-repeat;
     background-size: cover;
     width: 45px;
     height: 39px; }
+  .in-social-networks .icon-social-steemit {
+    background: url(../img/steemit.png) center no-repeat;
+    background-size: cover;
+    width: 103px;
+    height: 42px; }
 
 .box-icon-partners {
   text-align: center;
@@ -1147,59 +1154,72 @@ p {
     padding-left: 0;
     padding-right: 0; }
   .sect-top .in-social-p1 {
-    display: inline-block;
     padding: 0;
     margin: 0;
     width: 100%;
-    text-align: center;
-    margin-top: 14px; }
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .sect-top .in-social-p1 li {
       display: inline-block;
-      width: 15.3%;
-      text-align: right;
-      min-width: 85px; }
+      text-align: right; }
+      .sect-top .in-social-p1 li a {
+        font-size: 32px; }
+        .sect-top .in-social-p1 li a .fa {
+          color: #fff;
+          opacity: 0.5;
+          transition: all 0.2s ease-out; }
+          .sect-top .in-social-p1 li a .fa:hover {
+            opacity: 1; }
       .sect-top .in-social-p1 li [class^=icon-] {
         opacity: 0.5;
         transition: all 0.2s ease-out;
         cursor: pointer; }
         .sect-top .in-social-p1 li [class^=icon-]:hover {
           opacity: 1; }
-      .sect-top .in-social-p1 li .icon-social-1 {
+      .sect-top .in-social-p1 li .icon-social-slack {
         background: url(../img/icon-social-1.svg) no-repeat;
         background-size: contain;
         width: 30px;
         height: 30px;
         display: inline-block; }
-      .sect-top .in-social-p1 li .icon-social-2 {
+      .sect-top .in-social-p1 li .icon-social-telegram {
         background: url(../img/icon-social-2.svg) no-repeat;
         background-size: contain;
         width: 32px;
         height: 28px;
         display: inline-block; }
-      .sect-top .in-social-p1 li .icon-social-3 {
+      .sect-top .in-social-p1 li .icon-social-discord {
         background: url(../img/icon-social-3.svg) no-repeat;
         background-size: contain;
         width: 30px;
         height: 33px;
         display: inline-block; }
-      .sect-top .in-social-p1 li .icon-social-4 {
+      .sect-top .in-social-p1 li .icon-social-medium {
         background: url(../img/icon-social-4.svg) no-repeat;
         background-size: contain;
         width: 32px;
         height: 26px;
         display: inline-block; }
-      .sect-top .in-social-p1 li .icon-social-5 {
+      .sect-top .in-social-p1 li .icon-social-fb {
         background: url(../img/icon-social-5.svg) no-repeat;
         background-size: contain;
         width: 30px;
         height: 30px;
         display: inline-block; }
-      .sect-top .in-social-p1 li .icon-social-6 {
+      .sect-top .in-social-p1 li .icon-social-wechat {
         background: url(../img/icon-social-6.svg) no-repeat;
         background-size: contain;
         width: 36px;
         height: 31px;
         display: inline-block; }
+      .sect-top .in-social-p1 li .icon-social-steemit {
+        background: url(../img/steemit.png) center no-repeat;
+        background-size: cover;
+        width: 75px;
+        height: 30px; }
 
 .box-button-video {
   display: block;
@@ -1808,9 +1828,8 @@ p {
   width: 88%;
   float: right; }
   .box-in-social-p1 .in-social-p1 li {
-    width: 15%;
     text-align: center;
-    min-width: 60px; }
+    min-width: 58px; }
     .box-in-social-p1 .in-social-p1 li .icon-social-1 {
       width: 23px;
       height: 23px; }
@@ -2349,10 +2368,17 @@ a[href^=mailto] {
     margin-bottom: 134px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap; }
     .sect-footer .box-bottom .in-social-networks li {
-      opacity: 1; }
+      opacity: 1;
+      min-width: 80px; }
+      .sect-footer .box-bottom .in-social-networks li a {
+        opacity: 0.5;
+        color: #fff;
+        transition: all 0.2s ease-out; }
+        .sect-footer .box-bottom .in-social-networks li a:hover {
+          opacity: 1; }
     .sect-footer .box-bottom .in-social-networks.no-bord {
       border: none; }
     .sect-footer .box-bottom .in-social-networks [class^=icon-] {
@@ -2529,8 +2555,7 @@ a[href^=mailto] {
       content: " "; }
 
   .in-social-networks li:nth-child(1) {
-    display: block;
-    margin-top: 15px; }
+    display: block; }
 
   .sect-footer .in-social-networks li:nth-child(1) {
     margin-top: 0; }
