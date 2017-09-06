@@ -2227,11 +2227,12 @@ a[href^=mailto] {
     .box-img-right .box-img-anime .img-market-center-txt {
       position: absolute;
       top: 48%;
-      left: 36%;
       color: #0061b1;
-      text-align: center;
       line-height: 120%;
-      z-index: 1; }
+      z-index: 1;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 7px; }
     .box-img-right .box-img-anime .img-market-bottom-txt {
       line-height: 120%;
       font-size: 20px;
