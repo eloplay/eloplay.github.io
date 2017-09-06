@@ -1822,7 +1822,7 @@ p {
   width: 88%;
   float: right; }
   .box-in-social-p1 .in-social-p1 li {
-    text-align: center;
+    text-align: left;
     min-width: 58px; }
     .box-in-social-p1 .in-social-p1 li .icon-social-1 {
       width: 23px;
@@ -2581,7 +2581,7 @@ a[href^=mailto] {
   .sect-top .box-dark-button,
   .sect-top .in-social-p1 li,
   .sect-top .in-social-p1 {
-    text-align: center; }
+    text-align: left; }
 
   .bg-white-center {
     background-position: center; }
