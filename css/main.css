@@ -1174,7 +1174,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-left: 35px; }
     .sect-top .in-social-p1 li {
       display: inline-block;
       text-align: right; }
@@ -1223,10 +1224,10 @@ p {
         width: 36px;
         height: 31px; }
       .sect-top .in-social-p1 li .icon-social-steemit {
-        background: url(../img/steemit.png) center no-repeat;
+        background: url(../img/steemit.png) no-repeat;
         background-size: cover;
-        width: 75px;
-        height: 30px; }
+        width: 34px;
+        height: 34px; }
 
 .box-button-video {
   display: block;
