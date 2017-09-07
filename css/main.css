@@ -754,6 +754,8 @@ p {
   .btn-br-line:hover {
     color: rgba(255, 255, 255, 0.5);
     transform: scale(1.05); }
+  .btn-br-line:focus {
+    color: #fff; }
   .btn-br-line span {
     vertical-align: middle; }
 
