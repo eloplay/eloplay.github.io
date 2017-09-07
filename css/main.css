@@ -752,10 +752,10 @@ p {
   border: 1px solid #f27022;
   width: 240px; }
   .btn-br-line:hover {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     transform: scale(1.05); }
   .btn-br-line:focus {
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.5); }
   .btn-br-line span {
     vertical-align: middle; }
 
