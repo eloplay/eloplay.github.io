@@ -731,13 +731,26 @@ p {
   .btn-dark span {
     vertical-align: middle; }
 
+.box-top-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 89px; }
+  .box-top-button .icon-arrow-down-circle {
+    font-size: 32px;
+    position: relative;
+    color: #ac5617;
+    margin-right: 9px;
+    vertical-align: middle; }
+
 .btn-br-line {
   color: rgba(255, 255, 255, 0.5);
-  padding: 1.1rem 4.5rem;
+  padding: 1.1rem 0;
   background-color: transparent;
   font-size: 1.8rem;
   transition: all 0.2s;
-  border: 1px solid #f27022; }
+  border: 1px solid #f27022;
+  width: 240px; }
   .btn-br-line:hover {
     color: rgba(255, 255, 255, 0.5);
     transform: scale(1.05); }
@@ -1218,7 +1231,6 @@ p {
 .box-button-video {
   display: block;
   width: 100%;
-  margin: 79px auto 44px;
   text-align: left; }
 
 .bg-sect-1 {
@@ -2662,7 +2674,8 @@ a[href^=mailto] {
     width: 76%;
     display: block; }
 
-  .box-button-video {
+  .box-button-video,
+  .box-button-readw {
     text-align: center;
     margin-top: 47px; }
 
