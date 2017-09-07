@@ -734,8 +734,8 @@ p {
 .box-top-button {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-top: 89px; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
   .box-top-button .icon-arrow-down-circle {
     font-size: 32px;
     position: relative;
@@ -1229,10 +1229,10 @@ p {
         width: 34px;
         height: 34px; }
 
-.box-button-video {
-  display: block;
-  width: 100%;
-  text-align: left; }
+.box-button-video,
+.box-button-readw {
+  display: inline-block;
+  margin: 47px 0 40px; }
 
 .bg-sect-1 {
   background: url(../img/bg-sec-0-pg2.png) no-repeat;
@@ -1261,7 +1261,7 @@ p {
     padding-left: 50px; }
 
 .bg-sect-4 {
-  background: url(../img/bg-sec-3-pg2.png) no-repeat;
+  background: url(../img/bg-sec-3-pg2.jpg) no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 788px;
@@ -1286,7 +1286,7 @@ p {
   padding: 46px;
   text-align: center; }
   .bg-sect-31 .fl-bg-mam {
-    background: url(../img/bg-man.png) center no-repeat;
+    background: url(../img/bg-man.jpg) center no-repeat;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -1302,7 +1302,7 @@ p {
 
 .bg-sect-32 {
   margin-top: 112px;
-  background: url(../img/bg-sec-22-pg2.png) no-repeat;
+  background: url(../img/bg-sec-22-pg2.jpg) no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 779px; }
@@ -2583,6 +2583,14 @@ a[href^=mailto] {
       content: " "; }
 
   .elo-in-media {
+    justify-content: center; }
+
+  .box-button-video,
+  .box-button-readw {
+    display: inline-block;
+    margin: 47px 15px 40px; }
+
+  .box-top-button {
     justify-content: center; } }
 @media (max-width: 992px) {
   .del-br-992 br {
@@ -2656,6 +2664,7 @@ a[href^=mailto] {
     min-height: 500px; }
   .full-bg-p2 .box-pairs {
     justify-content: center; }
+  .full-bg-p2 .img-monitor video,
   .full-bg-p2 .img-monitor img {
     border: 10px solid #533f4c;
     width: 100%; }
@@ -2674,11 +2683,6 @@ a[href^=mailto] {
     margin: 62px auto 0;
     width: 76%;
     display: block; }
-
-  .box-button-video,
-  .box-button-readw {
-    text-align: center;
-    margin-top: 47px; }
 
   .img-medal {
     float: none; }

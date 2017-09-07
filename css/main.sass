@@ -724,9 +724,9 @@ p
 .box-top-button
 	display: flex
 	align-items: center
-	//flex-wrap: wrap
-	justify-content: flex-start
-	margin-top: 89px
+	flex-wrap: wrap
+	justify-content: space-between
+	//margin-top: 89px
 	.icon-arrow-down-circle
 		font-size: 32px
 		//line-height: 10px
@@ -1224,12 +1224,13 @@ p
 				background-size: cover
 				width: 34px
 				height: 34px
-.box-button-video
-	display: block
-	//margin-top: 34px
-	width: 100%
+.box-button-video,
+.box-button-readw
+	display: inline-block
+	margin: 47px 0 40px
+	//width: 100%
 	//margin: 79px auto 44px
-	text-align: left
+	//text-align: left
 .bg-sect-1
 	background: url(../img/bg-sec-0-pg2.png) no-repeat
 	background-size: cover
@@ -1254,7 +1255,7 @@ p
 		padding-bottom: 0
 		padding-left: 50px
 .bg-sect-4
-	background: url(../img/bg-sec-3-pg2.png) no-repeat
+	background: url(../img/bg-sec-3-pg2.jpg) no-repeat
 	background-size: cover
 	width: 100%
 	min-height: 788px
@@ -1277,7 +1278,7 @@ p
 	padding: 46px
 	text-align: center
 	.fl-bg-mam
-		background: url(../img/bg-man.png) center no-repeat
+		background: url(../img/bg-man.jpg) center no-repeat
 		background-size: cover
 		position: absolute
 		left: 0
@@ -1293,7 +1294,7 @@ p
 .bg-sect-32
 	margin-top: 112px
 	//margin-bottom: 81px
-	background: url(../img/bg-sec-22-pg2.png) no-repeat
+	background: url(../img/bg-sec-22-pg2.jpg) no-repeat
 	background-size: cover
 	width: 100%
 	min-height: 779px
@@ -2501,6 +2502,12 @@ a
 					content: '\00a0'
 	.elo-in-media
 		justify-content: center
+	.box-button-video,
+	.box-button-readw
+		display: inline-block
+		margin: 47px 15px 40px
+	.box-top-button
+		justify-content: center
 @media (max-width: 992px)
 	.del-br-992
 		br
@@ -2572,9 +2579,11 @@ a
 			min-height: 500px
 		.box-pairs
 			justify-content: center
-		.img-monitor img
-			border: 10px solid #533f4c
-			width: 100%
+		.img-monitor
+			video,
+			img
+				border: 10px solid #533f4c
+				width: 100%
 		.banner-link
 			margin: 50px 0 50px 0
 			img
@@ -2590,10 +2599,6 @@ a
 		margin: 62px auto 0
 		width: 76%
 		display: block
-	.box-button-video,
-	.box-button-readw
-		text-align: center
-		margin-top: 47px
 	.img-medal
 		float: none
 	.box-img-right .box-img-anime
