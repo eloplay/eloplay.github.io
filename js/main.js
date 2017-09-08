@@ -175,5 +175,7 @@
 		play_video();
 	});
 $( window ).load(function() {
+	setTimeout(function() {
      $( '#video' ).get(0).play();
+		    }, 500);
 });
