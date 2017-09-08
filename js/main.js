@@ -173,3 +173,8 @@
 		});
 		play_video();
 	});
+window.addEventListener('touchstart', function videoStart() {
+	play_video();
+	// remove from the window and call the function we are removing
+	this.removeEventListener('touchstart', videoStart);
+});
