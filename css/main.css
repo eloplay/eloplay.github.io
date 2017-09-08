@@ -2459,6 +2459,9 @@ a[href^=mailto] {
     .modal-dialog .modal-footer .btn-large-color[disabled]:hover {
       transform: translateX(-50%) scale(1);
       box-shadow: none; }
+    .modal-dialog .modal-footer .btn-large-color[disabled] {
+      opacity: 1;
+      background: #f6b470; }
 .modal-dialog .box-input-mail .input-mail label {
   color: #8a9fa9;
   font-family: "Ubuntu-regular", sans-serif;
