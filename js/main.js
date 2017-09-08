@@ -118,19 +118,12 @@
 			]
 		});
 
-		$('a#ex1').on("click", function (event) {
+		$('a[href^=\\#]').on("click", function (event) {
 			event.preventDefault();
 			var id  = $(this).attr('href'),
 					top = $(id).offset().top;
 			$('body,html').animate({scrollTop: top}, 800);
 		});
-		$('a#ex2').on("click", function (event) {
-			event.preventDefault();
-			var id  = $(this).attr('href'),
-					top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 800);
-		});
-
 
 		var dataStart = moment('2017-10-09 12:00:00Z').valueOf();//2017-10-09 12:00:00 UTC
 
