@@ -174,6 +174,7 @@
 		play_video();
 	});
 var video = document.querySelector('video');
+enableInlineVideo(video);
 window.addEventListener('touchstart', function videoStart() {
 	video.play();
 	// remove from the window and call the function we are removing
