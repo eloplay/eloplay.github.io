@@ -160,3 +160,9 @@
 		});
 		play_video();
 	});
+
+var video = document.querySelector('video');
+window.addEventListener('touchstart', function videoStart() {
+	video.play();
+	this.removeEventListener('touchstart', videoStart);
+});
