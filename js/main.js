@@ -161,6 +161,7 @@
 			},false);
 
 			$('video').each(function(){
+				alert($(this).is(":in-viewport"));
 				if ($(this).is(":in-viewport")) {
 					$(this).get(0).play();
 //					$(this)[0].play();
