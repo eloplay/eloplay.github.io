@@ -174,8 +174,7 @@
 		});
 		play_video();
 	});
-$( window ).load(function() {
-	setTimeout(function() {
-     $( '#video' ).get(0).play();
-		    }, 500);
-});
+var video = document.getElementById('video');
+video.addEventListener('click',function(){
+	  video.play();
+},false);
