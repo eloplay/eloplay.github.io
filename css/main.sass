@@ -724,7 +724,7 @@ p
 .box-top-button
 	display: flex
 	align-items: center
-	flex-wrap: wrap
+	//flex-wrap: wrap
 	justify-content: space-between
 	//margin-top: 89px
 	.icon-arrow-down-circle
@@ -1164,7 +1164,7 @@ p
 		display: flex
 		align-items: center
 		justify-content: space-around
-		flex-wrap: wrap
+		//flex-wrap: wrap
 		padding-left: 35px
 		li
 			display: inline-block
@@ -2509,7 +2509,7 @@ a
 		display: inline-block
 		margin: 47px 15px 40px
 	.box-top-button
-		justify-content: center
+		justify-content: space-around
 @media (max-width: 992px)
 	.del-br-992
 		br
@@ -2622,6 +2622,8 @@ a
 		display: block
 	.full-bg-p2 .command .box-item-command.show-desktop
 		display: none
+	.full-bg-p2 .sect-top .box-left p:nth-child(2)
+		margin-bottom: 0
 
 
 @media (max-width: 768px)
@@ -2849,6 +2851,13 @@ a
 		transform: translateX(-50%)
 	.full-bg-p2 .bg-sect-3
 		min-height: 800px
+	.box-top-button
+		justify-content: center
+		flex-wrap: wrap
+	.sect-top .in-social-p1
+		flex-wrap: wrap
+	.box-button-video
+		margin-bottom: 0
 
 @media (max-width: 470px)
 	.del-br-470
