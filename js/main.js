@@ -154,8 +154,6 @@
 				}*/
 		}, 1000);
 
-			var video = document.getElementById('video');
-				  video.play();
 		function play_video(){
 /*			var video = document.getElementById('video');
 			video.addEventListener('scroll',function(){
