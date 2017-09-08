@@ -156,7 +156,7 @@
 
 		function play_video(){
 			var video = document.getElementById('video');
-			video.addEventListener('onload',function(){
+			video.addEventListener('scroll',function(){
 				  video.play();
 			},false);
 
