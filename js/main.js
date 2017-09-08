@@ -173,5 +173,3 @@
 		});
 		play_video();
 	});
-var video = document.getElementById('video');
-video.play();
