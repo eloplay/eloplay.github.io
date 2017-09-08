@@ -2363,6 +2363,9 @@ a[href^=mailto] {
     .box-pairs .items-pairs .icon-synergis {
       width: 190px;
       height: 30px; }
+    .box-pairs .items-pairs .icon-forklog {
+      width: 200px;
+      height: 51px; }
     .box-pairs .items-pairs:hover {
       background-color: #000; }
       .box-pairs .items-pairs:hover img {
@@ -2459,6 +2462,9 @@ a[href^=mailto] {
     .modal-dialog .modal-footer .btn-large-color[disabled]:hover {
       transform: translateX(-50%) scale(1);
       box-shadow: none; }
+    .modal-dialog .modal-footer .btn-large-color[disabled] {
+      opacity: 1;
+      background: #f6b470; }
 .modal-dialog .box-input-mail .input-mail label {
   color: #8a9fa9;
   font-family: "Ubuntu-regular", sans-serif;
