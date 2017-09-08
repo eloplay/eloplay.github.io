@@ -173,8 +173,9 @@
 		});
 		play_video();
 	});
+var video = document.querySelector('video');
 window.addEventListener('touchstart', function videoStart() {
-	play_video();
+	video.play();
 	// remove from the window and call the function we are removing
 	this.removeEventListener('touchstart', videoStart);
 });
