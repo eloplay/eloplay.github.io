@@ -155,11 +155,6 @@
 		}, 1000);
 
 		function play_video(){
-/*			var video = document.getElementById('video');
-			video.addEventListener('scroll',function(){
-				  video.play();
-			},false);
-*/
 			$('video').each(function(){
 				if ($(this).is(":in-viewport")) {
 					$(this)[0].play();
@@ -174,10 +169,8 @@
 		play_video();
 	});
 var video = document.querySelector('video');
-enableInlineVideo(video);
 window.addEventListener('touchstart', function videoStart() {
-	setTimeout(function () { video.play(); }, 1000);
-//	video.play();
+	video.play();
 	// remove from the window and call the function we are removing
 	this.removeEventListener('touchstart', videoStart);
 });
