@@ -160,7 +160,6 @@
 				  video.play();
 			},false);
 */
-			$( '#video' ).get(0).play();
 /*			$('video').each(function(){
 				if ($(this).is(":in-viewport")) {
 					$(this)[0].play();
@@ -175,3 +174,6 @@
 		});
 		play_video();
 	});
+$( window ).load(function() {
+     $( '#video' ).get(0).play();
+});
