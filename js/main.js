@@ -154,6 +154,8 @@
 				}*/
 		}, 1000);
 
+			var video = document.getElementById('video');
+				  video.play();
 		function play_video(){
 /*			var video = document.getElementById('video');
 			video.addEventListener('scroll',function(){
@@ -162,8 +164,7 @@
 */
 			$('video').each(function(){
 				if ($(this).is(":in-viewport")) {
-					$('#video').get(0).play();
-//					$(this)[0].play();
+					$(this)[0].play();
 				} else {
 					$(this)[0].pause();
 				}
