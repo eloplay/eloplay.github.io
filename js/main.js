@@ -155,14 +155,14 @@
 		}, 1000);
 
 		function play_video(){
-			var video = document.getElementById('video');
+/*			var video = document.getElementById('video');
 			video.addEventListener('scroll',function(){
 				  video.play();
 			},false);
-
+*/
 			$('video').each(function(){
 				if ($(this).is(":in-viewport")) {
-					$(this).get(0).play();
+					$('#video').get(0).play();
 //					$(this)[0].play();
 				} else {
 					$(this)[0].pause();
