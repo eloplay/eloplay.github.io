@@ -156,11 +156,14 @@
 
 		function play_video(){
 			var video = document.getElementById('video');
-			video.play();
+			video.addEventListener('click',function(){
+				  video.play();
+			},false);
 
 			$('video').each(function(){
 				if ($(this).is(":in-viewport")) {
-					$(this)[0].play();
+					$(this).get(0).play();
+//					$(this)[0].play();
 				} else {
 					$(this)[0].pause();
 				}
