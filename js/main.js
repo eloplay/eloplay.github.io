@@ -14,10 +14,6 @@
 
 	});
 
-var video = document.getElementById('video');
-video.addEventListener('click',function(){
-	  video.play();
-},false);
 
 	$(function() {
 
@@ -159,6 +155,9 @@ video.addEventListener('click',function(){
 		}, 1000);
 
 		function play_video(){
+			var video = document.getElementById('video');
+			video.play();
+
 			$('video').each(function(){
 				if ($(this).is(":in-viewport")) {
 					$(this)[0].play();
