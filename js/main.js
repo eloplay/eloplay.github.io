@@ -174,9 +174,10 @@
 		play_video();
 	});
 var video = document.querySelector('video');
-//enableInlineVideo(video);
+enableInlineVideo(video);
 window.addEventListener('touchstart', function videoStart() {
-	video.play();
+	setTimeout(function () { video.play(); }, 1000);
+//	video.play();
 	// remove from the window and call the function we are removing
 	this.removeEventListener('touchstart', videoStart);
 });
