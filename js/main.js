@@ -2,7 +2,7 @@
 	.module('app', ['ngAnimate', 'ngSanitize', 'ui.bootstrap'])
 	.controller('pageICO_Ctr', function($scope, $window) {
 
-		$scope.scrollPos = 0;
+  	$scope.scrollPos = $("body").scrollTop();
 
 		$window.onscroll = function(){
 			$scope.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
