@@ -277,7 +277,7 @@ p {
   .history-progect .box-item-hist {
     text-align: center; }
     .history-progect .box-item-hist .item-hist {
-      width: 22%;
+      width: 250px;
       min-width: 216px;
       height: 325px;
       border: 1px solid #ff8d00;
