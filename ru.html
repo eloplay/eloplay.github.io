@@ -51,6 +51,29 @@
 	<link href="css/main.css?v=14" rel="stylesheet" />
 	<link href="css/fonts.css?v=1" rel="stylesheet" />
 
+<!-- autodetect lang -->
+<script>
+//var langs  = ['ru','en','es','ko','pt','zh','de','ja'];
+var langs  = ['ru','en'];
+var savedLang = sessionStorage.getItem('savedLang');
+var currentUrl =  window.location.pathname;
+var currentLang  = currentUrl.substring(1, 3);
+//if((savedLang == null) || (savedLang != null && (currentLang != '' || langs.indexOf(currentLang) != -1 ) && savedLang != currentLang)){
+if(savedLang == null){
+	var userLang = navigator.browserLanguage || navigator.language || navigator.userLanguage;
+	userLang = userLang.split('-');
+	userLang = userLang[0];
+	if(langs.indexOf(userLang) != -1){
+		userLang = userLang == 'uk' ? 'ru' : 'en';
+	}
+	sessionStorage.setItem('savedLang', userLang);
+	if(userLang != currentLang){
+		window.location = '/'+userLang+'.html';
+	}
+}
+</script>
+<!-- End autodetect lang -->
+
 <!-- Google Tag Manager -->
 <script>
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
