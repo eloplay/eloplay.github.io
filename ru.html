@@ -49,7 +49,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
 	<link href="css/michalsnik/aos/2.1.1/dist/aos.min.css" rel="stylesheet">
 
-	<link href="css/main.css?v=14" rel="stylesheet" />
+	<link href="css/main.css?v=15" rel="stylesheet" />
 	<link href="css/fonts.css?v=1" rel="stylesheet" />
 
 <!-- autodetect lang -->
@@ -113,7 +113,7 @@ fbq('track', 'PageView');
 
 </head>
 
-<body ng-app="app">
+<body ng-app="app" class="lang-ru">
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZL4XCM"
@@ -181,35 +181,40 @@ src="https://www.facebook.com/tr?id=889685427848853&ev=PageView&noscript=1"
 				<div class="sect-top">
 					<div class="row indent-bottom">
 						<div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
-						<p class="font-l-42" >
-								Продажа токенов киберспортивной платформы Eloplay							</p>
-							<p class="del-br-1200">
-									Платформа создана для игроков и организаций,<br>которые проводят смарт-турниры на технологии блокчейн.<br>Токен Eloplay является основной движущей силой<br>экосистемы и единицeй ценности для её владельцев.<br>							</p>
+						<p class="font-l-42" style="margin: 23px 0 0px;display: inline-block;    font-size: 3.5rem;   ">
+								Киберспортивные смарт-турниры							</p>
+		
+							<p style="    border-bottom: 1px solid #f27022; padding-bottom: 20px; max-width: 480px; color: rgba(255, 255, 255, 0.6);" class=" font-l-31  del-br-1200">
+									Децентрализованная платформа<br>для геймеров и организаций							</p>
 							<div class="box-top-button">
 								<!-- <div class="box-button-video">
 									<a href="https://eloplay.com/about?utm_source=ico_landing" target="_blank" class="btn btn-br-line"><span class="icon-btn-play-video"></span><span>Смотреть видео</span></a>
 								</div> -->
+							</div>
+								<div class="box-time">
+								<p class="time-title">До старта торгов осталось:</p>
+								<ul id="timer" >
+									<li><span id="days"></span><p style="    margin-top: 5px;">дней</p></li>
+									<li><span id="hours"></span><p style="    margin-top: 5px;">часов</p></li>
+									<li><span id="minutes"></span><p style="    margin-top: 5px;">минут</p></li>
+									<li><span id="seconds"></span><p style="    margin-top: 5px;">секунд</p></li>
+								</ul>
 								<div class="box-button-readw">
-									<a href="https://eloplay.github.io/docs/ru/eloplay_whitepaper_ru_1.pdf" target="_blank" class="btn btn-br-line"><i class="icon-arrow-down-circle"></i><span>Читать Whitepaper</span></a>
+									<a style=" " href="https://goo.gl/forms/c6VBENadrSO1SwJx1" class="btn btn-large-color-y" target="_blank"><span>Сделай заказ первым</span></a>
 								</div>
 							</div>
+
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-6 box-right padd-no">
-							<div class="box-time">
-								<div class="hide-time">
-									<p>
-										Следите за новостями<br />токенсейла									</p>
-								</div>
-								<div class="box-time-bg"></div>
-								<a href="#" class="btn btn-large-color-y" data-toggle="modal" data-target="#subscriptionModal"><!-- <span class="icon-button"></span> --><span>подписаться на новости</span></a>
-								<p class="time-title">До старта торгов осталось:</p>
-								<ul id="timer">
-									<li><span id="days"></span><p>дней</p></li>
-									<li><span id="hours"></span><p>часов</p></li>
-									<li><span id="minutes"></span><p>минут</p></li>
-									<li><span id="seconds"></span><p>секунд</p></li>
-								</ul>
+							<div class="img-monitor">
+								<video style="" id="video2" loop autobuffer autoplay playsinline webkit-playsinline >
+									<source src="img/toptal-blog-image-1.m4v" />
+									<source src="img/toptal-blog-image-1.mp4" type='video/mp4' />
+									<source src="img/toptal-blog-image-1.webm" type='video/webm; codecs="vp8, vorbis"' />
+								</video>
+								<a style="" href="#" target="_blank" class="btn btn-br-line" data-toggle="modal" data-target="#subscriptionModal"><span style="vertical-align: unset;">Подпишись на новости Токен Сейла</span></a>
 							</div>
+
 							<div class="box-in-social-p1">
 								<ul class="in-social-p1">
 										<li><a href="https://join.slack.com/t/eloplaycom/shared_invite/MjMzMDYwMzU1NTc0LTE1MDM3NTY0MTYtYTg5MmMxMGRlNQ" target="_blank"><div class="icon-social-slack"></div></a></li>
@@ -1154,7 +1159,7 @@ src="https://www.facebook.com/tr?id=889685427848853&ev=PageView&noscript=1"
 
 	<script data-cfasync="true" src="js/push_message.js"></script>
 	<script data-cfasync="true" src="js/gapi_calendar.js"></script>
-	<script data-cfasync="true" src="js/main.js?v=14"></script>
+	<script data-cfasync="true" src="js/main.js?v=15"></script>
 
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"

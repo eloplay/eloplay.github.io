@@ -125,7 +125,7 @@
 			$('body,html').animate({scrollTop: top}, 800);
 		});
 
-		var dataStart = moment('2017-10-09 12:00:00Z').valueOf();//2017-10-09 12:00:00 UTC
+		var dataStart = moment('2017-10-16 12:00:00Z').valueOf();//2017-10-09 12:00:00 UTC
 
 		var x = setInterval(function() {
 
@@ -135,6 +135,11 @@
 				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 				
+				
+				days = days > 9 ? days : ( '0' + days);
+				hours = hours > 9 ? hours : ( '0' + hours);
+				minutes = minutes > 9 ? minutes : ( '0' + minutes);
+				seconds = seconds > 9 ? seconds : ( '0' + seconds);
 				$("#days").text(days);
 				$("#hours").text(hours);
 				$("#minutes").text(minutes);
