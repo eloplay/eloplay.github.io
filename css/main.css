@@ -2623,7 +2623,7 @@ a[href^=mailto] {
 
   .box-top-button {
     justify-content: space-around; } }
-@media (max-height: 640px) {
+@media (max-height: 642px) {
 
     .sect-top .box-left .box-time span#days, .sect-top .box-left .box-time span#hours, .sect-top .box-left .box-time span#minutes, .sect-top .box-left .box-time span#seconds {
       font-size: 6rem; }

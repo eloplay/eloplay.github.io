@@ -166,13 +166,10 @@
 		play_video();
 	});
 
-var video = document.querySelector('video');
+var video = document.querySelector('#video');
+var video2 = document.querySelector('#video2');
 window.addEventListener('touchstart', function videoStart() {
-	$('video').each(function(){
-		$(this)[0].play();
-		$(this)[0].pause();
-	});
-
-//	video.play();
+	video.play();
+	video2.play();
 	this.removeEventListener('touchstart', videoStart);
 });
