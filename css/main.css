@@ -2623,7 +2623,7 @@ a[href^=mailto] {
 
   .box-top-button {
     justify-content: space-around; } }
-@media (max-height: 640px) {
+@media (max-height: 640px) and (max-width: 1200px) {
 
     .sect-top .box-left .box-time span#days, .sect-top .box-left .box-time span#hours, .sect-top .box-left .box-time span#minutes, .sect-top .box-left .box-time span#seconds {
       font-size: 6rem; }
@@ -2800,7 +2800,8 @@ a[href^=mailto] {
 	margin-left: 0px;
 	}
 	#main-screen .btn-large-color-y{
-left: 50%; width:100%
+left: 50%; width:100%;
+bottom: -2.4rem;
 }
 
 #main-screen .btn-br-line {
