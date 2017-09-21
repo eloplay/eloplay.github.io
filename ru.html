@@ -64,7 +64,7 @@ if(savedLang == null){
 	var userLang = navigator.browserLanguage || navigator.language || navigator.userLanguage;
 	userLang = userLang.split('-');
 	userLang = userLang[0];
-	if(langs.indexOf(userLang) != -1){
+	if(langs.indexOf(userLang) == -1){
 		userLang = userLang == 'uk' ? 'ru' : 'en';
 	}
 	sessionStorage.setItem('savedLang', userLang);
