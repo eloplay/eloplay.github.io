@@ -168,6 +168,11 @@
 
 var video = document.querySelector('video');
 window.addEventListener('touchstart', function videoStart() {
-	video.play();
+	$('video').each(function(){
+		$(this)[0].play();
+		$(this)[0].pause();
+	});
+
+//	video.play();
 	this.removeEventListener('touchstart', videoStart);
 });
