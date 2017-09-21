@@ -745,8 +745,12 @@ left: 41%; width:80%
     vertical-align: middle; }
 
 #main-screen .btn-br-line {
-padding: 1.1rem 4rem;  margin-top: 75px;  margin-left: 70px;
+padding: 1.1rem 4rem;  margin-top: 168px;  margin-left: 70px;
 }
+#main-screen .box-in-social-p1 {
+margin-top: 30px;
+}
+
 .btn-br-line {
   color: rgba(255, 255, 255, 0.5);
   padding: 1.1rem 0;
@@ -1278,7 +1282,7 @@ padding: 1.1rem 4rem;  margin-top: 75px;  margin-left: 70px;
   position: relative;
   text-align: center; }
 .sect-top .img-monitor video{
-      width: 120%;
+      width: 100%;
 	      border: none;
       margin-top: 38px;
 	   margin-bottom: initial;}
@@ -2578,7 +2582,14 @@ a[href^=mailto] {
       .elo-in-media [class^=item-media-]:hover img {
         opacity: 1; }
 
+@media (max-width: 1366px) {
+
+  .full-bg-p2 .sect-top {
+    margin-top: 90px; }
+}
 @media (max-width: 1200px) {
+  .full-bg-p2 .sect-top {
+    margin-top: 90px; }
   .del-br-1200 br {
     content: ""; }
     .del-br-1200 br:after {
@@ -2689,10 +2700,16 @@ a[href^=mailto] {
     padding-bottom: 45px; }
     .full-bg-p2 .box-pairs .items-pairs {
       height: 100px; }
+
   .full-bg-p2 .img-monitor video,
   .full-bg-p2 .img-monitor img {
     border: 10px solid #533f4c;
     width: 100%; }
+	.sect-top .img-monitor video{
+      border: none;
+	   margin-top: 60px;}
+   #main-screen .btn-br-line {
+		margin-top: 80px; }
   .full-bg-p2 .banner-link {
     margin: 50px 0 50px 0; }
     .full-bg-p2 .banner-link img {
