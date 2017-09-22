@@ -745,10 +745,11 @@ left: 41%; width:80%
     vertical-align: middle; }
 
 #main-screen .btn-br-line {
-padding: 1.1rem 4rem;  margin-top: 168px;  margin-left: 70px;
+padding: 1.1rem 4rem;  margin-top: 25px;  margin-left: -10px;
 }
 #main-screen .box-in-social-p1 {
-margin-top: 30px;
+margin-top: 15px;
+    width: 100%
 }
 
 .btn-br-line {
@@ -1020,7 +1021,8 @@ margin-top: 30px;
     .full-bg-p2 .sect-top .box-left p:nth-child(2) {
    /*   font-size: 2rem;*/
       font-family: "Ubuntu-light", sans-serif;
-      margin-top: 36px;
+      margin-top: 25px;
+	  font-size: 2.5rem;
       line-height: 134%;
     /*  margin-bottom: 42px; */}
   .full-bg-p2 .sel-lang.lang-nav {
@@ -1101,7 +1103,7 @@ margin-top: 30px;
         width: 100%; }
     .sect-top .box-left .box-time .time-title {
       display: inline-block;
-      margin: 39px auto 19px;
+      margin: 20px auto 19px;
       width: 100%; }
     .sect-top .box-left .box-time .box-time-bg {
       position: absolute;
@@ -1121,7 +1123,7 @@ margin-top: 30px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: -3.6rem;
+      bottom: 4.2rem;
       z-index: 2;
       background: -moz-linear-gradient(20.28% -94.49% -45deg, #f29222 0%, #f26522 100%);
       background: -webkit-linear-gradient(-45deg, #f29222 0%, #f26522 100%);
@@ -1142,14 +1144,14 @@ margin-top: 30px;
       line-height: normal; }
     .sect-top .box-left .box-time span#days, .sect-top .box-left .box-time span#hours, .sect-top .box-left .box-time span#minutes, .sect-top .box-left .box-time span#seconds {
       color: #fff;
-      font-size: 8rem;
+      font-size: 5rem;
       font-family: "DINpro-light", sans-serif;
       text-shadow: 5px 6px 13px rgba(0, 0, 0, 0.7); }
     .sect-top .box-left .box-time ul {
       padding: 0;
       margin: 0;
       text-align: center; 
-      margin-left: -35px;}
+      margin-left: -50px;}
       .sect-top .box-left .box-time ul li {
         text-transform: uppercase;
         display: inline-block;
@@ -1282,9 +1284,11 @@ margin-top: 30px;
   position: relative;
   text-align: center; }
 .sect-top .img-monitor video{
-      width: 100%;
+      width: 640px;
+	  height: 360px;
 	      border: none;
       margin-top: 38px;
+	  margin-left: -70px;
 	   margin-bottom: initial;}
   .img-monitor video,
   .img-monitor img {
@@ -2626,7 +2630,7 @@ a[href^=mailto] {
 @media (max-height: 641px) {
 
 	.sect-top .box-left .box-time span#days, .sect-top .box-left .box-time span#hours, .sect-top .box-left .box-time span#minutes, .sect-top .box-left .box-time span#seconds {
-	font-size: 6rem; }
+	font-size: 5rem; }
 	.sect-top .box-left .box-time .time-title {
 	margin: 20px auto 0px;}
 	#main-screen .btn-large-color-y {
@@ -3186,9 +3190,9 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 		min-height: 255px;
 	}
 	#presaleModal .modal-dialog .modal-header h2 {
-		font-family: "DINpro-light", sans-serif;
-		color: #1d1930;
-		font-size: 36px;
+		font-family : 'DINPro';
+		font-size : 28px;
+		color : #1D1930;
 		position: relative;
 		line-height: 127%;
 		min-height: 181px;
@@ -3239,12 +3243,13 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 		font-family : DINPro;
 		font-size : 60px;
 		color : #fff;
-		text-shadow: 0 3px 2px #231F20;
+		text-shadow: 0 3px 5px #231F20;
 	}
 	.presale-choise strong{
-		font-family : DINPro;
-		font-size : 28px;
-		color : #78909C;
+		font-family: 'DINPro-medium';
+		font-size: 28px;
+		color: #78909C;
+		font-weight: normal;
 	}
 	.presale-choise .premium{
 		background : linear-gradient(90deg, rgba(237, 105, 37, 1) 1.54%, rgba(241, 98, 96, 1) 100%);
@@ -3264,20 +3269,21 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 		margin: 35px 0 15px;
 	}
 	.presale-choise .btn-large-color-yellow {
+		font-family : 'DINPro';
+		font-size : 16px;
 		display: block;
 		text-transform: uppercase;
-		font-size: 22px;
 		border: 2px solid #f28222;
 		border-radius: 5px;
 		margin-top: 35px;
 		color : #78909C;
 	}
 	.presale-choise:hover{
-		box-shadow : 5px 11.25px 15.63px rgba(10, 0, 25, 0.68);
+		box-shadow : 5px 11.25px 20.63px rgba(10, 0, 25, 0.68);
 	}
 	.presale-choise:hover .btn-large-color-yellow{
 		background : linear-gradient(135deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%);
-		box-shadow : 4.98px 11.21px 15.56px rgba(10, 0, 25, 0.68);
+		box-shadow : 4.98px 11.21px 20.56px rgba(10, 0, 25, 0.68);
 		color: #fff;
 	}
 
