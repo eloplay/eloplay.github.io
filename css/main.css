@@ -3128,9 +3128,9 @@ a[href^=mailto] {
 		min-height: 255px;
 	}
 	#presaleModal .modal-dialog .modal-header h2 {
-		font-family: "DINpro-light", sans-serif;
-		color: #1d1930;
-		font-size: 36px;
+		font-family : 'DINPro';
+		font-size : 28px;
+		color : #1D1930;
 		position: relative;
 		line-height: 127%;
 		min-height: 181px;
@@ -3184,9 +3184,10 @@ a[href^=mailto] {
 		text-shadow: 0 3px 2px #231F20;
 	}
 	.presale-choise strong{
-		font-family : DINPro;
-		font-size : 28px;
-		color : #78909C;
+		font-family: 'DINPro-medium';
+		font-size: 28px;
+		color: #78909C;
+		font-weight: normal;
 	}
 	.presale-choise .premium{
 		background : linear-gradient(90deg, rgba(237, 105, 37, 1) 1.54%, rgba(241, 98, 96, 1) 100%);
@@ -3206,9 +3207,10 @@ a[href^=mailto] {
 		margin: 35px 0 15px;
 	}
 	.presale-choise .btn-large-color-yellow {
+		font-family : 'DINPro';
+		font-size : 16px;
 		display: block;
 		text-transform: uppercase;
-		font-size: 22px;
 		border: 2px solid #f28222;
 		border-radius: 5px;
 		margin-top: 35px;
