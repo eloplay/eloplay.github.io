@@ -3188,7 +3188,8 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 		min-height: 255px;
 	}
 	#presaleModal .modal-dialog .modal-header h2 {
-		font-family : 'DINPro';
+/*		font-family : 'DINPro';*/
+		font-family : 'Ubuntu';
 		font-size : 28px;
 		color : #1D1930;
 		position: relative;
@@ -3238,7 +3239,7 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 		margin-top: 0;
 	}
 	.presale-choise span{
-		font-family : DINPro;
+/*		font-family : DINPro;*/
 		font-size : 60px;
 		color : #fff;
 		text-shadow: 0 3px 5px #231F20;
@@ -3267,7 +3268,7 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 		margin: 35px 0 15px;
 	}
 	.presale-choise .btn-large-color-yellow {
-		font-family : 'DINPro';
+/*		font-family : 'DINPro';*/
 		font-size : 16px;
 		display: block;
 		text-transform: uppercase;
@@ -3278,6 +3279,7 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 	}
 	.presale-choise:hover{
 		box-shadow : 5px 11.25px 20.63px rgba(10, 0, 25, 0.68);
+		transition: box-shadow 0.2s ease-in-out;
 	}
 	.presale-choise:hover .btn-large-color-yellow{
 		background : linear-gradient(135deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%);
