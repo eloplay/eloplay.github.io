@@ -166,8 +166,10 @@
 		play_video();
 	});
 
-var video = document.querySelector('video');
+var video = document.querySelector('#video');
+var video2 = document.querySelector('#video2');
 window.addEventListener('touchstart', function videoStart() {
 	video.play();
+	video2.play();
 	this.removeEventListener('touchstart', videoStart);
 });
