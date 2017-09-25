@@ -3181,7 +3181,7 @@ a[href^=mailto] {
 		font-family : DINPro;
 		font-size : 60px;
 		color : #fff;
-		text-shadow: 0 3px 2px #231F20;
+		text-shadow: 0 3px 5px #231F20;
 	}
 	.presale-choise strong{
 		font-family: 'DINPro-medium';
@@ -3217,11 +3217,11 @@ a[href^=mailto] {
 		color : #78909C;
 	}
 	.presale-choise:hover{
-		box-shadow : 5px 11.25px 15.63px rgba(10, 0, 25, 0.68);
+		box-shadow : 5px 11.25px 20.63px rgba(10, 0, 25, 0.68);
 	}
 	.presale-choise:hover .btn-large-color-yellow{
 		background : linear-gradient(135deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%);
-		box-shadow : 4.98px 11.21px 15.56px rgba(10, 0, 25, 0.68);
+		box-shadow : 4.98px 11.21px 20.56px rgba(10, 0, 25, 0.68);
 		color: #fff;
 	}
 
