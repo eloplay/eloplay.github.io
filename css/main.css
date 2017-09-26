@@ -2816,6 +2816,10 @@ left: 50%; width:100%;
 bottom: -2.4rem;
 }
 
+	iframe {
+		height: 240px;
+		width: 426px;
+	}
 #main-screen .btn-br-line {
 padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 }
@@ -3173,6 +3177,10 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 	#presaleModal .modal-dialog .modal-header h2 {
 		font-size: 24px !important;
 	}
+	iframe {
+		height: 182px;
+		width: 325px;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
@@ -3288,3 +3296,7 @@ padding: 1.1rem ; margin-top: 40px;  margin-left: 0px;
 		color: #fff;
 	}
 
+	iframe {
+		height: 360px;
+		width: 640px;
+	}
