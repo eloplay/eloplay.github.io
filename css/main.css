@@ -2551,6 +2551,7 @@ a[href^=mailto] {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 80px;
   justify-content: flex-start; }
   .elo-in-media .item-media-vc img {
     width: 48px;
