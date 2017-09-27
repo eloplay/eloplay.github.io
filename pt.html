@@ -74,7 +74,7 @@ if(savedLang == null){
 	}
 	sessionStorage.setItem('savedLang', userLang);
 	if(userLang != currentLang){
-		window.location = '/'+userLang+'.html'+window.location.hash;
+		window.location = '/'+userLang+'.html'+window.location.search+window.location.hash;
 	}
 }
 </script>
@@ -1172,6 +1172,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<p class="font-l-42 title-pairs">Eloplay na Mídia</p>
 				<div class="elo-in-media">
 
+					<a href="https://forklog.com/blokchejn-pokoryaet-industriyu-kibersporta/" target="_blank" class="item-media-forklog">
+						<img src="img/forklogo_white.svg" alt="">
+					</a>
 					<a href="https://coinspot.io/company/kibersportivnyj-proekt-elopay-stanet-blokchejn-platformoj/" target="_blank" class="item-media-coinspeaker">
 						<img src="img/coinspeaker.png" alt="">
 					</a>
