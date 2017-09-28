@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "DINPro-regular";
+	src: url("fonts/DINPro-Regular_13937.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+} 
+@font-face {
+	font-family: "DINPro-Light";
+	src: url("fonts/DINPro-Light_13935.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+} 
+@font-face {
+	
+	font-family: "DINPro-Medium";
+	src: url("fonts/DINPro-Medium_13936.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+} 
+@font-face {
+	font-family: "Ubuntu-B";
+	src: url("fonts/Ubuntu-B.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+} 
+@font-face {
+	font-family: "Ubuntu-L";
+	src: url("fonts/Ubuntu-L.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+} 
+@font-face {
+	font-family: "Ubuntu-M";
+	src: url("fonts/Ubuntu-M.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+} 
+@font-face {
+	font-family: "Ubuntu-R";
+	src: url("fonts/Ubuntu-R.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal; 
+} 
