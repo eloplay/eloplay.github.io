@@ -2041,7 +2041,7 @@ margin-top: 15px;
     left: 4px; }
   .sel-lang span {
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -2249,7 +2249,7 @@ a[href^=mailto] {
     .box-img-right .box-img-anime .img-market-top {
       background: url(../img/img-line-pro.png) no-repeat;
       background-size: contain;
-      width: 41px;
+      width: 210px;
       height: 74px;
       position: absolute;
       top: -37px;
