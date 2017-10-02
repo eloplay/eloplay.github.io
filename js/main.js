@@ -118,6 +118,19 @@
 			]
 		});
 
+		$('.slider__smart-tournaments').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			dots: true,
+			appendArrows: $('.smart-tournamentss-arrow'),
+			appendDots: $('.smart-tournaments-dots'),
+			prevArrow: '<i class="icon-arrow-left"></i>',
+			nextArrow: '<i class="icon-arrow-right"></i>',
+		});
+
 		$('a[href^=\\#]').on("click", function (event) {
 			event.preventDefault();
 			var id  = $(this).attr('href'),
