@@ -123,7 +123,7 @@
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 4000,
+			autoplaySpeed: 8000,
 			dots: true,
 			appendArrows: $('.smart-tournamentss-arrow'),
 			appendDots: $('.smart-tournaments-dots'),

@@ -2996,7 +2996,16 @@ iframe {
 
 .box-slider__smart-tournaments {
   text-align: center;
-  margin-top: 80px; }
+  margin-top: 80px;
+  position: relative; }
+  .box-slider__smart-tournaments .slider__smart-tournaments {
+    z-index: 1; }
+  .box-slider__smart-tournaments .sl-control-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .box-slider__smart-tournaments .slick-dots {
     position: relative; }
     .box-slider__smart-tournaments .slick-dots li {
@@ -3009,21 +3018,33 @@ iframe {
         color: #fff;
         font-size: 14px; }
   .box-slider__smart-tournaments .smart-tournamentss-arrow {
-    position: relative; }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
     .box-slider__smart-tournaments .smart-tournamentss-arrow .icon-arrow-left {
-      left: -43px; }
+      left: 40px; }
     .box-slider__smart-tournaments .smart-tournamentss-arrow .icon-arrow-right {
-      right: -43px; }
+      right: 40px; }
     .box-slider__smart-tournaments .smart-tournamentss-arrow [class^=icon-arrow] {
       position: absolute;
-      font-size: 26px;
+      font-size: 40px;
       cursor: pointer;
-      color: #fff;
-      opacity: 0.25; }
+      color: #000;
+      opacity: 0.5;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1; }
       .box-slider__smart-tournaments .smart-tournamentss-arrow [class^=icon-arrow]:hover {
         opacity: 1; }
   .box-slider__smart-tournaments .item-smart-tournaments:focus {
     outline: none; }
+  .box-slider__smart-tournaments .smart-tournaments-dots {
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    right: 0; }
 
 @media (max-width: 1366px) {
   .full-bg-p2 .sect-top {
