@@ -3064,32 +3064,35 @@ iframe {
     left: 0;
     right: 0; }
 
-	/* telegram btn */
-	a.floating-button {
-		background: #009cde none repeat scroll 0 0;
-		bottom: 20px;
-		box-shadow: 0 0 0 7px transparent;
-		color: #ffffff;
-		font-size: 20px;
-		border-radius: 50%;
-		height: 40px;
-		padding-top: 6px;
-		position: fixed;
-		right: 20px;
-		text-align: center;
-		width: 40px;
-		z-index: 99;
-		transition: 0.3s;
-		transition-property: all;
-		transition-duration: 0.3s;
-		transition-timing-function: ease;
-		transition-delay: 0s;
-	}
-	a.floating-button:hover {
-		outline: 0 none;
-		box-shadow: 0 0 0 0 #272727;
-		background: #272727;
-	}
+/* telegram btn */
+a.floating-button {
+  background: #009cde none repeat scroll 0 0;
+  bottom: 20px;
+  box-shadow: 0 0 0 7px transparent;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 50%;
+  height: 40px;
+  padding-top: 6px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 99;
+  transition: 0.3s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+  a.floating-button:hover {
+    outline: 0 none;
+    box-shadow: 0 0 0 0 #272727;
+    background: #272727; }
+  a.floating-button .fa-telegram {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
 @media (max-width: 1366px) {
   .full-bg-p2 .sect-top {
