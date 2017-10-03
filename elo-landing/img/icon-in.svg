@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 93.3 93.3" style="enable-background:new 0 0 93.3 93.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;opacity:0.7;fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-80.342" y1="173.6579" x2="174.6579" y2="-81.342">
+		<stop  offset="0" style="stop-color:#D5718E"/>
+		<stop  offset="0.1297" style="stop-color:#D77386"/>
+		<stop  offset="0.3302" style="stop-color:#DE7770"/>
+		<stop  offset="0.5767" style="stop-color:#E87E4D"/>
+		<stop  offset="0.8569" style="stop-color:#F7881C"/>
+		<stop  offset="1" style="stop-color:#FF8D00"/>
+	</linearGradient>
+	<rect x="-80.3" y="-80.3" class="st0" width="254" height="254"/>
+	<g>
+		<path id="LinkedIn_2_" class="st1" d="M61.7,46.6v11.1h-6.4V47.3c0-2.6-0.9-4.4-3.3-4.4c-1.8,0-2.8,1.2-3.3,2.4
+			c-0.2,0.4-0.2,1-0.2,1.6v10.8H42c0,0,0.1-17.5,0-19.3h6.4v2.7c0,0,0,0,0,0.1h0v-0.1c0.9-1.3,2.4-3.2,5.8-3.2
+			C58.5,37.9,61.7,40.6,61.7,46.6z M35.3,29c-2.2,0-3.6,1.4-3.6,3.3c0,1.9,1.4,3.3,3.6,3.3h0c2.2,0,3.6-1.5,3.6-3.3
+			C38.9,30.4,37.5,29,35.3,29z M32,57.7h6.4V38.3H32V57.7z"/>
+	</g>
+	<circle class="st2" cx="46.7" cy="46.7" r="46.2"/>
+</g>
+</svg>
