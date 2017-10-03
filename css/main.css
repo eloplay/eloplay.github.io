@@ -357,6 +357,18 @@ p {
 .command h2 {
   margin-top: 135px;
   margin-bottom: 60px; }
+.command.esports-team .box-item-command .item-command {
+  width: 100%;
+  max-width: 100%; }
+.command.esports-team .box-item-command a {
+  float: left; }
+.command.esports-team .box-item-command .command-photo {
+  width: 200px; }
+.command.esports-team .box-item-command .box-text-info {
+  float: left;
+  width: 70%;
+  margin-left: 40px;
+  margin-top: 0 !important; }
 .command .box-item-command {
   text-align: left;
   position: relative; }
@@ -2728,7 +2740,7 @@ a[href^=mailto] {
   padding: 55px 15px; }
 .modal-dialog .modal-header {
   background-color: #cfd8dc;
-  padding: 71px 15px; }
+  padding: 39px 15px 191px; }
   .modal-dialog .modal-header h2 {
     font-family: "DINpro-light", sans-serif;
     color: #1d1930;
@@ -2875,13 +2887,19 @@ a[href^=mailto] {
 #presaleModal .modal-body {
   background: #e7ecee;
   min-height: 255px; }
+  #presaleModal .modal-body .presale-body {
+    position: relative;
+    top: -213px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: -246px; }
 #presaleModal .modal-dialog .modal-header h2 {
-  font-family: "Ubuntu";
+  font-family: "DINpro-light", sans-serif;
   font-size: 28px;
   color: #1D1930;
   position: relative;
-  line-height: 127%;
-  min-height: 181px; }
+  line-height: 127%; }
   #presaleModal .modal-dialog .modal-header h2:after {
     content: "";
     width: 120px;
@@ -2891,11 +2909,9 @@ a[href^=mailto] {
     left: 50%;
     transform: translateX(-50%);
     background: none; }
-
-.presale-body {
-  position: absolute;
-  top: -198px;
-  width: 100%; }
+#presaleModal .presale-choise .btn-large-color-yellow {
+  font-family: "DINpro-light", sans-serif;
+  padding: 1.3rem 3rem; }
 
 .presale-choise {
   float: left;
@@ -2906,7 +2922,8 @@ a[href^=mailto] {
   color: #78909C;
   padding-bottom: 25px;
   border-radius: 6px;
-  background: #fff; }
+  background: #fff;
+  margin: 15px; }
   .presale-choise .optimal {
     background: linear-gradient(90deg, #fdb71b 0%, #ee7525 100%);
     opacity: 0.9;
@@ -2923,7 +2940,7 @@ a[href^=mailto] {
   .presale-choise span {
     font-size: 60px;
     color: #fff;
-    text-shadow: 0 3px 5px #231F20; }
+    text-shadow: 0 2px 3px rgba(35, 31, 32, 0.5); }
   .presale-choise strong {
     font-family: "DINPro-medium";
     font-size: 28px;
@@ -2950,13 +2967,14 @@ a[href^=mailto] {
     border: 2px solid #f28222;
     border-radius: 5px;
     margin-top: 35px;
-    color: #78909C; }
+    color: #78909C;
+    transition: all 0.2s ease-in-out; }
   .presale-choise:hover {
-    box-shadow: 5px 11.25px 20.63px rgba(10, 0, 25, 0.68);
-    transition: box-shadow 0.2s ease-in-out; }
+    box-shadow: 2px 5px 50px rgba(10, 0, 25, 0.7);
+    transition: all 0.2s ease-in-out; }
     .presale-choise:hover .btn-large-color-yellow {
       background: linear-gradient(135deg, #f29222 0%, #f26522 100%);
-      box-shadow: 4.98px 11.21px 20.56px rgba(10, 0, 25, 0.68);
+      box-shadow: 2px 5px 35px rgba(10, 0, 25, 0.8);
       color: #fff; }
 
 iframe {
@@ -3046,10 +3064,43 @@ iframe {
     left: 0;
     right: 0; }
 
+	/* telegram btn */
+	a.floating-button {
+		background: #009cde none repeat scroll 0 0;
+		bottom: 20px;
+		box-shadow: 0 0 0 7px transparent;
+		color: #ffffff;
+		font-size: 20px;
+		border-radius: 50%;
+		height: 40px;
+		padding-top: 6px;
+		position: fixed;
+		right: 20px;
+		text-align: center;
+		width: 40px;
+		z-index: 99;
+		transition: 0.3s;
+		transition-property: all;
+		transition-duration: 0.3s;
+		transition-timing-function: ease;
+		transition-delay: 0s;
+	}
+	a.floating-button:hover {
+		outline: 0 none;
+		box-shadow: 0 0 0 0 #272727;
+		background: #272727;
+	}
+
 @media (max-width: 1366px) {
   .full-bg-p2 .sect-top {
     margin-top: 90px; } }
 @media (max-width: 1200px) {
+  #presaleModal {
+    padding-right: 0 !important; }
+    #presaleModal .modal-dialog {
+      width: 92%;
+      margin: 15px auto; }
+
   .full-bg-p2 .sect-top {
     margin-top: 90px; }
 
@@ -3294,20 +3345,13 @@ iframe {
   .sect-top.pre3-screen .box-double .box-time-right .time-title-bottom {
     margin-top: 22px; }
 
-  #presaleModal .modal-dialog {
-    width: 545px !important; }
-  #presaleModal .modal-body {
-    min-height: 1000px !important; }
-
-  .presale-choise {
-    margin: 0 0 20px 100px !important; }
-
   .sect-top .box-left .box-time ul {
     margin-left: 0px; }
 
   #main-screen .btn-large-color-y {
     left: 50%;
-    width: 100%; }
+    width: 100%;
+    bottom: -26px; }
 
   iframe {
     height: 240px;
@@ -3382,6 +3426,7 @@ iframe {
       margin-top: 10px;
       padding: 0; }
     .sect-top .indent-bottom .box-left .box-time, .sect-top .indent-bottom .box-right .box-time {
+      width: 100%;
       height: 235px;
       margin-bottom: 40px; }
       .sect-top .indent-bottom .box-left .box-time ul li p:nth-child(1), .sect-top .indent-bottom .box-right .box-time ul li p:nth-child(1) {
@@ -3626,11 +3671,9 @@ iframe {
 
   .modal-dialog {
     width: calc(100% - 22px); }
-    .modal-dialog .modal-header {
-      padding: 40px 15px; }
-      .modal-dialog .modal-header h2 {
-        font-size: 28px;
-        line-height: 100%; }
+    .modal-dialog .modal-header h2 {
+      font-size: 28px;
+      line-height: 100%; }
     .modal-dialog .modal-body {
       padding: 15px 15px 40px; }
     .modal-dialog .box-input-mail .input-mail label {
@@ -3642,7 +3685,10 @@ iframe {
       height: 70px; }
       .modal-dialog .modal-footer .btn-large-color {
         padding: 16px 64px;
-        top: -29px; } }
+        top: -29px; }
+
+  #presaleModal .modal-body .presale-body {
+    top: -173px; } }
 @media (max-width: 360px) {
   html {
     font-size: 9px; }
@@ -3659,20 +3705,8 @@ iframe {
   .full-bg-p2 .bg-sect-3 {
     min-height: 712px; }
 
-  #presaleModal .modal-dialog {
-    width: 335px !important; }
-  #presaleModal .modal-body {
-    min-height: 930px !important; }
-
-  .presale-choise {
-    margin: 0 0 20px 12px !important; }
-
-  .presale-body {
-    top: -157px !important; }
-
-  #presaleModal .modal-dialog .modal-header h2 {
-    font-size: 24px !important;
-    min-height: 200px; }
+  #presaleModal .presale-choise .optimal, #presaleModal .presale-choise .premium, #presaleModal .presale-choise .ultimate {
+    width: 100%; }
 
   iframe {
     height: 182px;

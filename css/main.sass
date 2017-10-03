@@ -361,6 +361,20 @@ p
   h2
     margin-top: 135px
     margin-bottom: 60px
+  &.esports-team
+    .box-item-command 
+      .item-command
+        width: 100%
+        max-width: 100%
+      a
+        float: left
+      .command-photo
+        width: 200px
+      .box-text-info
+        float: left
+        width: 70%
+        margin-left: 40px
+        margin-top: 0!important
   .box-item-command
     text-align: left
     position: relative
@@ -2773,7 +2787,8 @@ a[href^=mailto]
     padding: 55px 15px
   .modal-header
     background-color: #cfd8dc
-    padding: 71px 15px
+    //padding: 71px 15px    
+    padding: 39px 15px 191px
     h2
       font-family: "DINpro-light", sans-serif
       color: #1d1930
@@ -2923,14 +2938,21 @@ a[href^=mailto]
   .modal-body
     background: #e7ecee
     min-height: 255px
+    .presale-body
+      position: relative
+      top: -213px
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      margin-bottom: -246px
   .modal-dialog .modal-header h2
     //font-family : 'DINPro';
-    font-family: 'Ubuntu'
+    font-family: "DINpro-light", sans-serif
     font-size: 28px
     color: #1D1930
     position: relative
     line-height: 127%
-    min-height: 181px
+    //min-height: 181px
     &:after
       content: ""
       width: 120px
@@ -2940,11 +2962,13 @@ a[href^=mailto]
       left: 50%
       transform: translateX(-50%)
       background: none
-
+  .presale-choise .btn-large-color-yellow
+    font-family: "DINpro-light", sans-serif
+    padding: 1.3rem 3rem
 .presale-body
-  position: absolute
-  top: -198px
-  width: 100%
+  //position: absolute
+  //top: -198px
+  //width: 100%
 
 .presale-choise
   float: left
@@ -2956,6 +2980,7 @@ a[href^=mailto]
   padding-bottom: 25px
   border-radius: 6px
   background: #fff
+  margin: 15px
   .optimal
     background: linear-gradient(90deg, rgba(253, 183, 27, 1) 0%, rgba(238, 117, 37, 1) 100%)
     opacity: 0.9
@@ -2973,7 +2998,7 @@ a[href^=mailto]
     //font-family : DINPro;
     font-size: 60px
     color: #fff
-    text-shadow: 0 3px 5px #231F20
+    text-shadow: 0 2px 3px rgba(35,31,32,0.5)
   strong
     font-family: 'DINPro-medium'
     font-size: 28px
@@ -3002,12 +3027,13 @@ a[href^=mailto]
     border-radius: 5px
     margin-top: 35px
     color: #78909C
+    transition: all 0.2s ease-in-out
   &:hover
-    box-shadow: 5px 11.25px 20.63px rgba(10, 0, 25, 0.68)
-    transition: box-shadow 0.2s ease-in-out
+    box-shadow: 2px 5px 50px rgba(10, 0, 25, 0.7)
+    transition: all 0.2s ease-in-out
     .btn-large-color-yellow
       background: linear-gradient(135deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
-      box-shadow: 4.98px 11.21px 20.56px rgba(10, 0, 25, 0.68)
+      box-shadow: 2px 5px 35px rgba(10, 0, 25, 0.8)
       color: #fff
 
 iframe
@@ -3101,12 +3127,41 @@ iframe
     left: 0
     right: 0
 
+/* telegram btn */
+a.floating-button
+    background: #009cde none repeat scroll 0 0
+    bottom: 20px
+    box-shadow: 0 0 0 7px transparent
+    color: #ffffff
+    font-size: 20px
+    border-radius: 50%
+    height: 40px
+    padding-top: 6px
+    position: fixed
+    right: 20px
+    text-align: center
+    width: 40px
+    z-index: 99
+    transition: 0.3s
+    transition-property: all
+    transition-duration: 0.3s
+    transition-timing-function: ease
+    transition-delay: 0s
+    &:hover
+      outline: 0 none
+      box-shadow: 0 0 0 0 #272727
+      background: #272727
 
 @media (max-width: 1366px)
   .full-bg-p2 .sect-top
     margin-top: 90px
 
 @media (max-width: 1200px)
+  #presaleModal
+    padding-right: 0!important
+    .modal-dialog
+      width: 92%
+      margin: 15px auto
   .full-bg-p2 .sect-top
     margin-top: 90px
   .del-br-1200 br
@@ -3357,17 +3412,17 @@ iframe
 
   #presaleModal
     .modal-dialog
-      width: 545px !important
+      //width: 545px !important
     .modal-body
-      min-height: 1000px !important
+      //min-height: 1000px !important
   .presale-choise
-    margin: 0 0 20px 100px !important
+    //margin: 0 0 20px 100px !important
   .sect-top .box-left .box-time ul
     margin-left: 0px
   #main-screen .btn-large-color-y
     left: 50%
     width: 100%
-    //bottom: -2.4rem
+    bottom: -26px
   iframe
     height: 240px
     width: 100%
@@ -3430,6 +3485,7 @@ iframe
       margin-top: 10px
       padding: 0
     .box-left .box-time, .box-right .box-time
+      width: 100%
       height: 235px
       margin-bottom: 40px
       ul li
@@ -3650,7 +3706,7 @@ iframe
   .modal-dialog
     width: calc(100% - 22px)
     .modal-header
-      padding: 40px 15px
+      //padding: 40px 15px
       h2
         font-size: 28px
         line-height: 100%
@@ -3667,7 +3723,8 @@ iframe
       .btn-large-color
         padding: 16px 64px
         top: -29px
-
+  #presaleModal .modal-body .presale-body
+    top: -173px
 @media (max-width: 360px)
   html
     font-size: 9px
@@ -3680,17 +3737,20 @@ iframe
   .full-bg-p2 .bg-sect-3
     min-height: 712px
   #presaleModal
+    .presale-choise 
+      .optimal, .premium, .ultimate
+        width: 100%
     .modal-dialog
-      width: 335px !important
+      //width: 335px !important
     .modal-body
-      min-height: 930px !important
+      //min-height: 930px !important
   .presale-choise
-    margin: 0 0 20px 12px !important
+    //margin: 0 0 20px 12px !important
   .presale-body
-    top: -157px !important
+    //top: -157px !important
   #presaleModal .modal-dialog .modal-header h2
-    font-size: 24px !important
-    min-height: 200px
+    //font-size: 24px !important
+    //min-height: 200px
   iframe
     height: 182px
     width: 325px
