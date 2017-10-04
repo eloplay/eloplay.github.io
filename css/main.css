@@ -1567,9 +1567,20 @@ p {
 
 .sel-lang.no-bord {
   border: none; }
-
+.contribute-link {
+	text-transform: uppercase;
+	border-bottom: 3px solid #f27022;
+	padding: 10px 0;
+	color: rgba(255, 255, 255, 0.6);
+	display: inline-block;
+	margin-top: 20px;
+}
+.contribute-link:hover, .contribute-link:focus{
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
 .bg-top-screen {
-  background: url(../img/bg-top-3.jpg) no-repeat;
+  background: url(../img/bg-top-3.png) no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -1617,10 +1628,10 @@ p {
         font-family: "DINpro-light", sans-serif;
         color: rgba(255, 255, 255, 0.6);
         font-size: 12px; }
-  .bg-top-screen .img-monitor {
+  .bg-video-screen .img-monitor {
     width: 74%;
     margin: auto; }
-    .bg-top-screen .img-monitor iframe {
+    .bg-video-screen .img-monitor iframe {
       height: 480px; }
 
 .bg-sect-1 {
@@ -3444,6 +3455,8 @@ a.floating-button {
     width: 100%;
     bottom: -26px; }
 
+.bg-video-screen .img-monitor iframe {
+  height: 240px; }
   iframe {
     height: 240px;
     width: 100%; }
@@ -3798,7 +3811,13 @@ a.floating-button {
 
   #presaleModal .presale-choise .optimal, #presaleModal .presale-choise .premium, #presaleModal .presale-choise .ultimate {
     width: 100%; }
-
+.bg-video-screen .img-monitor {
+	width: 98%;
+}
+.bg-video-screen .img-monitor iframe {
+    height: 182px;
+    width: 325px;
+}
   iframe {
     height: 182px;
     width: 325px; }
