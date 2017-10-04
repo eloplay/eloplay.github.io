@@ -156,7 +156,17 @@ p
       &:hover
         transform: scale(1.05)
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5)
-
+.icon-telegram
+  background: url(../img/icon-social-2.svg) center no-repeat
+  background-size: contain
+  width: 28px
+  height: 27px
+  display: inline-block
+  opacity: 0.5
+  transition: all 0.2s
+  cursor: pointer
+  &:hover
+    opacity: 1
 .in-social-networks
   width: 100%
   display: block
@@ -1005,6 +1015,17 @@ p
         padding: 5px 20px
         &:hover
           color: #fff
+  .nav-telegram
+    position: absolute
+    right: -15px
+    line-height: 85%
+    .fa-telegram
+      color: rgba(255, 255, 255, 1)
+      font-size: 28px
+      transition: all 0.2s
+      opacity: 0.5
+      &:hover
+        opacity: 1
 
 .font-l-48
   font-size: 4.8rem
@@ -1574,9 +1595,68 @@ p
 .box-button-video, .box-button-readw
   display: inline-block
   margin: 47px 0 40px
+.sel-lang.no-bord
+  border: none
+.bg-top-screen
+  background: url(../img/bg-top-3.jpg) no-repeat  
+  background-size: cover
+  width: 100%
+  min-height: 100vh
+  text-align: center
+  .sect-top
+    margin-top: 16vh
+  .btn-large-color-y
+    margin: 7vh auto 7vh
+    display: block
+    max-width: 350px
+    text-transform: uppercase
+    background: -moz-linear-gradient(20.28% -94.49% -45deg, #f29222 0%, #f26522 100%)
+    background: -webkit-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+    background: -webkit-gradient(linear, 20.28% -94.49%, 79.72% 194.49%, color-stop(0, #f29222), color-stop(1, #f26522))
+    background: -o-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+    background: -ms-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F29222', endColorstr='#F26522' ,GradientType=0)"
+    background: linear-gradient(135deg, #f29222 0%, #f26522 100%)
+    transition: all 0.2s ease-out
+    &:hover
+      transform: scale(1.05)
+  .box-time    
+    width: 94%
+    max-width: 465px
+    //height: 308px
+    border-radius: 6px
+    position: relative
+    z-index: 0
+    margin: auto
+    ul
+      padding: 0
+      margin: 0
+      text-align: center
+      margin: auto
+      li
+        text-transform: uppercase
+        display: inline-block
+        position: relative
+        width: 23%
+        span
+          &#days, &#hours, &#minutes, &#seconds
+            color: rgba(255,255,255,0.6)
+            font-size: 4rem
+            font-family: "DINpro-light", sans-serif
+            text-shadow: 5px 6px 13px rgba(0, 0, 0, 0.7)
+      p
+        font-family: "DINpro-light", sans-serif
+        color: rgba(255,255,255,0.6)
+        font-size: 12px
+  .img-monitor
+    width: 74%
+    margin: auto
+    iframe
+      height: 480px
+
 
 .bg-sect-1
-  background: url(../img/bg-sec-0-pg2.png) no-repeat
+  background: url(../img/bg-sec-0-pg2.png) no-repeat  
   background-size: cover
   width: 100%
   min-height: 695px
@@ -2393,7 +2473,8 @@ p
       [uib-dropdown-menu]
         background-color: rgba(8, 15, 23, 0.8)
         margin-top: 20px
-        left: -52px
+        //left: -52px
+        left: -60px
         min-width: 128px
         border-radius: 6px 0 6px 6px
         ul
@@ -2414,7 +2495,8 @@ p
         height: 58px
         position: absolute
         top: -7px
-        left: -7px
+        //left: -7px
+        left: -15px
     &:hover
       opacity: 1
   &.lang-nav
@@ -2457,6 +2539,11 @@ a[href^=mailto]
   font-family: "DINpro-light", sans-serif
   line-height: 120%
 
+.font-l-51
+  font-size: 5.1rem
+  font-family: "DINpro-light", sans-serif
+  line-height: 120%
+
 .padd-no
   padding: 0
 
@@ -2470,6 +2557,8 @@ a[href^=mailto]
       margin-bottom: 59px
   .indent-pl-50
     padding-left: 50px
+  .sel-lang.dropdown.open [uib-dropdown-menu]
+    margin-top: 18px
 
 .img-medal img
   width: 85%
