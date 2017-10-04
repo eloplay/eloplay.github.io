@@ -55,7 +55,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
   <link href="css/michalsnik/aos/2.1.1/dist/aos.min.css" rel="stylesheet">
 
-  <link href="css/main.css?v=1507123298" rel="stylesheet" />
+  <link href="css/main.css?v=1507135594" rel="stylesheet" />
   <link href="css/fonts.css?v=1507109128" rel="stylesheet" />
 
 <!-- autodetect lang -->
@@ -126,8 +126,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
           <div class="nav-links">
             <ul>
-                          <li><a href="https://eloplay.com/en/?utm_source=ico_landing" target="_blank">Live product</a></li>
-              <li><a href="https://eloplay.github.io/docs/en/eloplay_whitepaper_en_1.pdf" target="_blank">Whitepaper</a></li>
+            				              <li><a href="https://eloplay.com/en/?utm_source=ico_landing" target="_blank">Live product</a></li>
+				              <li><a href="https://eloplay.github.io/docs/en/eloplay_whitepaper_en_1.pdf" target="_blank">Whitepaper</a></li>
                           </ul>
           </div>
           <div ng-init="current_lang='EN'">
@@ -161,9 +161,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="btn-nav-menu" ng-class="{'d-menu-show': is_btn_show}" ng-cloak>
           <ul>
             <!--a href="#faq" ng-click="is_btn_show=false"><li>FAQ</li></a-->
-            <a href="https://eloplay.com/en/?utm_source=ico_landing" target="_blank"><li>Eloplay.com</li></a>
+				            <a href="https://eloplay.com/en/?utm_source=ico_landing" target="_blank"><li>Eloplay.com</li></a>
             <a href="https://eloplay.com/en/blog" target="_blank"><li>Blog</li></a>
-            <a href="#team" ng-click="is_btn_show=false"><li>Team</li></a>
+				            <a href="#team" ng-click="is_btn_show=false"><li>Team</li></a>
             <a href="#tokensale" id="ex1" ng-click="is_btn_show=false"><li>Token Sale</li></a>
             <a href="#docs" ng-click="is_btn_show=false"><li>Documentation</li></a>
             <a href="https://eloplay.github.io/docs/en/eloplay_whitepaper_en_1.pdf" target="_blank"><li>Whitepaper</li></a>
@@ -308,9 +308,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
         </div>
-        <a class="btn btn-br-line sect-3" href="https://eloplay.com/?utm_source=ico_landing" target="_blank">
+				        <a class="btn btn-br-line sect-3" href="https://eloplay.com/?utm_source=ico_landing" target="_blank">
           Play on Eloplay        </a>
-    </div>
+				    </div>
 
     <div class="bg-sect-32">
         <div class="container " data-aos="zoom-in">
@@ -325,7 +325,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="link-guard" href="https://www.theguardian.com/sport/video/2017/jun/16/e-sports-the-digital-revolution-has-arrived-video" target="_blank">
               Source: The Guardian            </a>
           </div>
-          <!-- <a href="https://eloplay.com/?utm_source=ico_landing" target="_blank" class="btn btn-br-line sect-3"><span>ИгратьPlay on Eloplay</span></a> -->
         </div>
     </div>  
 
@@ -1353,7 +1352,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <form id="subscribeNews" class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8" name="reg_form" novalidate>
               <input type="email" name="email" class="form-control st-placeh" placeholder="Enter E-mail" id="send-mail" maxlength="50" ng-class = "{ 'input-error-mail-top': reg_form.email.$error.required && reg_form.email.$touched || !reg_form.email.$error.required && reg_form.email.$touched && !reg_form.email.$valid || reg_form.email.$dirty && reg_form.email.$error.pattern, 'input-error-mail-bottom': !reg_form.password.$valid && reg_form.password.$touched && !reg_form.password.$error.minlength || reg_form.password.$error.minlength && reg_form.password.$touched }" type="email" name="email" ng-model="register.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required ng-keyup="$event.keyCode == 13 && do_register()" autocomplete="off" />
               <div class="error_message" ng-show = "reg_form.email.$error.required && reg_form.email.$touched">Enter E-mail</div>
-              <div class="error_message" ng-show = "reg_form.email.$dirty && reg_form.email.$error.pattern">E-mail format: mymail@doman.com</div>
+              <div class="error_message" ng-show = "reg_form.email.$dirty && reg_form.email.$error.pattern">E-mail format: mymail@domain.com</div>
               <input id="check1" type="checkbox" checked name="tockensale_start" value="tockensale_start">              
               <label for="check1" class="label-checkbox del-br-470">Tell me about token sale start<br>with browser push notification</label>
               <input type="hidden" name="campaign_token" value="nTjtu" />
@@ -1368,12 +1367,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </div>
-
-  <div class="modal fade" id="presaleModal" tabindex="-1" role="dialog" aria-labelledby="presaleModal" aria-hidden="true">
+  <!-- end modal -->
+  <!-- modal -->
+  <div class="modal fade" id="presaleModal" tabindex="-1" role="dialog" aria-labelledby="subscribeNews" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel">Choose the most suitable package</h2>
+          <h2 class="modal-title" id="exampleModalLabel">contribute first. join order book</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-sign" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="box-input-mail">
+            <form id="presale" class="form-group input-mail"  action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8" name="presale_form" novalidate>
+
+              <input type="text" name="first_name" class="form-control st-placeh"  ng-model="register.first_name" placeholder="Name" id="first-name" maxlength="50" minlength="2" required autocomplete="off" />
+			  <div class="error_message err-name" ng-show = "presale_form.first_name.$error.required && presale_form.first_name.$touched">empty field name</div>
+    
+              <input type="email" name="email" class="form-control st-placeh" placeholder="Enter E-mail" id="send-mail" maxlength="50" type="email" name="email" ng-model="register.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required autocomplete="off" />
+
+              <div class="error_message err-mail" ng-show = "presale_form.email.$error.required && presale_form.email.$touched">Enter E-mail</div>
+              <div class="error_message err-mail" ng-show = "presale_form.email.$dirty && presale_form.email.$error.pattern">E-mail format: mymail@domain.com</div>
+              <input type="hidden" name="campaign_token" value="nTjtu" />
+          <input type="submit" class="btn btn-large-color" id="subscribeBtn" ng-disabled="!presale_form.$valid" value="make order" />
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer box-time">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="modal fade" id="presaleModal" tabindex="-1" role="dialog" aria-labelledby="presaleModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Contact information token preorder:</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span class="close-sign" aria-hidden="true"></span>
           </button>
@@ -1418,11 +1449,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <br style="clear:both;" />
           </div>
         </div>
-        <!--        <div class="modal-footer box-time">
-        </div>-->
+        <div class="modal-footer box-time">
+        </div>
       </div>
     </div>  
-  </div>
+  </div> -->
+  <!-- <div class="modal fade" id="presaleModal" tabindex="-1" role="dialog" aria-labelledby="presaleModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Contact information token preorder:</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-sign" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="row modal-body">
+          <form action="">
+            <div class="col-sm-12 col-md-6 col-lg-6 box-left">
+              <div class="form-group">
+                  <label for="usr">Ваше имя:</label>
+                  <input type="text" class="form-control" id="usr">
+                  <label for="email">E-mail:</label>
+                  <input type="text" class="form-control" id="email">
+                  <label for="phone">Номер телефона:</label>
+                  <input type="text" class="form-control" id="phone">
+                  <label for="coment">Коментарии:</label>
+                  <textarea name="" id="coment" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 box-right">
+              <p class="text-title-smail">Выберите пакет с максимальной выгодой для Вас:</p>
+              <div class="box-package">
+                <div class="package-optimal">
+                  <div class="box-head"><p>+5%</p></div>
+                    <p>при взносах более<br>чем $ 50,000</p>
+                    <p>1eth=10500elt</p>
+                </div>
+                <div class="package-premium">
+                  <div class="box-head"><p>+10%</p></div>
+                    <p>при взносах более<br>чем $ 50,000</p>
+                    <p>1eth=10500elt</p>
+                </div>
+                <div class="package-ultimate">
+                  <div class="box-head"><p>+20%</p></div>
+                   <p>при взносах более<br>чем $ 50,000</p>
+                   <p>1eth=10500elt</p>                     
+                </div>
+              </div>
+              <div class="form-group select-currency">
+                <div>
+                  <label for="payment">Или введите свою сумму:</label>
+                  <input type="text" class="form-control" id="payment">
+                </div>
+                <div>
+                  <label for="currency">Выберите валюту:</label>
+                  <select name="currency" id="currency"></select>
+                </div>
+              </div>
+  
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>  
+  </div> -->
 
   <script data-cfasync="true" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script data-cfasync="true" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -1440,9 +1530,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script data-cfasync="true" src="js/moment/moment/2.18.1/min/moment.min.js"></script>
   
 
-  <script data-cfasync="true" src="js/push_message.js"></script>
+    <script data-cfasync="true" src="js/push_message.js"></script>
   <script data-cfasync="true" src="js/gapi_calendar.js"></script>
-  <script data-cfasync="true" src="js/main.js?v=1507109128"></script>
+	  <script data-cfasync="true" src="js/main.js?v=1507109128"></script>
 
   <script async defer src="https://apis.google.com/js/api.js"
     onload="this.onload=function(){};handleClientLoad()"
@@ -1481,7 +1571,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   twq('track','PageView');
   </script>
   <!-- End Twitter universal website tag code -->
-
 
 </body>
 </html>

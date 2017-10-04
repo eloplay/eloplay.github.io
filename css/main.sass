@@ -1592,13 +1592,24 @@ p
     &:hover
       transform: translateX(-50%) scale(1.05)
 
+.contribute-link 
+  text-transform: uppercase
+  border-bottom: 3px solid #f27022
+  padding: 10px 0
+  color: rgba(255, 255, 255, 0.6)
+  display: inline-block
+  margin-top: 20px
+  &:hover, &:focus
+    color: rgba(255, 255, 255, 0.6)
+    text-decoration: none
+
 .box-button-video, .box-button-readw
   display: inline-block
   margin: 47px 0 40px
 .sel-lang.no-bord
   border: none
 .bg-top-screen
-  background: url(../img/bg-top-3.jpg) no-repeat  
+  background: url(../img/bg-top-3.png) no-repeat  
   background-size: cover
   width: 100%
   min-height: 100vh
@@ -1648,6 +1659,7 @@ p
         font-family: "DINpro-light", sans-serif
         color: rgba(255,255,255,0.6)
         font-size: 12px
+.bg-video-screen 
   .img-monitor
     width: 74%
     margin: auto
@@ -2876,8 +2888,11 @@ a[href^=mailto]
     padding: 55px 15px
   .modal-header
     background-color: #cfd8dc
-    //padding: 71px 15px    
-    padding: 39px 15px 191px
+    padding: 28px 15px 27px
+    min-height: 122px
+    display: flex
+    justify-content: center
+    align-items: center
     h2
       font-family: "DINpro-light", sans-serif
       color: #1d1930
@@ -3019,41 +3034,35 @@ a[href^=mailto]
         opacity: 1
 
 // presale modal
-
 #presaleModal
-  .modal-dialog
-    width: 1075px
-    text-align: center
-  .modal-body
-    background: #e7ecee
-    min-height: 255px
-    .presale-body
-      position: relative
-      top: -213px
-      display: flex
-      justify-content: center
-      flex-wrap: wrap
-      margin-bottom: -246px
-  .modal-dialog .modal-header h2
-    //font-family : 'DINPro';
-    font-family: "DINpro-light", sans-serif
-    font-size: 28px
-    color: #1D1930
+  .modal-dialog .error_message
+    position: absolute
+    left: 10%
+    font-size: 12px
+    color: red
+    &.err-mail
+      bottom: -20px
+      top: initial
+  .modal-dialog .modal-content input
+    display: block
+  .modal-dialog .modal-body
     position: relative
-    line-height: 127%
-    //min-height: 181px
-    &:after
-      content: ""
-      width: 120px
-      height: 3px
-      position: absolute
-      bottom: -21px
-      left: 50%
-      transform: translateX(-50%)
-      background: none
-  .presale-choise .btn-large-color-yellow
-    font-family: "DINpro-light", sans-serif
-    padding: 1.3rem 3rem
+  input#subscribeBtn
+    position: absolute
+    transform: translateX(-50%)
+    left: 50%
+    bottom: -137px
+    z-index: 1
+    &:hover
+      transform: translateX(-50%) scale(1.05)
+      //box-shadow: none
+    &.btn[disabled]
+      opacity: 1
+      background: #f6b470
+      &:hover
+        transform: translateX(-50%) scale(1)
+        box-shadow: none
+
 .presale-body
   //position: absolute
   //top: -198px
@@ -3471,6 +3480,10 @@ a.floating-button
     width: 570px
 
 @media (max-width: 576px)
+  .bg-video-screen 
+    .img-monitor
+      iframe
+        height: 240px          
   .sect-top
     &.pre-screen
       .indent-bottom .box-left
@@ -3503,12 +3516,6 @@ a.floating-button
                 font-size: 3rem
           .time-title-bottom
             margin-top: 22px
-
-  #presaleModal
-    .modal-dialog
-      //width: 545px !important
-    .modal-body
-      //min-height: 1000px !important
   .presale-choise
     //margin: 0 0 20px 100px !important
   .sect-top .box-left .box-time ul
@@ -3817,8 +3824,6 @@ a.floating-button
       .btn-large-color
         padding: 16px 64px
         top: -29px
-  #presaleModal .modal-body .presale-body
-    top: -173px
 @media (max-width: 360px)
   html
     font-size: 9px
@@ -3830,21 +3835,11 @@ a.floating-button
     left: -18%
   .full-bg-p2 .bg-sect-3
     min-height: 712px
-  #presaleModal
-    .presale-choise 
-      .optimal, .premium, .ultimate
-        width: 100%
-    .modal-dialog
-      //width: 335px !important
-    .modal-body
-      //min-height: 930px !important
-  .presale-choise
-    //margin: 0 0 20px 12px !important
-  .presale-body
-    //top: -157px !important
-  #presaleModal .modal-dialog .modal-header h2
-    //font-size: 24px !important
-    //min-height: 200px
+  .bg-video-screen .img-monitor
+    width: 98%
+  .bg-video-screen .img-monitor iframe
+    height: 182px
+    width: 325px
   iframe
     height: 182px
     width: 325px
