@@ -86,11 +86,11 @@ function sendEvent(){
 		'summary': 'Eloplay ICO',
 		'description': 'Eloplay ICO',
 		'start': {
-			'dateTime': '2017-10-09T12:00:00',
+			'dateTime': '2017-10-16T12:00:00',
 			'timeZone': 'UTC'
 		},
 		'end': {
-			'dateTime': '2017-11-08T12:00:00',
+			'dateTime': '2017-11-15T12:00:00',
 			'timeZone': 'UTC'
 		},
 		'recurrence': [

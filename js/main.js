@@ -2,7 +2,7 @@
 	.module('app', ['ngAnimate', 'ngSanitize', 'ui.bootstrap'])
 	.controller('pageICO_Ctr', function($scope, $window) {
 
-		$scope.scrollPos = 0;
+  	$scope.scrollPos = $("body").scrollTop();
 
 		$window.onscroll = function(){
 			$scope.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
@@ -13,7 +13,6 @@
 	};
 
 	});
-
 
 	$(function() {
 
@@ -119,6 +118,19 @@
 			]
 		});
 
+		$('.slider__smart-tournaments').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 8000,
+			dots: true,
+			appendArrows: $('.smart-tournamentss-arrow'),
+			appendDots: $('.smart-tournaments-dots'),
+			prevArrow: '<i class="icon-arrow-left"></i>',
+			nextArrow: '<i class="icon-arrow-right"></i>',
+		});
+
 		$('a[href^=\\#]').on("click", function (event) {
 			event.preventDefault();
 			var id  = $(this).attr('href'),
@@ -126,7 +138,7 @@
 			$('body,html').animate({scrollTop: top}, 800);
 		});
 
-		var dataStart = moment('2017-10-09 12:00:00Z').valueOf();//2017-10-09 12:00:00 UTC
+		var dataStart = moment('2017-10-16 12:00:00Z').valueOf();//2017-10-09 12:00:00 UTC
 
 		var x = setInterval(function() {
 
@@ -136,6 +148,11 @@
 				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 				
+				
+				days = days > 9 ? days : ( '0' + days);
+				hours = hours > 9 ? hours : ( '0' + hours);
+				minutes = minutes > 9 ? minutes : ( '0' + minutes);
+				seconds = seconds > 9 ? seconds : ( '0' + seconds);
 				$("#days").text(days);
 				$("#hours").text(hours);
 				$("#minutes").text(minutes);
@@ -161,8 +178,11 @@
 		});
 		play_video();
 	});
-var video = document.querySelector('video');
+
+var video = document.querySelector('#video');
+var video2 = document.querySelector('#video2');
 window.addEventListener('touchstart', function videoStart() {
 	video.play();
+	video2.play();
 	this.removeEventListener('touchstart', videoStart);
 });
