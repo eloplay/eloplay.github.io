@@ -1040,7 +1040,7 @@ p
   width: 100%
   overflow: hidden
   .sect-top
-    margin-top: 180px
+    //margin-top: 180px
     .box-left p:nth-child(2)
       font-family: "DINpro-light", sans-serif
       color: rgba(255, 255, 255, 0.5)
@@ -1135,6 +1135,7 @@ p
         z-index: 1
         text-align: center
   .box-right
+    text-align: center
     .box-time
       width: 87%
       height: 234px
@@ -1592,13 +1593,29 @@ p
     &:hover
       transform: translateX(-50%) scale(1.05)
 
+.contribute-link 
+  text-transform: uppercase
+  border-bottom: 3px solid #f27022
+  padding: 10px 0
+  color: rgba(255, 255, 255, 0.6)
+  display: inline-block
+  margin-top: 20px
+  transition: all 0.2s
+  &:hover, &:focus
+    color: rgba(255, 255, 255, 0.6)
+    text-decoration: none
+    outline: none
+  &:hover
+    color: #fff
+    transform: scale(1.05)
+
 .box-button-video, .box-button-readw
   display: inline-block
   margin: 47px 0 40px
 .sel-lang.no-bord
   border: none
 .bg-top-screen
-  background: url(../img/bg-top-3.jpg) no-repeat  
+  background: url(../img/bg-top-3.png) no-repeat  
   background-size: cover
   width: 100%
   min-height: 100vh
@@ -1648,11 +1665,26 @@ p
         font-family: "DINpro-light", sans-serif
         color: rgba(255,255,255,0.6)
         font-size: 12px
+
+.img-monitor
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  overflow: hidden
+  iframe, video
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+.box2-img-monitor
+  max-width: 830px
+  margin: 58px auto
+  position: relative
   .img-monitor
-    width: 74%
-    margin: auto
-    iframe
-      height: 480px
+    padding-bottom: 58.1%
+    height: 0
+    overflow: hidden
 
 
 .bg-sect-1
@@ -1703,10 +1735,10 @@ p
 
 .img-monitor
   video, img
-    margin: 58px auto
+    //margin: 58px auto
     border: 23px solid #533f4c
     border-radius: 3px
-    width: 73%
+    //width: 73%
 
 .bg-sect-31
   position: relative
@@ -1740,8 +1772,8 @@ p
     position: absolute
     color: rgba(255, 255, 255, 0.4)
     font-size: 10px
-    right: 13.5%
-    bottom: 41px
+    right: 0
+    bottom: -25px
 
 .font-l-31
   font-size: 3.1rem
@@ -2552,13 +2584,17 @@ a[href^=mailto]
     //float: right;
   .sect-top
     margin-bottom: 59px
-    margin-top: 180px
+    //margin-top: 180px
     .indent-bottom
       margin-bottom: 59px
+    .box-img-monitor
+      max-width: 850px
+      margin: auto
   .indent-pl-50
     padding-left: 50px
   .sel-lang.dropdown.open [uib-dropdown-menu]
     margin-top: 18px
+
 
 .img-medal img
   width: 85%
@@ -2858,6 +2894,10 @@ a[href^=mailto]
       width: 145px
       height: 42px
 
+#subscriptionModal, #presaleModal
+  .modal-dialog
+    max-width: 500px 
+
 .modal-dialog
   .modal-content
     overflow: hidden
@@ -2876,8 +2916,11 @@ a[href^=mailto]
     padding: 55px 15px
   .modal-header
     background-color: #cfd8dc
-    //padding: 71px 15px    
-    padding: 39px 15px 191px
+    padding: 28px 15px 27px
+    min-height: 122px
+    display: flex
+    justify-content: center
+    align-items: center
     h2
       font-family: "DINpro-light", sans-serif
       color: #1d1930
@@ -3019,41 +3062,36 @@ a[href^=mailto]
         opacity: 1
 
 // presale modal
-
 #presaleModal
-  .modal-dialog
-    width: 1075px
-    text-align: center
-  .modal-body
-    background: #e7ecee
-    min-height: 255px
-    .presale-body
-      position: relative
-      top: -213px
-      display: flex
-      justify-content: center
-      flex-wrap: wrap
-      margin-bottom: -246px
-  .modal-dialog .modal-header h2
-    //font-family : 'DINPro';
-    font-family: "DINpro-light", sans-serif
-    font-size: 28px
-    color: #1D1930
+  .modal-dialog .error_message
+    position: absolute
+    left: 10%
+    font-size: 12px
+    color: red
+    &.err-mail
+      bottom: -20px
+      top: initial
+  .modal-dialog .modal-content input
+    display: block
+  .modal-dialog .modal-body
     position: relative
-    line-height: 127%
-    //min-height: 181px
-    &:after
-      content: ""
-      width: 120px
-      height: 3px
-      position: absolute
-      bottom: -21px
-      left: 50%
-      transform: translateX(-50%)
-      background: none
-  .presale-choise .btn-large-color-yellow
-    font-family: "DINpro-light", sans-serif
-    padding: 1.3rem 3rem
+  input#subscribeBtn
+    position: absolute
+    transform: translateX(-50%)
+    left: 50%
+    bottom: -137px
+    z-index: 1
+    border: none
+    &:hover
+      transform: translateX(-50%) scale(1.05)
+      //box-shadow: none
+    &.btn[disabled]
+      opacity: 1
+      background: #f6b470
+      &:hover
+        transform: translateX(-50%) scale(1)
+        box-shadow: none
+
 .presale-body
   //position: absolute
   //top: -198px
@@ -3145,6 +3183,9 @@ iframe
     background: url(../img/slider_004.jpg) center no-repeat
   .img-smart-tournaments-5
     background: url(../img/slider_005.jpg) center no-repeat
+  .full-bg-p2
+    .sect-top
+      margin-top: 180px
 .lang-en
   .img-smart-tournaments-1
     background: url(../img/slider_001_en.jpg) center no-repeat
@@ -3254,7 +3295,6 @@ a.floating-button
   #presaleModal
     padding-right: 0!important
     .modal-dialog
-      width: 92%
       margin: 15px auto
   .full-bg-p2 .sect-top
     margin-top: 90px
@@ -3451,7 +3491,8 @@ a.floating-button
           margin-top: 0
           .icon-social-steemit
             margin: auto
-
+  .box2-img-monitor .img-monitor
+    padding-bottom: 57.1%
 @media (max-width: 768px)
   .hide-768
     display: none !important
@@ -3465,10 +3506,11 @@ a.floating-button
     height: 612px
   .contacts-bottom li
     display: block
-
-@media (min-width: 768px)
-  .modal-dialog
-    width: 570px
+  #presaleModal, #subscriptionModal
+    padding-right: 0!important
+    .modal-dialog
+      width: calc(100% - 30px)
+      margin: 15px auto
 
 @media (max-width: 576px)
   .sect-top
@@ -3503,12 +3545,6 @@ a.floating-button
                 font-size: 3rem
           .time-title-bottom
             margin-top: 22px
-
-  #presaleModal
-    .modal-dialog
-      //width: 545px !important
-    .modal-body
-      //min-height: 1000px !important
   .presale-choise
     //margin: 0 0 20px 100px !important
   .sect-top .box-left .box-time ul
@@ -3817,8 +3853,10 @@ a.floating-button
       .btn-large-color
         padding: 16px 64px
         top: -29px
-  #presaleModal .modal-body .presale-body
-    top: -173px
+        width: 75%
+  #presaleModal input#subscribeBtn
+    bottom: -99px
+    width: 81%
 @media (max-width: 360px)
   html
     font-size: 9px
@@ -3830,26 +3868,6 @@ a.floating-button
     left: -18%
   .full-bg-p2 .bg-sect-3
     min-height: 712px
-  #presaleModal
-    .presale-choise 
-      .optimal, .premium, .ultimate
-        width: 100%
-    .modal-dialog
-      //width: 335px !important
-    .modal-body
-      //min-height: 930px !important
-  .presale-choise
-    //margin: 0 0 20px 12px !important
-  .presale-body
-    //top: -157px !important
-  #presaleModal .modal-dialog .modal-header h2
-    //font-size: 24px !important
-    //min-height: 200px
-  iframe
-    height: 182px
-    width: 325px
   .title-bonus
     margin-top: 7px
-  .sect-top .img-monitor video
-    margin-left: -5px
-    margin-top: -60px
+
