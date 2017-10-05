@@ -372,26 +372,37 @@ p
     margin-top: 135px
     margin-bottom: 60px
   &.esports-team
-    .box-item-command 
+    .box-item-command
+      margin-left: 14px
       .item-command
         width: 100%
         max-width: 100%
+        display: flex
+        text-align: left
       a
-        float: left
+        margin-right: 20px
       .command-photo
         width: 200px
       .box-text-info
         float: left
         width: 70%
-        margin-left: 40px
+        //margin-left: 40px
         margin-top: 0!important
+        p:nth-child(1)
+          margin-bottom: 6rem!important
+    .title-esports-advisors
+      font-family: "Ubuntu-light", sans-serif
+      color: rgba(255,255,255,0.8)
+      line-height: 100%
+      margin-left: 22px
+      margin-bottom: 37px
   .box-item-command
     text-align: left
     position: relative
     .slick-slide:focus
       outline: none
     .item-command
-      max-width: 255px
+      max-width: 180px
       display: inline-block
       vertical-align: top
       margin: 10px
@@ -408,21 +419,21 @@ p
           width: 255px
       .box-text-info
         border-bottom: 1px solid rgba(255, 255, 255, 0.5)
-        margin-top: 3.4rem
+        margin-top: 1.8rem
         padding-bottom: 30px
         p
           &:nth-child(1)
             color: #ff8d00
             font-family: "DINpro-regular", sans-serif
-            font-size: 2.1rem
+            font-size: 1.5rem
             font-weight: normal
-            line-height: 2.5rem
-            margin-bottom: 2.2rem
+            line-height: 120%
+            margin-bottom: 5px
           &:nth-child(2)
             font-family: "Ubuntu", sans-serif
             font-weight: 300
-            font-size: 1.8rem
-            line-height: 2.8rem
+            font-size: 1.4rem
+            line-height: 140%
             color: rgba(255, 255, 255, 0.5)
       .command-photo-1
         background: url(../img/img-command-1.jpg) top no-repeat
@@ -464,6 +475,27 @@ p
         display: inline-block
         &:not(:last-child)
           margin-right: 23px
+  .slick-command
+    text-align: center
+  .title-advisors
+    font-family: "Ubuntu-light", sans-serif
+    color: rgba(255, 255, 255, 0.8)
+    line-height: 100%
+    margin-left: 22px
+    margin-bottom: 20px
+    margin-top: 32px
+  .title-audit  
+    font-family: "Ubuntu-light", sans-serif
+    color: rgba(255, 255, 255, 0.8)
+    line-height: 100%
+    margin-left: 22px
+    margin-bottom: 20px
+    margin-top: 15px
+  .slick-audit
+    .item-command
+      .box-text-info
+        text-align: left
+
 
 .box-input-mail.box-bottom
   display: block
@@ -2133,6 +2165,24 @@ p
     position: absolute
     bottom: -21px
     left: 4px
+.title-advisor
+  color: #fff
+  margin: 5px 0 53px 17px
+  position: relative
+  &:after
+    content: ""
+    width: 180px
+    height: 3px
+    background: -moz-linear-gradient(20.28% -94.49% -45deg, #f29222 0%, #f26522 100%)
+    background: -webkit-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+    background: -webkit-gradient(linear, 20.28% -94.49%, 79.72% 194.49%, color-stop(0, #f29222), color-stop(1, #f26522))
+    background: -o-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+    background: -ms-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F29222', endColorstr='#F26522' ,GradientType=0)"
+    background: linear-gradient(135deg, #f29222 0%, #f26522 100%)
+    position: absolute
+    bottom: -21px
+    left: 4px  
 
 .title-history
   color: #fff
@@ -2219,7 +2269,7 @@ p
     display: block
     margin: 0 auto
 
-.item-command
+.item-command, .item-founders
   cursor: pointer
   .command-photo
     position: relative
@@ -2263,6 +2313,43 @@ p
     top: 0
     bottom: 0
     opacity: 0.7
+
+
+.box-item-founders
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  padding: 0 10px 0 22px
+  .item-founders
+    max-width: 240px
+    margin-right: 15px
+    .box-text-info p
+      &:nth-child(1)
+        margin-bottom: 1rem
+        line-height: 2.1rem
+        font-size: 1.7rem
+        color: #ff8d00
+        font-weight: 300
+      &:nth-child(2)
+        line-height: 2.2rem
+        font-size: 1.4rem
+        font-weight: 300
+        color: rgba(255,255,255,0.5)
+      &:nth-child(3)
+        color: #fff
+        font-family: "Ubuntu", sans-serif
+        font-size: 1.4rem
+        font-weight: 300
+        line-height: 147%
+    .command-photo
+      margin: 15px 0
+.title-founders, .title-team
+  font-family: "Ubuntu-light", sans-serif
+  color: rgba(255,255,255,0.8)
+  line-height: 100%
+  margin-left: 22px
+.title-team
+  margin-top: 43px
 
 .history-progect .item-hist
   cursor: pointer
@@ -3771,6 +3858,17 @@ a.floating-button
     flex-wrap: wrap
   .box-button-video
     margin-bottom: 0
+  .box-item-founders
+    justify-content: center
+    flex-wrap: wrap
+  .command.esports-team .box-item-command .item-command
+    flex-wrap: wrap
+    align-items: center
+    .box-text-info
+      width: 100%
+      padding-top: 20px
+    p:nth-child(1)
+      margin-bottom: initial!important
 
 @media (max-width: 470px)
   .del-br-470 br

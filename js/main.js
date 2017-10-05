@@ -54,7 +54,7 @@
 
 		$('.slick-command').slick({
 			infinite: true,
-			slidesToShow: 4,
+			slidesToShow: 5,
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 2000,
@@ -93,6 +93,39 @@
 			autoplaySpeed: 2000,
 			dots: false,
 			appendArrows: $('.advisors-class-arrow'),
+			//appendDots: $('.command-class-dots'),
+			prevArrow: '<i class="icon-arrow-left"></i>',
+			nextArrow: '<i class="icon-arrow-right"></i>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 650,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 576,					
+					settings: {
+						verticalSwiping: true,
+						vertical: true,
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+
+		$('.slick-audit').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			dots: false,
+			appendArrows: $('.audit-class-arrow'),
 			//appendDots: $('.command-class-dots'),
 			prevArrow: '<i class="icon-arrow-left"></i>',
 			nextArrow: '<i class="icon-arrow-right"></i>',
