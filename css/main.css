@@ -3214,6 +3214,11 @@ iframe {
 .lang-de .box-slider__smart-tournaments, .lang-es .box-slider__smart-tournaments, .lang-ja .box-slider__smart-tournaments, .lang-ko .box-slider__smart-tournaments, .lang-pt .box-slider__smart-tournaments, .lang-zh .box-slider__smart-tournaments {
   display: none; }
 
+.lang-de .row-tokens .token-distribution-en, .lang-es .row-tokens .token-distribution-en, .lang-ja .row-tokens .token-distribution-en, .lang-ko .row-tokens .token-distribution-en, .lang-pt .row-tokens .token-distribution-en, .lang-zh .row-tokens .token-distribution-en, .lang-en .row-tokens .token-distribution-en {
+  display: block; }
+.lang-de .row-tokens .token-distribution-ru, .lang-es .row-tokens .token-distribution-ru, .lang-ja .row-tokens .token-distribution-ru, .lang-ko .row-tokens .token-distribution-ru, .lang-pt .row-tokens .token-distribution-ru, .lang-zh .row-tokens .token-distribution-ru, .lang-en .row-tokens .token-distribution-ru {
+  display: none; }
+
 .lang-ru .img-smart-tournaments-1 {
   background: url(../img/slider_001.jpg) center no-repeat; }
 .lang-ru .img-smart-tournaments-2 {
@@ -3226,6 +3231,10 @@ iframe {
   background: url(../img/slider_005.jpg) center no-repeat; }
 .lang-ru .full-bg-p2 .sect-top {
   margin-top: 180px; }
+.lang-ru .row-tokens .token-distribution-en {
+  display: none; }
+.lang-ru .row-tokens .token-distribution-ru {
+  display: block; }
 
 .lang-en .img-smart-tournaments-1 {
   background: url(../img/slider_001_en.jpg) center no-repeat; }
