@@ -2868,7 +2868,7 @@ a[href^=mailto] {
   padding-bottom: 162px; }
   .box-pairs .items-pairs {
     position: relative;
-    width: 235px;
+    width: 226px;
     height: 165px;
     cursor: pointer;
     transition: all 0.2s ease-out; }
@@ -3305,14 +3305,13 @@ a.floating-button {
     transform: translate(-50%, -50%); }
 
 #terms-link {
-	padding: 10px 0;
-	margin-top: 70px;
-}
-#terms-link a {
-	color: rgba(255, 255, 255, 0.6);
-	transition: all 0.2s;
-    text-decoration: underline;
-}
+  padding: 10px 0;
+  margin-top: 70px; }
+  #terms-link a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s;
+    text-decoration: underline; }
+
 @media (max-width: 1366px) {
   .full-bg-p2 .sect-top {
     margin-top: 90px; } }
