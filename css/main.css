@@ -219,6 +219,11 @@ p {
     background-size: cover;
     width: 40px;
     height: 40px; }
+  .in-social-networks .icon-social-golos {
+    background: url(../img/golos_icon.png) center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px; }
 
 .box-icon-partners {
   text-align: center;
@@ -1401,6 +1406,11 @@ p {
         height: 31px; }
       .sect-top .in-social-p1 li .icon-social-steemit {
         background: url(../img/steemit.png) no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px; }
+      .sect-top .in-social-p1 li .icon-social-golos {
+        background: url(../img/golos_icon.png) no-repeat;
         background-size: cover;
         width: 30px;
         height: 30px; }
