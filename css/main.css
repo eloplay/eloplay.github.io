@@ -222,8 +222,18 @@ p {
   .in-social-networks .icon-social-golos {
     background: url(../img/golos_icon.png) center no-repeat;
     background-size: cover;
-    width: 40px;
-    height: 40px; }
+    width: 32px;
+    height: 35px; }
+  .in-social-networks .icon-social-bitcointalk {
+    background: url(../img/bitcointalk.png) center no-repeat;
+    background-size: cover;
+    width: 37px;
+    height: 37px; }
+  .in-social-networks .icon-social-bitcointalk_bounty {
+    background: url(../img/bitcointalk_bounty.png) center no-repeat;
+    background-size: cover;
+    width: 37px;
+    height: 37px; }
 
 .box-icon-partners {
   text-align: center;
@@ -1412,8 +1422,18 @@ p {
       .sect-top .in-social-p1 li .icon-social-golos {
         background: url(../img/golos_icon.png) no-repeat;
         background-size: cover;
-        width: 30px;
-        height: 30px; }
+        width: 32px;
+        height: 35px; }
+      .sect-top .in-social-p1 li .icon-social-bitcointalk {
+        background: url(../img/bitcointalk.png) no-repeat;
+        background-size: cover;
+        width: 37px;
+        height: 37px; }
+      .sect-top .in-social-p1 li .icon-social-bitcointalk_bounty {
+        background: url(../img/bitcointalk_bounty.png) no-repeat;
+        background-size: cover;
+        width: 37px;
+        height: 37px; }
   .sect-top .box-progressbar p {
     color: #f28222;
     font-family: "DINpro-medium", sans-serif;
