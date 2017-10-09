@@ -156,6 +156,7 @@ p
       &:hover
         transform: scale(1.05)
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5)
+
 .icon-telegram
   background: url(../img/icon-social-2.svg) center no-repeat
   background-size: contain
@@ -167,6 +168,7 @@ p
   cursor: pointer
   &:hover
     opacity: 1
+
 .in-social-networks
   width: 100%
   display: block
@@ -401,13 +403,12 @@ p
       .box-text-info
         float: left
         width: 70%
-        //margin-left: 40px
-        margin-top: 0!important
+        margin-top: 0 !important
         p:nth-child(1)
-          margin-bottom: 6rem!important
+          margin-bottom: 6rem !important
     .title-esports-advisors
       font-family: "Ubuntu-light", sans-serif
-      color: rgba(255,255,255,0.8)
+      color: rgba(255, 255, 255, 0.8)
       line-height: 100%
       margin-left: 22px
       margin-bottom: 37px
@@ -499,18 +500,15 @@ p
     margin-left: 22px
     margin-bottom: 20px
     margin-top: 32px
-  .title-audit  
+  .title-audit
     font-family: "Ubuntu-light", sans-serif
     color: rgba(255, 255, 255, 0.8)
     line-height: 100%
     margin-left: 22px
     margin-bottom: 20px
     margin-top: 15px
-  .slick-audit
-    .item-command
-      .box-text-info
-        text-align: left
-
+  .slick-audit .item-command .box-text-info
+    text-align: left
 
 .box-input-mail.box-bottom
   display: block
@@ -567,6 +565,14 @@ p
   display: none
   padding-left: 0
   li
+    display: block
+    text-align: center
+    width: 100%
+    color: rgba(255, 255, 255, 0.5)
+    font-size: 1.8rem
+    font-family: "DINpro-regular", sans-serif
+    font-weight: 300
+    padding: 2.5rem
     a
       text-decoration: none
       color: rgba(255, 255, 255, 0.5)
@@ -577,14 +583,6 @@ p
           color: #fff
     &:not(:last-child)
       border-bottom: 1px solid rgba(255, 255, 255, 0.5)
-    display: block
-    text-align: center
-    width: 100%
-    color: rgba(255, 255, 255, 0.5)
-    font-size: 1.8rem
-    font-family: "DINpro-regular", sans-serif
-    font-weight: 300
-    padding: 2.5rem
     span
       color: rgba(255, 255, 255, 0.3)
 
@@ -761,6 +759,7 @@ p
   left: 41%
   width: 80%
   min-width: 250px
+
 .btn-large-color-y
   text-transform: uppercase
   padding: 2.4rem 1rem
@@ -1067,7 +1066,7 @@ p
     right: -15px
     line-height: 85%
     .fa-telegram
-      color: rgba(255, 255, 255, 1)
+      color: white
       font-size: 28px
       transition: all 0.2s
       opacity: 0.5
@@ -1086,14 +1085,12 @@ p
   background-color: #1b0006
   width: 100%
   overflow: hidden
-  .sect-top
-    //margin-top: 180px
-    .box-left p:nth-child(2)
-      font-family: "DINpro-light", sans-serif
-      color: rgba(255, 255, 255, 0.5)
-      margin-top: 14px
-      font-size: 2.5rem
-      line-height: 148%
+  .sect-top .box-left p:nth-child(2)
+    font-family: "DINpro-light", sans-serif
+    color: rgba(255, 255, 255, 0.5)
+    margin-top: 14px
+    font-size: 2.5rem
+    line-height: 148%
   .title-light
     border-bottom: 1px solid #f27022
     padding-bottom: 20px
@@ -1129,20 +1126,20 @@ p
             text-align: left
             font-size: 1.4rem
             line-height: 136%
-.sect-top.pre-screen
-  ul#timer
-    span
-      &#days, &#hours, &#minutes, &#seconds
-        font-size: 6.5rem
-    li:not(:last-child):after
-      top: 48px
-  .box-left .box-time 
-    .time-title
-      margin: 4px auto 0
-    .btn-large-color-y
-      bottom: 61px
 
 .sect-top
+  &.pre-screen
+    ul#timer
+      span
+        &#days, &#hours, &#minutes, &#seconds
+          font-size: 6.5rem
+      li:not(:last-child):after
+        top: 48px
+    .box-left .box-time
+      .time-title
+        margin: 4px auto 0
+      .btn-large-color-y
+        bottom: 61px
   margin-bottom: 85px
   .indent-bottom
     margin-bottom: 168px
@@ -1151,7 +1148,6 @@ p
   .box-left
     padding-left: 0
     p:nth-child(2)
-      //font-size: 2.1rem;
       color: rgba(255, 255, 255, 0.8)
       font-family: "Ubuntu", sans-serif
       margin-top: 47px
@@ -1160,10 +1156,8 @@ p
       max-width: 465px
       height: 308px
       border-radius: 6px
-      //margin: 0 auto;
       position: relative
       z-index: 0
-      //box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.3);
       .hide-time
         position: absolute
         left: 0
@@ -1198,16 +1192,11 @@ p
       background: -ms-linear-gradient(left, #250715 0%, #451227 100%)
       background: linear-gradient(to right, #250715 0%, #451227 100%)
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#250715', endColorstr='#451227', GradientType=1 )
-      .box-button-readw
-        //position: absolute
-        //width: 100%
-        //bottom: -77px
-        //margin: 0
-        .btn-large-color-y
-          left: 50%!important
-          width: 71%!important
-          bottom: -36px
-  .box-left .box-time .hide-time p
+      .box-button-readw .btn-large-color-y
+        left: 50% !important
+        width: 71% !important
+        bottom: -36px
+  .box-left .box-time .hide-time p, .box-right .box-time .hide-time p
     font-size: 3.1rem
     line-height: 133%
     font-family: DINpro-light
@@ -1216,15 +1205,6 @@ p
     left: 50%
     transform: translate(-50%, -50%)
     width: 100%
-  .box-right .box-time .hide-time p
-    font-size: 3.1rem
-    line-height: 133%
-    font-family: DINpro-light
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    width: 100%   
   .box-left .box-time
     .time-title
       display: inline-block
@@ -1259,11 +1239,9 @@ p
     .btn-large-color:hover, .btn-large-color-y:hover
       transform: translateX(-50%) scale(1.05)
     p
-      //font-family: "Ubuntu", sans-serif
       font-family: "DINpro-light", sans-serif
       font-size: 1.8rem
       color: rgba(255, 255, 255, 0.5)
-      //text-align: center;
       font-weight: 300
       line-height: normal
     span
@@ -1381,7 +1359,7 @@ p
           background-color: rgba(255, 255, 255, 0.5)
           transform: rotate(90deg)
           top: 40px
-          right: -11px  
+          right: -11px
   .box-dark-button
     text-align: left
     padding-left: 0
@@ -1479,7 +1457,7 @@ p
       height: 8px
       overflow: initial
       border-radius: 4px
-      box-shadow: 0px 0px 12px 0px rgba(255,255,255,0.3)
+      box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.3)
       .progress-bar
         background-color: #f28222
         box-shadow: 0px 0px 50px 1px #f28222
@@ -1501,11 +1479,11 @@ p
       .ruler-left
         width: 33.33%
         height: 100px
-        border-left: 1px solid rgba(255,255,255,0.3) 
-        position: relative       
+        border-left: 1px solid rgba(255, 255, 255, 0.3)
+        position: relative
         p
           font-family: "DINpro-light", sans-serif
-          color: rgba(255,255,255,0.5)
+          color: rgba(255, 255, 255, 0.5)
           font-size: 1.6rem
           text-transform: initial
           line-height: 135%
@@ -1515,12 +1493,12 @@ p
       .ruler-center
         width: 33.33%
         height: 30px
-        border-left: 1px solid rgba(255,255,255,0.3)
-        border-right: 1px solid rgba(255,255,255,0.3)
+        border-left: 1px solid rgba(255, 255, 255, 0.3)
+        border-right: 1px solid rgba(255, 255, 255, 0.3)
       .ruler-right
         width: 33.33%
         height: 100px
-        border-right: 1px solid rgba(255,255,255,0.3)
+        border-right: 1px solid rgba(255, 255, 255, 0.3)
         position: relative
         p
           position: absolute
@@ -1528,10 +1506,11 @@ p
           bottom: 12px
           line-height: 135%
           text-align: right
-          color: rgba(242,130,34,0.5)
+          color: rgba(242, 130, 34, 0.5)
           span
-            color: rgba(255,255,255,0.5)
+            color: rgba(255, 255, 255, 0.5)
             font-family: "DINpro-light", sans-serif
+
 .box-double
   width: 89%
   height: 234px
@@ -1609,7 +1588,7 @@ p
         width: 23%
         span
           &#days, &#hours, &#minutes, &#seconds
-            color: rgba(255,255,255,0.5)
+            color: rgba(255, 255, 255, 0.5)
         &:not(:last-child):after
           content: ""
           position: absolute
@@ -1633,7 +1612,7 @@ p
       text-align: center
       font-family: "DINpro-medium", sans-serif
       text-transform: uppercase
-      color: rgba(255,255,255,0.5)
+      color: rgba(255, 255, 255, 0.5)
       font-size: 1.6rem
       line-height: 3rem
   .btn-large-color-y
@@ -1655,7 +1634,7 @@ p
     &:hover
       transform: translateX(-50%) scale(1.05)
 
-.contribute-link 
+.contribute-link
   text-transform: uppercase
   border-bottom: 3px solid #f27022
   padding: 10px 0
@@ -1674,10 +1653,12 @@ p
 .box-button-video, .box-button-readw
   display: inline-block
   margin: 47px 0 40px
+
 .sel-lang.no-bord
   border: none
+
 .bg-top-screen
-  background: url(../img/bg-top-3.png) no-repeat  
+  background: url(../img/bg-top-3.png) no-repeat
   background-size: cover
   width: 100%
   min-height: 100vh
@@ -1699,10 +1680,9 @@ p
     transition: all 0.2s ease-out
     &:hover
       transform: scale(1.05)
-  .box-time    
+  .box-time
     width: 94%
     max-width: 465px
-    //height: 308px
     border-radius: 6px
     position: relative
     z-index: 0
@@ -1719,13 +1699,13 @@ p
         width: 23%
         span
           &#days, &#hours, &#minutes, &#seconds
-            color: rgba(255,255,255,0.6)
+            color: rgba(255, 255, 255, 0.6)
             font-size: 4rem
             font-family: "DINpro-light", sans-serif
             text-shadow: 5px 6px 13px rgba(0, 0, 0, 0.7)
       p
         font-family: "DINpro-light", sans-serif
-        color: rgba(255,255,255,0.6)
+        color: rgba(255, 255, 255, 0.6)
         font-size: 12px
 
 .img-monitor
@@ -1739,6 +1719,7 @@ p
     left: 0
     width: 100%
     height: 100%
+
 .box2-img-monitor
   max-width: 830px
   margin: 58px auto
@@ -1748,9 +1729,8 @@ p
     height: 0
     overflow: hidden
 
-
 .bg-sect-1
-  background: url(../img/bg-sec-0-pg2.png) no-repeat  
+  background: url(../img/bg-sec-0-pg2.png) no-repeat
   background-size: cover
   width: 100%
   min-height: 695px
@@ -1797,10 +1777,8 @@ p
 
 .img-monitor
   video, img
-    //margin: 58px auto
     border: 23px solid #533f4c
     border-radius: 3px
-    //width: 73%
 
 .bg-sect-31
   position: relative
@@ -2116,6 +2094,8 @@ p
   flex-wrap: wrap
   padding: 0
   margin-top: 37px
+  &.img-token
+    padding-left: 15%
 
 .item-distribution-token
   text-align: center
@@ -2195,6 +2175,7 @@ p
     position: absolute
     bottom: -21px
     left: 4px
+
 .title-advisor
   color: #fff
   margin: 5px 0 53px 17px
@@ -2212,7 +2193,7 @@ p
     background: linear-gradient(135deg, #f29222 0%, #f26522 100%)
     position: absolute
     bottom: -21px
-    left: 4px  
+    left: 4px
 
 .title-history
   color: #fff
@@ -2301,49 +2282,54 @@ p
 
 .item-command, .item-founders
   cursor: pointer
-  .command-photo
-    position: relative
-    .hover-gradient
-      opacity: 0
-      transition: all 0.2s ease-out
-      &:before
-        content: ""
-        width: 92px
-        height: 92px
-        border-radius: 50%
-        position: absolute
-      .fa-linkedin
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        color: #fff
-        font-size: 40px
-        &:after
-          content: ""
-          width: 92px
-          height: 92px
-          border-radius: 50%
-          position: absolute
-          border: 1px solid #fff
-          top: 50%
-          left: 50%
-          transform: translate(-50%, -50%)
-  &:hover .command-photo .hover-gradient
-    background: -moz-linear-gradient(20.28% -94.49% -45deg, #f29222 0%, #f26522 100%)
-    background: -webkit-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
-    background: -webkit-gradient(linear, 20.28% -94.49%, 79.72% 194.49%, color-stop(0, #f29222), color-stop(1, #f26522))
-    background: -o-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
-    background: -ms-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F29222', endColorstr='#F26522' ,GradientType=0)"
-    background: linear-gradient(135deg, #f29222 0%, #f26522 100%)
-    position: absolute
-    left: 0
-    right: 0
-    top: 0
-    bottom: 0
-    opacity: 0.7
 
+.item-command .command-photo, .item-founders .command-photo
+  position: relative
+
+.item-command .command-photo .hover-gradient, .item-founders .command-photo .hover-gradient
+  opacity: 0
+  transition: all 0.2s ease-out
+
+.item-command .command-photo .hover-gradient:before, .item-founders .command-photo .hover-gradient:before
+  content: ""
+  width: 92px
+  height: 92px
+  border-radius: 50%
+  position: absolute
+
+.item-command .command-photo .hover-gradient .fa-linkedin, .item-founders .command-photo .hover-gradient .fa-linkedin
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  color: #fff
+  font-size: 40px
+
+.item-command .command-photo .hover-gradient .fa-linkedin:after, .item-founders .command-photo .hover-gradient .fa-linkedin:after
+  content: ""
+  width: 92px
+  height: 92px
+  border-radius: 50%
+  position: absolute
+  border: 1px solid #fff
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.item-command:hover .command-photo .hover-gradient, .item-founders:hover .command-photo .hover-gradient
+  background: -moz-linear-gradient(20.28% -94.49% -45deg, #f29222 0%, #f26522 100%)
+  background: -webkit-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+  background: -webkit-gradient(linear, 20.28% -94.49%, 79.72% 194.49%, color-stop(0, #f29222), color-stop(1, #f26522))
+  background: -o-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+  background: -ms-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F29222', endColorstr='#F26522' ,GradientType=0)"
+  background: linear-gradient(135deg, #f29222 0%, #f26522 100%)
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  opacity: 0.7
 
 .box-item-founders
   display: flex
@@ -2364,7 +2350,7 @@ p
         line-height: 2.2rem
         font-size: 1.4rem
         font-weight: 300
-        color: rgba(255,255,255,0.5)
+        color: rgba(255, 255, 255, 0.5)
       &:nth-child(3)
         color: #fff
         font-family: "Ubuntu", sans-serif
@@ -2373,12 +2359,18 @@ p
         line-height: 147%
     .command-photo
       margin: 15px 0
-.title-founders, .title-team
+
+.title-founders
   font-family: "Ubuntu-light", sans-serif
-  color: rgba(255,255,255,0.8)
+  color: rgba(255, 255, 255, 0.8)
   line-height: 100%
   margin-left: 22px
+
 .title-team
+  font-family: "Ubuntu-light", sans-serif
+  color: rgba(255, 255, 255, 0.8)
+  line-height: 100%
+  margin-left: 22px
   margin-top: 43px
 
 .history-progect .item-hist
@@ -2622,7 +2614,6 @@ p
       [uib-dropdown-menu]
         background-color: rgba(8, 15, 23, 0.8)
         margin-top: 20px
-        //left: -52px
         left: -60px
         min-width: 128px
         border-radius: 6px 0 6px 6px
@@ -2644,7 +2635,6 @@ p
         height: 58px
         position: absolute
         top: -7px
-        //left: -7px
         left: -15px
     &:hover
       opacity: 1
@@ -2697,11 +2687,8 @@ a[href^=mailto]
   padding: 0
 
 .full-bg-p2
-  .box-time
-    //float: right;
   .sect-top
     margin-bottom: 59px
-    //margin-top: 180px
     .indent-bottom
       margin-bottom: 59px
     .box-img-monitor
@@ -2711,7 +2698,6 @@ a[href^=mailto]
     padding-left: 50px
   .sel-lang.dropdown.open [uib-dropdown-menu]
     margin-top: 18px
-
 
 .img-medal img
   width: 85%
@@ -2916,12 +2902,11 @@ a[href^=mailto]
     color: #fff
     font-size: 26px
 
-.slick-command .item-command, .slick-advisors .item-command
+.slick-command .item-command, .slick-advisors .item-command, .slick-command .item-command img, .slick-advisors .item-command img
   display: inline-block
-  img
-    display: inline-block
-  .box-text-info
-    text-align: left
+
+.slick-command .item-command .box-text-info, .slick-advisors .item-command .box-text-info
+  text-align: left
 
 .title-pairs
   position: relative
@@ -2972,20 +2957,19 @@ a[href^=mailto]
       height: 51px
     &:hover
       background-color: #000
-      img
-        opacity: 1
-      .title-wings
+      img, .title-wings
         opacity: 1
     .title-wings
       opacity: 0.5
       font-size: 12px
       width: 100%
       text-align: center
-      background-color: rgba(255,255,255,0.2)
+      background-color: rgba(255, 255, 255, 0.2)
       margin: 0
       position: absolute
       bottom: 0
       text-transform: uppercase
+
 .sect-footer .box-bottom
   background-color: #0c0007
   width: 100%
@@ -3022,9 +3006,8 @@ a[href^=mailto]
       width: 145px
       height: 42px
 
-#subscriptionModal, #presaleModal
-  .modal-dialog
-    max-width: 500px 
+#subscriptionModal .modal-dialog, #presaleModal .modal-dialog
+  max-width: 500px
 
 .modal-dialog
   .modal-content
@@ -3084,11 +3067,11 @@ a[href^=mailto]
       &:hover
         transform: translateX(-50%) scale(1.05)
       &[disabled]
+        opacity: 1
+        background: #f6b470
         &:hover
           transform: translateX(-50%) scale(1)
           box-shadow: none
-        opacity: 1
-        background: #f6b470
   .box-input-mail .input-mail label
     color: #8a9fa9
     font-family: "Ubuntu-regular", sans-serif
@@ -3189,20 +3172,20 @@ a[href^=mailto]
       img
         opacity: 1
 
-// presale modal
 #presaleModal
-  .modal-dialog .error_message
-    position: absolute
-    left: 10%
-    font-size: 12px
-    color: red
-    &.err-mail
-      bottom: -20px
-      top: initial
-  .modal-dialog .modal-content input
-    display: block
-  .modal-dialog .modal-body
-    position: relative
+  .modal-dialog
+    .error_message
+      position: absolute
+      left: 10%
+      font-size: 12px
+      color: red
+      &.err-mail
+        bottom: -20px
+        top: initial
+    .modal-content input
+      display: block
+    .modal-body
+      position: relative
   input#subscribeBtn
     position: absolute
     transform: translateX(-50%)
@@ -3212,18 +3195,12 @@ a[href^=mailto]
     border: none
     &:hover
       transform: translateX(-50%) scale(1.05)
-      //box-shadow: none
     &.btn[disabled]
       opacity: 1
       background: #f6b470
       &:hover
         transform: translateX(-50%) scale(1)
         box-shadow: none
-
-.presale-body
-  //position: absolute
-  //top: -198px
-  //width: 100%
 
 .presale-choise
   float: left
@@ -3237,7 +3214,7 @@ a[href^=mailto]
   background: #fff
   margin: 15px
   .optimal
-    background: linear-gradient(90deg, rgba(253, 183, 27, 1) 0%, rgba(238, 117, 37, 1) 100%)
+    background: linear-gradient(90deg, #fdb71b 0%, #ee7525 100%)
     opacity: 0.9
     border-radius: 6px 6px 0px 0px
     width: 285px
@@ -3250,23 +3227,22 @@ a[href^=mailto]
     padding: 15px 0 27px
     margin-top: 0
   span
-    //font-family : DINPro;
     font-size: 60px
     color: #fff
-    text-shadow: 0 2px 3px rgba(35,31,32,0.5)
+    text-shadow: 0 2px 3px rgba(35, 31, 32, 0.5)
   strong
-    font-family: 'DINPro-medium'
+    font-family: "DINPro-medium"
     font-size: 28px
     color: #78909C
     font-weight: normal
   .premium
-    background: linear-gradient(90deg, rgba(237, 105, 37, 1) 1.54%, rgba(241, 98, 96, 1) 100%)
+    background: linear-gradient(90deg, #ed6925 1.54%, #f16260 100%)
     border-radius: 6px 6px 0px 0px
     width: 285px
     height: 142px
     color: #fff
   .ultimate
-    background: linear-gradient(90deg, rgba(231, 70, 72, 1) 0.51%, rgba(159, 77, 121, 1) 100%)
+    background: linear-gradient(90deg, #e74648 0.51%, #9f4d79 100%)
     border-radius: 6px 6px 0px 0px
     width: 285px
     height: 142px
@@ -3274,7 +3250,6 @@ a[href^=mailto]
   .simply-text
     margin: 35px 0 15px
   .btn-large-color-yellow
-    //font-family : 'DINPro';
     font-size: 16px
     display: block
     text-transform: uppercase
@@ -3287,7 +3262,7 @@ a[href^=mailto]
     box-shadow: 2px 5px 50px rgba(10, 0, 25, 0.7)
     transition: all 0.2s ease-in-out
     .btn-large-color-yellow
-      background: linear-gradient(135deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+      background: linear-gradient(135deg, #f29222 0%, #f26522 100%)
       box-shadow: 2px 5px 35px rgba(10, 0, 25, 0.8)
       color: #fff
 
@@ -3295,17 +3270,17 @@ iframe
   height: 360px
   width: 100%
 
-// slider slider__smart-tournaments
-.lang-de, .lang-es, .lang-ja, .lang-ko, .lang-pt, .lang-zh
-  .box-slider__smart-tournaments
-    display: none
-.lang-de, .lang-es, .lang-ja, .lang-ko, .lang-pt, .lang-zh, .lang-en
-  .row-tokens
-    .token-distribution-en
-      display: block
-    .token-distribution-ru
-      display: none
+.lang-de .box-slider__smart-tournaments, .lang-es .box-slider__smart-tournaments, .lang-ja .box-slider__smart-tournaments, .lang-ko .box-slider__smart-tournaments, .lang-pt .box-slider__smart-tournaments, .lang-zh .box-slider__smart-tournaments
+  display: none
 
+.lang-de .row-tokens .token-distribution-en, .lang-es .row-tokens .token-distribution-en, .lang-ja .row-tokens .token-distribution-en, .lang-ko .row-tokens .token-distribution-en, .lang-pt .row-tokens .token-distribution-en, .lang-zh .row-tokens .token-distribution-en, .lang-en .row-tokens .token-distribution-en
+  display: block
+
+.lang-de .row-tokens .token-distribution-ru, .lang-es .row-tokens .token-distribution-ru, .lang-ja .row-tokens .token-distribution-ru, .lang-ko .row-tokens .token-distribution-ru, .lang-pt .row-tokens .token-distribution-ru, .lang-zh .row-tokens .token-distribution-ru, .lang-en .row-tokens .token-distribution-ru
+  display: none
+
+.full-bg-p2 .sect-top
+  margin-top: 180px
 .lang-ru
   .img-smart-tournaments-1
     background: url(../img/slider_001.jpg) center no-repeat
@@ -3317,9 +3292,6 @@ iframe
     background: url(../img/slider_004.jpg) center no-repeat
   .img-smart-tournaments-5
     background: url(../img/slider_005.jpg) center no-repeat
-  .full-bg-p2
-    .sect-top
-      margin-top: 180px
   .row-tokens
     .token-distribution-en
       display: none
@@ -3337,6 +3309,7 @@ iframe
     background: url(../img/slider_004_en.jpg) center no-repeat
   .img-smart-tournaments-5
     background: url(../img/slider_005_en.jpg) center no-repeat
+
 [class^=img-smart-tournaments]
   background-size: contain
   width: 100%
@@ -3356,14 +3329,13 @@ iframe
     right: 0
     bottom: 0
   .slick-dots
-    position: relative 
+    position: relative
     li
       margin: 0 15px
-      &.slick-active 
-        button:before
-          color: #fff
-          font-size: 7px
-          opacity: .25
+      &.slick-active button:before
+        color: #fff
+        font-size: 7px
+        opacity: 0.25
       button:before
         color: #fff
         font-size: 14px
@@ -3388,16 +3360,14 @@ iframe
       z-index: 1
       &:hover
         opacity: 1
-  .item-smart-tournaments
-    &:focus
-      outline: none
+  .item-smart-tournaments:focus
+    outline: none
   .smart-tournaments-dots
     position: absolute
     bottom: -11px
     left: 0
     right: 0
 
-/* telegram btn */
 a.floating-button
   background: #009cde none repeat scroll 0 0
   bottom: 20px
@@ -3427,13 +3397,205 @@ a.floating-button
     top: 50%
     transform: translate(-50%, -50%)
 
-#terms-link 
+#terms-link
   padding: 10px 0
   margin-top: 70px
-  a 
+  a
     color: rgba(255, 255, 255, 0.6)
     transition: all 0.2s
     text-decoration: underline
+
+///**************** roadmap **************************
+
+.hide-768
+  display: block
+.show-768
+  display: none!important
+.bg-roadmap
+  background: url(../img/bg-roadmap.png) center no-repeat
+  background-size: cover
+  width: 100%
+  min-height: 1353px
+  margin: 100px 0 0
+  padding-bottom: 80px
+.title-roadmap
+  color: #1d1930
+  padding-left: 0
+  margin: 204px 0 54px
+  &:after
+    width: 143px
+strong
+  font-family: "Ubuntu-regular", sans-serif
+.btn-large-color-y.roadmap
+  text-transform: initial
+  font-size: 2.6rem
+  padding: 1.8rem 1rem
+  max-width: 384px
+  padding: 1.8rem 1rem
+  margin-top: 60px
+  display: block
+  margin: 80px auto
+  background: -moz-linear-gradient(20.28% -94.49% -45deg, #f29222 0%, #f26522 100%)
+  background: -webkit-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+  background: -webkit-gradient(linear, 20.28% -94.49%, 79.72% 194.49%, color-stop(0, #f29222), color-stop(1, #f26522))
+  background: -o-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+  background: -ms-linear-gradient(-45deg, #f29222 0%, #f26522 100%)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F29222', endColorstr='#F26522' ,GradientType=0)"
+  background: linear-gradient(135deg, #f29222 0%, #f26522 100%)
+.roadmap-item-row
+  display: flex
+  p
+    font-family: "Ubuntu-light", sans-serif
+    font-size: 16px
+    line-height: 21px
+    color: #5C556B
+    margin: 5px 0
+  .round
+    display: none
+  &.center-block
+    p
+      color: #f3793f
+    .center-box-item
+      .center-line-orang
+        background: linear-gradient(to bottom, #f27e22 0%, #60586f 100%)
+        &:before
+          box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.4)
+        &:after
+          //left: -60px
+          background-color: #655f73
+        .round
+          display: block
+  &.left-info
+    .right-box-item
+      opacity: 0
+    .center-box-item
+      .center-line-orang, .center-line-grey
+        &:after
+          left: -54px
+
+    &.center-block
+      .right-box-item
+        opacity: 0
+      .center-box-item
+        .center-line-orang, .center-line-grey
+          &:after
+            left: -60px
+  &.right-info
+    .left-box-item
+      opacity: 0
+    &.center-block
+      .center-box-item
+        .center-line-orang, .center-line-grey
+          &:after
+            left: 15px
+
+  .left-box-item
+    width: 45%
+    padding-right: 40px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    p
+      text-align: right
+  .center-box-item
+    width: 90px
+    display: flex
+    align-items: center
+    justify-content: center
+    .center-line-top
+      width: 2px
+      height: 75px
+      background: linear-gradient(to top, #f27e22 0%, rgba(0,0,0,0) 100%)
+      position: relative
+    .center-line-bottom
+      width: 2px
+      height: 75px
+      background: linear-gradient(to bottom, #60586f 0%, rgba(0,0,0,0) 100%)
+      position: relative
+    .center-line-orang
+      width: 2px
+      height: 100%
+      background: #f27e22
+      position: relative
+      &:before
+        content: ""
+        position: absolute
+        width: 18px
+        height: 18px
+        border-radius: 50%
+        top: 50%
+        background: linear-gradient(90deg, rgba(242, 146, 34, 1) 0%, rgba(242, 101, 34, 1) 100%)
+        transform: translate(-50%, -50%)
+        margin-left: 1px
+      &:after
+        content: ""
+        position: absolute
+        width: 45px
+        height: 2px
+        top: 50%
+        background: #f27e22
+        transform: translateY(-50%)
+        margin-left: 1px
+        left: 4px
+      .round
+        width: 32px
+        height: 32px
+        border-radius: 50%
+        border: 2px solid #60586f
+        position: absolute
+        top: 50%
+        transform: translate(-50%, -50%)
+        margin-left: 1px
+    .center-line-grey
+      width: 2px
+      height: 100%
+      background: #60586f
+      position: relative
+      &:after
+        content: ""
+        position: absolute
+        width: 49px
+        height: 2px
+        top: 50%
+        background: #60586f
+        transform: translateY(-50%)
+        margin-left: 1px
+      &:before
+        content: ""
+        position: absolute
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        top: 50%
+        background: #60586f
+        transform: translate(-50%, -50%)
+        margin-left: 1px
+      .round
+        display: none
+  .right-box-item
+    width: 45%
+    padding-left: 40px
+
+///****************end roadmap **************************
+
+@media (max-height: 641px)
+  .sect-top
+    .box-left .box-time span
+      &#days, &#hours, &#minutes, &#seconds
+        font-size: 5rem
+    .box-right .box-time span
+      &#days, &#hours, &#minutes, &#seconds
+        font-size: 5rem
+    .box-left .box-time .time-title, .box-right .box-time .time-title
+      margin: 20px auto 0px
+  #main-screen
+    .btn-br-line
+      margin-top: 25px
+    .box-in-social-p1
+      margin-top: 10px
+  .full-bg-p2 .sect-top .box-left p:nth-child(2)
+    margin-top: 20px
+
 
 @media (max-width: 1366px)
   .full-bg-p2 .sect-top
@@ -3441,7 +3603,7 @@ a.floating-button
 
 @media (max-width: 1200px)
   #presaleModal
-    padding-right: 0!important
+    padding-right: 0 !important
     .modal-dialog
       margin: 15px auto
   .full-bg-p2 .sect-top
@@ -3471,26 +3633,9 @@ a.floating-button
   .box-top-button
     justify-content: space-around
 
-@media (max-height: 641px)
-  .sect-top .box-left .box-time, .sect-top .box-right .box-time
-    span
-      &#days, &#hours, &#minutes, &#seconds
-        font-size: 5rem
-    .time-title
-      margin: 20px auto 0px
-  #main-screen
-    .btn-large-color-y
-      //bottom: 4.2rem
-    .btn-br-line
-      margin-top: 25px
-    .box-in-social-p1
-      margin-top: 10px
-  .full-bg-p2 .sect-top .box-left p:nth-child(2)
-    margin-top: 20px
-
 @media (max-width: 992px)
   .hide-992
-    display: none!important
+    display: none !important
   .del-br-992 br
     content: ""
     &:after
@@ -3502,9 +3647,9 @@ a.floating-button
     .box-dark-button
       text-align: left
     .in-social-p1
+      text-align: left
       li
         text-align: left
-      text-align: left
   .bg-white-center
     background-position: center
   .sect-top
@@ -3548,10 +3693,10 @@ a.floating-button
     .items-pairs
       padding-bottom: 60px
     .sect-footer .box-bottom
+      padding-bottom: 40px
       .in-social-networks
         margin-top: 60px
         margin-bottom: 30px
-      padding-bottom: 40px
     .sect-top
       margin-top: 85px
     .nav-links
@@ -3617,23 +3762,20 @@ a.floating-button
       margin-bottom: 0
   .sect-top
     &.pre2-screen
-      .box-right 
-        .box-time
-          width: 100%
-      .box-left 
-        .in-social-p1
-          padding-right: 0
+      .box-right .box-time
+        width: 100%
+      .box-left .in-social-p1
+        padding-right: 0
       .in-social-p1 li
         margin-bottom: 40px
         margin-top: 0
         .icon-social-steemit
           margin: auto
     &.pre3-screen
-      .box-right 
-        .box-double
-          width: 100%
+      .box-right .box-double
+        width: 100%
       .in-social-p1
-        padding-right: 0 
+        padding-right: 0
         li
           margin-bottom: 40px
           margin-top: 0
@@ -3641,9 +3783,12 @@ a.floating-button
             margin: auto
   .box2-img-monitor .img-monitor
     padding-bottom: 57.1%
+
 @media (max-width: 768px)
   .hide-768
     display: none !important
+  .show-768
+    display: block!important
   .bg-heder .indent-top
     margin-top: 72px
   .in-social-networ
@@ -3655,48 +3800,80 @@ a.floating-button
   .contacts-bottom li
     display: block
   #presaleModal, #subscriptionModal
-    padding-right: 0!important
-    .modal-dialog
-      width: calc(100% - 30px)
-      margin: 15px auto
+    padding-right: 0 !important
+  #presaleModal .modal-dialog, #subscriptionModal .modal-dialog
+    width: calc(100% - 30px)
+    margin: 15px auto
+  .row-tokens
+    .info-date
+      justify-content: flex-end
+      .info-left, .info-right
+        margin: 15px 0
+  ///***roadmap***************************************************************
+  .roadmap-item-row.position-block-mobil
+    width: 90%
+    margin: auto
+    .left-box-item
+      display: none
+    .center-box-item
+      width: 65px
+      justify-content: flex-start
+      .center-line-orang, .center-line-grey
+        background: none
+    .center-line-top, .center-line-bottom
+      background: none
+
+    &.left-info
+      .center-box-item
+        .center-line-orang
+          &:after
+            left: 4px
+        .center-line-grey
+          &:after
+            left: 0
+      &.center-block
+        .right-box-item
+          opacity: 1
+        .center-box-item
+          .center-line-orang, .center-line-grey
+            &:after
+              left: 14px
+    .right-box-item
+      opacity: 1
+      width: 100%
+      padding: 15px 5% 15px 15px
 
 @media (max-width: 576px)
   .sect-top
-    &.pre-screen
-      .indent-bottom .box-left
-        .box-time
-          width: 100%
-          max-width: 490px
-          .btn-large-color-y
-            bottom: -16px
-        p:nth-child(1)
-          font-size: 1.8rem
+    &.pre-screen .indent-bottom .box-left
+      .box-time
+        width: 100%
+        max-width: 490px
+        .btn-large-color-y
+          bottom: -16px
+      p:nth-child(1)
+        font-size: 1.8rem
     &.pre2-screen
-      .box-right 
-        .box-time
-          width: 100%
-      .box-left 
-        .in-social-p1
-          padding-right: 0
-    &.pre3-screen
-      .box-double 
-        .box-time-left p:nth-child(2)
-          font-size: 4rem
-        .box-time-right 
-          ul li
-            &:not(:last-child):after
-              content: none
-            p
-              font-size: 9px
-            span
-              &#days, &#hours, &#minutes, &#seconds
-                font-size: 3rem
-          .time-title-bottom
-            margin-top: 22px
-  .presale-choise
-    //margin: 0 0 20px 100px !important
-  .sect-top .box-left .box-time ul
-    margin-left: 0px
+      .box-right .box-time
+        width: 100%
+      .box-left .in-social-p1
+        padding-right: 0
+    &.pre3-screen .box-double
+      .box-time-left p:nth-child(2)
+        font-size: 4rem
+      .box-time-right
+        ul li
+          &:not(:last-child):after
+            content: none
+          p
+            font-size: 9px
+          span
+            &#days, &#hours, &#minutes, &#seconds
+              font-size: 3rem
+        .time-title-bottom
+          margin-top: 22px
+    .box-left .box-time ul
+      margin-left: 0px
   #main-screen .btn-large-color-y
     left: 50%
     width: 100%
@@ -3766,17 +3943,20 @@ a.floating-button
       width: 100%
       height: 235px
       margin-bottom: 40px
-      ul li
-        p:nth-child(1)
-          font-size: 6rem
-        &:not(:last-child):after
-          top: 41px
-      .time-title
-        margin: 20px auto 0
-      span
-        &#days, &#hours, &#minutes, &#seconds
-          color: #fff
-          font-size: 6rem
+    .box-left .box-time ul li p:nth-child(1), .box-right .box-time ul li p:nth-child(1)
+      font-size: 6rem
+    .box-left .box-time ul li:not(:last-child):after, .box-right .box-time ul li:not(:last-child):after
+      top: 41px
+    .box-left .box-time .time-title, .box-right .box-time .time-title
+      margin: 20px auto 0
+    .box-left .box-time span
+      &#days, &#hours, &#minutes, &#seconds
+        color: #fff
+        font-size: 6rem
+    .box-right .box-time span
+      &#days, &#hours, &#minutes, &#seconds
+        color: #fff
+        font-size: 6rem
   .title-pay-token
     text-align: center
     line-height: 117%
@@ -3889,10 +4069,10 @@ a.floating-button
     width: 30px
     left: -47px
   .perspective-pr ul
+    padding-left: 39px
     li:before
       width: 30px
       left: -47px
-    padding-left: 39px
   .box-cont-left ul
     padding-left: 39px
   .btn-br-line.sect-3
@@ -3921,7 +4101,13 @@ a.floating-button
       width: 100%
       padding-top: 20px
     p:nth-child(1)
-      margin-bottom: initial!important
+      margin-bottom: initial !important
+  .btn.btn-large-color-y.roadmap
+    width: 100%
+    font-size: 2.1rem
+    margin-top: -28px
+  .title-roadmap
+    margin: 147px 0 0
 
 @media (max-width: 470px)
   .del-br-470 br
@@ -3989,16 +4175,15 @@ a.floating-button
   .bg-white-center .btn-large-color-y
     max-width: 270px
     padding: 1.8rem 1rem
-  .sect-top .box-left .box-time .hide-time p, .sect-top .box-right .box-time .hide-time p
-    line-height: 100%
-    font-size: 2.5rem
+  .sect-top
+    .box-left .box-time .hide-time p, .box-right .box-time .hide-time p
+      line-height: 100%
+      font-size: 2.5rem
   .modal-dialog
     width: calc(100% - 22px)
-    .modal-header
-      //padding: 40px 15px
-      h2
-        font-size: 28px
-        line-height: 100%
+    .modal-header h2
+      font-size: 28px
+      line-height: 100%
     .modal-body
       padding: 15px 15px 40px
     .box-input-mail .input-mail
@@ -4016,6 +4201,9 @@ a.floating-button
   #presaleModal input#subscribeBtn
     bottom: -99px
     width: 81%
+  .roadmap-item-row.position-block-mobil
+    width: calc(100% - 16px)
+
 @media (max-width: 360px)
   html
     font-size: 9px
@@ -4029,4 +4217,3 @@ a.floating-button
     min-height: 712px
   .title-bonus
     margin-top: 7px
-
