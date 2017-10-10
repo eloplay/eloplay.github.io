@@ -118,7 +118,7 @@ p {
       left: 57%;
       top: -40px; }
 
-.box-input-mail p, .box-input-preorder p {
+.box-input-mail p {
   font-family: "DINpro-regular", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 25px;
@@ -126,9 +126,9 @@ p {
   position: absolute;
   right: 195px;
   top: -90px; }
-.box-input-mail .input-mail, .box-input-preorder .input-mail {
+.box-input-mail .input-mail {
   position: relative; }
-  .box-input-mail .input-mail label, .box-input-preorder .input-mail label {
+  .box-input-mail .input-mail label {
     color: #ff8d00;
     font-size: 2.6rem;
     line-height: 3rem;
@@ -136,13 +136,13 @@ p {
     font-family: "DINpro-medium", sans-serif;
     font-weight: normal;
     display: block; }
-  .box-input-mail .input-mail .form-control, .box-input-preorder .input-mail .form-control {
+  .box-input-mail .input-mail .form-control {
     width: 66.5%;
     height: 42px;
     border-radius: 0;
     display: inline-block;
     font-size: 16px; }
-  .box-input-mail .input-mail .btn-send, .box-input-preorder .input-mail .btn-send {
+  .box-input-mail .input-mail .btn-send {
     height: 42px;
     width: 29%;
     background-color: #ff8d00;
@@ -151,7 +151,7 @@ p {
     margin-left: 10px;
     transition: transform 0.2s;
     font-size: 16px; }
-    .box-input-mail .input-mail .btn-send:hover, .box-input-preorder .input-mail .btn-send:hover {
+    .box-input-mail .input-mail .btn-send:hover {
       transform: scale(1.05);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); }
 
@@ -3521,70 +3521,6 @@ strong {
   .roadmap-item-row .right-box-item {
     width: 45%;
     padding-left: 40px; }
-
-.modal.fade#preorderAddress .modal-dialog .modal-header {
-  display: block; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header h2 {
-    margin-bottom: 40px; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header p {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 16px;
-    line-height: 130%;
-    width: 80%;
-    text-align: center;
-    margin: auto; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header a {
-    color: rgba(0, 0, 0, 0.7);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.7); }
-    .modal.fade#preorderAddress .modal-dialog .modal-header a:hover {
-      border-bottom: none;
-      text-decoration: none; }
-.modal.fade#preorderAddress button.btn-large-color {
-  min-width: 240px; }
-.modal.fade#preorderAddress form .check-top {
-  margin-bottom: 40px; }
-.modal.fade#preorderAddress form .check-center {
-  margin-bottom: 20px; }
-
-.modal.fade#depositAddress .modal-dialog .modal-header {
-  padding: 31px 15px 57px; }
-.modal.fade#depositAddress h2 {
-  color: #000;
-  font-size: 24px; }
-.modal.fade#depositAddress a {
-  font-size: 16px;
-  color: #000;
-  border-bottom: 1px solid #000; }
-  .modal.fade#depositAddress a:hover {
-    border-bottom: none;
-    text-decoration: none; }
-  .modal.fade#depositAddress a:focus {
-    text-decoration: none;
-    outline: none; }
-.modal.fade#depositAddress .modal-dialog .modal-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 116px; }
-.modal.fade#depositAddress .modal-body {
-  text-align: center; }
-  .modal.fade#depositAddress .modal-body a {
-    font-size: 22px;
-    font-family: Dinpro-medium, sans-serif; }
-.modal.fade#depositAddress .btn-gray {
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
-  padding: 12px 47px;
-  font-family: Ubuntu, sans-serif;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.5);
-  transition: all 0.2s; }
-  .modal.fade#depositAddress .btn-gray:hover {
-    transform: scale(1.05); }
-  .modal.fade#depositAddress .btn-gray:focus {
-    text-decoration: none;
-    outline: none; }
 
 @media (max-height: 641px) {
   .sect-top .box-left .box-time span#days, .sect-top .box-left .box-time span#hours, .sect-top .box-left .box-time span#minutes, .sect-top .box-left .box-time span#seconds {

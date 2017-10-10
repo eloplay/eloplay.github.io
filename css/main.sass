@@ -119,7 +119,7 @@ p
       left: 57%
       top: -40px
 
-.box-input-mail
+.box-input-mail, .box-input-preorder
   p
     font-family: "DINpro-regular", sans-serif
     font-size: 2.5rem
@@ -3579,7 +3579,71 @@ strong
     width: 45%
     padding-left: 40px
 
-///****************end roadmap **************************
+.modal.fade#preorderAddress
+  .modal-dialog .modal-header
+    display: block
+    h2
+      margin-bottom: 40px
+    p
+      color: rgba(0,0,0,0.7)
+      font-size: 16px
+      line-height: 130%
+      width: 80%
+      text-align: center
+      margin: auto
+    a
+      color: rgba(0,0,0,0.7)
+      border-bottom: 1px solid rgba(0,0,0,0.7)
+      &:hover
+        border-bottom: none
+        text-decoration: none
+  button.btn-large-color
+    min-width: 240px
+  form
+    .check-top
+      margin-bottom: 40px
+    .check-center
+      margin-bottom: 20px
+.modal.fade#depositAddress
+  .modal-dialog .modal-header
+    padding: 31px 15px 57px
+  h2
+    color: #000
+    font-size: 24px
+  a
+    font-size: 16px
+    color: #000
+    border-bottom: 1px solid #000
+    &:hover
+      border-bottom: none
+      text-decoration: none
+    &:focus
+      text-decoration: none
+      outline: none
+  .modal-dialog .modal-footer
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 116px
+  .modal-body
+    text-align: center
+    a
+      font-size: 22px
+      font-family: Dinpro-medium, sans-serif 
+  .btn-gray
+    background: transparent
+    border: 1px solid rgba(0,0,0,0.3)
+    border-radius: 6px
+    padding: 12px 47px
+    font-family: Ubuntu, sans-serif
+    font-size: 16px
+    color: rgba(0,0,0,0.5)
+    transition: all 0.2s
+    &:hover
+      transform: scale(1.05)
+    &:focus
+      text-decoration: none
+      outline: none
 
 @media (max-height: 641px)
   .sect-top

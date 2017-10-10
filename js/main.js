@@ -210,6 +210,19 @@
 			play_video();
 		});
 		play_video();
+
+
+		/** post preorder form **/
+		$('#presaleBtn').click(function() {
+			$("#presale").attr('target', 'presale_form_iframe');
+			$('#presale').submit();
+			$('#presaleModal').modal('hide');
+			$('#preorderAddress').modal('show');
+		});
+		$('#preorderAddressBtn').click(function() {
+			$('#preorderAddress').modal('hide');
+			$('#depositAddress').modal('show');
+		});
 	});
 
 var video = document.querySelector('#video');

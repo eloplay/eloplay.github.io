@@ -118,7 +118,6 @@ function sendEvent(){
 	});
 }
 
-
 function submit_news_form(){
 	$("#icoNews").attr('target', 'news_form_iframe');
 	$('#icoNews').submit();
