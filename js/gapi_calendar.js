@@ -1,8 +1,8 @@
-//var CLIENT_ID = '360396386092-brlch566ifd681ncmkuboqnf05itfchv.apps.googleusercontent.com'; // my test client_id
-var CLIENT_ID = '82833938-o9dgbcu490eafj0h3voq694ubr4hipl5.apps.googleusercontent.com';
+var CLIENT_ID = '360396386092-brlch566ifd681ncmkuboqnf05itfchv.apps.googleusercontent.com'; // my test client_id
+//var CLIENT_ID = '82833938-o9dgbcu490eafj0h3voq694ubr4hipl5.apps.googleusercontent.com';
 
 var SCOPES = "https://www.googleapis.com/auth/calendar";
-var authorizeButton = document.getElementById('subscribeBtn');
+var authorizeButton = document.getElementById('iconewsBtn');
 var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 /**
  *  On load, called to load the auth2 library and API client library.
@@ -47,10 +47,10 @@ function handleAuthClick(event) {
 		gapi.auth2.getAuthInstance().signIn();
 		CreateNewEvent();
 	}else{
-		var is_modal = $('#subscriptionModal').is(':visible');
-		var is_valid = $('#subscribeNews')[0].checkValidity();
+		var is_modal = $('#newsModal').is(':visible');
+		var is_valid = $('#icoNews')[0].checkValidity();
 		if(is_modal == true && is_valid == true){
-			$( "#subscribeNews" ).submit();
+			submit_news_form();
 		}
 	}
 }
@@ -64,10 +64,10 @@ function CreateNewEvent() {
 		});
 		event_request.execute(function(resp) {
 			if(resp.status !== undefined && resp.status != 'cancelled'){
-				var is_modal = $('#subscriptionModal').is(':visible');
-				var is_valid = $('#subscribeNews')[0].checkValidity();
+				var is_modal = $('#newsModal').is(':visible');
+				var is_valid = $('#icoNews')[0].checkValidity();
 				if(is_modal == true && is_valid == true){
-					$( "#subscribeNews" ).submit();
+					submit_news_form();
 				}
 //				return true;
 			}else{
@@ -110,10 +110,17 @@ function sendEvent(){
 	});
 	request.execute(function(event) {
 		storage.setItem('calendar_event', JSON.stringify({id: event.id}));
-		var is_modal = $('#subscriptionModal').is(':visible');
-		var is_valid = $('#subscribeNews')[0].checkValidity();
+		var is_modal = $('#newsModal').is(':visible');
+		var is_valid = $('#icoNews')[0].checkValidity();
 		if(is_modal == true && is_valid == true){
-			$( "#subscribeNews" ).submit();
+			submit_news_form();
 		}
 	});
+}
+
+
+function submit_news_form(){
+	$("#icoNews").attr('target', 'news_form_iframe');
+	$('#icoNews').submit();
+	$('#newsModal').modal('hide');
 }

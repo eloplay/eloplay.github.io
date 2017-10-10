@@ -55,7 +55,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
   <link href="css/michalsnik/aos/2.1.1/dist/aos.min.css" rel="stylesheet">
 
-  <link href="css/main.css?v=1507622841" rel="stylesheet" />
+  <link href="css/main.css?v=1507644085" rel="stylesheet" />
   <link href="css/fonts.css?v=1507109128" rel="stylesheet" />
 
   <!-- autodetect lang -->
@@ -205,7 +205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               
                         </div>
                     
-                      <a style="" href="" target="_blank" class="btn btn-br-line" data-toggle="modal" data-target="#subscriptionModal"><span style="vertical-align: unset;">トークンセールニュースを購読する</span></a>
+                      <a style="" href="" target="_blank" class="btn btn-br-line" data-toggle="modal" data-target="#newsModal"><span style="vertical-align: unset;">トークンセールニュースを購読する</span></a>
 
                       <div class="box-in-social-p1">
                         <ul class="in-social-p1">
@@ -1433,7 +1433,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="subscriptionModal" tabindex="-1" role="dialog" aria-labelledby="subscribeNews" aria-hidden="true">
+  <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="News" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -1444,7 +1444,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="modal-body">
           <div class="box-input-mail">
-            <form id="subscribeNews" class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8" name="reg_form" novalidate>
+            <form id="icoNews" class="form-group input-mail" action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="utf-8" name="reg_form" novalidate target="news_form_iframe">
               <input type="email" name="email" class="form-control st-placeh" placeholder="メールアドレスを入力してください" id="send-mail" maxlength="50" ng-class = "{ 'input-error-mail-top': reg_form.email.$error.required && reg_form.email.$touched || !reg_form.email.$error.required && reg_form.email.$touched && !reg_form.email.$valid || reg_form.email.$dirty && reg_form.email.$error.pattern, 'input-error-mail-bottom': !reg_form.password.$valid && reg_form.password.$touched && !reg_form.password.$error.minlength || reg_form.password.$error.minlength && reg_form.password.$touched }" type="email" name="email" ng-model="register.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required ng-keyup="$event.keyCode == 13 && do_register()" autocomplete="off" />
               <div class="error_message" ng-show = "reg_form.email.$error.required && reg_form.email.$touched">メールアドレスを入力してください</div>
               <div class="error_message" ng-show = "reg_form.email.$dirty && reg_form.email.$error.pattern">メール形式: mymail@domain.com</div>
@@ -1453,11 +1453,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <input type="hidden" name="campaign_token" value="nTjtu" />
               <input type="checkbox" checked name="calendar_event" value="calendar_event" id="calendar_event">
               <label for="calendar_event" class="label-checkbox">イベントをカレンダーに追加</label>
+			<iframe name="news_form_iframe" id="news_form_iframe" src="javascript:void();" width="0" height="0" style="display:none"></iframe>
             </form>
           </div>
         </div>
         <div class="modal-footer box-time">
-          <button type="button" class="btn btn-large-color" id="subscribeBtn" ng-disabled = "!reg_form.$valid" ><span>購読する</span></button>
+          <button type="button" class="btn btn-large-color" id="iconewsBtn" ng-disabled = "!reg_form.$valid" ><span>購読する</span></button>
         </div>
       </div>
     </div>
@@ -1517,7 +1518,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script data-cfasync="true" src="js/push_message.js"></script>
   <script data-cfasync="true" src="js/gapi_calendar.js"></script>
-    <script data-cfasync="true" src="js/main.js?v=1507559394"></script>
+    <script data-cfasync="true" src="js/main.js?v=1507644085"></script>
 
     <script async defer src="https://apis.google.com/js/api.js"
     onload="this.onload=function(){};handleClientLoad()"
