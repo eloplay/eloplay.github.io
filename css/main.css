@@ -3601,6 +3601,84 @@ strong {
 
   .full-bg-p2 .sect-top .box-left p:nth-child(2) {
     margin-top: 20px; } }
+.bg-top-accordion {
+  background: url(../img/bg-top-sction.png) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 253px;
+  background-position-y: 1px; }
+
+.bg-bottom-accordion {
+  background: url(../img/bg-bottom-sction.png) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 297px;
+  background-position-y: -1px; }
+
+.bg-center-accordion {
+  width: 100%;
+  background: linear-gradient(0deg, #fff 0%, #d9dadb 100%);
+  padding-top: 20px; }
+
+.panel-group {
+  margin-bottom: 0; }
+
+.faq-accordion .panel-default,
+.faq-accordion .panel-heading {
+  background: transparent; }
+.faq-accordion .panel-default {
+  border: initial;
+  border-radius: initial; }
+.faq-accordion .panel-default .panel-heading {
+  border-bottom: 1px solid #5b5a62;
+  border-radius: initial;
+  padding: 23px 15px;
+  position: relative; }
+  .faq-accordion .panel-default .panel-heading [class^=icon-arrow-] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: #5b5a62; }
+.faq-accordion .panel-default a p {
+  font-size: 2.4rem; }
+.faq-accordion .panel-default a[data-toggle=collapse] {
+  text-decoration: none; }
+  .faq-accordion .panel-default a[data-toggle=collapse] p {
+    color: #5b5a62; }
+    .faq-accordion .panel-default a[data-toggle=collapse] p [class=icon-arrow-down] {
+      display: block; }
+    .faq-accordion .panel-default a[data-toggle=collapse] p [class=icon-arrow-up] {
+      display: none; }
+.faq-accordion .panel-default a[aria-expanded=true] p {
+  color: #1d1930; }
+  .faq-accordion .panel-default a[aria-expanded=true] p [class=icon-arrow-down] {
+    display: none; }
+  .faq-accordion .panel-default a[aria-expanded=true] p [class=icon-arrow-up] {
+    display: block; }
+.faq-accordion .title-accordion {
+  color: #1d1930;
+  padding-top: 168px;
+  margin: 0; }
+.faq-accordion .panel-body p {
+  color: #1d1930;
+  font-size: 1.8rem;
+  line-height: 160%; }
+.faq-accordion .panel-body b {
+  color: #1d1930; }
+.faq-accordion .panel-body a {
+  text-decoration: none;
+  color: #1d1930;
+  border-bottom: 1px solid #1d1930; }
+  .faq-accordion .panel-body a:hover {
+    border-bottom: none; }
+.faq-accordion .panel-body ul li {
+  color: #1d1930;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem; }
+.faq-accordion .img-monitor {
+  margin: 8%; }
+
 @media (max-width: 1366px) {
   .full-bg-p2 .sect-top {
     margin-top: 90px; } }

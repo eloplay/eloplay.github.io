@@ -163,11 +163,18 @@
 			prevArrow: '<i class="icon-arrow-left"></i>',
 			nextArrow: '<i class="icon-arrow-right"></i>',
 		});
+		$('a[href^=\\#faq-]').click(function(){
+			$(this).parent().parent().parent().parent().modal('hide');
+			var id  = $(this).attr('href');
+			$(id).parent().parent().collapse('show');        
+		});
 
-		$('a[href^=\\#]').on("click", function (event) {
+		$('a[href^=\\#anchor-]').on("click", function (event) {
+
 			event.preventDefault();
 			var id  = $(this).attr('href'),
-					top = $(id).offset().top;
+				top = $(id).offset().top;
+
 			$('body,html').animate({scrollTop: top}, 800);
 		});
 

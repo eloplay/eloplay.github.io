@@ -55,8 +55,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
   <link href="css/michalsnik/aos/2.1.1/dist/aos.min.css" rel="stylesheet">
 
-  <link href="css/main.css?v=1507725407" rel="stylesheet" />
-  <link href="css/fonts.css?v=1506588406" rel="stylesheet" />
+  <link href="css/main.css?v=1507729749" rel="stylesheet" />
+  <link href="css/fonts.css?v=1507109128" rel="stylesheet" />
 
   <!-- autodetect lang -->
 <script>
@@ -119,7 +119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="full-bg-p2" ng-controller="pageICO_Ctr">
     <!-- navbar -->
-    <div class="top-bar" ng-class="{'no-transparent': scrollPos > 150}" ng-cloak>
+	<div class="top-bar" ng-class="{'no-transparent': scrollPos > 150}" ng-cloak>
         <div class="container">
           <div class="box-logo">
             <a href="#main-screen"><div class="logo-eloplay"></div></a>
@@ -128,11 +128,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="nav-links">
             <ul>
                             <li><a href="https://eloplay.com/?utm_source=ico_landing" target="_blank">Eloplay.com</a></li>
-              <!--li><a href="#faq">FAQ</a></li-->
+              <li><a href="#anchor-faq">FAQ</a></li>
               <li><a href="https://eloplay.com/blog" target="_blank">Блог</a></li>
-                            <li><a href="#team">Команда</a></li>
-              <li><a href="#tokensale" id="ex2">Токенсейл</a></li>
-              <li><a href="#docs">Документация</a></li>
+                            <li><a href="#anchor-team">Команда</a></li>
+              <li><a href="#anchor-tokensale" id="ex2">Токенсейл</a></li>
+              <li><a href="#anchor-docs">Документация</a></li>
               <li><a href="./docs/ru/eloplay_whitepaper_ru_1.pdf" target="_blank">Whitepaper</a></li>
             </ul>
           </div>
@@ -165,12 +165,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </button>
         <div class="btn-nav-menu" ng-class="{'d-menu-show': is_btn_show}" ng-cloak>
           <ul>
-            <!--a href="#faq" ng-click="is_btn_show=false"><li>FAQ</li></a-->
+            <a href="#anchor-faq" ng-click="is_btn_show=false"><li>FAQ</li></a>
                         <a href="https://eloplay.com/?utm_source=ico_landing" target="_blank"><li>Eloplay.com</li></a>
             <a href="https://eloplay.com/blog" target="_blank"><li>Блог</li></a>
-                        <a href="#team" ng-click="is_btn_show=false"><li>Команда</li></a>
-            <a href="#tokensale" id="ex1" ng-click="is_btn_show=false"><li>Токенсейл</li></a>
-            <a href="#docs" ng-click="is_btn_show=false"><li>Документация</li></a>
+                        <a href="#anchor-team" ng-click="is_btn_show=false"><li>Команда</li></a>
+            <a href="#anchor-tokensale" id="ex1" ng-click="is_btn_show=false"><li>Токенсейл</li></a>
+            <a href="#anchor-docs" ng-click="is_btn_show=false"><li>Документация</li></a>
             <a href="./docs/ru/eloplay_whitepaper_ru_1.pdf" target="_blank"><li>Whitepaper</li></a>
           </ul>
         </div>
@@ -445,7 +445,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <div class="bg-white-center" id="tokensale">
+    <div class="bg-white-center" id="anchor-tokensale">
       <div class="container">
         <p id="pay-token" class="font-l-42 title-pay-token" data-aos="zoom-in">
           Продажа Токенов Eloplay        </p>
@@ -630,20 +630,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="btn btn-large-color-y roadmap" href="./docs/ru/eloplay_roadmap_ru_1.pdf" target="_blank">Roadmap - полная версия</a>
         </div>
 
-        <!--end roadmap **********************************************************************************-->
-        
+        <!--end roadmap **********************************************************************************-->        
       </div>
     </div>
 
     <div class="container command" data-aos="fade-down" data-aos-delay="800" data-aos-offset="300">
-      <p class="font-l-42 title-command" id="team">Команда Eloplay</p>
+      <p class="font-l-42 title-command" id="anchor-team">Команда Eloplay</p>
       <p class="title-founders">Учредители:</p>
       <div class="box-item-founders">
                 <div class="item-founders">
           <a href="https://linkedin.com/in/vitalybalakhonov" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/vbalakhonov.png?v=1507558032" alt="Виталий Балахонов">
+              <img class="img-responsive" src="img/team/vbalakhonov.png?v=1507551970" alt="Виталий Балахонов">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -656,7 +655,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/imyfix" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/yvysotskiy.jpg?v=1506588406" alt="Юрий Высоцкий">
+              <img class="img-responsive" src="img/team/yvysotskiy.jpg?v=1507109128" alt="Юрий Высоцкий">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -669,7 +668,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/dmytro-salnikov-55a051147" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/dsalnikov.jpg?v=1506588406" alt="Дмитрий Сальников">
+              <img class="img-responsive" src="img/team/dsalnikov.jpg?v=1507109128" alt="Дмитрий Сальников">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -689,7 +688,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/nirasaf/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/nirasaf.jpg?v=1506588406" alt="Nir Asaf">
+                  <img class="img-responsive" src="img/team/nirasaf.jpg?v=1507109128" alt="Nir Asaf">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -703,7 +702,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/menaskop/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/vpopov.jpg?v=1506588406" alt="Владимир Попов">
+                  <img class="img-responsive" src="img/team/vpopov.jpg?v=1507109128" alt="Владимир Попов">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -717,7 +716,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/sergeymushta" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/smushta.jpg?v=1506588406" alt="Сергей Мушта">
+                  <img class="img-responsive" src="img/team/smushta.jpg?v=1507109128" alt="Сергей Мушта">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -731,7 +730,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/imyyv" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/yyakovenko.jpg?v=1506588406" alt="Ярослав Яковенко">
+                  <img class="img-responsive" src="img/team/yyakovenko.jpg?v=1507109128" alt="Ярослав Яковенко">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -745,7 +744,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/sergeykorzhikov" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/skorzhikov.jpg?v=1506588406" alt="Сергей Коржиков">
+                  <img class="img-responsive" src="img/team/skorzhikov.jpg?v=1507109128" alt="Сергей Коржиков">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -759,7 +758,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/larvs" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/alezhenko.jpg?v=1506588406" alt="Александр Леженко">
+                  <img class="img-responsive" src="img/team/alezhenko.jpg?v=1507109128" alt="Александр Леженко">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -773,7 +772,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/pavel-zakhovalko-408200139" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/pzakhovalko.jpg?v=1506588406" alt="Павел Заховалко">
+                  <img class="img-responsive" src="img/team/pzakhovalko.jpg?v=1507109128" alt="Павел Заховалко">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -787,7 +786,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="#" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/apashchenko.jpg?v=1506588406" alt="Андрей Пащенко">
+                  <img class="img-responsive" src="img/team/apashchenko.jpg?v=1507109128" alt="Андрей Пащенко">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -801,7 +800,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/viktoriia-moskalenko-b758a014a" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/vmoskalenko.jpg?v=1506588406" alt="Виктория Москаленко">
+                  <img class="img-responsive" src="img/team/vmoskalenko.jpg?v=1507109128" alt="Виктория Москаленко">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -815,7 +814,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/dmitriy-makushin-9b08a014a" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/dmakushin.jpg?v=1506588406" alt="Дмитрий Макушин">
+                  <img class="img-responsive" src="img/team/dmakushin.jpg?v=1507109128" alt="Дмитрий Макушин">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -829,7 +828,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/oleksandr-svyrydovskyi-8288a014a" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/osviridovskiy.jpg?v=1506588406" alt="Олександр Свиридовський">
+                  <img class="img-responsive" src="img/team/osviridovskiy.jpg?v=1507109128" alt="Олександр Свиридовський">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -843,7 +842,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://linkedin.com/in/valeria-arsjuta-15b8a514a/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/varsjuta.jpg?v=1506588406" alt="Valeria Arsjuta">
+                  <img class="img-responsive" src="img/team/varsjuta.jpg?v=1507109128" alt="Valeria Arsjuta">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -857,7 +856,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/elizabeth-izmailova/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/eizmailova.jpg?v=1506588406" alt="Elizabeth Izmailova">
+                  <img class="img-responsive" src="img/team/eizmailova.jpg?v=1507109128" alt="Elizabeth Izmailova">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -878,7 +877,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/nirasaf/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/nirasaf.jpg?v=1506588406" alt="Nir Asaf">
+              <img class="img-responsive" src="img/team/nirasaf.jpg?v=1507109128" alt="Nir Asaf">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -890,7 +889,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/menaskop/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/vpopov.jpg?v=1506588406" alt="Владимир Попов">
+              <img class="img-responsive" src="img/team/vpopov.jpg?v=1507109128" alt="Владимир Попов">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -902,7 +901,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/sergeymushta" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/smushta.jpg?v=1506588406" alt="Сергей Мушта">
+              <img class="img-responsive" src="img/team/smushta.jpg?v=1507109128" alt="Сергей Мушта">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -914,7 +913,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/imyyv" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/yyakovenko.jpg?v=1506588406" alt="Ярослав Яковенко">
+              <img class="img-responsive" src="img/team/yyakovenko.jpg?v=1507109128" alt="Ярослав Яковенко">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -926,7 +925,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/sergeykorzhikov" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/skorzhikov.jpg?v=1506588406" alt="Сергей Коржиков">
+              <img class="img-responsive" src="img/team/skorzhikov.jpg?v=1507109128" alt="Сергей Коржиков">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -938,7 +937,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/larvs" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/alezhenko.jpg?v=1506588406" alt="Александр Леженко">
+              <img class="img-responsive" src="img/team/alezhenko.jpg?v=1507109128" alt="Александр Леженко">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -950,7 +949,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/pavel-zakhovalko-408200139" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/pzakhovalko.jpg?v=1506588406" alt="Павел Заховалко">
+              <img class="img-responsive" src="img/team/pzakhovalko.jpg?v=1507109128" alt="Павел Заховалко">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -962,7 +961,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/apashchenko.jpg?v=1506588406" alt="Андрей Пащенко">
+              <img class="img-responsive" src="img/team/apashchenko.jpg?v=1507109128" alt="Андрей Пащенко">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -974,7 +973,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/viktoriia-moskalenko-b758a014a" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/vmoskalenko.jpg?v=1506588406" alt="Виктория Москаленко">
+              <img class="img-responsive" src="img/team/vmoskalenko.jpg?v=1507109128" alt="Виктория Москаленко">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -986,7 +985,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/dmitriy-makushin-9b08a014a" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/dmakushin.jpg?v=1506588406" alt="Дмитрий Макушин">
+              <img class="img-responsive" src="img/team/dmakushin.jpg?v=1507109128" alt="Дмитрий Макушин">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -998,7 +997,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/oleksandr-svyrydovskyi-8288a014a" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/osviridovskiy.jpg?v=1506588406" alt="Олександр Свиридовський">
+              <img class="img-responsive" src="img/team/osviridovskiy.jpg?v=1507109128" alt="Олександр Свиридовський">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1010,7 +1009,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://linkedin.com/in/valeria-arsjuta-15b8a514a/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/varsjuta.jpg?v=1506588406" alt="Valeria Arsjuta">
+              <img class="img-responsive" src="img/team/varsjuta.jpg?v=1507109128" alt="Valeria Arsjuta">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1022,7 +1021,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/elizabeth-izmailova/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/eizmailova.jpg?v=1506588406" alt="Elizabeth Izmailova">
+              <img class="img-responsive" src="img/team/eizmailova.jpg?v=1507109128" alt="Elizabeth Izmailova">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1040,7 +1039,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="item-command">
           <a href="https://www.cybersport.ru/base/gamers/zeus/" target="_blank">
             <div class="command-photo">
-              <img class="img-responsive" src="img/team/zeus.png?v=1507553054" alt="Данил Тесленко &quot;Zeus&quot;">
+              <img class="img-responsive" src="img/team/zeus.png?v=1507195241" alt="Данил Тесленко &quot;Zeus&quot;">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1064,7 +1063,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/andrei-veressov-b535ba21" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/averesov.jpg?v=1506588406" alt="Андрей Верессов">
+                  <img class="img-responsive" src="img/team/averesov.jpg?v=1507109128" alt="Андрей Верессов">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -1078,7 +1077,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/norbert-radoki-366447133/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/norbert-radoki.jpg?v=1506588406" alt="Norbert Radoki">
+                  <img class="img-responsive" src="img/team/norbert-radoki.jpg?v=1507109128" alt="Norbert Radoki">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -1092,7 +1091,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/ivo-georgiev-8298b678/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/ivo-georgiev.jpg?v=1506588406" alt="Ivo Georgiev">
+                  <img class="img-responsive" src="img/team/ivo-georgiev.jpg?v=1507109128" alt="Ivo Georgiev">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -1106,7 +1105,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/matetokay/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/matetokay.jpg?v=1506588406" alt="Mate Tokay">
+                  <img class="img-responsive" src="img/team/matetokay.jpg?v=1507109128" alt="Mate Tokay">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -1120,7 +1119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/estebanvangoor/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/estebanvangoor.jpg?v=1506588406" alt="Esteban van Goor">
+                  <img class="img-responsive" src="img/team/estebanvangoor.jpg?v=1507109128" alt="Esteban van Goor">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -1141,7 +1140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/andrei-veressov-b535ba21" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/averesov.jpg?v=1506588406" alt="Андрей Верессов">
+              <img class="img-responsive" src="img/team/averesov.jpg?v=1507109128" alt="Андрей Верессов">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1153,7 +1152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/norbert-radoki-366447133/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/norbert-radoki.jpg?v=1506588406" alt="Norbert Radoki">
+              <img class="img-responsive" src="img/team/norbert-radoki.jpg?v=1507109128" alt="Norbert Radoki">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1165,7 +1164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/ivo-georgiev-8298b678/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/ivo-georgiev.jpg?v=1506588406" alt="Ivo Georgiev">
+              <img class="img-responsive" src="img/team/ivo-georgiev.jpg?v=1507109128" alt="Ivo Georgiev">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1177,7 +1176,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/matetokay/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/matetokay.jpg?v=1506588406" alt="Mate Tokay">
+              <img class="img-responsive" src="img/team/matetokay.jpg?v=1507109128" alt="Mate Tokay">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1189,7 +1188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/estebanvangoor/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/estebanvangoor.jpg?v=1506588406" alt="Esteban van Goor">
+              <img class="img-responsive" src="img/team/estebanvangoor.jpg?v=1507109128" alt="Esteban van Goor">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1209,7 +1208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/lastperson/" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/lastperson.jpg?v=1507032602" alt="Алексей Матиясевич">
+                  <img class="img-responsive" src="img/team/lastperson.jpg?v=1507109128" alt="Алексей Матиясевич">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -1223,7 +1222,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="https://www.linkedin.com/in/yaroslav-tumanov-8710885a/ " target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/ytumanov.jpg?v=1506700137" alt="Ярослав Туманов">
+                  <img class="img-responsive" src="img/team/ytumanov.jpg?v=1507109128" alt="Ярослав Туманов">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -1237,7 +1236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="#" target="_blank">
                 <div class="command-photo">
                   <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                  <img class="img-responsive" src="img/team/ashendrick.jpg?v=1506700137" alt="Алексей Шендрик">
+                  <img class="img-responsive" src="img/team/ashendrick.jpg?v=1507109128" alt="Алексей Шендрик">
                 </div>
               </a>
               <div class="box-text-info no-line">
@@ -1258,7 +1257,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/lastperson/" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/lastperson.jpg?v=1507032602" alt="Алексей Матиясевич">
+              <img class="img-responsive" src="img/team/lastperson.jpg?v=1507109128" alt="Алексей Матиясевич">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1270,7 +1269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="https://www.linkedin.com/in/yaroslav-tumanov-8710885a/ " target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/ytumanov.jpg?v=1506700137" alt="Ярослав Туманов">
+              <img class="img-responsive" src="img/team/ytumanov.jpg?v=1507109128" alt="Ярослав Туманов">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1282,7 +1281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#" target="_blank">
             <div class="command-photo">
               <div class="hover-gradient"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-              <img class="img-responsive" src="img/team/ashendrick.jpg?v=1506700137" alt="Алексей Шендрик">
+              <img class="img-responsive" src="img/team/ashendrick.jpg?v=1507109128" alt="Алексей Шендрик">
             </div>
           </a>
           <div class="box-text-info no-line">
@@ -1293,7 +1292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
     </div>
       
-    <div class="bg-in-media" id="docs">
+    <div class="bg-in-media" id="anchor-docs">
       <div class="container">
         <p class="font-l-42 title-pay-token">Документы</p>
         <!-- карусель Eloplay в медиа -->
@@ -1416,6 +1415,208 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </a>
                   </div>
       </div>
+
+      <!-- accordion -->
+      <div id="anchor-faq" class="faq-accordion">
+        <div class="bg-top-accordion">
+          <div class=" container"><p class="font-l-42 title-accordion title-pairs">F.A.Q</p></div>
+        </div>
+        <div class="bg-center-accordion">
+       
+          <div class="panel-group container">
+            <div class="panel panel-default">
+			  <a data-toggle="collapse" href="#bitcointalk_bounty">
+				<p class="panel-heading">Видео                  <i class="icon-arrow-down"></i>
+                  <i class="icon-arrow-up"></i>
+                </p>
+              </a>
+              <div id="bitcointalk_bounty" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="img-monitor">
+					  						<iframe src="https://www.youtube.com/embed/r7-U7NoNafw" frameborder="0" allowfullscreen></iframe>
+						  
+					</div>
+
+					<div class="img-monitor">
+					  						<iframe src="https://www.youtube.com/embed/Xe8mLbzG-vs" frameborder="0" allowfullscreen></iframe>
+						  
+					</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                    <div class="panel-group container">
+            <div class="panel panel-default">
+			        <a data-toggle="collapse" href="#general">
+			          <p class="panel-heading">
+                Общие Вопросы                  <i class="icon-arrow-down"></i>
+                  <i class="icon-arrow-up"></i>
+                </p>
+              </a>
+              <div id="general" class="panel-collapse collapse">
+                <div class="panel-body">
+					       
+<b id="faq-what-is-cryptocurrency">Что такое криптовалюта?</b>
+<p>Криптовалюта — это денежная единица (также известная как "токен"), которая защищена криптографическими методами. Не существует никакого физического аналога данным денежным единицам, они существуют только в виртуальном пространстве. Токены не могут быть подделаны, так как они представляют собой зашифрованную информацию, которая не может быть скопирована.<br>
+Читайте больше на <a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%D0%B0" target="_blank">странице Википедии о Криптовалюте</a>.</p>
+<b id="faq-what-is-blockchain">Что такое Блокчейн?</b>
+<p>Блокчейн — это распределенная база данных, у которой устройства хранения данных не подключены к общему серверу. Эта база данных хранит постоянно растущий список упорядоченных записей, называемых блоками. Каждый блок содержит метку времени и ссылку на предыдущий блок.<br>
+Читайте больше на <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA%D1%87%D0%B5%D0%B9%D0%BD" target="_blank">странице Википедии о Блокчейне</a>.</p>
+<b id="faq-what-are-smart-contracts">Что такое Смарт Контракты?</b>
+<p>Смарт Контракт — это компьютерный протокол, который позволяет облегчить и автоматизировать финансовые контракты. Другими словами, смарт контракты — это программный код, который позволяет вам автоматически выполнять определенные функции при наступлении определенных условий. Для реализации смарт контрактов необходима децентрализованная среда, которая полностью исключает человеческий фактор. Для передачи ценности в смарт контракте используется криптовалюта.<br>
+Читайте больше на <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BC%D0%B0%D1%80%D1%82_%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%B0%D0%BA%D1%82" target="_blank">странице Википедии о Смарт Контрактах</a>.</p>
+<b id="faq-how-do-i-create-an-ether-wallet">Как создать кошелек на платформе Ethereum?</b>
+<p>
+	<b>Просмотрите эту <a href="https://docs.google.com/document/d/1GUxzrgHbZnOw_Ek4mPN7wAWb8WFnYO21SynCK7VRTVM/" target="_blank">инструкцию</a> или следуйте инструкции ниже:</b>
+</p>
+	<ul>
+		<li>Откройте сайт <a href="https://www.myetherwallet.com/" target="_blank">www.myetherwallet.com</a></li>
+		<li>Установите пароль и нажмите “Create New Wallet”. ВАЖНО: придумайте пароль, который Вы точно не забудете, так как восстановить его будет невозможно! Запишите его и храните в безопасном месте. Если речь идёт о больших суммах, доступы могут храниться в банковской ячейке.</li>
+		<li>Далее сохраните свой закрытый ключ (private key). Это то же самое, что ключ к сейфу, но в электронной форме. Ключ + пароль — это единственный способ получить доступ к Вашему кошельку и средствам, которые находятся на блокчейн. Нажмите "Download Keystore File" и сохраните его на своем устройстве в безопасном месте, предпочтительно на оффлайновом носителе, и сделайте резервную копию.</li>
+		<li>Нажмите ”I Understand. Continue”.</li>
+		<li>На следующем этапе вы получите ваш закрытый ключ в незашифрованной форме. Любой, кто получит к нему доступ, сможет зайти в ваш кошелек. Поэтому желательно распечатать этот ключ и хранить его в безопасном месте (например, в банковской ячейке). Затем нажмите "Save Your Address".</li>
+		<li>Далее вам необходимо узнать адрес вашего кошелька:
+			<ol>
+				<li>Выберите "Keystore File (UTC / JSON)".</li>
+				<li>Определите путь к зашифрованному файлу (из шага 3) и введите пароль, созданный в шаге 2. Если вы все сделаете правильно, вы будете видеть адрес и баланс на экране своего кошелька,</li>
+				<li>Выберите Закрытый ключ (Private Key). Для этого вам необходимо ввести незашифрованный адрес, вводить пароль не нужно. Это опасный и незащищенный способ. Мы не рекомендуем его использовать! Этот ключ должен храниться в безопасном оффлайновом хранилище и использоваться только в крайнем случае.</li>
+			</ol>
+		</li>
+	</ul>
+	<br>
+	<p>Как только вы создали кошелек, все, что вам нужно сделать для покупки Эфира на биржах, это определить его количество и сделать покупку (на каждой платформе процесс совершения покупки немного отличается).</p>
+<b id="faq-how-can-i-buy-ether">Как покупать Эфир?</b>
+<p>Можно купить Эфир на биржах, например на www.exmo.me или www.coinbase.com (у каждой биржи есть собственный мобильный кошелек для покупки/ продажи биткоинов и Эфира). Кроме того, существует множество обменников. Однако, если вы не работали с ними прежде, лучше сначала внимательно изучить отзывы, чтобы не попасть на ненадёжные платформы.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+                    <div class="panel-group container">
+            <div class="panel panel-default">
+			        <a data-toggle="collapse" href="#participation">
+			          <p class="panel-heading">
+                Участие в Краудсейле                  <i class="icon-arrow-down"></i>
+                  <i class="icon-arrow-up"></i>
+                </p>
+              </a>
+              <div id="participation" class="panel-collapse collapse">
+                <div class="panel-body">
+					       
+		<b id="faq-how-can-i-start-the-process-to-join-the-eloplay-ico">Как подключиться к процессу Eloplay ICO?</b>
+<p>Eloplay ICO будет проводиться на <a href="https://ico.eloplay.com/">сайте Eloplay ICO</a>.Вы можете нажать на ссылку или связаться с нами через <a href="https://t.me/ico_eloplaycom_ru" target="_blank">Telegram Eloplay ICO</a>.</p>
+<b id="faq-how-do-i-participate">Как участвовать в Eloplay ICO?</b>
+<p>Токены будут распределены между учасниками кампании по краудфандингу. Вы можете использовать любой клиент Ethereum (Geth, Parity, Mist), или MyEtherWallet для отправки Эфира (далее ETH) на адрес контракта, который будет объявлен в день начала кампании. Убедитесь, что вы храните закрытый ключ, который использовали для отправки ETH на адрес контракта, в безопасности. В вашем кошельке будет также отображаться баланс токенов ELT. Пожалуйста, не отправляйте ETH на краудфандинговые контракты Eloplay с кошельков, созданных на обменниках. Удостоверьтесь, что у вас сохранён ваш закрытый ключ.</p>
+<b id="faq-when-does-the-crowdsale-begin">Когда начинается Краудсейл?</b>
+<p>Дата начала: 16 октября 2017 (12:00 PM London Time, UTC+0)</p>
+<b id="faq-when-does-the-crowdsale-end">Когда заканчивается Краудсейл?</b>
+<p>Количество предлагаемых токенов ограничено максимальной целью продажи токенов:<br>
+$12,000,000. По достижении цели смарт-контракт автоматически прекращает эмиссию.<br>
+В случае, если максимальное значение не будет достигнуто, смарт-контракт прекратит<br>
+эмиссию новых токенов 15 ноября 2017 года (12:00 PM London Time, UTC+0).
+</p>
+<b id="faq-token-sale-maximum-cap">Максимальная цель продажи токенов:</b>
+<p>$12,000,000</p>
+<b id="faq-token-sale-minimum-target">Минимальная цель продажи токенов:</b>
+<p>$3,000,000</p>
+<b id="faq-what-currency-is-accepted">Принимаемые валюты:</b>
+<p>ETH.</p> 
+<b id="faq-what-is-the-token-exchange-rate">Курс токена:</b>
+<p>1 ETH = 10,000 ELT</p>
+<b id="faq-amount-of-tokens-per-person">Количество токенов на человека:</b>
+<p>Неограничено</p>
+<b id="faq-maximum-transaction-amount">Максимальная сумма транзакции:</b>
+<p>Неограничено</p>
+<b id="faq-minimum-transaction-amount">Минимальная сумма транзакции:</b>
+<p>0.1 ETH</p>
+<b id="faq-how-many-tokens-will-be-created">Сколько всего токенов будет создано и будут ли какие-то «сожжены»?</b>
+<p>Мы будем знать, сколько токенов будет выпущено прямо перед началом токенсейла. 
+В отличии от других ICO, мы выпустим наши токены только тогда, когда на смарт контракт зайдёт определенное количество Эфира. Таким образом, не будет никаких лишних токенов, которые будут «сожжены».
+</p>
+<b id="faq-what-happens-if-the-hard-cap-is-not-reached">Что будет если минимальная цель продажи токенов не будет достигнута?</b>
+<p>Если будет собрано 3,000,000$, осуществление этого проекта будет продолжаться. 
+Если минимальная цель не достигнута, мы либо вернем средства, либо заморозим токены и скорректируем план. 
+Eloplay это уже работающая платформа и развитие проекта будет продолжаться вне зависимости от объёма привлечённых средств.
+</p>
+<b id="faq-when-will-public-token-sale-participants-see-elt-in-their-wallets">Когда участники токенсейла увидят ELT в своих кошельках?</b>
+<p>Участники токенсейла увидят ELT в своих кошельках сразу после того как они отправят Эфир на смарт контракт.</p>
+<b id="faq-when-will-pre-sale-participants-see-the-elt-in-their-wallets">Когда участники пресейла токенов увидят ELT в своих кошельках?</b>
+<p>Токены будут отправлены участникам пресейла, как только начнется главный этап кампании.</p>
+<b id="faq-can-i-participate-in-the-eloplay-ico-without-creating-an-ethereum-address">Могу ли я участвовать в Eloplay ICO, не создавая адрес Ethereum?</b>
+<p>Нет. Так как токены Eloplay (ELT) выпущены на блокчейн-платформе Ethereum, вам будет нужен адрес Ethereum, чтобы купить и хранить токены Eloplay. Вы можете использовать такие кошельки Ethereum: Ethereum wallet, Mist, MyEtherWallet.com или другие кошельки, где у вас есть доступ к вашим закрытым ключам.<b>Не отправляйте ETH для участия в ICO c кошельков, созданных на обменниках!!!</b></p>
+<b id="faq-i-a-us-citizen">Я гражданин США. Я могу участвовать в токенсейле?</b>
+<p>Нет. Граждане США не могут участвовать в токенсейле Eloplay.</p>
+<b id="faq-can-i-participate-in-eloplay-ico-if-i-have-a-permanent-residence-in-the-us">Я могу участвовать в Eloplay ICO, если у меня есть постоянный вид на жительство в США?</b>
+<p>Нет. Люди с постоянным видом на жительство в США не могут участвовать в токенсейле Eloplay.</p>
+<b id="faq-i-a-chinese-citizen">Я гражданин Китая. Я могу участвовать в токенсейле?</b>
+<p>Eloplay принадлежит компании Qooors OÜ, зарегистрированной в Эстонии, поэтому китайские граждане могут участвовать токенсейле Eloplay.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+                    <div class="panel-group container">
+            <div class="panel panel-default">
+			        <a data-toggle="collapse" href="#about">
+			          <p class="panel-heading">
+                Всё о токенах                  <i class="icon-arrow-down"></i>
+                  <i class="icon-arrow-up"></i>
+                </p>
+              </a>
+              <div id="about" class="panel-collapse collapse">
+                <div class="panel-body">
+					       
+<b id="faq-what-are-elt">Что такое ELT?</b>
+<p>Токен Eloplay (ELT) - это стандартный токен ERC-20 на блокчейн-платформе Ethereum. Он совместим с кошельками, акциями и является передаваемым активом.</p>
+<b id="faq-what-will-be-eloplay-token-distribution">Как будут распределены токены?</b>
+<p>
+80% Токенсейл<br>
+10% Команда<br>
+5% Консультационный совет<br>
+3% Bounty-программа<br>
+2% Долгосрочный баунти фонд<br>
+</p>
+<b id="faq-what-is-the-long-term-bounty-fund">Что такое долгосрочный баунти фонд?</b>
+<p>Долгосрочный баунти фонд будет использован для Смарт Турниров Eloplay и Рейтинговой системы для команд и турнирных рейтингов игроков и команд. Рейтинговая система для команд призвана стимулировать активность и давать возможность лучшим игрокам выиграть токены EloPlay. Это количество игровых достижений для новых игроков. Игроки, которые достигают определенных целей, как например общее количество часов на Eloplay или количество убийств в одной игре, будут награждены токенами Eloplay.<br>
+Долгосрочный баунти фонд будет сформирован после токенсейла из токенов EloPlay. На него будет выделено 2% от общей суммы токенсейла + 2% от Смарт Контрактов + токены, полученные благодаря рекламе.</p>
+<b id="faq-what-can-i-do-with-elt">Что я могу делать с токенами ELT?</b>
+<p>
+<b>Организовывать Турниры:</b>использовать токены как вознаграждение за киберспортивные смарт турниры<br>
+<b>Размещать рекламу:</b> бренды могут предлагать свои товары и услуги аудитории киберспорта<br>
+<b>Продавать токены на бирже:</b> токены будут выставлены на фондовой бирже и могут быть проданы немедленно<br>
+</p>
+<b id="faq-are-the-tokens-instantly-transferable">Токены переводятся немедленно или есть период Lock-up?</b>
+<p>Токены Eloplay можно будет переводить по окончанию токенсейла.<br>
+Токены ELT создаются смарт контрактами по необходимости. Как только покупатель переводит ETH на адрес смарт контракта, ELT немедленно появляется в их кошельках.<br>
+Однако токены ELT не могут переводиться до окончания токенсейла.<br>
+После окончания токенсейла, мы разблокируем возможность передачи токенов.<br>
+Затем начнется процесс включения токенов ELT на общественные биржи.
+</p>
+<b id="faq-do-token-holders-get-dividends">Получают ли владельцы токенов дивиденды?</b>
+<p>Нет. ELT  призван стать динамической системой. Если давать людям токены или деньги за владение токенами, это приведёт к обратному стимулирующему эффекту.</p>
+<b id="faq-can-i-exchange-my-elt">Могу ли я обменять свои токены ELT?</b>
+<p>Да. Токены можно обменять на ETH и BTC через обменники.</p>
+<b id="faq-how-many-tokens-will-be-created-in-total-and-will-any-be-burned">Сколько всего токенов будет создано и будут ли какие-то «сожжены»?</b>
+<p>Мы будем знать, сколько токенов будет выпущено прямо перед началом токенсейла.<br>
+В отличии от других ICO, мы выпустим наши токены только тогда, когда на смарт контракт зайдёт определенное количество Эфира. Таким образом, не будет никаких лишних токенов, которые будут «сожжены».
+</p>
+<b id="faq-can-i-send-my-elt-tokens-back-get-me-ether back">Я могу отправить свои токены ELT обратно и получить Эфир?</b>
+<p>Нет, но будут независимые контракты по обмену токенов, которые можно использовать для обмена токенов на другие токены.</p>
+<b id="faq-do-you-guys-have-any-concrete-products">У вас есть какие-то конкретные продукты прямо сейчас? Что-то кроме потенциала и отличного бизнес-плана.</b>
+<p>Да. Eloplay — процветающая операционная киберспортивная платформа с 90,000 зарегистрированных пользователей и 80,000 проведенных сражений. Eloplay уже провёл 3,500 турниров один на один и командных турниров. Мы с нетерпением ожидаем роста тенденции к вовлечению новых участников.</p>
+<b id="faq-and-why-do-you-want">И на что вам нужны деньги прежде всего?</b>
+<p>40% всех собранных средств, должны быть потрачены на маркетинг и рекламу, чтобы обеспечить дальнейшее продвижение платформы и вовлечение большего количества пользователей.<br>
+Следующие важные расходы — это Призовой фонд Eloplay, который подразумевает вознаграждения за использование  платформы.<br>
+Наконец, это административные расходы, расходы на лицензии и юридическое сопровождение, а также на техническое обеспечение. Процентное соотношение может меняться со временем, но главная цель EloPlay — это обеспечение эффективного взаимодействия между игроками и брендами в экосистеме.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="bg-bottom-accordion"></div>
+      </div>
+      <!--end accordion -->
+
       <div class="box-bottom">
         <div class="container">
           <ul class="in-social-networks no-bord">
@@ -1556,7 +1757,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </form>
           </div>
         </div>
-        <div class="modal-footer box-time"><a href="#">Please follow instructions</a></div>
+        <div class="modal-footer box-time"><a href="#faq-how-do-i-create-an-ether-wallet">Please follow instructions</a></div>
       </div>
     </div>
   </div>
@@ -1581,7 +1782,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <script data-cfasync="true" src="js/push_message.js"></script>
   <script data-cfasync="true" src="js/gapi_calendar.js"></script>
-  <script data-cfasync="true" src="js/main.js?v=1507724203"></script>
+  <script data-cfasync="true" src="js/main.js?v=1507729749"></script>
 
   <script async defer src="https://apis.google.com/js/api.js"
     onload="this.onload=function(){};handleClientLoad()"

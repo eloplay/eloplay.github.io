@@ -3663,6 +3663,89 @@ strong
   .full-bg-p2 .sect-top .box-left p:nth-child(2)
     margin-top: 20px
 
+///************ faq-accordion *******************************
+
+.bg-top-accordion
+  background: url(../img/bg-top-sction.png) center no-repeat
+  background-size: cover
+  width: 100%
+  height: 253px
+  background-position-y: 1px
+.bg-bottom-accordion
+  background: url(../img/bg-bottom-sction.png) center no-repeat
+  background-size: cover
+  width: 100%
+  height: 297px
+  background-position-y: -1px
+.bg-center-accordion
+  width: 100%
+  background: linear-gradient(0deg, #fff 0%, #d9dadb 100%)
+  padding-top: 20px
+.panel-group
+  margin-bottom: 0
+.faq-accordion
+  .panel-default,
+  .panel-heading
+    background: transparent
+  .panel-default
+    border: initial
+    border-radius: initial
+  .panel-default
+    .panel-heading
+      border-bottom: 1px solid #5b5a62
+      border-radius: initial
+      padding: 23px 15px
+      position: relative
+      [class^=icon-arrow-]
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+        color: #5b5a62
+    a
+      p
+        font-size: 2.4rem
+      &[data-toggle=collapse]
+        text-decoration: none
+        p
+          color: #5b5a62
+          [class=icon-arrow-down]
+            display: block
+          [class=icon-arrow-up]
+            display: none
+      &[aria-expanded=true]
+        p
+          color: #1d1930
+          [class=icon-arrow-down]
+            display: none
+          [class=icon-arrow-up]
+            display: block
+  .title-accordion
+    color: #1d1930
+    padding-top: 168px
+    margin: 0
+
+  .panel-body
+    p
+      color: #1d1930
+      font-size: 1.8rem
+      line-height: 160%
+    b
+      color: #1d1930
+    a
+      text-decoration: none
+      color: #1d1930
+      border-bottom: 1px solid #1d1930
+      &:hover
+        border-bottom: none
+    ul
+      li
+        color: #1d1930
+        font-family: "Ubuntu", sans-serif
+        font-size: 1.8rem
+  .img-monitor
+    margin: 8%
+///************ end faq-accordion *******************************
 
 @media (max-width: 1366px)
   .full-bg-p2 .sect-top
