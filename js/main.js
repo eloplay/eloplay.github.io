@@ -163,7 +163,17 @@
 			prevArrow: '<i class="icon-arrow-left"></i>',
 			nextArrow: '<i class="icon-arrow-right"></i>',
 		});
-		$('a[href^=\\#faq-]').click(function(){
+/*
+		if(window.location.hash) {
+			var hash = window.location.hash;
+			$('#hidden_anchor').attr('href', hash);
+			$('#anchor-faq .panel-collapse:not(".in")').collapse('show');
+			$(hash).parent().parent().collapse('show');        
+			$('#hidden_anchor').click();
+		}
+		*/
+		$('a[href^=\\#faq-]').on("click", function(event){
+			event.preventDefault();
 			$(this).parent().parent().parent().parent().modal('hide');
 			var id  = $(this).attr('href');
 			$(id).parent().parent().collapse('show');        
