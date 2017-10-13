@@ -181,8 +181,7 @@
 			$('#hidden_anchor').click();
 		}
 		*/
-		$('a[href^=\\#faq-]').on("click", function(event){
-			event.preventDefault();
+		$('a[href^=\\#faq-]').click(function(event){
 			$(this).parent().parent().parent().parent().modal('hide');
 			var id  = $(this).attr('href');
 			$(id).parent().parent().collapse('show');
