@@ -30,7 +30,7 @@
       disable: true
     });
 
-    new Clipboard('#cipy_cliboard');
+    new Clipboard('#copy_cliboard');
 
 		$('.in-media').slick({
 			infinite: true,
