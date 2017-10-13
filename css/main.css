@@ -3551,53 +3551,53 @@ strong {
     width: 45%;
     padding-left: 40px; }
 
-.modal.fade#preorderAddress .modal-dialog .modal-header {
+.modal.fade#preorderAddress .modal-dialog .modal-header, .modal.fade#tokensaleAddress .modal-dialog .modal-header {
   display: block; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header h2 {
+  .modal.fade#preorderAddress .modal-dialog .modal-header h2, .modal.fade#tokensaleAddress .modal-dialog .modal-header h2 {
     margin-bottom: 40px; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header p {
+  .modal.fade#preorderAddress .modal-dialog .modal-header p, .modal.fade#tokensaleAddress .modal-dialog .modal-header p {
     color: rgba(0, 0, 0, 0.7);
     font-size: 16px;
     line-height: 130%;
     width: 80%;
     text-align: center;
     margin: auto; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header a {
+  .modal.fade#preorderAddress .modal-dialog .modal-header a, .modal.fade#tokensaleAddress .modal-dialog .modal-header a {
     color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid rgba(0, 0, 0, 0.7); }
-    .modal.fade#preorderAddress .modal-dialog .modal-header a:hover {
+    .modal.fade#preorderAddress .modal-dialog .modal-header a:hover, .modal.fade#tokensaleAddress .modal-dialog .modal-header a:hover {
       border-bottom: none;
       text-decoration: none; }
-.modal.fade#preorderAddress button.btn-large-color {
+.modal.fade#preorderAddress button.btn-large-color, .modal.fade#tokensaleAddress button.btn-large-color {
   min-width: 240px; }
-.modal.fade#preorderAddress form .check-top {
+.modal.fade#preorderAddress form .check-top, .modal.fade#tokensaleAddress form .check-top {
   margin-bottom: 40px; }
-.modal.fade#preorderAddress form .check-center {
+.modal.fade#preorderAddress form .check-center, .modal.fade#tokensaleAddress form .check-center {
   margin-bottom: 20px; }
 
-.modal.fade#depositAddress .modal-dialog .modal-header {
+.modal.fade#depositAddress .modal-dialog .modal-header, .modal.fade#contractAddress .modal-dialog .modal-header {
   padding: 31px 15px 57px; }
-.modal.fade#depositAddress a {
+.modal.fade#depositAddress a, .modal.fade#contractAddress a {
   font-size: 16px;
   color: #000;
   border-bottom: 1px solid #000; }
-  .modal.fade#depositAddress a:hover {
+  .modal.fade#depositAddress a:hover, .modal.fade#contractAddress a:hover {
     border-bottom: none;
     text-decoration: none; }
-  .modal.fade#depositAddress a:focus {
+  .modal.fade#depositAddress a:focus, .modal.fade#contractAddress a:focus {
     text-decoration: none;
     outline: none; }
-.modal.fade#depositAddress .modal-dialog .modal-footer {
+.modal.fade#depositAddress .modal-dialog .modal-footer, .modal.fade#contractAddress .modal-dialog .modal-footer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 116px; }
-.modal.fade#depositAddress .modal-body {
+.modal.fade#depositAddress .modal-body, .modal.fade#contractAddress .modal-body {
   text-align: center; }
-  .modal.fade#depositAddress .modal-body a {
+  .modal.fade#depositAddress .modal-body a, .modal.fade#contractAddress .modal-body a {
     font-size: 22px;
     font-family: Dinpro-medium, sans-serif; }
-.modal.fade#depositAddress .btn-gray {
+.modal.fade#depositAddress .btn-gray, .modal.fade#contractAddress .btn-gray {
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6px;
@@ -3607,9 +3607,9 @@ strong {
   color: rgba(0, 0, 0, 0.5);
   transition: all 0.2s;
   margin-top: 36px; }
-  .modal.fade#depositAddress .btn-gray:hover {
+  .modal.fade#depositAddress .btn-gray:hover, .modal.fade#contractAddress .btn-gray:hover {
     transform: scale(1.05); }
-  .modal.fade#depositAddress .btn-gray:focus {
+  .modal.fade#depositAddress .btn-gray:focus, .modal.fade#contractAddress .btn-gray:focus {
     text-decoration: none;
     outline: none; }
 

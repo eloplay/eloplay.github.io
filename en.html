@@ -55,7 +55,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
   <link href="css/michalsnik/aos/2.1.1/dist/aos.min.css" rel="stylesheet">
 
-  <link href="css/main.css?v=1507905951" rel="stylesheet" />
+  <link href="css/main.css?v=1507908951" rel="stylesheet" />
   <link href="css/fonts.css?v=1507109128" rel="stylesheet" />
 
   <!-- autodetect lang -->
@@ -267,7 +267,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</ul>
 							<p class="time-title-bottom">1 ETH = 10,000 ELT</p>
 							<div class="box-button-readw">
-								<a style="" href="#" data-toggle="modal" data-target="#presaleModal" class="btn btn-large-color-y" target="_blank"><span>Join a token sale</span></a>
+								<a style="" href="#" data-toggle="modal" data-target="#tokensaleAddress" class="btn btn-large-color-y" target="_blank"><span>Join a token sale</span></a>
 							</div>
 						</div>
 
@@ -290,7 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<p class="time-title-bottom hidden" id="second_week_info_post">1 ETH = 10,000 ELT</p>
 							</div>
 							<div class="box-button-readw">
-								<a style="" href="#" data-toggle="modal" data-target="#presaleModal" class="btn btn-large-color-y" target="_blank"><span>Join a token sale</span></a>
+								<a style="" href="#" data-toggle="modal" data-target="#tokensaleAddress" class="btn btn-large-color-y" target="_blank"><span>Join a token sale</span></a>
 							</div>
 						</div>
 					</div>
@@ -1895,7 +1895,7 @@ Finally, there are administration-related expenses, legal support & licensing ex
             <form class="form-group input-mail" accept-charset="utf-8" name="deposit_form" novalidate>
               <img src="./img/wallet.png" alt="">
                 <h2><a href="https://etherscan.io/address/0xc1adAc2FA2f07aaC606bE5e37ef70dC0f99Cf639" target="_blank">0xc1adAc2FA2f07aaC606bE5e37ef70dC0f99Cf639</a></h2>
-                <button id="copy_cliboard" class="btn btn-gray" data-clipboard-text="0xc1adAc2FA2f07aaC606bE5e37ef70dC0f99Cf639">Copy</button>
+                <button id="" class="copy_clipboard btn btn-gray" data-clipboard-text="0xc1adAc2FA2f07aaC606bE5e37ef70dC0f99Cf639">Copy</button>
             </form>
           </div>
         </div>
@@ -1904,6 +1904,69 @@ Finally, there are administration-related expenses, legal support & licensing ex
     </div>
   </div>
   <!-- end modal -->
+
+  <div class="modal fade" id="tokensaleAddress" tabindex="-1" role="dialog" aria-labelledby="tokensaleAddress" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="orderAddressLabel">Order Eloplay Tokens</h2>
+          <p>Read and Agree to the <a href="./docs/en/eloplay_terms_and_conditions.pdf" target="_blank"> Terms and Conditions</a>. Tick all the three columns if you fulfil all three of them and press “Submit”.<br><br>If you do not fulfil either one of them, please do not support the token sale.</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-sign" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="step-line">
+          <p class="active" style="width: 50%">Step 1</p>
+          <p style="width: 50%">Step 2</p>
+         </div>
+        <div class="modal-body">
+          <div class="box-input-mail">
+            <form id="" class="form-group input-mail" accept-charset="utf-8" name="order_form" novalidate>
+              <input id="i_have_read" type="checkbox" checked name="i_have_read" value="i_have_read" ng-model="register.i_have_read" required>              
+              <label for="i_have_read" class="label-checkbox check-top del-br-470">I have read and agree to the Terms and Conditions.</label>
+
+              <input type="checkbox" checked name="not_us_or_chinese" value="not_us_or_chinese" id="not_us_or_chinese" ng-model="register.not_us_or_chinese" required>
+              <label for="not_us_or_chinese" class="label-checkbox check-center">I am not a US (including its territories) person as defined in the Terms and Conditions.</label>
+
+              <input type="checkbox" checked name="politically_exposed" value="politically_exposed" id="politically_exposed" ng-model="register.politically_exposed" required>
+              <label for="politically_exposed" class="label-checkbox">I am not a politically exposed person or conflicted from<br>entering this token subscription for any reason.</label>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer box-time">
+          <button type="button" class="btn btn-large-color" id="tokensaleAddressBtn" ng-disabled = "!order_form.$valid" ><span>submit</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="contractAddress" tabindex="-1" role="dialog" aria-labelledby="contractAddress" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="depositAddressLabel">Deposit to this address</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-sign" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="step-line">
+          <p  style="width: 50%">Step 1</p>
+          <p  class="active" style="width: 50%">Step 2</p>
+        </div>
+        <div class="modal-body">
+          <div class="box-input-mail">
+            <form class="form-group input-mail" accept-charset="utf-8" name="deposit_form" novalidate>
+              <img src="./img/wallet.png" alt="">
+                <h2><a href="https://etherscan.io/address/0x13792a2A22333F8564945b1EE1F5B46A20C23A5d" target="_blank">0x13792a2A22333F8564945b1EE1F5B46A20C23A5d</a></h2>
+                <button id="" class="copy_clipboard btn btn-gray" data-clipboard-text="0x13792a2A22333F8564945b1EE1F5B46A20C23A5d">Copy</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer box-time"><a href="#faq-how-do-i-create-an-ether-wallet">Please follow instructions</a></div>
+      </div>
+    </div>
+  </div>
+
 
   <script data-cfasync="true" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script data-cfasync="true" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -1924,7 +1987,7 @@ Finally, there are administration-related expenses, legal support & licensing ex
 
   <script data-cfasync="true" src="js/push_message.js"></script>
   <script data-cfasync="true" src="js/gapi_calendar.js"></script>
-  <script data-cfasync="true" src="js/main.js?v=1507908529"></script>
+  <script data-cfasync="true" src="js/main.js?v=1507911428"></script>
 
   <script async defer src="https://apis.google.com/js/api.js"
     onload="this.onload=function(){};handleClientLoad()"

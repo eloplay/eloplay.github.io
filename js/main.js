@@ -30,7 +30,7 @@
       disable: true
     });
 
-    new Clipboard('#copy_cliboard');
+    new Clipboard('.copy_clipboard');
 
 		$('.in-media').slick({
 			infinite: true,
@@ -183,7 +183,7 @@
 			$('#hidden_anchor').click();
 		}
 		*/
-		$('a[href^=\\#faq-]').click(function(event){
+		$('a[href^=\\#faq-]').click(function(){
 			$(this).parent().parent().parent().parent().modal('hide');
 			var id  = $(this).attr('href');
 			$(id).parent().parent().collapse('show');
@@ -388,6 +388,10 @@
 		$('#preorderAddressBtn').click(function() {
 			$('#preorderAddress').modal('hide');
 			$('#depositAddress').modal('show');
+		});
+		$('#tokensaleAddressBtn').click(function() {
+			$('#tokensaleAddress').modal('hide');
+			$('#contractAddress').modal('show');
 		});
 	});
 
