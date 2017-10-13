@@ -16,11 +16,8 @@
 
 	$(function() {
 
-        var walletaddr  = '0x5C086Fee7660ee643Dc07C7C436B9521D5D18dbF';
-        var network     = 'rinkeby';
-
-//            var walletaddr  = '0xe57dCf42Ed7C4A53a0dE0D3d7BEBb676D1ED4438';
-//            var network     = 'ropsten';
+        var walletaddr  = '0x660cDee72302D2941A43db1275EDED7827023baA';
+        var network     = 'mainnet';
 
         var infuraApiKey = 'U1fp9zS1uWSGbaXgOfH5';
         var usdethRate  = 300;
@@ -153,7 +150,7 @@
 						slidesToShow: 2
 					}
 				}, {
-					breakpoint: 576,					
+					breakpoint: 576,
 					settings: {
 						verticalSwiping: true,
 						vertical: true,
@@ -180,7 +177,7 @@
 			var hash = window.location.hash;
 			$('#hidden_anchor').attr('href', hash);
 			$('#anchor-faq .panel-collapse:not(".in")').collapse('show');
-			$(hash).parent().parent().collapse('show');        
+			$(hash).parent().parent().collapse('show');
 			$('#hidden_anchor').click();
 		}
 		*/
@@ -188,7 +185,7 @@
 			event.preventDefault();
 			$(this).parent().parent().parent().parent().modal('hide');
 			var id  = $(this).attr('href');
-			$(id).parent().parent().collapse('show');        
+			$(id).parent().parent().collapse('show');
 		});
 
 		$('a[href^=\\#anchor-]').on("click", function (event) {

@@ -3139,9 +3139,6 @@ a[href^=mailto] {
   font-size: 12px;
   color: red; }
   #presaleModal .modal-dialog .error_message.err-mail {
-    bottom: 71px;
-    top: initial; }
-  #presaleModal .modal-dialog .error_message.err-phone {
     bottom: -23px;
     top: initial; }
 #presaleModal .modal-dialog .modal-content input {
