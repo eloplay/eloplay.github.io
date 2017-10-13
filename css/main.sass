@@ -3016,8 +3016,11 @@ a[href^=mailto]
       height: 42px
 
 #subscriptionModal .modal-dialog, #presaleModal .modal-dialog
-  max-width: 500px
-
+  max-width: 580px
+#presaleModal
+  .modal-dialog
+    .modal-header
+      padding: 57px 15px 70px
 .modal-dialog
   .modal-content
     overflow: hidden
@@ -3036,7 +3039,7 @@ a[href^=mailto]
     padding: 55px 15px
   .modal-header
     background-color: #cfd8dc
-    padding: 28px 15px 27px
+    padding: 28px 15px 27px    
     min-height: 122px
     display: flex
     justify-content: center
@@ -3214,6 +3217,32 @@ a[href^=mailto]
         transform: translateX(-50%) scale(1)
         box-shadow: none
 
+.modal-header
+  border: none
+.step-line
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #ebeff2
+  p
+    position: initial
+    color: #799098
+    display: inline-block
+    width: 33.3%
+    text-align: center
+    text-transform: uppercase
+    font-size: 14px
+    margin: 0
+    position: relative
+    &.active
+      &:after
+        content: ""
+        position: absolute
+        height: 4px
+        width: 100%
+        background-color: #799098
+        bottom: 0px
+        left: 0
 .presale-choise
   float: left
   margin: 0 0 0 45px
