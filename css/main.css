@@ -3577,9 +3577,6 @@ strong {
 
 .modal.fade#depositAddress .modal-dialog .modal-header {
   padding: 31px 15px 57px; }
-.modal.fade#depositAddress h2 {
-  color: #000;
-  font-size: 24px; }
 .modal.fade#depositAddress a {
   font-size: 16px;
   color: #000;
