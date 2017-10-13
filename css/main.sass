@@ -1131,7 +1131,7 @@ p
   &.pre-screen
     ul#timer
       span
-        &#days, &#hours, &#minutes, &#seconds
+        &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
           font-size: 6.5rem
       li:not(:last-child):after
         top: 48px
@@ -1245,7 +1245,7 @@ p
       font-weight: 300
       line-height: normal
     span
-      &#days, &#hours, &#minutes, &#seconds
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         color: #fff
         font-size: 5rem
         font-family: "DINpro-light", sans-serif
@@ -1327,7 +1327,7 @@ p
       font-size: 1.6rem
       line-height: 3rem
     span
-      &#days, &#hours, &#minutes, &#seconds
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         color: #fff
         font-size: 5.5rem
         font-family: "DINpro-light", sans-serif
@@ -1587,7 +1587,7 @@ p
         position: relative
         width: 23%
         span
-          &#days, &#hours, &#minutes, &#seconds
+          &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
             color: rgba(255, 255, 255, 0.5)
         &:not(:last-child):after
           content: ""
@@ -1603,7 +1603,7 @@ p
           font-size: 12px
           font-family: "DINpro-light", sans-serif
     span
-      &#days, &#hours, &#minutes, &#seconds
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         color: #fff
         font-size: 4.5rem
         font-family: "DINpro-light", sans-serif
@@ -1633,6 +1633,10 @@ p
     transition: all 0.2s ease-out
     &:hover
       transform: translateX(-50%) scale(1.05)
+
+.box-button-video, .box-button-readw
+  display: inline-block
+  margin: 47px 0 40px
 
 .contribute-link
   text-transform: uppercase
@@ -1698,7 +1702,7 @@ p
         position: relative
         width: 23%
         span
-          &#days, &#hours, &#minutes, &#seconds
+          &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
             color: rgba(255, 255, 255, 0.6)
             font-size: 4rem
             font-family: "DINpro-light", sans-serif
@@ -1728,6 +1732,7 @@ p
     padding-bottom: 58.1%
     height: 0
     overflow: hidden
+
 
 .bg-sect-1
   background: url(../img/bg-sec-0-pg2.png) no-repeat
@@ -3649,13 +3654,18 @@ strong
       text-decoration: none
       outline: none
 
+.timer-days, .timer-hours, .timer-minutes, .timer-seconds
+  font-family: "DINpro-light", sans-serif
+  color: rgba(255, 255, 255, 0.5)
+  font-size: 4.5rem
+
 @media (max-height: 641px)
   .sect-top
     .box-left .box-time span
-      &#days, &#hours, &#minutes, &#seconds
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         font-size: 5rem
     .box-right .box-time span
-      &#days, &#hours, &#minutes, &#seconds
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         font-size: 5rem
     .box-left .box-time .time-title, .box-right .box-time .time-title
       margin: 20px auto 0px
@@ -3783,7 +3793,7 @@ strong
     justify-content: center
   .box-button-video, .box-button-readw
     display: inline-block
-    margin: 47px 15px 40px
+    //margin: 47px 15px 40px
   .box-top-button
     justify-content: space-around
 
@@ -3937,6 +3947,8 @@ strong
             margin: auto
   .box2-img-monitor .img-monitor
     padding-bottom: 57.1%
+  .box-button-readw
+    margin: 0 8px 0 0
 
 @media (max-width: 768px)
   .hide-768
@@ -4022,12 +4034,22 @@ strong
           p
             font-size: 9px
           span
-            &#days, &#hours, &#minutes, &#seconds
+            &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
               font-size: 3rem
         .time-title-bottom
-          margin-top: 22px
+          //margin-top: 22px
     .box-left .box-time ul
       margin-left: 0px
+
+  #presaleModal
+    .modal-dialog
+      //width: 545px !important
+    .modal-body
+      //min-height: 1000px !important
+  .presale-choise
+    //margin: 0 0 20px 100px !important
+  .sect-top .box-left .box-time ul
+    margin-left: 0px
   #main-screen .btn-large-color-y
     left: 50%
     width: 100%
@@ -4104,11 +4126,11 @@ strong
     .box-left .box-time .time-title, .box-right .box-time .time-title
       margin: 20px auto 0
     .box-left .box-time span
-      &#days, &#hours, &#minutes, &#seconds
+      &#_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         color: #fff
         font-size: 6rem
     .box-right .box-time span
-      &#days, &#hours, &#minutes, &#seconds
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         color: #fff
         font-size: 6rem
   .title-pay-token
@@ -4306,7 +4328,7 @@ strong
         &:not(:last-child):after
           top: 34px
       span
-        &#days, &#hours, &#minutes, &#seconds
+        &#_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
           font-size: 5rem
     .box-right .box-time
       ul li
@@ -4315,7 +4337,7 @@ strong
         &:not(:last-child):after
           top: 34px
       span
-        &#days, &#hours, &#minutes, &#seconds
+        &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
           font-size: 5.5rem
   .icon-button
     display: none
@@ -4357,6 +4379,14 @@ strong
     width: 81%
   .roadmap-item-row.position-block-mobil
     width: calc(100% - 16px)
+  .timer-days, .timer-hours, .timer-minutes, .timer-seconds
+    font-size: 3.5rem
+  .btn.btn-large-color-y
+    font-size: 1.5rem
+  .sect-top .box-left .in-social-p1
+    justify-content: center
+  .sect-top.pre3-screen .box-double .box-time-right .time-title-bottom
+    margin-top: 18px
 
 @media (max-width: 360px)
   html

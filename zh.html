@@ -55,7 +55,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
   <link href="css/michalsnik/aos/2.1.1/dist/aos.min.css" rel="stylesheet">
 
-  <link href="css/main.css?v=1507802808" rel="stylesheet" />
+  <link href="css/main.css?v=1507813731" rel="stylesheet" />
   <link href="css/fonts.css?v=1507109128" rel="stylesheet" />
 
   <!-- autodetect lang -->
@@ -176,8 +176,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
     <!-- end navbar -->
-    <div class="bg-sect-1">
-        <div class="container" id="main-screen">
+	<div class="bg-sect-1">
+		<div class="container" id="main-screen" style="display: none">
           <div class="sect-top">
               <div class="row indent-bottom">
                 <div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
@@ -188,10 +188,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="box-time">
                       <p class="time-title">令牌发售即将开始:</p>
                       <ul id="timer" >
-                        <li><span id="days"></span><p style="    margin-top: 5px;">天</p></li>
-                        <li><span id="hours"></span><p style="    margin-top: 5px;">小时</p></li>
-                        <li><span id="minutes"></span><p style="    margin-top: 5px;">分钟</p></li>
-                        <li><span id="seconds"></span><p style="    margin-top: 5px;">秒</p></li>
+                        <li><span id="days_pre"></span><p style="    margin-top: 5px;">天</p></li>
+                        <li><span id="hours_pre"></span><p style="    margin-top: 5px;">小时</p></li>
+                        <li><span id="minutes_pre"></span><p style="    margin-top: 5px;">分钟</p></li>
+                        <li><span id="seconds_pre"></span><p style="    margin-top: 5px;">秒</p></li>
                       </ul>
                       <!-- <div class="box-button-readw"> -->
                         <a style="" href="" data-toggle="modal" data-target="#presaleModal" class="btn btn-large-color-y" target="_blank"><span>先捐赠，然后加入订单簿</span></a>
@@ -226,7 +226,96 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                   </div>
           </div>
-        </div>
+		</div>
+
+		<!--- tokensale starts -->
+		<div class="container" id="sale-started" style="display: none;">
+			<div class="sect-top pre3-screen">
+				<div class="row indent-bottom">
+					<div class="col-xs-12 col-sm-12 col-md-6 box-left padd-no">
+						<p class="font-l-38">面向玩家和品牌的智能锦标赛</p>
+													<p style="padding-bottom: 20px; max-width: 380px; color: rgba(255, 255, 255, 0.6);" class="del-br-1200"></p>
+													<div class="box-in-social-p1" style="width: 100%">
+								<ul class="in-social-p1">
+																										<li><a href="https://t.me/joinchat/EpNnZg6uThvYzkscpOmbkw" target="_blank"><div class="icon-social-telegram"></div></a></li>
+
+																																			<li><a href="https://www.facebook.com/eloplaycom" target="_blank"><div class="icon-social-fb"></div></a></li>
+
+																																			<li><a href="https://twitter.com/eloplaycom" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+																																			<li><a href="https://steemit.com/@eloplaycom" target="_blank"><div class="icon-social-steemit"></div></a></li>
+
+																																			<li><a href="https://golos.io/@eloplaycom/" target="_blank"><div class="icon-social-golos"></div></a></li>
+
+																																			<li><a href="https://bitcointalk.org/index.php?topic=2200034.new#new" target="_blank"><div class="icon-social-bitcointalk"></div></a></li>
+
+																																			<li><a href="https://bitcointalk.org/index.php?topic=2209899" target="_blank"><div class="icon-social-bitcointalk_bounty"></div></a></li>
+
+																									</ul>
+							</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 box-right padd-no">
+
+						<div class="box-time hidden">
+							<p class="time-title"></p>
+							<ul id="timer" >
+								<li><span class="timer-days"></span><p>天</p></li>
+								<li><span class="timer-hours"></span><p>小时</p></li>
+								<li><span class="timer-minutes"></span><p>分钟</p></li>
+								<li><span class="timer-seconds"></span><p>秒</p></li>
+							</ul>
+							<p class="time-title-bottom">1 ETH = 10,000 ELT</p>
+							<div class="box-button-readw">
+								<a style="" href="#" data-toggle="modal" data-target="#presaleModal" class="btn btn-large-color-y" target="_blank"><span>Join a token sale</span></a>
+							</div>
+						</div>
+
+						<div class="box-double hidden">
+							<div class="box-time-left hidden" id="first_hour_info"><p>第 1 小时</p><p>+20%</p><p>1 ETH = 12,000 ELT</p></div>
+							<div class="box-time-left hidden" id="first_day_info"><p>第 1 天</p><p>+15%</p><p>1 ETH = 11,500 ELT</p></div>
+							<div class="box-time-left hidden" id="first_week_info"><p>第 1 周</p><p>+10%</p><p>1 ETH = 11,000 ELT</p></div>
+							<div class="box-time-left hidden" id="second_week_info"><p>第 2 周</p><p>+5%</p><p>1 ETH = 10,500 ELT</p></div>
+							<div class="box-time-right">
+								<p class="time-title">Via</p>
+								<ul id="timer" >
+									<li><span class="timer-days"></span><p>天</p></li>
+									<li><span class="timer-hours"></span><p>小时</p></li>
+									<li><span class="timer-minutes"></span><p>分钟</p></li>
+									<li><span class="timer-seconds"></span><p>秒</p></li>
+								</ul>
+								<p class="time-title-bottom hidden" id="first_hour_info_post">1 ETH = 11,500 ELT</p>
+								<p class="time-title-bottom hidden" id="first_day_info_post">1 ETH = 11,000 ELT</p>
+								<p class="time-title-bottom hidden" id="first_week_info_post">1 ETH = 10,500 ELT</p>
+								<p class="time-title-bottom hidden" id="second_week_info_post">1 ETH = 10,000 ELT</p>
+							</div>
+							<div class="box-button-readw">
+								<a style="" href="#" data-toggle="modal" data-target="#presaleModal" class="btn btn-large-color-y" target="_blank"><span>Join a token sale</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box-progressbar hidden">
+					<p>Total collected:</p>
+					<div class="progress-text"><span id="usd_invested"></span><span>|</span><span id="eth_invested"></span></div>
+					<div class="progress">
+						<div class="progress-bar" id="prc_invested" role="progressbar" style="width:0%">
+						</div>
+					</div>
+					<div class="box-ruler">
+						<div class="ruler-left">
+							<p>Start:<br>16 October 2017</p>
+						</div>
+						<div class="ruler-center"></div>
+						<div class="ruler-right">
+							<p><span id="usd_cap"></span><br><span id="eth_cap"></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--- tokensale starts -->
+
     </div>
 
     <div class="bg-sect-2" id="token-desc">
@@ -453,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container">
         <div class="box-time-token">
           <div class="start-pay-token">
-            <p>开始: <span>16.10.2017</span></p>
+            <p>Start: <span>16.10.2017</span></p>
             <p>(12:00 PM London Time, UTC+0)</p>
           </div>
           <div class="end-pay-token">
@@ -1817,7 +1906,7 @@ Finally, there are administration-related expenses, legal support & licensing ex
 
   <script data-cfasync="true" src="js/push_message.js"></script>
   <script data-cfasync="true" src="js/gapi_calendar.js"></script>
-  <script data-cfasync="true" src="js/main.js?v=1507802749"></script>
+  <script data-cfasync="true" src="js/main.js?v=1507815165"></script>
 
   <script async defer src="https://apis.google.com/js/api.js"
     onload="this.onload=function(){};handleClientLoad()"
