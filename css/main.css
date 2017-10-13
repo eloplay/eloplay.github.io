@@ -3605,7 +3605,8 @@ strong {
   font-family: Ubuntu, sans-serif;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  margin-top: 36px; }
   .modal.fade#depositAddress .btn-gray:hover {
     transform: scale(1.05); }
   .modal.fade#depositAddress .btn-gray:focus {

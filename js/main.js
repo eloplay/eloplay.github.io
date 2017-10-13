@@ -30,6 +30,8 @@
       disable: true
     });
 
+    new Clipboard('#cipy_cliboard');
+
 		$('.in-media').slick({
 			infinite: true,
 			slidesToShow: 4,
@@ -195,6 +197,7 @@
 
 			$('body,html').animate({scrollTop: top}, 800);
 		});
+
 
         function number_format( number, decimals, dec_point, thousands_sep ) {	// Format a number with grouped thousands
             //
