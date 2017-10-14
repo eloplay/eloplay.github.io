@@ -174,15 +174,14 @@
 			prevArrow: '<i class="icon-arrow-left"></i>',
 			nextArrow: '<i class="icon-arrow-right"></i>',
 		});
-/*
 		if(window.location.hash) {
-			var hash = window.location.hash;
-			$('#hidden_anchor').attr('href', hash);
-			$('#anchor-faq .panel-collapse:not(".in")').collapse('show');
-			$(hash).parent().parent().collapse('show');
-			$('#hidden_anchor').click();
+			var hash = window.location.hash.replace("/", "");
+			if($(hash).hasClass('collapse')){
+				$(hash).collapse('toggle');
+			}else if($(hash).parent().parent().hasClass('collapse')){
+				$(hash).parent().parent().collapse('toggle');
+			}
 		}
-		*/
 		$('a[href^=\\#faq-]').click(function(){
 			$(this).parent().parent().parent().parent().modal('hide');
 			var id  = $(this).attr('href');
