@@ -1080,7 +1080,7 @@ p {
   .full-bg-p2 .sect-top .box-left p:nth-child(2) {
     font-family: "DINpro-light", sans-serif;
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 14px;
+    margin-top: 20px;
     font-size: 2.5rem;
     line-height: 148%; }
   .full-bg-p2 .title-light {
@@ -1228,7 +1228,7 @@ p {
     line-height: normal; }
   .sect-top .box-left .box-time span#days_pre, .sect-top .box-left .box-time span#hours_pre, .sect-top .box-left .box-time span#minutes_pre, .sect-top .box-left .box-time span#seconds_pre {
     color: #fff;
-    font-size: 5rem;
+    font-size: 6.5rem;
     font-family: "DINpro-light", sans-serif;
     text-shadow: 5px 6px 13px rgba(0, 0, 0, 0.7); }
   .sect-top .box-left .box-time ul {
@@ -1257,7 +1257,7 @@ p {
         height: 1px;
         background-color: rgba(255, 255, 255, 0.5);
         transform: rotate(90deg);
-        top: 40px;
+        top: 48px;
         right: -11px; }
   .sect-top .box-right .box-time .time-title {
     display: inline-block;
@@ -1335,7 +1335,7 @@ p {
         height: 1px;
         background-color: rgba(255, 255, 255, 0.5);
         transform: rotate(90deg);
-        top: 40px;
+        top: 34px;
         right: -11px; }
   .sect-top .box-dark-button {
     text-align: left;
@@ -1707,10 +1707,13 @@ p {
     overflow: hidden; }
 
 .bg-sect-1 {
-  background: url(../img/bg-sec-0-pg2.png) no-repeat;
+  background: url(../img/bg-top-3.png) center no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 695px; }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .bg-sect-2 {
   background: url(../img/bg-sec-1-pg2.png) no-repeat;
@@ -3605,8 +3608,7 @@ strong {
   font-family: Ubuntu, sans-serif;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
-  transition: all 0.2s;
-  margin-top: 36px; }
+  transition: all 0.2s; }
   .modal.fade#depositAddress .btn-gray:hover, .modal.fade#contractAddress .btn-gray:hover {
     transform: scale(1.05); }
   .modal.fade#depositAddress .btn-gray:focus, .modal.fade#contractAddress .btn-gray:focus {
@@ -3619,10 +3621,6 @@ strong {
   font-size: 4.5rem; }
 
 @media (max-height: 641px) {
-  .sect-top .box-left .box-time span#days_pre, .sect-top .box-left .box-time span#hours_pre, .sect-top .box-left .box-time span#minutes_pre, .sect-top .box-left .box-time span#seconds_pre {
-    font-size: 5rem; }
-  .sect-top .box-right .box-time span#days_pre, .sect-top .box-right .box-time span#hours_pre, .sect-top .box-right .box-time span#minutes_pre, .sect-top .box-right .box-time span#seconds_pre {
-    font-size: 5rem; }
   .sect-top .box-left .box-time .time-title, .sect-top .box-right .box-time .time-title {
     margin: 20px auto 0px; }
 
@@ -3986,6 +3984,12 @@ strong {
   .sect-top .box-left .box-time ul {
     margin-left: 0px; }
 
+  .modal.fade.in {
+    overflow-y: auto; }
+
+  .modal.fade#contractAddress .modal-body a {
+    font-size: 14px; }
+
   .sect-top .box-left .box-time ul {
     margin-left: 0px; }
 
@@ -4076,7 +4080,7 @@ strong {
       top: 41px; }
     .sect-top .indent-bottom .box-left .box-time .time-title, .sect-top .indent-bottom .box-right .box-time .time-title {
       margin: 20px auto 0; }
-    .sect-top .indent-bottom .box-left .box-time span#_pre, .sect-top .indent-bottom .box-left .box-time span#hours_pre, .sect-top .indent-bottom .box-left .box-time span#minutes_pre, .sect-top .indent-bottom .box-left .box-time span#seconds_pre {
+    .sect-top .indent-bottom .box-left .box-time span#days_pre, .sect-top .indent-bottom .box-left .box-time span#hours_pre, .sect-top .indent-bottom .box-left .box-time span#minutes_pre, .sect-top .indent-bottom .box-left .box-time span#seconds_pre {
       color: #fff;
       font-size: 6rem; }
     .sect-top .indent-bottom .box-right .box-time span#days_pre, .sect-top .indent-bottom .box-right .box-time span#hours_pre, .sect-top .indent-bottom .box-right .box-time span#minutes_pre, .sect-top .indent-bottom .box-right .box-time span#seconds_pre {
@@ -4094,7 +4098,6 @@ strong {
 
   .sect-top .box-left p:nth-child(1) {
     line-height: 106%;
-    font-size: 3.2rem;
     margin-bottom: 12px; }
   .sect-top .box-left p:nth-child(2) {
     margin-top: 0;
@@ -4300,7 +4303,7 @@ strong {
     font-size: 5rem; }
   .sect-top .indent-bottom .box-left .box-time ul li:not(:last-child):after {
     top: 34px; }
-  .sect-top .indent-bottom .box-left .box-time span#_pre, .sect-top .indent-bottom .box-left .box-time span#hours_pre, .sect-top .indent-bottom .box-left .box-time span#minutes_pre, .sect-top .indent-bottom .box-left .box-time span#seconds_pre {
+  .sect-top .indent-bottom .box-left .box-time span#days_pre, .sect-top .indent-bottom .box-left .box-time span#hours_pre, .sect-top .indent-bottom .box-left .box-time span#minutes_pre, .sect-top .indent-bottom .box-left .box-time span#seconds_pre {
     font-size: 5rem; }
   .sect-top .indent-bottom .box-right .box-time ul li p:nth-child(1) {
     font-size: 5.5rem; }
@@ -4345,7 +4348,7 @@ strong {
     .modal-dialog .modal-footer {
       height: 70px; }
       .modal-dialog .modal-footer .btn-large-color {
-        padding: 16px 64px;
+        padding: 16px 5px;
         top: -29px;
         width: 75%; }
 

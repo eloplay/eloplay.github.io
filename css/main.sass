@@ -1088,7 +1088,7 @@ p
   .sect-top .box-left p:nth-child(2)
     font-family: "DINpro-light", sans-serif
     color: rgba(255, 255, 255, 0.5)
-    margin-top: 14px
+    margin-top: 20px
     font-size: 2.5rem
     line-height: 148%
   .title-light
@@ -1247,7 +1247,8 @@ p
     span
       &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         color: #fff
-        font-size: 5rem
+        //font-size: 5rem
+        font-size: 6.5rem
         font-family: "DINpro-light", sans-serif
         text-shadow: 5px 6px 13px rgba(0, 0, 0, 0.7)
     ul
@@ -1277,7 +1278,8 @@ p
           height: 1px
           background-color: rgba(255, 255, 255, 0.5)
           transform: rotate(90deg)
-          top: 40px
+          //top: 40px
+          top: 48px
           right: -11px
   .box-right .box-time
     .time-title
@@ -1358,7 +1360,8 @@ p
           height: 1px
           background-color: rgba(255, 255, 255, 0.5)
           transform: rotate(90deg)
-          top: 40px
+          //top: 40px
+          top: 34px
           right: -11px
   .box-dark-button
     text-align: left
@@ -1735,10 +1738,15 @@ p
 
 
 .bg-sect-1
-  background: url(../img/bg-sec-0-pg2.png) no-repeat
+  background: url(../img/bg-top-3.png) center no-repeat
+  //background: url(../img/bg-sec-0-pg2.png) no-repeat
   background-size: cover
   width: 100%
-  min-height: 695px
+  //min-height: 695px
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
 
 .bg-sect-2
   background: url(../img/bg-sec-1-pg2.png) no-repeat
@@ -3677,7 +3685,7 @@ strong
     font-size: 16px
     color: rgba(0,0,0,0.5)
     transition: all 0.2s
-    margin-top: 36px
+    //margin-top: 36px
     &:hover
       transform: scale(1.05)
     &:focus
@@ -3693,10 +3701,10 @@ strong
   .sect-top
     .box-left .box-time span
       &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
-        font-size: 5rem
+        //font-size: 5rem
     .box-right .box-time span
       &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
-        font-size: 5rem
+        //font-size: 5rem
     .box-left .box-time .time-title, .box-right .box-time .time-title
       margin: 20px auto 0px
   #main-screen
@@ -3790,6 +3798,8 @@ strong
   .img-monitor
     margin: 8%
 ///************ end faq-accordion *******************************
+
+
 
 @media (max-width: 1366px)
   .full-bg-p2 .sect-top
@@ -4070,6 +4080,10 @@ strong
           //margin-top: 22px
     .box-left .box-time ul
       margin-left: 0px
+  .modal.fade.in
+    overflow-y: auto
+  .modal.fade#contractAddress .modal-body a
+    font-size: 14px
 
   #presaleModal
     .modal-dialog
@@ -4156,7 +4170,7 @@ strong
     .box-left .box-time .time-title, .box-right .box-time .time-title
       margin: 20px auto 0
     .box-left .box-time span
-      &#_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
         color: #fff
         font-size: 6rem
     .box-right .box-time span
@@ -4174,7 +4188,7 @@ strong
   .sect-top .box-left p
     &:nth-child(1)
       line-height: 106%
-      font-size: 3.2rem
+      //font-size: 3.2rem
       margin-bottom: 12px
     &:nth-child(2)
       margin-top: 0
@@ -4358,7 +4372,7 @@ strong
         &:not(:last-child):after
           top: 34px
       span
-        &#_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
+        &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
           font-size: 5rem
     .box-right .box-time
       ul li
@@ -4401,7 +4415,7 @@ strong
     .modal-footer
       height: 70px
       .btn-large-color
-        padding: 16px 64px
+        padding: 16px 5px
         top: -29px
         width: 75%
   #presaleModal input#subscribeBtn

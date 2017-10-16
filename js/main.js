@@ -14,6 +14,24 @@
 
 	});
 
+function copyToClipboard() {
+  document.querySelector('#contract_address_cp').select();
+  document.execCommand('copy');
+  
+  //clear selection
+   if ( document.selection ) {
+        document.selection.empty();
+    } else if ( window.getSelection ) {
+        window.getSelection().removeAllRanges();
+    }
+    
+}
+
+document.querySelector('#copy_button').addEventListener('click', function() {
+  copyToClipboard()
+});
+
+
 	$(function() {
 
         var walletaddr  = '0x660cDee72302D2941A43db1275EDED7827023baA';
