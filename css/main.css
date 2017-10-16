@@ -3709,6 +3709,11 @@ strong {
 .faq-accordion .img-monitor {
   margin: 8%; }
 
+.box-monitor-video {
+  max-width: 850px;
+  margin: auto;
+  padding-bottom: 120px; }
+
 @media (max-width: 1366px) {
   .full-bg-p2 .sect-top {
     margin-top: 90px; } }

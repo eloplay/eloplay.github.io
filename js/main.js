@@ -291,6 +291,7 @@ document.querySelector('#copy_button').addEventListener('click', function() {
         // ICO ongoing
 		if(toStart <= 0 && toEnd > 0){
 			$('#sale-started').show();
+			$('#sale-started-video-block').show();
 
             if (firstHour >= 0) {
                 var currentCounter = dataHour;
