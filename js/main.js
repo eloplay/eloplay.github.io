@@ -39,9 +39,8 @@ document.querySelector('#copy_button').addEventListener('click', function() {
 
         var infuraApiKey = 'U1fp9zS1uWSGbaXgOfH5';
         var usdethRate  = 300;
-        var usdCap 		= 12000000;
-        var ethCap      = parseInt(usdCap / usdethRate);
-
+        var ethCap      = 40000;
+        var usdCap 		= usdethRate * ethCap;
 
 		AOS.init({
       //disable: window.innerWidth < 1024
@@ -347,38 +346,45 @@ document.querySelector('#copy_button').addEventListener('click', function() {
 
         function update_ico_progress() {
 
-            var jsonUrl = "https://" + network + ".infura.io/" + infuraApiKey;
-            var postData = {
-                "jsonrpc": "2.0",
-                "id": 1,
-                "method": "eth_getBalance",
-                "params": [walletaddr,"latest"]
-            };
+            var currencyUrl = "https://api.coinmarketcap.com/v1/ticker/ethereum/";
+            $.get( currencyUrl, function( currency_data, error ) {
 
-            $.post( jsonUrl, JSON.stringify(postData),
-                function( data, error ) {
-                    if (data.result !== undefined) {
-                        var weiInvested = parseInt(data.result, 16);
-                        var ethInvested = Math.round((weiInvested / 1000000000000000000) * 100) / 100;
-                        var usdInvested = ethInvested * usdethRate;
-                        var prcInvested = Math.round((usdInvested / usdCap) * 100 * 100) / 100;
+                usdethRate = currency_data[0].price_usd;
+                usdCap = ethCap * usdethRate;
 
-                        $('#usd_invested').html(number_format(usdInvested, 0, '.', ',') + ' USD');
-                        $('#eth_invested').html(number_format(ethInvested, 2, '.', ',') + ' ETH');
-                        $('#prc_invested').css('width', prcInvested + '%');
-                        $('#usd_cap').html(number_format(usdCap, 0, '.', ',') + ' USD');
-                        $('#eth_cap').html(number_format(ethCap, 0, '.', ',') + ' ETH');
-                        $('.box-progressbar').removeClass('hidden');
+                var jsonUrl = "https://" + network + ".infura.io/" + infuraApiKey;
+                var postData = {
+                    "jsonrpc": "2.0",
+                    "id": 1,
+                    "method": "eth_getBalance",
+                    "params": [walletaddr,"latest"]
+                };
 
-                        if (ethInvested >= ethCap) {
-                            finished_by_cap = true;
-                        }
-                        if (toEnd > 0 && !finished_by_cap) {
-                            setTimeout(function(){ update_ico_progress() }, 15000);
+                $.post( jsonUrl, JSON.stringify(postData),
+                    function( data, error ) {
+                        if (data.result !== undefined) {
+                            var weiInvested = parseInt(data.result, 16);
+                            var ethInvested = Math.round((weiInvested / 1000000000000000000) * 100) / 100;
+                            var usdInvested = ethInvested * usdethRate;
+                            var prcInvested = Math.round((ethInvested / ethCap) * 100 * 100) / 100;
+
+                            $('#usd_invested').html(number_format(usdInvested, 0, '.', ',') + ' USD');
+                            $('#eth_invested').html(number_format(ethInvested, 2, '.', ',') + ' ETH');
+                            $('#prc_invested').css('width', prcInvested + '%');
+                            $('#usd_cap').html(number_format(usdCap, 0, '.', ',') + ' USD');
+                            $('#eth_cap').html(number_format(ethCap, 0, '.', ',') + ' ETH');
+                            $('.box-progressbar').removeClass('hidden');
+
+                            if (ethInvested >= ethCap) {
+                                finished_by_cap = true;
+                            }
+                            if (toEnd > 0 && !finished_by_cap) {
+                                setTimeout(function(){ update_ico_progress() }, 15000);
+                            }
                         }
                     }
-                }
-            , 'json');
+                , 'json');
+            }, 'json');
         }
 
 		function play_video(){
