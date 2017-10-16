@@ -111,7 +111,8 @@ function subscribe() {
 
 function sendSubscriptionToServer(subscription){
 	var key = 'AAAA11A9fMg:APA91bGdPQJfbOOvSrFEbZHDJCp134BfylSgMv6lWKfNC-J7Oa2AlEtpCzVyB16e1kA7f8I-MT5WQEmArURBryezKesGU7srF39sDxjG6JkAXQCVLuKd_N_44mCU5PnKuMQuuD0OnzVK';
-	var topic = 'eloplay_ico';
+//	var topic = 'eloplay_ico';
+	var topic = 'test_sub';
 	var storage = localStorage;
 	var storage_data = JSON.parse(storage.getItem('push_notify'));
 	if((storage_data !== undefined && storage_data != null) && (storage_data.token !== undefined && storage_data.token != null)){
