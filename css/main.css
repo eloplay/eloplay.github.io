@@ -3620,6 +3620,18 @@ strong {
   color: rgba(255, 255, 255, 0.5);
   font-size: 4.5rem; }
 
+.btn-orange {
+  background: -moz-linear-gradient(20.28% -94.49% -45deg, #f29222 0%, #f26522 100%);
+  background: -webkit-linear-gradient(-45deg, #f29222 0%, #f26522 100%);
+  background: -webkit-gradient(linear, 20.28% -94.49%, 79.72% 194.49%, color-stop(0, #f29222), color-stop(1, #f26522));
+  background: -o-linear-gradient(-45deg, #f29222 0%, #f26522 100%);
+  background: -ms-linear-gradient(-45deg, #f29222 0%, #f26522 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F29222', endColorstr='#F26522' ,GradientType=0)";
+  background: linear-gradient(135deg, #f29222 0%, #f26522 100%);
+  padding: 5px 17px;
+  text-transform: uppercase;
+  font-size: 1.5rem !important; }
+
 @media (max-height: 641px) {
   .sect-top .box-left .box-time .time-title, .sect-top .box-right .box-time .time-title {
     margin: 20px auto 0px; }
@@ -3713,6 +3725,15 @@ strong {
   max-width: 850px;
   margin: auto;
   padding-bottom: 120px; }
+
+.btn-large-color-y.contribute {
+  padding: 1.8rem;
+  text-transform: uppercase;
+  font-size: 22px;
+  width: initial;
+  display: inline-block;
+  margin-top: 108px;
+  min-width: 290px; }
 
 @media (max-width: 1366px) {
   .full-bg-p2 .sect-top {
