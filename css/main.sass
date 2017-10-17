@@ -1760,7 +1760,7 @@ p
   background: url(../img/bg-sec-21-pg2.png) no-repeat
   background-size: cover
   width: 100%
-  min-height: 1007px
+  min-height: 820px
   padding-top: 106px
   text-align: center
   .add-padd
@@ -2781,7 +2781,7 @@ a[href^=mailto]
 
 .banner-link.evro-ico-block
   padding: 11px 15px 11px 40px
-  margin: -4px auto 90px
+  margin: -4px auto 50px
 
 .icon-evro
   background: url(../img/icon-evro.svg) no-repeat
@@ -3708,24 +3708,6 @@ strong
   text-transform: uppercase
   font-size: 1.5rem!important
 
-@media (max-height: 641px)
-  .sect-top
-    .box-left .box-time span
-      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
-        //font-size: 5rem
-    .box-right .box-time span
-      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
-        //font-size: 5rem
-    .box-left .box-time .time-title, .box-right .box-time .time-title
-      margin: 20px auto 0px
-  #main-screen
-    .btn-br-line
-      margin-top: 25px
-    .box-in-social-p1
-      margin-top: 10px
-  .full-bg-p2 .sect-top .box-left p:nth-child(2)
-    margin-top: 20px
-
 ///************ faq-accordion *******************************
 
 .bg-top-accordion
@@ -3925,6 +3907,64 @@ strong
   display: inline-block
   margin-top: 108px
   min-width: 290px
+
+#kickico
+  margin: 0 auto
+  margin-bottom: 100px
+  a
+    text-decoration: none
+.logo-kick
+  background: url(../img/logo-kick.svg) no-repeat
+  background-size: cover
+  width: 110px
+  height: 22px
+  display: inline-block
+  margin-left: 5px
+.baner-kick
+  width: 100%
+  max-width: 920px
+  padding: 9px 20px 12px
+  background: linear-gradient(90deg, #30b6e2, #583bc9)
+  margin: auto
+  border-radius: 6px
+  p
+    margin: 0
+    &:nth-child(1)
+      font-family: "Roboto"
+      color: rgba(255,255,255,0.6)
+      font-size: 20px
+      font-weight: normal
+      display: inline-block
+      vertical-align: text-bottom
+    &:nth-child(3)
+      font-family: "Roboto"
+      color: #fff
+      font-size: 32px
+      font-weight: 700
+      margin-top: 3px
+      span
+        background: -webkit-linear-gradient(65deg, #fec83c, #f9a313)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+/////////////////// media ///////////////////////  
+
+@media (max-height: 641px)
+  .sect-top
+    .box-left .box-time span
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
+        //font-size: 5rem
+    .box-right .box-time span
+      &#days_pre, &#hours_pre, &#minutes_pre, &#seconds_pre
+        //font-size: 5rem
+    .box-left .box-time .time-title, .box-right .box-time .time-title
+      margin: 20px auto 0px
+  #main-screen
+    .btn-br-line
+      margin-top: 25px
+    .box-in-social-p1
+      margin-top: 10px
+  .full-bg-p2 .sect-top .box-left p:nth-child(2)
+    margin-top: 20px
 @media (max-width: 1366px)
   .full-bg-p2 .sect-top
     margin-top: 90px
@@ -4113,6 +4153,8 @@ strong
     padding-bottom: 57.1%
   .box-button-readw
     margin: 0 8px 0 0
+  .baner-kick p:nth-child(3)
+    font-size: 27px
   .full-bg-p2 .bg-sect-1-fin .sect-top .box-left .in-social-p1
     padding-right: initial   
 
@@ -4557,6 +4599,8 @@ strong
     justify-content: center
   .sect-top.pre3-screen .box-double .box-time-right .time-title-bottom
     margin-top: 18px
+  .baner-kick p:nth-child(3)
+    font-size: 22px
 
 @media (max-width: 360px)
   html
