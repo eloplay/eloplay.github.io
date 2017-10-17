@@ -39,7 +39,8 @@ document.querySelector('#copy_button').addEventListener('click', function() {
 
         var infuraApiKey = 'U1fp9zS1uWSGbaXgOfH5';
         var usdethRate  = 300;
-        var ethCap      = 40000;
+//        var ethCap      = 40000;
+        var ethCap      = 10000;
         var usdCap 		= usdethRate * ethCap;
 
 		AOS.init({
