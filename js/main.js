@@ -304,7 +304,7 @@ document.querySelector('#copy_button').addEventListener('click', function() {
                 $("#first_day_info_post").removeClass('hidden');
             } else if (firstWeek >= 0) {
                 var currentCounter = dataWeek;
-                $(".box-double").removeClass('hidden');
+				$(".box-double").removeClass('hidden');
                 $("#first_week_info").removeClass('hidden');
                 $("#first_week_info_post").removeClass('hidden');
             } else if (secondWeek >= 0) {
@@ -345,7 +345,6 @@ document.querySelector('#copy_button').addEventListener('click', function() {
         }
 
         function update_ico_progress() {
-
             var currencyUrl = "https://api.coinmarketcap.com/v1/ticker/ethereum/";
             $.get( currencyUrl, function( currency_data, error ) {
 
@@ -363,24 +362,39 @@ document.querySelector('#copy_button').addEventListener('click', function() {
                 $.post( jsonUrl, JSON.stringify(postData),
                     function( data, error ) {
                         if (data.result !== undefined) {
-                            var weiInvested = parseInt(data.result, 16);
-                            var ethInvested = Math.round((weiInvested / 1000000000000000000) * 100) / 100;
-                            var usdInvested = ethInvested * usdethRate;
-                            var prcInvested = Math.round((ethInvested / ethCap) * 100 * 100) / 100;
+							var weiInvested = parseInt(data.result, 16);
+							var ethInvested = Math.round((weiInvested / 1000000000000000000) * 100) / 100;
+							var usdInvested = ethInvested * usdethRate;
+							var prcInvested = Math.round((ethInvested / ethCap) * 100 * 100) / 100;
 
-                            $('#usd_invested').html(number_format(usdInvested, 0, '.', ',') + ' USD');
-                            $('#eth_invested').html(number_format(ethInvested, 2, '.', ',') + ' ETH');
-                            $('#prc_invested').css('width', prcInvested + '%');
-                            $('#usd_cap').html(number_format(usdCap, 0, '.', ',') + ' USD');
-                            $('#eth_cap').html(number_format(ethCap, 0, '.', ',') + ' ETH');
-                            $('.box-progressbar').removeClass('hidden');
+							$('#usd_invested').html(number_format(usdInvested, 0, '.', ',') + ' USD');
+							$('#eth_invested').html(number_format(ethInvested, 2, '.', ',') + ' ETH');
+							$('#prc_invested').css('width', prcInvested + '%');
+							$('#usd_cap').html(number_format(usdCap, 0, '.', ',') + ' USD');
+							$('#eth_cap').html(number_format(ethCap, 0, '.', ',') + ' ETH');
+							$('.box-progressbar').removeClass('hidden');
 
-                            if (ethInvested >= ethCap) {
-                                finished_by_cap = true;
-                            }
-                            if (toEnd > 0 && !finished_by_cap) {
-                                setTimeout(function(){ update_ico_progress() }, 15000);
-                            }
+							if (ethInvested >= ethCap) {
+								finished_by_cap = true;
+							}
+							if (toEnd > 0 && !finished_by_cap) {
+								setTimeout(function(){ update_ico_progress() }, 15000);
+							}else{
+								$(".box-double").addClass('hidden');
+								$("#first_day_info").addClass('hidden');
+								$("#first_day_info_post").addClass('hidden');
+								$("#first_week_info").addClass('hidden');
+								$("#first_week_info_post").addClass('hidden');
+								$("#second_week_info").addClass('hidden');
+								$("#second_week_info_post").addClass('hidden');
+								$(".box-time").addClass('hidden');
+								$('.box-progressbar').addClass('hidden');
+
+								$(".box-fin-money").removeClass('hidden');
+								$(".fin-text").removeClass('hidden');
+								$('#fin-cap-usd').html(number_format(usdInvested, 0, '.', ',') + ' USD');
+								$('#fin-cap-eth').html(number_format(ethInvested, 2, '.', ',') + ' ETH');
+							}
                         }
                     }
                 , 'json');
