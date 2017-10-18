@@ -3625,7 +3625,7 @@ strong
     width: 45%
     padding-left: 40px
 
-.modal.fade#preorderAddress, .modal.fade#tokensaleAddress
+.modal.fade#preorderAddress, .modal.fade#tokensaleAddress, .modal.fade#contractAddress
   .modal-dialog .modal-header
     display: block
     h2
@@ -3691,6 +3691,15 @@ strong
     &:focus
       text-decoration: none
       outline: none
+
+.modal.fade#contractAddress
+  .modal-dialog 
+    .modal-header
+      padding: 31px 15px 31px
+    h2
+      margin-top: 12px
+    .modal-body
+      padding-bottom: 0
 
 .timer-days, .timer-hours, .timer-minutes, .timer-seconds
   font-family: "DINpro-light", sans-serif
@@ -3946,6 +3955,9 @@ strong
         background: -webkit-linear-gradient(65deg, #fec83c, #f9a313)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+
+.modal.fade.in
+  overflow-y: auto
 /////////////////// media ///////////////////////  
 
 @media (max-height: 641px)
@@ -4248,8 +4260,6 @@ strong
           //margin-top: 22px
     .box-left .box-time ul
       margin-left: 0px
-  .modal.fade.in
-    overflow-y: auto
   .modal.fade#contractAddress .modal-body a
     font-size: 14px
 
