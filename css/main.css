@@ -3554,28 +3554,28 @@ strong {
     width: 45%;
     padding-left: 40px; }
 
-.modal.fade#preorderAddress .modal-dialog .modal-header, .modal.fade#tokensaleAddress .modal-dialog .modal-header {
+.modal.fade#preorderAddress .modal-dialog .modal-header, .modal.fade#tokensaleAddress .modal-dialog .modal-header, .modal.fade#contractAddress .modal-dialog .modal-header {
   display: block; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header h2, .modal.fade#tokensaleAddress .modal-dialog .modal-header h2 {
+  .modal.fade#preorderAddress .modal-dialog .modal-header h2, .modal.fade#tokensaleAddress .modal-dialog .modal-header h2, .modal.fade#contractAddress .modal-dialog .modal-header h2 {
     margin-bottom: 40px; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header p, .modal.fade#tokensaleAddress .modal-dialog .modal-header p {
+  .modal.fade#preorderAddress .modal-dialog .modal-header p, .modal.fade#tokensaleAddress .modal-dialog .modal-header p, .modal.fade#contractAddress .modal-dialog .modal-header p {
     color: rgba(0, 0, 0, 0.7);
     font-size: 16px;
     line-height: 130%;
     width: 80%;
     text-align: center;
     margin: auto; }
-  .modal.fade#preorderAddress .modal-dialog .modal-header a, .modal.fade#tokensaleAddress .modal-dialog .modal-header a {
+  .modal.fade#preorderAddress .modal-dialog .modal-header a, .modal.fade#tokensaleAddress .modal-dialog .modal-header a, .modal.fade#contractAddress .modal-dialog .modal-header a {
     color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid rgba(0, 0, 0, 0.7); }
-    .modal.fade#preorderAddress .modal-dialog .modal-header a:hover, .modal.fade#tokensaleAddress .modal-dialog .modal-header a:hover {
+    .modal.fade#preorderAddress .modal-dialog .modal-header a:hover, .modal.fade#tokensaleAddress .modal-dialog .modal-header a:hover, .modal.fade#contractAddress .modal-dialog .modal-header a:hover {
       border-bottom: none;
       text-decoration: none; }
-.modal.fade#preorderAddress button.btn-large-color, .modal.fade#tokensaleAddress button.btn-large-color {
+.modal.fade#preorderAddress button.btn-large-color, .modal.fade#tokensaleAddress button.btn-large-color, .modal.fade#contractAddress button.btn-large-color {
   min-width: 240px; }
-.modal.fade#preorderAddress form .check-top, .modal.fade#tokensaleAddress form .check-top {
+.modal.fade#preorderAddress form .check-top, .modal.fade#tokensaleAddress form .check-top, .modal.fade#contractAddress form .check-top {
   margin-bottom: 40px; }
-.modal.fade#preorderAddress form .check-center, .modal.fade#tokensaleAddress form .check-center {
+.modal.fade#preorderAddress form .check-center, .modal.fade#tokensaleAddress form .check-center, .modal.fade#contractAddress form .check-center {
   margin-bottom: 20px; }
 
 .modal.fade#depositAddress .modal-dialog .modal-header, .modal.fade#contractAddress .modal-dialog .modal-header {
@@ -3614,6 +3614,13 @@ strong {
   .modal.fade#depositAddress .btn-gray:focus, .modal.fade#contractAddress .btn-gray:focus {
     text-decoration: none;
     outline: none; }
+
+.modal.fade#contractAddress .modal-dialog .modal-header {
+  padding: 31px 15px 31px; }
+.modal.fade#contractAddress .modal-dialog h2 {
+  margin-top: 12px; }
+.modal.fade#contractAddress .modal-dialog .modal-body {
+  padding-bottom: 0; }
 
 .timer-days, .timer-hours, .timer-minutes, .timer-seconds {
   font-family: "DINpro-light", sans-serif;
@@ -3859,6 +3866,9 @@ strong {
         background: -webkit-linear-gradient(65deg, #fec83c, #f9a313);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
+
+.modal.fade.in {
+  overflow-y: auto; }
 
 @media (max-height: 641px) {
   .sect-top .box-left .box-time .time-title, .sect-top .box-right .box-time .time-title {
@@ -4151,9 +4161,6 @@ strong {
     font-size: 3rem; }
   .sect-top .box-left .box-time ul {
     margin-left: 0px; }
-
-  .modal.fade.in {
-    overflow-y: auto; }
 
   .modal.fade#contractAddress .modal-body a {
     font-size: 14px; }
