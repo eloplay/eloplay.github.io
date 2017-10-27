@@ -13,9 +13,19 @@ messaging.setBackgroundMessageHandler(function(payload) {
 		body: 'Elo Tokens for eSports Smart Tournaments',
 		icon: '/logo-eloplay.svg',
 		tag: 'eloplay ico',
-		data: 'https://ico.eloplay.com/'
+		url: 'https://ico.eloplay.com/'
 	};
 	return self.registration.showNotification(notificationTitle,
 		notificationOptions);
 });
 
+self.addEventListener('notificationclick', function(event) {
+	if (Notification.prototype.hasOwnProperty('data')) {
+		var url = event.notification.data.url;
+		if(url != undefined && url != ''){
+			event.waitUntil(clients.openWindow(url));
+		}
+	} else {
+		console.log('url not provided');
+	}
+});
