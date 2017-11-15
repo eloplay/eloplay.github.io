@@ -338,6 +338,8 @@ document.querySelector('#copy_button').addEventListener('click', function() {
 					window.location.reload(true);
 				}
 			}, 1000);
+		}else{
+			 update_ico_progress() ;
 		}
 
         if(toStart <= 0){
@@ -380,6 +382,8 @@ document.querySelector('#copy_button').addEventListener('click', function() {
 							if (toEnd > 0 && !finished_by_cap) {
 								setTimeout(function(){ update_ico_progress() }, 15000);
 							}else{
+								$('#sale-started').show();
+								$('#sale-started-video-block').show();
 								$(".box-double").addClass('hidden');
 								$("#first_day_info").addClass('hidden');
 								$("#first_day_info_post").addClass('hidden');
