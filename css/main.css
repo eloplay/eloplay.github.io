@@ -3729,7 +3729,7 @@ strong {
     margin-top: 20px; }
   .full-bg-p2 .bg-sect-1-fin .fin-text {
     text-align: center;
-    margin-top: 15vh; }
+    margin-top: 5vh; }
     .full-bg-p2 .bg-sect-1-fin .fin-text p {
       font-size: 2.5rem;
       font-family: "DINpro-light", sans-serif; }
@@ -3866,6 +3866,18 @@ strong {
 .modal.fade.in {
   overflow-y: auto; }
 
+.top-lnk {
+  color: #fff;
+  opacity: 0.5;
+  font-family: "DINpro-light", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none; }
+  .top-lnk:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    opacity: 1; }
+
 @media (max-height: 641px) {
   .sect-top .box-left .box-time .time-title, .sect-top .box-right .box-time .time-title {
     margin: 20px auto 0px; }
@@ -3942,7 +3954,7 @@ strong {
   .sect-top .in-social-p1 li {
     margin-top: 45px; }
   .sect-top .indent-bottom {
-    margin-bottom: 100px; }
+    margin-bottom: 30px; }
 
   .full-bg-p2 .box-time {
     float: none; }
@@ -4135,6 +4147,9 @@ strong {
       opacity: 1;
       width: 100%;
       padding: 15px 5% 15px 15px; } }
+@media (min-width: 1400px) {
+  .full-bg-p2 .bg-sect-1-fin .fin-text {
+    margin-top: 15vh; } }
 @media (max-width: 576px) {
   .sect-top.pre-screen .indent-bottom .box-left .box-time {
     width: 100%;
