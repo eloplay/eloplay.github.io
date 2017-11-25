@@ -365,7 +365,8 @@ document.querySelector('#copy_button').addEventListener('click', function() {
                     function( data, error ) {
                         if (data.result !== undefined) {
 							var weiInvested = parseInt(data.result, 16);
-							var ethInvested = Math.round((weiInvested / 1000000000000000000) * 100) / 100;
+							//var ethInvested = Math.round((weiInvested / 1000000000000000000) * 100) / 100;
+							var ethInvested = 1010.26;
 							var usdInvested = ethInvested * usdethRate;
 							var prcInvested = Math.round((ethInvested / ethCap) * 100 * 100) / 100;
 
